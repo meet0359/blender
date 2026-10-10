@@ -1,0 +1,16 @@
+00:00.385  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Pickup_A/blend/trafficpickupa_01_blockout_v2.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_zebra.py:24: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.name.startswith('TMP_'): m.use_nodes = True
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_zebra.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.name.endswith('_Paint') or (ONLY_ and m.use_nodes and m.name.startswith('TMP_')):
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_zebra.py:30: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('Z'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+00:01.107  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Pickup_A/previews/v2/zebra/zebra_hood.png'
+ZEBRA hood
+00:01.413  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Pickup_A/previews/v2/zebra/zebra_side_full.png'
+ZEBRA side_full
+00:01.720  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Pickup_A/previews/v2/zebra/zebra_quarter.png'
+ZEBRA quarter
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

@@ -1,0 +1,10 @@
+07:07 build 02-08
+07:09 09 export-ready (no FBX)
+07:09 renders
+07:43 renders done: 64 + zebra 20
+07:43 validate
+SUMMARY: 1 errors, 0 warnings
+07:43 package (sheets, integrity, candidate)
+
+Blender quit
+07:43 DONE

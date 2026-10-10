@@ -1,0 +1,57 @@
+[PASS] units METRIC scale 1.0
+[PASS] unapplied object scale: none
+[PASS] length 4.680 m (target 4.6-4.75)
+[PASS] width (body, no mirrors) 2.057 m (target 2.0-2.08)
+[PASS] height 1.169 m (target 1.12-1.2)
+[PASS] ground clearance 0.105 m (target 0.1-0.13)
+[INFO] body shell bounds x[-1.029,1.029] y[-2.379,2.249] z[0.130,1.169]
+[PASS] wheel collider refs present
+[PASS] wheelbase 2.780 m (target 2.72-2.82)
+[INFO] front overhang 1.040 m, rear overhang 0.860 m (incl. splitter / diffuser)
+[PASS] Tire_FL center vs ref offset 0.0 mm
+[PASS] Tire_FL axle along X, sits on ground (min z 0.0008)
+[PASS] Tire_FL diameter 0.708 m (target 0.7-0.72)
+[PASS] Tire_FL width 0.309 m (target 0.3-0.32)
+[PASS] Tire_FL rotation identity (spin axis X)
+[PASS] Tire_FR center vs ref offset 0.0 mm
+[PASS] Tire_FR axle along X, sits on ground (min z 0.0008)
+[PASS] Tire_FR diameter 0.708 m (target 0.7-0.72)
+[PASS] Tire_FR width 0.309 m (target 0.3-0.32)
+[PASS] Tire_FR rotation identity (spin axis X)
+[PASS] Tire_RL center vs ref offset 0.0 mm
+[PASS] Tire_RL axle along X, sits on ground (min z 0.0008)
+[PASS] Tire_RL diameter 0.753 m (target 0.74-0.77)
+[PASS] Tire_RL width 0.348 m (target 0.34-0.36)
+[PASS] Tire_RL rotation identity (spin axis X)
+[PASS] Tire_RR center vs ref offset 0.0 mm
+[PASS] Tire_RR axle along X, sits on ground (min z 0.0008)
+[PASS] Tire_RR diameter 0.753 m (target 0.74-0.77)
+[PASS] Tire_RR width 0.348 m (target 0.34-0.36)
+[PASS] Tire_RR rotation identity (spin axis X)
+[PASS] Tire_FL vs Body_Shell overlap faces: 0
+[PASS] Rim_FL vs Body_Shell overlap faces: 0
+[PASS] Caliper_FL vs Body_Shell overlap faces: 0
+[PASS] Tire_FR vs Body_Shell overlap faces: 0
+[PASS] Rim_FR vs Body_Shell overlap faces: 0
+[PASS] Caliper_FR vs Body_Shell overlap faces: 0
+[PASS] Tire_RL vs Body_Shell overlap faces: 0
+[PASS] Rim_RL vs Body_Shell overlap faces: 0
+[PASS] Caliper_RL vs Body_Shell overlap faces: 0
+[PASS] Tire_RR vs Body_Shell overlap faces: 0
+[PASS] Rim_RR vs Body_Shell overlap faces: 0
+[PASS] Caliper_RR vs Body_Shell overlap faces: 0
+[PASS] Body_Shell evaluated non-manifold edges: 0
+[PASS] Body_Shell normals outward (signed volume 5.133 m3)
+[INFO] evaluated triangles: body 207,094, whole car 247,402
+[INFO] Body_Shell base cage: 3629 faces, ngons: 0, tris: 0
+[PASS] duplicate-suffixed objects: none
+[PASS] required objects missing: none
+[PASS] objects not parented under Car_Root: none
+[PASS] hidden render geometry (non-cutter): none
+[PASS] boolean cutters visible in render: none
+[PASS] CenterOfMass at (0.0, 0.12, 0.35) (rear-biased, low)
+[PASS] objects with empty material slots: none
+[INFO] materials are PRE_* blockout preview shaders; production materials are phase 6
+[WARNING] meshes without UVs: 22 (expected until phase 6)
+[PASS] missing texture links: none
+[INFO] LOD0-3 and Collision_* not created yet (phase 7/8)

@@ -1,0 +1,46 @@
+REALISTIC BODY CHECKPOINT VALIDATION
+PASS: All milestone body, glass, aero, wheel and brake objects exist
+PASS: Original collection structure preserved
+PASS: All vehicle scales are unity
+PASS: No meaningless default object names
+PASS: No hidden accidental vehicle geometry
+PASS: All mesh coordinates finite
+PASS: Metric units / -Y forward / +Z up preserved
+PASS: Wheel_FL original axle center and local X rotation convention retained
+PASS: Wheel_FL diameter 0.690 m retained
+PASS: Wheel_FL rotating rim, spokes and lugs parented
+PASS: FL brakes independent; caliper remains stationary
+PASS: FL actual rotation test leaves caliper stationary
+PASS: Wheel_FR original axle center and local X rotation convention retained
+PASS: Wheel_FR diameter 0.690 m retained
+PASS: Wheel_FR rotating rim, spokes and lugs parented
+PASS: FR brakes independent; caliper remains stationary
+PASS: FR actual rotation test leaves caliper stationary
+PASS: Wheel_RL original axle center and local X rotation convention retained
+PASS: Wheel_RL diameter 0.730 m retained
+PASS: Wheel_RL rotating rim, spokes and lugs parented
+PASS: RL brakes independent; caliper remains stationary
+PASS: RL actual rotation test leaves caliper stationary
+PASS: Wheel_RR original axle center and local X rotation convention retained
+PASS: Wheel_RR diameter 0.730 m retained
+PASS: Wheel_RR rotating rim, spokes and lugs parented
+PASS: RR brakes independent; caliper remains stationary
+PASS: RR actual rotation test leaves caliper stationary
+PASS: 2.70 m wheelbase retained
+PASS: Evaluated envelope L/W/H = 4.5488 / 2.0060 / 1.1990 m
+PASS: No zero-area base mesh faces (0)
+PASS: No unused base mesh vertices (0)
+PASS: Live body symmetry retained
+PASS: Live body subdivision retained
+PASS: Temporary surface-review materials exist
+PASS: Windshield centerline rake 29.23 degrees above horizontal; source 33.60 degrees
+PASS: Base meshes 29,908 polygons / 61,760 triangles
+PASS: Evaluated vehicle including curve trims 171,034 polygons / 343,036 triangles
+WARNING: Temporary review shaders; final UVs/textures and light internals intentionally absent.
+WARNING: Only a cabin shadow tray/deck, no detailed cockpit; glass tint is provisional.
+WARNING: Arch end transitions and bumper-to-quarter panel joins still need production-level topology review.
+WARNING: Side intake trim and front duct shut lines may need additional panel integration in the next body pass.
+WARNING: Open base panel boundaries are intentional; Solidify supplies panel thickness. Not export-certified.
+WARNING: Evaluated render geometry exceeds the earlier 100–180k LOD0 target; export-budget optimization is still required.
+WARNING: COLLIDERS and LODS remain empty, as requested. Final collider/LOD checks deferred.
+RESULT: 0 errors / 7 stage warnings

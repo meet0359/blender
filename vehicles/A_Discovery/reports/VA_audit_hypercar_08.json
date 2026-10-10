@@ -1,0 +1,518 @@
+{
+ "source": "/Users/meetshah/Documents/blender/new_car/hypercar_08_unity_export.blend",
+ "tag": "hypercar_08",
+ "objects": {
+  "MESH": 401,
+  "CAMERA": 24,
+  "EMPTY": 43,
+  "LIGHT": 18
+ },
+ "collections": 57,
+ "materials_total": 55,
+ "images_total": 47,
+ "missing_images": [],
+ "lods": {
+  "LOD0": {
+   "objects": 84,
+   "tris": 206329,
+   "materials": 24,
+   "material_names": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_AmbientLight",
+    "MAT_BrakeCaliper",
+    "MAT_CarbonExterior",
+    "MAT_Display",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red",
+    "MAT_HeadlightLens",
+    "MAT_InteriorCarbon",
+    "MAT_InteriorMirror",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens",
+    "MAT_TaillightLens"
+   ],
+   "images": 42,
+   "curves": 0,
+   "largest": [
+    [
+     70508,
+     "Body_LOD0"
+    ],
+    [
+     10624,
+     "Body_Buttress_LOD0"
+    ],
+    [
+     9436,
+     "Seat_Passenger_LOD0"
+    ],
+    [
+     9436,
+     "Seat_Driver_LOD0"
+    ],
+    [
+     4608,
+     "Tire_RR_LOD0"
+    ],
+    [
+     4608,
+     "Tire_RL_LOD0"
+    ]
+   ]
+  },
+  "LOD1": {
+   "objects": 84,
+   "tris": 107212,
+   "materials": 24,
+   "material_names": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_AmbientLight",
+    "MAT_BrakeCaliper",
+    "MAT_CarbonExterior",
+    "MAT_Display",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red",
+    "MAT_HeadlightLens",
+    "MAT_InteriorCarbon",
+    "MAT_InteriorMirror",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens",
+    "MAT_TaillightLens"
+   ],
+   "images": 42,
+   "curves": 0,
+   "largest": [
+    [
+     38784,
+     "Body_LOD1"
+    ],
+    [
+     4748,
+     "Seat_Passenger_LOD1"
+    ],
+    [
+     4748,
+     "Seat_Driver_LOD1"
+    ],
+    [
+     2624,
+     "Body_Buttress_LOD1"
+    ],
+    [
+     2534,
+     "Tire_RR_LOD1"
+    ],
+    [
+     2534,
+     "Tire_RL_LOD1"
+    ]
+   ]
+  },
+  "LOD2": {
+   "objects": 73,
+   "tris": 53807,
+   "materials": 20,
+   "material_names": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_AmbientLight",
+    "MAT_BrakeCaliper",
+    "MAT_Display",
+    "MAT_HeadlightLens",
+    "MAT_InteriorMirror",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens",
+    "MAT_TaillightLens"
+   ],
+   "images": 40,
+   "curves": 0,
+   "largest": [
+    [
+     20338,
+     "Body_LOD2"
+    ],
+    [
+     2136,
+     "Seat_Passenger_LOD2"
+    ],
+    [
+     2136,
+     "Seat_Driver_LOD2"
+    ],
+    [
+     1572,
+     "Body_Buttress_LOD2"
+    ],
+    [
+     1382,
+     "Tire_RR_LOD2"
+    ],
+    [
+     1382,
+     "Tire_RL_LOD2"
+    ]
+   ]
+  },
+  "LOD3": {
+   "objects": 38,
+   "tris": 17779,
+   "materials": 15,
+   "material_names": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_BrakeCaliper",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ],
+   "images": 40,
+   "curves": 0,
+   "largest": [
+    [
+     8558,
+     "Body_LOD3"
+    ],
+    [
+     1420,
+     "Interior_LOD3"
+    ],
+    [
+     784,
+     "Body_Buttress_LOD3"
+    ],
+    [
+     460,
+     "Tire_RR_LOD3"
+    ],
+    [
+     460,
+     "Tire_RL_LOD3"
+    ],
+    [
+     460,
+     "Tire_FR_LOD3"
+    ]
+   ]
+  }
+ },
+ "hidden_reference_tris": 139717,
+ "left_right": {
+  "refs": {
+   "FL": "+X",
+   "FR": "-X",
+   "RL": "+X",
+   "RR": "-X"
+  },
+  "convention_ok": true,
+  "note": "project convention: vehicle left = Blender +X (forward -Y, up +Z)"
+ },
+ "unlodded_render_objects": 1,
+ "dims_lod0": {
+  "length_y": 4.695,
+  "width_x": 2.2113,
+  "height_z": 1.1726,
+  "min": [
+   -1.1056,
+   -2.425,
+   0.0
+  ],
+  "max": [
+   1.1056,
+   2.27,
+   1.1726
+  ]
+ },
+ "facing": "-Y (project convention)",
+ "wheels": {
+  "FL": {
+   "object": "Wheel_FL_LOD0",
+   "origin": [
+    0.835,
+    -1.39,
+    0.355
+   ],
+   "bbox_centre_offset_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "radius": 0.355,
+   "width": 0.31,
+   "ref": [
+    0.835,
+    -1.39,
+    0.355
+   ],
+   "side_by_convention": "LEFT(+X)",
+   "front": true
+  },
+  "FR": {
+   "object": "Wheel_FR_LOD0",
+   "origin": [
+    -0.835,
+    -1.39,
+    0.355
+   ],
+   "bbox_centre_offset_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "radius": 0.355,
+   "width": 0.31,
+   "ref": [
+    -0.835,
+    -1.39,
+    0.355
+   ],
+   "side_by_convention": "RIGHT(-X)",
+   "front": true
+  },
+  "RL": {
+   "object": "Wheel_RL_LOD0",
+   "origin": [
+    0.835,
+    1.39,
+    0.3775
+   ],
+   "bbox_centre_offset_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "radius": 0.3775,
+   "width": 0.35,
+   "ref": [
+    0.835,
+    1.39,
+    0.3775
+   ],
+   "side_by_convention": "LEFT(+X)",
+   "front": false
+  },
+  "RR": {
+   "object": "Wheel_RR_LOD0",
+   "origin": [
+    -0.835,
+    1.39,
+    0.3775
+   ],
+   "bbox_centre_offset_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "radius": 0.3775,
+   "width": 0.35,
+   "ref": [
+    -0.835,
+    1.39,
+    0.3775
+   ],
+   "side_by_convention": "RIGHT(-X)",
+   "front": false
+  }
+ },
+ "wheelbase": 2.78,
+ "track": 1.67,
+ "topology_lod0": {
+  "zero_area_faces": 2,
+  "ngons": 4931,
+  "loose_verts": 0,
+  "nonmanifold_edges": 0,
+  "boundary_edges": 5895,
+  "inconsistent_winding_edges": 0,
+  "duplicate_verts": 4,
+  "closed_inside_out": 0
+ },
+ "worst_lod0_objects": [
+  [
+   "Body_LOD0",
+   {
+    "zero_area": 2,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ]
+ ],
+ "duplicate_object_groups_lod0": 0,
+ "duplicate_object_examples": [],
+ "colliders": {
+  "Collision_Body": {
+   "tris": 52,
+   "closed": true,
+   "convex": true,
+   "materials": [
+    "QA_Collision_Body"
+   ]
+  },
+  "Collision_Cabin": {
+   "tris": 60,
+   "closed": true,
+   "convex": true,
+   "materials": [
+    "QA_Collision_Cabin"
+   ]
+  },
+  "Collision_Front": {
+   "tris": 74,
+   "closed": true,
+   "convex": true,
+   "materials": [
+    "QA_Collision_Front"
+   ]
+  },
+  "Collision_Rear": {
+   "tris": 76,
+   "closed": true,
+   "convex": true,
+   "materials": [
+    "QA_Collision_Rear"
+   ]
+  },
+  "Collision_Side_L": {
+   "tris": 64,
+   "closed": true,
+   "convex": true,
+   "materials": [
+    "QA_Collision_Side_L"
+   ]
+  },
+  "Collision_Side_R": {
+   "tris": 66,
+   "closed": true,
+   "convex": true,
+   "materials": [
+    "QA_Collision_Side_R"
+   ]
+  }
+ },
+ "references": {
+  "Car_Root": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "CenterOfMass": [
+   0.0,
+   0.12,
+   0.35
+  ],
+  "LOD0_Root": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "WheelColliderRef_FL": [
+   0.835,
+   -1.39,
+   0.355
+  ],
+  "WheelColliderRef_FR": [
+   -0.835,
+   -1.39,
+   0.355
+  ],
+  "WheelColliderRef_RL": [
+   0.835,
+   1.39,
+   0.3775
+  ],
+  "WheelColliderRef_RR": [
+   -0.835,
+   1.39,
+   0.3775
+  ]
+ },
+ "negative_scale": [],
+ "cameras": [
+  "Cam_carbon",
+  "Cam_diffuser",
+  "Cam_front",
+  "Cam_front_3q",
+  "Cam_glass_fit_front_3q",
+  "Cam_glass_fit_side",
+  "Cam_headlight",
+  "Cam_int_cockpit",
+  "Cam_int_dashboard",
+  "Cam_int_driver",
+  "Cam_int_passenger",
+  "Cam_int_seats",
+  "Cam_int_steering",
+  "Cam_low_3q",
+  "Cam_rear",
+  "Cam_rear_3q",
+  "Cam_side",
+  "Cam_side_intake",
+  "Cam_spoiler",
+  "Cam_taillight",
+  "Cam_top",
+  "Cam_top_3q",
+  "Cam_wheel",
+  "Camera_Cockpit_QA"
+ ],
+ "lights": [
+  "Light_CabinFill",
+  "Light_Fill",
+  "Light_Key",
+  "Light_NightKick",
+  "Light_NightRim",
+  "Light_OverheadStrip",
+  "Light_Rim",
+  "Light_SideStrip",
+  "QC_Strip_00",
+  "QC_Strip_01",
+  "QC_Strip_02",
+  "QC_Strip_03",
+  "QC_Strip_04",
+  "QC_Strip_05",
+  "QC_Strip_06",
+  "QC_Strip_07",
+  "QC_Strip_08",
+  "Sun_Daylight"
+ ],
+ "modifiers_lod0": {},
+ "objects_without_uv_lod0": []
+}

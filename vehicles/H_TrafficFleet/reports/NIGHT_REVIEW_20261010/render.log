@@ -1,0 +1,337 @@
+00:00.456  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Sedan_A_r3/blend/trafficsedanar3_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 REALISTIC HIGHWAY NIGHT
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:14.998  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front34.png
+00:29.314  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_rear34.png
+00:39.767  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_side.png
+00:49.979  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_game_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_game_close.png
+00:57.987  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_game_normal.png
+01:08.467  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_game_far.png
+01:23.638  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front_close.png
+01:33.077  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front_normal.png
+01:41.605  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/realistic/TrafficSedanA_night_front_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.501  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Sedan_A_r3/blend/trafficsedanar3_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 VISIBILITY QA
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:23.745  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/visibility_qa/TrafficSedanA_nightqa_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/visibility_qa/TrafficSedanA_nightqa_front34.png
+00:40.834  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/visibility_qa/TrafficSedanA_nightqa_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/visibility_qa/TrafficSedanA_nightqa_rear34.png
+00:56.758  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/visibility_qa/TrafficSedanA_nightqa_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_A_r3/visibility_qa/TrafficSedanA_nightqa_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.629  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Sedan_B/blend/trafficsedanb_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 REALISTIC HIGHWAY NIGHT
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:17.976  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front34.png
+00:35.230  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_rear34.png
+00:55.395  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_side.png
+01:15.477  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_game_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_game_close.png
+01:26.156  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_game_normal.png
+01:35.359  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_game_far.png
+01:50.135  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front_close.png
+02:02.163  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front_normal.png
+02:13.548  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/realistic/TrafficSedanB_night_front_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.761  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Sedan_B/blend/trafficsedanb_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 VISIBILITY QA
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:19.658  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/visibility_qa/TrafficSedanB_nightqa_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/visibility_qa/TrafficSedanB_nightqa_front34.png
+00:42.235  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/visibility_qa/TrafficSedanB_nightqa_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/visibility_qa/TrafficSedanB_nightqa_rear34.png
+01:02.087  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/visibility_qa/TrafficSedanB_nightqa_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Sedan_B/visibility_qa/TrafficSedanB_nightqa_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.810  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_SUV_A/blend/trafficsuva_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 REALISTIC HIGHWAY NIGHT
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:32.147  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front34.png
+01:02.705  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_rear34.png
+01:23.070  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_side.png
+01:50.161  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_game_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_game_close.png
+02:06.229  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_game_normal.png
+02:26.197  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_game_far.png
+02:51.396  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front_close.png
+03:01.946  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front_normal.png
+03:19.284  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/realistic/TrafficSUVA_night_front_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.606  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_SUV_A/blend/trafficsuva_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 VISIBILITY QA
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:25.770  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/visibility_qa/TrafficSUVA_nightqa_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/visibility_qa/TrafficSUVA_nightqa_front34.png
+00:53.945  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/visibility_qa/TrafficSUVA_nightqa_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/visibility_qa/TrafficSUVA_nightqa_rear34.png
+01:17.350  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/visibility_qa/TrafficSUVA_nightqa_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_A/visibility_qa/TrafficSUVA_nightqa_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.706  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_SUV_B/blend/trafficsuvb_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 REALISTIC HIGHWAY NIGHT
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:40.407  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front34.png
+01:07.195  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_rear34.png
+01:33.910  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_side.png
+01:56.555  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_game_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_game_close.png
+02:13.048  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_game_normal.png
+02:37.973  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_game_far.png
+02:57.673  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front_close.png
+03:21.564  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front_normal.png
+03:34.654  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/realistic/TrafficSUVB_night_front_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.708  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_SUV_B/blend/trafficsuvb_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 VISIBILITY QA
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:30.354  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/visibility_qa/TrafficSUVB_nightqa_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/visibility_qa/TrafficSUVB_nightqa_front34.png
+00:56.207  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/visibility_qa/TrafficSUVB_nightqa_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/visibility_qa/TrafficSUVB_nightqa_rear34.png
+01:21.301  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/visibility_qa/TrafficSUVB_nightqa_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_SUV_B/visibility_qa/TrafficSUVB_nightqa_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.857  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 REALISTIC HIGHWAY NIGHT
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:29.476  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front34.png
+01:02.068  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_rear34.png
+01:19.294  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_side.png
+01:51.108  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_game_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_game_close.png
+02:21.081  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_game_normal.png
+02:39.845  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_game_far.png
+03:12.429  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front_close.png
+03:35.592  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front_normal.png
+03:48.268  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/realistic/TrafficBoxTruckA_night_front_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.652  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 VISIBILITY QA
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:40.152  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/visibility_qa/TrafficBoxTruckA_nightqa_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/visibility_qa/TrafficBoxTruckA_nightqa_front34.png
+01:18.051  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/visibility_qa/TrafficBoxTruckA_nightqa_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/visibility_qa/TrafficBoxTruckA_nightqa_rear34.png
+01:44.995  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/visibility_qa/TrafficBoxTruckA_nightqa_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Box_Truck_A/visibility_qa/TrafficBoxTruckA_nightqa_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.841  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Bus_A/blend/trafficbusa_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 REALISTIC HIGHWAY NIGHT
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:34.847  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front34.png
+01:03.208  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_rear34.png
+01:34.985  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_side.png
+02:17.252  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_game_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_game_close.png
+02:38.192  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_game_normal.png
+02:52.955  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_game_far.png
+03:24.964  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front_close.png
+03:39.333  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front_normal.png
+03:56.378  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/realistic/TrafficBusA_night_front_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.575  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Bus_A/blend/trafficbusa_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 VISIBILITY QA
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:23.926  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/visibility_qa/TrafficBusA_nightqa_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/visibility_qa/TrafficBusA_nightqa_front34.png
+00:46.118  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/visibility_qa/TrafficBusA_nightqa_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/visibility_qa/TrafficBusA_nightqa_rear34.png
+01:09.791  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/visibility_qa/TrafficBusA_nightqa_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Bus_A/visibility_qa/TrafficBusA_nightqa_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.633  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A/blend/traffichatchbacka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 REALISTIC HIGHWAY NIGHT
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:32.295  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front34.png
+01:10.212  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_rear34.png
+01:34.492  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_side.png
+01:49.606  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_game_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_game_close.png
+02:05.448  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_game_normal.png
+02:21.066  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_game_far.png
+02:40.099  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front_close.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front_close.png
+02:59.200  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front_normal.png
+03:20.969  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/realistic/TrafficHatchbackA_night_front_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit
+00:00.922  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A/blend/traffichatchbacka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+NIGHT RIG v2 VISIBILITY QA
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+P0 MISSING: stand-in road
+GAMECAM shift rear 0.0 front 0.0
+00:36.927  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/visibility_qa/TrafficHatchbackA_nightqa_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/visibility_qa/TrafficHatchbackA_nightqa_front34.png
+01:15.500  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/visibility_qa/TrafficHatchbackA_nightqa_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/visibility_qa/TrafficHatchbackA_nightqa_rear34.png
+01:43.053  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/visibility_qa/TrafficHatchbackA_nightqa_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/reports/NIGHT_REVIEW_20261010/Traffic_Hatchback_A/visibility_qa/TrafficHatchbackA_nightqa_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+TS_Lights_State
+TS_Lights_State.png
+
+Blender quit

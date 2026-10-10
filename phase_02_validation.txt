@@ -1,0 +1,28 @@
+PHASE 2 BLOCKOUT VALIDATION
+PASS: All Phase 2 required objects exist
+PASS: All eight requested collections exist
+PASS: All vehicle mesh scales are (1,1,1)
+PASS: No default object names
+PASS: No hidden vehicle meshes
+PASS: Mesh coordinates are finite
+PASS: Wheel_FL origin at rotational center
+PASS: Wheel_FL circular around local X axis
+PASS: Wheel_FL center placeholder follows wheel rotation
+PASS: Wheel_FR origin at rotational center
+PASS: Wheel_FR circular around local X axis
+PASS: Wheel_FR center placeholder follows wheel rotation
+PASS: Wheel_RL origin at rotational center
+PASS: Wheel_RL circular around local X axis
+PASS: Wheel_RL center placeholder follows wheel rotation
+PASS: Wheel_RR origin at rotational center
+PASS: Wheel_RR circular around local X axis
+PASS: Wheel_RR center placeholder follows wheel rotation
+PASS: Evaluated vehicle envelope: length 4.580 m, width 2.016 m, height 1.200 m
+PASS: Wheelbase 2.700 m
+PASS: Metric scene units
+PASS: Main body origin at central chassis XY position
+WARNING: Blockout only. Body curvature and arch transitions need manual review before Phase 3.
+WARNING: Opaque cabin and simple bumper volumes are intentional.
+WARNING: Final materials, UVs, detailed lights, interior, brakes, collider and LOD meshes are deferred.
+PASS: Hidden reference empties and review floor are intentional; no hidden accidental vehicle geometry.
+RESULT: 0 errors

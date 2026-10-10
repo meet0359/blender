@@ -1,0 +1,672 @@
+{
+  "extensions": [
+    "KHR_materials_clearcoat",
+    "KHR_materials_transmission",
+    "KHR_materials_emissive_strength",
+    "KHR_materials_ior",
+    "KHR_materials_sheen"
+  ],
+  "embedded_images": true,
+  "render_primitives_have_tangents": true,
+  "render_primitive_count": 1717,
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.41999998688697815,
+          "clearcoatRoughnessFactor": 0.18000000715255737
+        }
+      },
+      "name": "MAT_CarPaint_Engine",
+      "normalTexture": {
+        "index": 0,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_BlackPlastic_Engine",
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 4,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 4,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.23000000417232513,
+          "clearcoatRoughnessFactor": 0.23999999463558197
+        }
+      },
+      "name": "MAT_CarbonFiber_Engine",
+      "normalTexture": {
+        "index": 6,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 7,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 8,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 7,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_HeadlightHousing_Engine",
+      "normalTexture": {
+        "index": 9,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 10,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 11,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 10,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_BrushedMetal_Engine",
+      "normalTexture": {
+        "index": 12,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 13,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 14,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 13,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_Chrome_Engine",
+      "normalTexture": {
+        "index": 15,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 16,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 17,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 16,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.41999998688697815,
+          "clearcoatRoughnessFactor": 0.18000000715255737
+        }
+      },
+      "name": "MAT_BrakeCaliper_Engine",
+      "normalTexture": {
+        "index": 18,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 19,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 20,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 19,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4600000381469727
+        }
+      },
+      "name": "MAT_Glass_LOD_Thin_Engine",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8299999833106995,
+          0.9100000262260437,
+          0.949999988079071,
+          0.18000000715255737
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.02500000037252903
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_sheen": {
+          "sheenColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "sheenRoughnessFactor": 0.5
+        }
+      },
+      "name": "MAT_InteriorAlcantara_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 21,
+        "scale": 0.30000001192092896
+      },
+      "occlusionTexture": {
+        "index": 22,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 23,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 22,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_InteriorLeather_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 24,
+        "scale": 0.30000001192092896
+      },
+      "occlusionTexture": {
+        "index": 25,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 26,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 25,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.23000000417232513,
+          "clearcoatRoughnessFactor": 0.23999999463558197
+        }
+      },
+      "name": "MAT_InteriorCarbon_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 27,
+        "scale": 0.30000001192092896
+      },
+      "occlusionTexture": {
+        "index": 28,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 29,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 28,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_InteriorPlastic_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 30,
+        "scale": 0.30000001192092896
+      },
+      "occlusionTexture": {
+        "index": 31,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 32,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 31,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.004900000067800281,
+        0.011549999740719796,
+        0.017499999962747093
+      ],
+      "name": "MAT_Display_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 33
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.006000000052154064,
+          0.01600000075995922,
+          0.023000000044703484,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.1899999976158142
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_InteriorMetal_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 34,
+        "scale": 0.30000001192092896
+      },
+      "occlusionTexture": {
+        "index": 35,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 36,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 35,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_Speaker_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 37,
+        "scale": 0.6499999761581421
+      },
+      "occlusionTexture": {
+        "index": 38,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 39,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 38,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_InteriorMirror_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 40
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6800000071525574,
+          0.7200000286102295,
+          0.7599999904632568,
+          1
+        ],
+        "roughnessFactor": 0.04500000178813934
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_SeatAccent_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 41,
+        "scale": 0.30000001192092896
+      },
+      "occlusionTexture": {
+        "index": 42,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 43,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 42,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.7599999904632568,
+        0.8700000047683716,
+        1
+      ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 2
+        }
+      },
+      "name": "MAT_EmissiveWhite_Engine",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7599999904632568,
+          0.8700000047683716,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.2800000011920929
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4600000381469727
+        }
+      },
+      "name": "MAT_HeadlightLens_Engine",
+      "normalTexture": {
+        "index": 44,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 45,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 46,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 45,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4600000381469727
+        }
+      },
+      "name": "MAT_ProjectorLens_Engine",
+      "normalTexture": {
+        "index": 47,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 48,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 49,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 48,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.8449999380111706,
+        0.006499999616295105,
+        0.011699999067187328
+      ],
+      "name": "MAT_EmissiveRed_Engine",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6499999761581421,
+          0.004999999888241291,
+          0.008999999612569809,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.2800000011920929
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        0.19999999254941953,
+        0.002500000081490724
+      ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.0399999773502344
+        }
+      },
+      "name": "MAT_EmissiveAmber_Engine",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.1599999964237213,
+          0.0020000000949949026,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.2800000011920929
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4600000381469727
+        }
+      },
+      "name": "MAT_TaillightLens_Engine",
+      "normalTexture": {
+        "index": 50,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 51,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 52,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 51,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_WheelDark_Engine",
+      "normalTexture": {
+        "index": 53,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 54,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 55,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 54,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_BrakeDisc_Engine",
+      "normalTexture": {
+        "index": 56,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 57,
+        "texCoord": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 58,
+          "texCoord": 2
+        },
+        "metallicRoughnessTexture": {
+          "index": 57,
+          "texCoord": 2
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_WheelMetal_Engine",
+      "normalTexture": {
+        "index": 59,
+        "scale": 0.30000001192092896,
+        "texCoord": 1
+      },
+      "occlusionTexture": {
+        "index": 60,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 61,
+          "texCoord": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 60,
+          "texCoord": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MAT_Tire_LOD_Detail_Engine",
+      "normalTexture": {
+        "index": 62,
+        "scale": 0.30000001192092896
+      },
+      "occlusionTexture": {
+        "index": 63
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 64
+        },
+        "metallicRoughnessTexture": {
+          "index": 63
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "paint": "//textures/racing_car/game/paint_ORM.png",
+  "carbon": "//textures/racing_car/game/carbon_ORM.png",
+  "plastic": "//textures/racing_car/game/plastic_ORM.png",
+  "chrome": "//textures/racing_car/game/chrome_ORM.png",
+  "metal": "//textures/racing_car/game/metal_ORM.png",
+  "rubber": "//textures/racing_car/game/rubber_ORM.png",
+  "rotor": "//textures/racing_car/game/rotor_ORM.png",
+  "caliper": "//textures/racing_car/game/caliper_ORM.png",
+  "leather": "//textures/racing_car/game/leather_ORM.png",
+  "alcantara": "//textures/racing_car/game/alcantara_ORM.png",
+  "speaker": "//textures/racing_car/game/speaker_ORM.png",
+  "lens": "//textures/racing_car/game/lens_ORM.png"
+}

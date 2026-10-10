@@ -1,0 +1,601 @@
+{
+ "source": "/Users/meetshah/Documents/blender/racing_car_09_unity_export_ready.blend",
+ "tag": "racing_car_09",
+ "objects": {
+  "CURVE": 231,
+  "MESH": 2059,
+  "EMPTY": 38,
+  "CAMERA": 25,
+  "LIGHT": 5
+ },
+ "collections": 53,
+ "materials_total": 56,
+ "images_total": 88,
+ "missing_images": [],
+ "lods": {
+  "LOD0": {
+   "objects": 642,
+   "tris": 176152,
+   "materials": 27,
+   "material_names": [
+    "MAT_BlackPlastic_Engine",
+    "MAT_BrakeCaliper_Engine",
+    "MAT_BrakeDisc_Engine",
+    "MAT_BrushedMetal_Engine",
+    "MAT_CarPaint_BrightRed",
+    "MAT_CarbonFiber_Engine",
+    "MAT_Chrome_Engine",
+    "MAT_Display_LOD_Detail_Engine",
+    "MAT_EmissiveAmber_Engine",
+    "MAT_EmissiveRed_Engine",
+    "MAT_EmissiveWhite_Engine",
+    "MAT_Glass_LOD_Thin_Engine",
+    "MAT_HeadlightHousing_Engine",
+    "MAT_HeadlightLens_Engine",
+    "MAT_InteriorAlcantara_LOD_Detail_Engine",
+    "MAT_InteriorCarbon_LOD_Detail_Engine",
+    "MAT_InteriorLeather_LOD_Detail_Engine",
+    "MAT_InteriorMetal_LOD_Detail_Engine",
+    "MAT_InteriorMirror_LOD_Detail_Engine",
+    "MAT_InteriorPlastic_LOD_Detail_Engine",
+    "MAT_ProjectorLens_Engine",
+    "MAT_SeatAccent_LOD_Detail_Engine",
+    "MAT_Speaker_LOD_Detail_Engine",
+    "MAT_TaillightLens_Engine",
+    "MAT_Tire_LOD_Detail_Engine",
+    "MAT_WheelDark_Engine",
+    "MAT_WheelMetal_Engine"
+   ],
+   "images": 49,
+   "curves": 0,
+   "largest": [
+    [
+     38560,
+     "Car_Body_LOD0"
+    ],
+    [
+     7120,
+     "Hood_LOD0"
+    ],
+    [
+     5825,
+     "Roof_Panel_LOD0"
+    ],
+    [
+     4992,
+     "Rear_Bumper_LOD0"
+    ],
+    [
+     4672,
+     "Front_Bumper_LOD0"
+    ],
+    [
+     2964,
+     "Wheel_RR_LOD0"
+    ]
+   ]
+  },
+  "LOD1": {
+   "objects": 452,
+   "tris": 99084,
+   "materials": 27,
+   "material_names": [
+    "MAT_BlackPlastic_Engine",
+    "MAT_BrakeCaliper_Engine",
+    "MAT_BrakeDisc_Engine",
+    "MAT_BrushedMetal_Engine",
+    "MAT_CarPaint_BrightRed",
+    "MAT_CarbonFiber_Engine",
+    "MAT_Chrome_Engine",
+    "MAT_Display_LOD_Detail_Engine",
+    "MAT_EmissiveAmber_Engine",
+    "MAT_EmissiveRed_Engine",
+    "MAT_EmissiveWhite_Engine",
+    "MAT_Glass_LOD_Thin_Engine",
+    "MAT_HeadlightHousing_Engine",
+    "MAT_HeadlightLens_Engine",
+    "MAT_InteriorAlcantara_LOD_Detail_Engine",
+    "MAT_InteriorCarbon_LOD_Detail_Engine",
+    "MAT_InteriorLeather_LOD_Detail_Engine",
+    "MAT_InteriorMetal_LOD_Detail_Engine",
+    "MAT_InteriorMirror_LOD_Detail_Engine",
+    "MAT_InteriorPlastic_LOD_Detail_Engine",
+    "MAT_ProjectorLens_Engine",
+    "MAT_SeatAccent_LOD_Detail_Engine",
+    "MAT_Speaker_LOD_Detail_Engine",
+    "MAT_TaillightLens_Engine",
+    "MAT_Tire_LOD_Detail_Engine",
+    "MAT_WheelDark_Engine",
+    "MAT_WheelMetal_Engine"
+   ],
+   "images": 49,
+   "curves": 0,
+   "largest": [
+    [
+     13411,
+     "Car_Body_LOD1"
+    ],
+    [
+     7120,
+     "Hood_LOD1"
+    ],
+    [
+     4992,
+     "Rear_Bumper_LOD1"
+    ],
+    [
+     4672,
+     "Front_Bumper_LOD1"
+    ],
+    [
+     2232,
+     "Wheel_RR_LOD1"
+    ],
+    [
+     2232,
+     "Wheel_RL_LOD1"
+    ]
+   ]
+  },
+  "LOD2": {
+   "objects": 248,
+   "tris": 44985,
+   "materials": 22,
+   "material_names": [
+    "MAT_BlackPlastic_Engine",
+    "MAT_BrakeCaliper_Engine",
+    "MAT_BrakeDisc_Engine",
+    "MAT_CarPaint_BrightRed",
+    "MAT_CarbonFiber_Engine",
+    "MAT_Chrome_Engine",
+    "MAT_Display_LOD_Detail_Engine",
+    "MAT_EmissiveAmber_Engine",
+    "MAT_EmissiveRed_Engine",
+    "MAT_EmissiveWhite_Engine",
+    "MAT_Glass_LOD_Thin_Engine",
+    "MAT_HeadlightHousing_Engine",
+    "MAT_HeadlightLens_Engine",
+    "MAT_InteriorAlcantara_LOD_Detail_Engine",
+    "MAT_InteriorCarbon_LOD_Detail_Engine",
+    "MAT_InteriorLeather_LOD_Detail_Engine",
+    "MAT_InteriorPlastic_LOD_Detail_Engine",
+    "MAT_ProjectorLens_Engine",
+    "MAT_TaillightLens_Engine",
+    "MAT_Tire_LOD_Detail_Engine",
+    "MAT_WheelDark_Engine",
+    "MAT_WheelMetal_Engine"
+   ],
+   "images": 41,
+   "curves": 0,
+   "largest": [
+    [
+     6958,
+     "Car_Body_LOD2"
+    ],
+    [
+     1326,
+     "Wheel_RR_LOD2"
+    ],
+    [
+     1326,
+     "Wheel_RL_LOD2"
+    ],
+    [
+     1326,
+     "Wheel_FR_LOD2"
+    ],
+    [
+     1326,
+     "Wheel_FL_LOD2"
+    ],
+    [
+     1246,
+     "Roof_Panel_LOD2"
+    ]
+   ]
+  },
+  "LOD3": {
+   "objects": 199,
+   "tris": 16386,
+   "materials": 21,
+   "material_names": [
+    "MAT_BlackPlastic_Engine",
+    "MAT_BrakeCaliper_Engine",
+    "MAT_BrakeDisc_Engine",
+    "MAT_CarPaint_BrightRed",
+    "MAT_CarbonFiber_Engine",
+    "MAT_Chrome_Engine",
+    "MAT_Display_LOD_Detail_Engine",
+    "MAT_EmissiveAmber_Engine",
+    "MAT_EmissiveRed_Engine",
+    "MAT_EmissiveWhite_Engine",
+    "MAT_Glass_LOD_Thin_Engine",
+    "MAT_HeadlightHousing_Engine",
+    "MAT_HeadlightLens_Engine",
+    "MAT_InteriorAlcantara_LOD_Detail_Engine",
+    "MAT_InteriorCarbon_LOD_Detail_Engine",
+    "MAT_InteriorLeather_LOD_Detail_Engine",
+    "MAT_InteriorPlastic_LOD_Detail_Engine",
+    "MAT_TaillightLens_Engine",
+    "MAT_Tire_LOD_Detail_Engine",
+    "MAT_WheelDark_Engine",
+    "MAT_WheelMetal_Engine"
+   ],
+   "images": 40,
+   "curves": 0,
+   "largest": [
+    [
+     2158,
+     "Car_Body_LOD3"
+    ],
+    [
+     1020,
+     "Front_Intake_Grille_LOD3"
+    ],
+    [
+     512,
+     "Wheel_RR_LOD3"
+    ],
+    [
+     512,
+     "Wheel_RL_LOD3"
+    ],
+    [
+     512,
+     "Wheel_FR_LOD3"
+    ],
+    [
+     512,
+     "Wheel_FL_LOD3"
+    ]
+   ]
+  }
+ },
+ "hidden_reference_tris": 251080,
+ "left_right": {
+  "refs": {
+   "FL": "-X",
+   "FR": "+X",
+   "RL": "-X",
+   "RR": "+X"
+  },
+  "convention_ok": false,
+  "note": "project convention: vehicle left = Blender +X (forward -Y, up +Z)"
+ },
+ "unlodded_render_objects": 0,
+ "dims_lod0": {
+  "length_y": 4.5488,
+  "width_x": 2.006,
+  "height_z": 1.1998,
+  "min": [
+   -1.003,
+   -2.29,
+   0.001
+  ],
+  "max": [
+   1.003,
+   2.2589,
+   1.2008
+  ]
+ },
+ "facing": "-Y (project convention)",
+ "wheels": {
+  "FL": {
+   "object": "Wheel_FL_LOD0",
+   "origin": [
+    -0.825,
+    -1.35,
+    0.345
+   ],
+   "bbox_centre_offset_mm": [
+    -0.0,
+    0.0,
+    0.51
+   ],
+   "radius": 0.3445,
+   "width": 0.296,
+   "ref": [
+    -0.825,
+    -1.35,
+    0.345
+   ],
+   "side_by_convention": "RIGHT(-X)",
+   "front": true
+  },
+  "FR": {
+   "object": "Wheel_FR_LOD0",
+   "origin": [
+    0.825,
+    -1.35,
+    0.345
+   ],
+   "bbox_centre_offset_mm": [
+    -0.0,
+    0.0,
+    0.5
+   ],
+   "radius": 0.3445,
+   "width": 0.296,
+   "ref": [
+    0.825,
+    -1.35,
+    0.345
+   ],
+   "side_by_convention": "LEFT(+X)",
+   "front": true
+  },
+  "RL": {
+   "object": "Wheel_RL_LOD0",
+   "origin": [
+    -0.835,
+    1.35,
+    0.365
+   ],
+   "bbox_centre_offset_mm": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "radius": 0.3645,
+   "width": 0.336,
+   "ref": [
+    -0.835,
+    1.35,
+    0.365
+   ],
+   "side_by_convention": "RIGHT(-X)",
+   "front": false
+  },
+  "RR": {
+   "object": "Wheel_RR_LOD0",
+   "origin": [
+    0.835,
+    1.35,
+    0.365
+   ],
+   "bbox_centre_offset_mm": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "radius": 0.3645,
+   "width": 0.336,
+   "ref": [
+    0.835,
+    1.35,
+    0.365
+   ],
+   "side_by_convention": "LEFT(+X)",
+   "front": false
+  }
+ },
+ "wheelbase": 2.7,
+ "track": 1.65,
+ "topology_lod0": {
+  "zero_area_faces": 366,
+  "ngons": 2438,
+  "loose_verts": 0,
+  "nonmanifold_edges": 0,
+  "boundary_edges": 6572,
+  "inconsistent_winding_edges": 0,
+  "duplicate_verts": 183,
+  "closed_inside_out": 0
+ },
+ "worst_lod0_objects": [
+  [
+   "InstrumentCluster_Screen_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Door_Handle_Recess_R_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Door_Handle_Recess_L_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Door_Handle_FlushBlade_R_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Door_Handle_FlushBlade_L_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Caliper_Spine_RR_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Caliper_Spine_RL_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Caliper_Spine_FR_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Caliper_Spine_FL_LOD0",
+   {
+    "zero_area": 32,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "Steering_GripInsert_1_LOD0",
+   {
+    "zero_area": 20,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "DoorPanel_R_SwitchPad_LOD0",
+   {
+    "zero_area": 16,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ],
+  [
+   "DoorPanel_L_SwitchPad_LOD0",
+   {
+    "zero_area": 16,
+    "winding": 0,
+    "nonmanifold": 0,
+    "inside_out": false
+   }
+  ]
+ ],
+ "duplicate_object_groups_lod0": 0,
+ "duplicate_object_examples": [],
+ "colliders": {
+  "Collision_Body": {
+   "tris": 28,
+   "closed": true,
+   "convex": true,
+   "materials": []
+  },
+  "Collision_Front": {
+   "tris": 20,
+   "closed": true,
+   "convex": true,
+   "materials": []
+  },
+  "Collision_Rear": {
+   "tris": 20,
+   "closed": true,
+   "convex": true,
+   "materials": []
+  },
+  "Collision_Roof": {
+   "tris": 28,
+   "closed": true,
+   "convex": true,
+   "materials": []
+  }
+ },
+ "references": {
+  "Car_Root": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "CenterOfMass": [
+   0.0,
+   0.22,
+   0.37
+  ],
+  "Front_Axle_Reference": [
+   0.0,
+   -1.35,
+   0.345
+  ],
+  "Rear_Axle_Reference": [
+   0.0,
+   1.35,
+   0.365
+  ],
+  "WheelColliderRef_FL": [
+   -0.825,
+   -1.35,
+   0.345
+  ],
+  "WheelColliderRef_FR": [
+   0.825,
+   -1.35,
+   0.345
+  ],
+  "WheelColliderRef_RL": [
+   -0.835,
+   1.35,
+   0.365
+  ],
+  "WheelColliderRef_RR": [
+   0.835,
+   1.35,
+   0.365
+  ]
+ },
+ "negative_scale": [],
+ "cameras": [
+  "Camera_Blockout_Review",
+  "Camera_Cockpit_QA",
+  "Camera_Front",
+  "Camera_Headlight_Closeup",
+  "Camera_Interior_Dashboard",
+  "Camera_Interior_Driver",
+  "Camera_Interior_Passenger",
+  "Camera_Interior_Seats",
+  "Camera_LOD0_ThroughGlass",
+  "Camera_LOD1_Distance",
+  "Camera_LOD2_Distance",
+  "Camera_LOD3_Distance",
+  "Camera_Low_Front",
+  "Camera_Low_Rear",
+  "Camera_Materials_Carbon",
+  "Camera_Materials_Steering",
+  "Camera_Presentation",
+  "Camera_Rear",
+  "Camera_Rear_Blockout",
+  "Camera_Rear_ThreeQuarter",
+  "Camera_Side",
+  "Camera_Side_Blockout",
+  "Camera_Taillight_Closeup",
+  "Camera_Top_ThreeQuarter",
+  "Camera_Wheel_Closeup"
+ ],
+ "lights": [
+  "Studio_Fill_Softbox",
+  "Studio_Front_Strip",
+  "Studio_Key_Softbox",
+  "Studio_Rear_Rim",
+  "Studio_Side_Strip"
+ ],
+ "modifiers_lod0": {},
+ "objects_without_uv_lod0": []
+}

@@ -1,0 +1,403 @@
+{
+  "Cabin_Lower_Deck": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.6919130682945251,
+        -0.9399999976158142,
+        0.7331525087356567
+      ],
+      [
+        0.6919130682945251,
+        1.120155692100525,
+        0.9386135339736938
+      ]
+    ],
+    "materials": [
+      "MAT_BlackPlastic",
+      "MAT_CarPaint"
+    ],
+    "modifiers": [
+      [
+        "Preserved X symmetry",
+        "MIRROR"
+      ],
+      [
+        "Close depth plate",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Cabin_Shadow_Tray": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.7099999785423279,
+        -0.8550000190734863,
+        0.625
+      ],
+      [
+        0.7099999785423279,
+        1.0149999856948853,
+        0.7450000047683716
+      ]
+    ],
+    "materials": [
+      "MAT_Recess_Depth"
+    ],
+    "modifiers": [
+      [
+        "Controlled edge radius",
+        "BEVEL"
+      ],
+      [
+        "Weighted corner normals",
+        "WEIGHTED_NORMAL"
+      ]
+    ]
+  },
+  "Car_Body": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.9974905252456665,
+        -2.229875326156616,
+        0.17480909824371338
+      ],
+      [
+        0.9974905252456665,
+        2.2298920154571533,
+        0.9662833213806152
+      ]
+    ],
+    "materials": [
+      "MAT_CarPaint"
+    ],
+    "modifiers": [
+      [
+        "Original X symmetry",
+        "MIRROR"
+      ],
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Car_Door_L": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.9232637882232666,
+        -0.8871757388114929,
+        0.2246379405260086
+      ],
+      [
+        -0.7996406555175781,
+        0.5183337330818176,
+        0.7248916029930115
+      ]
+    ],
+    "materials": [
+      "MAT_CarPaint"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Car_Door_R": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        0.7996406555175781,
+        -0.8871757388114929,
+        0.2246379405260086
+      ],
+      [
+        0.9232637882232666,
+        0.5183337330818176,
+        0.7248915433883667
+      ]
+    ],
+    "materials": [
+      "MAT_CarPaint"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Roof_Panel": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.5907361507415771,
+        -0.28997451066970825,
+        1.0694701671600342
+      ],
+      [
+        0.5907361507415771,
+        0.5411038398742676,
+        1.2007914781570435
+      ]
+    ],
+    "materials": [
+      "MAT_CarPaint"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Windshield": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.7134205102920532,
+        -1.0117852687835693,
+        0.7308485507965088
+      ],
+      [
+        0.7134205102920532,
+        -0.28356069326400757,
+        1.1407910585403442
+      ]
+    ],
+    "materials": [
+      "MAT_Glass"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Rear_Glass": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.6773072481155396,
+        0.5332826972007751,
+        0.8041601777076721
+      ],
+      [
+        0.6773072481155396,
+        1.1317918300628662,
+        1.152294397354126
+      ]
+    ],
+    "materials": [
+      "MAT_Glass"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Window_FL": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.7178321480751038,
+        -0.8330541849136353,
+        0.8368094563484192
+      ],
+      [
+        -0.5648282766342163,
+        0.5463083386421204,
+        1.1080982685089111
+      ]
+    ],
+    "materials": [
+      "MAT_Glass"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Window_FR": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        0.5648282766342163,
+        -0.83305424451828,
+        0.8368094563484192
+      ],
+      [
+        0.7178321480751038,
+        0.5463083386421204,
+        1.1080982685089111
+      ]
+    ],
+    "materials": [
+      "MAT_Glass"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Window_RL": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        -0.6956440210342407,
+        0.3814406991004944,
+        0.8705904483795166
+      ],
+      [
+        -0.5689011216163635,
+        0.9632789492607117,
+        1.0928624868392944
+      ]
+    ],
+    "materials": [
+      "MAT_Glass"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  },
+  "Window_RR": {
+    "type": "MESH",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounds": [
+      [
+        0.5689011216163635,
+        0.381440669298172,
+        0.8705904483795166
+      ],
+      [
+        0.6956440210342407,
+        0.9632789492607117,
+        1.0928624868392944
+      ]
+    ],
+    "materials": [
+      "MAT_Glass"
+    ],
+    "modifiers": [
+      [
+        "Controlled surface refinement",
+        "SUBSURF"
+      ],
+      [
+        "Panel thickness",
+        "SOLIDIFY"
+      ]
+    ]
+  }
+}

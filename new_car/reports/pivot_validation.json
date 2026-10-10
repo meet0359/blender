@@ -1,0 +1,285 @@
+{
+ "wheel_offsets_mm": {
+  "FL_LOD0": 0.0,
+  "FR_LOD0": 0.0,
+  "RL_LOD0": 0.0,
+  "RR_LOD0": 0.0,
+  "FL_LOD1": 0.0,
+  "FR_LOD1": 0.0,
+  "RL_LOD1": 0.0,
+  "RR_LOD1": 0.0,
+  "FL_LOD2": 0.0,
+  "FR_LOD2": 0.0,
+  "RL_LOD2": 0.0,
+  "RR_LOD2": 0.0,
+  "FL_LOD3": 0.0,
+  "FR_LOD3": 0.0,
+  "RL_LOD3": 0.0,
+  "RR_LOD3": 0.0
+ },
+ "roll": {
+  "FL_LOD0": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "FR_LOD0": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "RL_LOD0": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  },
+  "RR_LOD0": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  },
+  "FL_LOD1": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "FR_LOD1": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "RL_LOD1": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  },
+  "RR_LOD1": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  },
+  "FL_LOD2": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "FR_LOD2": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "RL_LOD2": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  },
+  "RR_LOD2": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  },
+  "FL_LOD3": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "FR_LOD3": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moved_mm": 0.0
+  },
+  "RL_LOD3": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  },
+  "RR_LOD3": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moved_mm": 0.0
+  }
+ },
+ "steer": {
+  "FL_LOD0": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FL_LOD0 > Wheel_FL_LOD0 (+ Caliper_FL_LOD0)"
+  },
+  "FR_LOD0": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FR_LOD0 > Wheel_FR_LOD0 (+ Caliper_FR_LOD0)"
+  },
+  "FL_LOD1": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FL_LOD1 > Wheel_FL_LOD1 (+ Caliper_FL_LOD1)"
+  },
+  "FR_LOD1": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FR_LOD1 > Wheel_FR_LOD1 (+ Caliper_FR_LOD1)"
+  },
+  "FL_LOD2": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FL_LOD2 > Wheel_FL_LOD2 (+ Caliper_FL_LOD2)"
+  },
+  "FR_LOD2": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FR_LOD2 > Wheel_FR_LOD2 (+ Caliper_FR_LOD2)"
+  },
+  "FL_LOD3": {
+   "max_vertex_error_mm": 0.00013,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FL_LOD3 > Wheel_FL_LOD3 (+ Caliper_FL_LOD3)"
+  },
+  "FR_LOD3": {
+   "max_vertex_error_mm": 0.00017,
+   "caliper_moves_on_roll_mm": 0.0,
+   "centre_shift_mm": 0.0,
+   "parent_chain": "SteerPivot_FR_LOD3 > Wheel_FR_LOD3 (+ Caliper_FR_LOD3)"
+  }
+ },
+ "steering_wheel": {
+  "LOD0": {
+   "origin": [
+    0.36,
+    -0.2,
+    0.645
+   ],
+   "axis": [
+    0.0,
+    0.9063,
+    0.4226
+   ],
+   "wobble_mm": 9e-05
+  },
+  "LOD1": {
+   "origin": [
+    0.36,
+    -0.2,
+    0.645
+   ],
+   "axis": [
+    0.0,
+    0.9063,
+    0.4226
+   ],
+   "wobble_mm": 9e-05
+  },
+  "LOD2": {
+   "origin": [
+    0.36,
+    -0.2,
+    0.645
+   ],
+   "axis": [
+    0.0,
+    0.9063,
+    0.4226
+   ],
+   "wobble_mm": 9e-05
+  }
+ },
+ "doors": {
+  "L_LOD0": {
+   "hinge_world": [
+    0.9,
+    -0.95,
+    0.8
+   ],
+   "children": [
+    "DoorHandle_L_LOD0",
+    "DoorPanel_L_LOD0",
+    "Window_FL_LOD0"
+   ],
+   "follow_error_mm": 0.00018,
+   "top_rise_m_at_18deg": 0.4182
+  },
+  "R_LOD0": {
+   "hinge_world": [
+    -0.9,
+    -0.95,
+    0.8
+   ],
+   "children": [
+    "DoorHandle_R_LOD0",
+    "DoorPanel_R_LOD0",
+    "Window_FR_LOD0"
+   ],
+   "follow_error_mm": 0.00018,
+   "top_rise_m_at_18deg": 0.3571
+  },
+  "L_LOD1": {
+   "hinge_world": [
+    0.9,
+    -0.95,
+    0.8
+   ],
+   "children": [
+    "DoorHandle_L_LOD1",
+    "DoorPanel_L_LOD1",
+    "Window_FL_LOD1"
+   ],
+   "follow_error_mm": 0.00024,
+   "top_rise_m_at_18deg": 0.4261
+  },
+  "R_LOD1": {
+   "hinge_world": [
+    -0.9,
+    -0.95,
+    0.8
+   ],
+   "children": [
+    "DoorHandle_R_LOD1",
+    "DoorPanel_R_LOD1",
+    "Window_FR_LOD1"
+   ],
+   "follow_error_mm": 0.00024,
+   "top_rise_m_at_18deg": 0.4219
+  }
+ },
+ "spoiler": {
+  "LOD0": {
+   "hinge_world": [
+    0.0,
+    1.884,
+    0.8735
+   ],
+   "default_deg": 3.0,
+   "open_test_deg": 18,
+   "error_mm": 0.00025,
+   "trailing_edge_rise_m": 0.0487,
+   "hinge_bracket_moved_mm": 0.0
+  },
+  "LOD1": {
+   "hinge_world": [
+    0.0,
+    1.884,
+    0.8735
+   ],
+   "default_deg": 3.0,
+   "open_test_deg": 18,
+   "error_mm": 0.00025,
+   "trailing_edge_rise_m": 0.0488,
+   "hinge_bracket_moved_mm": 0.0
+  },
+  "LOD2": {
+   "hinge_world": [
+    0.0,
+    1.884,
+    0.8735
+   ],
+   "default_deg": 3.0,
+   "open_test_deg": 18,
+   "error_mm": 0.00025,
+   "trailing_edge_rise_m": 0.0491,
+   "hinge_bracket_moved_mm": 0.0
+  },
+  "LOD3": {
+   "hinge_world": [
+    0.0,
+    1.884,
+    0.8735
+   ],
+   "default_deg": 3.0,
+   "open_test_deg": 18,
+   "error_mm": 0.00025,
+   "trailing_edge_rise_m": 0.0489,
+   "hinge_bracket_moved_mm": 0.0
+  }
+ }
+}

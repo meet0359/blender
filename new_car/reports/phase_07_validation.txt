@@ -1,0 +1,72 @@
+[PASS] LOD0: 206,329 tris (target 180,000-220,000), 57.1% below master
+[PASS] LOD0 dims L4.6950 W2.0523 H1.1726 m (delta vs master mm: +0.0/+0.1/+0.4)
+[PASS] Wheel_FL_LOD0 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_FR_LOD0 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RL_LOD0 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RR_LOD0 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] LOD0 wheelbase 2.7800 m
+[PASS] LOD0 UVMap on 84/84 meshes 
+[PASS] LOD0 empty material slots: none
+[PASS] LOD0 zero-area faces: 0
+[PASS] LOD0 loose vertices: 0
+[PASS] Body_LOD0 normals outward: 88.4% of faces
+[PASS] Body_LOD0 non-manifold (non-boundary) edges: 0 (window openings are intentional boundaries)
+[PASS] LOD0 wheel/tire vs body intersections: none
+[PASS] LOD0 hierarchy: orphans none, wrong subcollection none
+[PASS] LOD0 left(+X)/right(-X) naming: consistent
+[PASS] LOD0 material groups: 24; light channels separate: ['MAT_LED_Amber', 'MAT_LED_Brake', 'MAT_LED_Red', 'MAT_LED_Reverse', 'MAT_LED_White', 'MAT_ProjectorLens']
+[PASS] LOD1: 107,212 tris (target 90,000-120,000), 77.7% below master
+[PASS] LOD1 dims L4.6950 W2.0525 H1.1726 m (delta vs master mm: +0.0/+0.3/+0.4)
+[PASS] Wheel_FL_LOD1 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_FR_LOD1 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RL_LOD1 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RR_LOD1 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] LOD1 wheelbase 2.7800 m
+[PASS] LOD1 UVMap on 84/84 meshes 
+[PASS] LOD1 empty material slots: none
+[PASS] LOD1 zero-area faces: 0
+[PASS] LOD1 loose vertices: 0
+[PASS] Body_LOD1 normals outward: 87.3% of faces
+[PASS] Body_LOD1 non-manifold (non-boundary) edges: 0 (window openings are intentional boundaries)
+[PASS] LOD1 wheel/tire vs body intersections: none
+[PASS] LOD1 hierarchy: orphans none, wrong subcollection none
+[PASS] LOD1 left(+X)/right(-X) naming: consistent
+[PASS] LOD1 material groups: 24; light channels separate: ['MAT_LED_Amber', 'MAT_LED_Brake', 'MAT_LED_Red', 'MAT_LED_Reverse', 'MAT_LED_White', 'MAT_ProjectorLens']
+[PASS] LOD2: 53,807 tris (target 40,000-60,000), 88.8% below master
+[PASS] LOD2 dims L4.6950 W2.0528 H1.1741 m (delta vs master mm: +0.0/+0.5/+2.8)
+[PASS] Wheel_FL_LOD2 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_FR_LOD2 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RL_LOD2 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RR_LOD2 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] LOD2 wheelbase 2.7800 m
+[PASS] LOD2 UVMap on 73/73 meshes 
+[PASS] LOD2 empty material slots: none
+[PASS] LOD2 zero-area faces: 0
+[PASS] LOD2 loose vertices: 0
+[PASS] Body_LOD2 normals outward: 85.6% of faces
+[PASS] Body_LOD2 non-manifold (non-boundary) edges: 0 (window openings are intentional boundaries)
+[PASS] LOD2 wheel/tire vs body intersections: none
+[PASS] LOD2 hierarchy: orphans none, wrong subcollection none
+[PASS] LOD2 left(+X)/right(-X) naming: consistent
+[PASS] LOD2 material groups: 20; light channels separate: ['MAT_LED_Amber', 'MAT_LED_Brake', 'MAT_LED_Red', 'MAT_LED_Reverse', 'MAT_LED_White', 'MAT_ProjectorLens']
+[PASS] LOD3: 17,779 tris (target 12,000-20,000), 96.3% below master
+[PASS] LOD3 dims L4.6920 W2.0528 H1.1741 m (delta vs master mm: -3.0/+0.5/+0.9)
+[PASS] Wheel_FL_LOD3 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_FR_LOD3 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RL_LOD3 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] Wheel_RR_LOD3 pivot offset 0.000 mm, rotation 0.00e+00 rad (roll axis = local X)
+[PASS] LOD3 wheelbase 2.7800 m
+[PASS] LOD3 UVMap on 38/38 meshes 
+[PASS] LOD3 empty material slots: none
+[PASS] LOD3 zero-area faces: 0
+[PASS] LOD3 loose vertices: 0
+[PASS] Body_LOD3 normals outward: 86.0% of faces
+[PASS] Body_LOD3 non-manifold (non-boundary) edges: 0 (window openings are intentional boundaries)
+[PASS] LOD3 wheel/tire vs body intersections: none
+[PASS] LOD3 hierarchy: orphans none, wrong subcollection none
+[PASS] LOD3 left(+X)/right(-X) naming: consistent
+[PASS] LOD3 material groups: 15; light channels separate: ['MAT_LED_Amber', 'MAT_LED_Brake', 'MAT_LED_Red', 'MAT_LED_Reverse', 'MAT_LED_White', 'MAT_ProjectorLens']
+[PASS] texture links resolve: 47 images, missing none
+[PASS] normal maps tangent/OpenGL + Non-Color: ok
+[PASS] REFERENCE_Master hidden from render (and excluded from view layer in the saved file)
+[PASS] master file unchanged (sha1 eaf334d81404)

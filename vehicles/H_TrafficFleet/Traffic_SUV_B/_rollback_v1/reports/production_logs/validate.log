@@ -1,0 +1,41 @@
+00:00.770  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_SUV_B/blend/trafficsuvb_09_export_ready.blend"
+00:40.752  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_0_side.png'
+00:40.786  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_0_front.png'
+00:40.819  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_0_top.png'
+00:40.853  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_1_side.png'
+00:40.887  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_1_front.png'
+00:40.919  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_1_top.png'
+00:40.954  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_2_side.png'
+00:40.990  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_2_front.png'
+00:41.023  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_2_top.png'
+00:41.056  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_3_side.png'
+00:41.089  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_3_front.png'
+00:41.121  render           | Saved: '/var/folders/zf/yzhvghxx1ln8xj4x_xtyvvsc0000gn/T/blender_oYiDTu/_tsil_3_top.png'
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_validate.py:139: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  imgs = sorted({n.image for o in rend for m in o.data.materials if m and m.use_nodes for n in m.node_tree.nodes if n.type == 'TEX_IMAGE' and n.image and not n.image.packed_file}, key=lambda i: i.name)
+== Traffic_SUV_B (Phase H traffic) - VALIDATION ==
+source blend/trafficsuvb_09_export_ready.blend; 71 objects, 52 meshes (48 render, 4 colliders)
+
+[PASS]  1. protected files byte-identical: Phase A baseline (frozen P0-P3, Hypercar, racing_car sources, all files outside vehicles/), frozen releases B_ZeroGapR (70), C_TitanGT (81), C_TitanGT_r1 (89), D_VortexR (109), D_VortexR_r1 (91), E_RavenXR (147), Traffic_Hatchback_A (298), Traffic_Sedan_A_r3 (246), Traffic_Sedan_B (259), postponed Pulse EV blockout untouched; nothing added outside vehicles/ -- 1554 files; changed [] added [] frozen changed [] pulse_ok True
+[PASS]  2. hierarchy: Car_Root (origin, identity, top level) -> LOD0_Root..LOD3_Root (identity), Collision, WheelColliderRef_FL/FR/RL/RR, CenterOfMass; no cameras / lights; no negative or non-unit scale -- top-level ['Car_Root'] bad scale []
+[PASS]  3. every LOD has the full car: Body, Glass, Trim, Lights, Interior, Wheel x4 (rim + tire + disc), Caliper x4 at LOD0-2 (LOD3 drops calipers behind the spokes) -- {"0": 13, "1": 13, "2": 13, "3": 9}
+[PASS]  4. orientation: nose toward -Y, vehicle left = +X (FL / RL refs on +X, FR / RR on -X), +Z up, LHD driver (steering wheel) on +X -- FL (0.84, -1.55, 0.391) RL (0.845, 1.43, 0.391) steering x 0.30
+[PASS]  5. wheel pivots: every Wheel_<c>_LODn origin = WheelColliderRef; +/-30 deg roll about local X keeps the hub centre (< 2 mm); calipers do not roll; front SteerPivot +25 deg yaw keeps the wheel centre on the steering axis and steers the caliper -- []
+[PASS]  6. ground contact + clearance: tires touch the ground (lowest tire point within 5 mm of z 0 at every LOD); body / trim lowest point >= 0.12 m -- tire min z {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0}; body min z 0.2256
+[PASS]  7. triangle budget (traffic): LOD0 19,776 within 13,000-20,000; LOD1 9,535 (48%, target 40%-55%); LOD2 4,316 (22%, 15%-25%); LOD3 1,869 (9%, 5%-10%); strictly decreasing
+[PASS]  8. material slots: unique materials per LOD [8, 8, 8, 6] (<= 8); draw calls (mesh x material) per LOD [19, 19, 19, 13] -- {"0": ["TS_Atlas", "TS_Lens", "TS_LensRed", "TS_Lights", "TS_SUVB_Glass", "TS_SUVB_Interior", "TS_SUVB_Paint", "TS_Tire"], "1": ["TS_Atlas", "TS_Lens", "TS_LensRed", "TS_Lights", "TS_SUVB_Glass", "TS_SUVB_Interior", "TS_SUVB_Paint_LOD1", "TS_Tire"], "2": ["TS_Atlas", "TS_Lens", "TS_LensRed", "TS_Lights", "TS_SUVB_Glass", "TS_SUVB_Interior", "TS_SUVB_Paint_Far", "TS_Tire"], "3": ["TS_Atlas", "TS_Lights", "TS_SUVB_Glass", "TS_SUVB_Interior", "TS_SUVB_Paint_Far", "TS_Tire"]}
+[PASS]  9. LOD silhouette preserved: bounding dimensions within 10 mm of LOD0, silhouette IoU vs LOD0 >= 0.97 LOD1, 0.95 LOD2, 0.90 LOD3 -- max dim delta 2.2 mm; IoU {"LOD1": {"side": 0.9962, "front": 0.9991, "top": 0.9999}, "LOD2": {"side": 0.9883, "front": 0.9957, "top": 0.9996}, "LOD3": {"side": 0.9511, "front": 0.9921, "top": 0.9862}}
+[PASS] 10. materials: only the shared traffic library (TS_Atlas, TS_Tire, TS_Glass, TS_Lens, TS_LensRed, TS_Lights) + this vehicle's paint instances ['TS_SUVB_Paint', 'TS_SUVB_Paint_Far', 'TS_SUVB_Paint_LOD1'] + declared instances of shared materials ['TS_SUVB_Glass', 'TS_SUVB_Interior']; no stray / Blender-default materials -- ['TS_Atlas', 'TS_Lens', 'TS_LensRed', 'TS_Lights', 'TS_SUVB_Glass', 'TS_SUVB_Interior', 'TS_SUVB_Paint', 'TS_SUVB_Paint_Far', 'TS_SUVB_Paint_LOD1', 'TS_Tire']
+[PASS] 11. independent light channels (TS_Lights mask cells) on Lights_LOD0..2: DRL + Headlamp front, Tail / Reverse rear, Brake rear (incl. high-mount), Indicator_L front + side + rear on +X, Indicator_R on -X -- [] faces {"DRL": 32, "Headlamp": 70, "Tail": 8, "Brake": 11, "Indicator_L": 7, "Indicator_R": 7, "Reverse": 6}
+[PASS] 12. textures: 12 external PNGs present (shared: atlas, tire, paint flake, light mask; per vehicle: body normal LOD0 + LOD1, AO / grime); uncompressed RGBA 94.5 MB (GPU-compressed formats much smaller) -- ['TS_Atlas_BaseColor.png', 'TS_Atlas_Metallic.png', 'TS_Atlas_Normal.png', 'TS_Atlas_Roughness.png', 'TS_Lights_BaseColor.png', 'TS_Lights_Emission.png', 'TS_SUVB_Body_AO_Grime', 'TS_SUVB_Body_Normal', 'TS_SUVB_Body_Normal_LOD1', 'TS_Tire_BaseColor.png', 'TS_Tire_Normal.png', 'TS_Tire_Roughness.png'] missing []
+[PASS] 13. UVs: exactly one UV channel (UVMap) on every render mesh, finite; atlas faces inside their cell; light faces inside their mask cell; paint body UVs unique unwrap in 0-1 (baked normal / AO) -- []
+[PASS] 14. topology: no zero-area faces, no loose vertices, no duplicate (coincident) faces on every render mesh -- []
+[PASS] 15. colliders: 4 convex hulls, each closed, convex, outward, <= 255 tris, no material, no UVs; union bounds within 6 cm of the body; CenterOfMass on the centreline, z 0.70 (0.3-0.7), between the axles -- {"Collision_Body": {"tris": 66, "closed": true, "convex": true, "outward": true, "material": false, "uv": 0}, "Collision_Cabin": {"tris": 170, "closed": true, "convex": true, "outward": true, "material": false, "uv": 0}, "Collision_Front": {"tris": 136, "closed": true, "convex": true, "outward": true, "material": false, "uv": 0}, "Collision_Rear": {"tris": 198, "closed": true, "convex": true, "outward": true, "material": false, "uv": 0}}; cover 0.002 m
+[PASS] 16. visual QA renders: studio (10), daylight (3), game camera (3) present -- missing []
+[SKIP]     FBX clean re-import: NOT RUN - Blender-only production (owner instruction: no FBX / Unity files)
+[PASS] S1. shading screen, ALL LODs: torn loop normals (> 50 deg off their face) <= 1 % on every render mesh (calibration in VA_SHADING_QA_STANDARD.md; visual LOD comparison renders confirm) -- worst [('Glass_LOD1', 0.216), ('Body_LOD3', 0.063), ('Body_LOD2', 0.055), ('Interior_LOD0', 0.031), ('Body_LOD0', 0.0)]
+
+SUMMARY: 0 errors, 0 warnings
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

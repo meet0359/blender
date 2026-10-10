@@ -1,0 +1,109 @@
+{
+ "cage": {
+  "stations": 29,
+  "points_per_ring": 26,
+  "cage_faces": 780,
+  "fairing": "Taubin 30 x (0.5, -0.53) along Y + 12 x (0.45, -0.48) around each section",
+  "max_control_point_shift_mm": 123.3
+ },
+ "waviness": {
+  "hood": {
+   "x=0": {
+    "inflections": 1,
+    "fairness_rms": 12.089394220433308
+   },
+   "x=0.25": {
+    "inflections": 1,
+    "fairness_rms": 14.207309977273685
+   },
+   "x=0.45": {
+    "inflections": 1,
+    "fairness_rms": 12.301417434774926
+   }
+  },
+  "roof": {
+   "x=0": {
+    "inflections": 0,
+    "fairness_rms": 76.7762872969678
+   },
+   "x=0.2": {
+    "inflections": 14,
+    "fairness_rms": 80.87842446472021
+   },
+   "x=0.35": {
+    "inflections": 23,
+    "fairness_rms": 89.61578405449501
+   }
+  },
+  "rear_deck": {
+   "x=0": {
+    "inflections": 1,
+    "fairness_rms": 6.268839324056716
+   },
+   "x=0.3": {
+    "inflections": 1,
+    "fairness_rms": 5.942281577776006
+   },
+   "x=0.55": {
+    "inflections": 0,
+    "fairness_rms": 5.449133168536287
+   }
+  },
+  "door_lateral": {
+   "inflections": 0,
+   "fairness_rms": 1.2804488815340467
+  }
+ },
+ "stage": "01 blockout",
+ "design": {
+  "length": 4.56,
+  "width_body": 2.07,
+  "height": 1.13,
+  "wheelbase": 2.72,
+  "track_f": 1.72,
+  "track_r": 1.7,
+  "overhang_f": 0.94,
+  "overhang_r": 0.9,
+  "ground_clearance": 0.105,
+  "tire_f": "255/30 R20 (R 0.339)",
+  "tire_r": "325/25 R21 (R 0.348)"
+ },
+ "measured": {
+  "length": 4.586,
+  "width_overall": 2.26,
+  "width_body": 2.086,
+  "height": 1.275,
+  "height_body": 1.123
+ },
+ "triangles_total": 112806,
+ "objects": {
+  "Body_Blockout": 95784,
+  "Details": 3868,
+  "Mirror_L": 440,
+  "MirrorStalk_L": 12,
+  "Mirror_R": 440,
+  "MirrorStalk_R": 12,
+  "Tire_FL": 1280,
+  "RimBarrel_FL": 640,
+  "Spokes_FL": 464,
+  "BrakeDisc_FL": 288,
+  "Caliper_FL": 120,
+  "Tire_FR": 1280,
+  "RimBarrel_FR": 640,
+  "Spokes_FR": 464,
+  "BrakeDisc_FR": 288,
+  "Caliper_FR": 120,
+  "Tire_RL": 1280,
+  "RimBarrel_RL": 640,
+  "Spokes_RL": 464,
+  "BrakeDisc_RL": 288,
+  "Caliper_RL": 120,
+  "Tire_RR": 1280,
+  "RimBarrel_RR": 640,
+  "Spokes_RR": 464,
+  "BrakeDisc_RR": 288,
+  "Caliper_RR": 120,
+  "Interior_Blockout": 1080,
+  "Floor": 2
+ }
+}

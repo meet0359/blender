@@ -1,0 +1,501 @@
+{
+ "phase": "A \u2014 Vehicle discovery and baseline",
+ "date": "2026-10-08",
+ "vehicles": [
+  {
+   "name": "Hypercar",
+   "role": "flagship player car",
+   "status": "COMPLETE, FROZEN \u2014 reference only",
+   "source": "new_car/hypercar_08_unity_export.blend",
+   "audit": {
+    "dims_lod0": {
+     "length_y": 4.695,
+     "width_x": 2.2113,
+     "height_z": 1.1726,
+     "min": [
+      -1.1056,
+      -2.425,
+      0.0
+     ],
+     "max": [
+      1.1056,
+      2.27,
+      1.1726
+     ]
+    },
+    "wheelbase": 2.78,
+    "track": 1.67,
+    "left_right": {
+     "refs": {
+      "FL": "+X",
+      "FR": "-X",
+      "RL": "+X",
+      "RR": "-X"
+     },
+     "convention_ok": true,
+     "note": "project convention: vehicle left = Blender +X (forward -Y, up +Z)"
+    },
+    "lods": {
+     "LOD0": {
+      "objects": 84,
+      "tris": 206329,
+      "materials": 24,
+      "images": 42
+     },
+     "LOD1": {
+      "objects": 84,
+      "tris": 107212,
+      "materials": 24,
+      "images": 42
+     },
+     "LOD2": {
+      "objects": 73,
+      "tris": 53807,
+      "materials": 20,
+      "images": 40
+     },
+     "LOD3": {
+      "objects": 38,
+      "tris": 17779,
+      "materials": 15,
+      "images": 40
+     }
+    },
+    "colliders": {
+     "Collision_Body": {
+      "tris": 52,
+      "closed": true,
+      "convex": true,
+      "materials": [
+       "QA_Collision_Body"
+      ]
+     },
+     "Collision_Cabin": {
+      "tris": 60,
+      "closed": true,
+      "convex": true,
+      "materials": [
+       "QA_Collision_Cabin"
+      ]
+     },
+     "Collision_Front": {
+      "tris": 74,
+      "closed": true,
+      "convex": true,
+      "materials": [
+       "QA_Collision_Front"
+      ]
+     },
+     "Collision_Rear": {
+      "tris": 76,
+      "closed": true,
+      "convex": true,
+      "materials": [
+       "QA_Collision_Rear"
+      ]
+     },
+     "Collision_Side_L": {
+      "tris": 64,
+      "closed": true,
+      "convex": true,
+      "materials": [
+       "QA_Collision_Side_L"
+      ]
+     },
+     "Collision_Side_R": {
+      "tris": 66,
+      "closed": true,
+      "convex": true,
+      "materials": [
+       "QA_Collision_Side_R"
+      ]
+     }
+    },
+    "references": {
+     "Car_Root": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "CenterOfMass": [
+      0.0,
+      0.12,
+      0.35
+     ],
+     "LOD0_Root": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "WheelColliderRef_FL": [
+      0.835,
+      -1.39,
+      0.355
+     ],
+     "WheelColliderRef_FR": [
+      -0.835,
+      -1.39,
+      0.355
+     ],
+     "WheelColliderRef_RL": [
+      0.835,
+      1.39,
+      0.3775
+     ],
+     "WheelColliderRef_RR": [
+      -0.835,
+      1.39,
+      0.3775
+     ]
+    },
+    "topology_lod0": {
+     "zero_area_faces": 2,
+     "ngons": 4931,
+     "loose_verts": 0,
+     "nonmanifold_edges": 0,
+     "boundary_edges": 5895,
+     "inconsistent_winding_edges": 0,
+     "duplicate_verts": 4,
+     "closed_inside_out": 0
+    },
+    "file_hygiene": {
+     "cameras": 24,
+     "lights": 18,
+     "hidden_reference_tris": 139717
+    }
+   }
+  },
+  {
+   "name": "Unnamed racing car",
+   "role": "probable Zero Gap R (needs confirmation)",
+   "status": "complete multi-LOD source with quality and pipeline defects",
+   "source": "racing_car_09_unity_export_ready.blend (+ racing_car_00..08 history, textures/racing_car/)",
+   "audit": {
+    "dims_lod0": {
+     "length_y": 4.5488,
+     "width_x": 2.006,
+     "height_z": 1.1998,
+     "min": [
+      -1.003,
+      -2.29,
+      0.001
+     ],
+     "max": [
+      1.003,
+      2.2589,
+      1.2008
+     ]
+    },
+    "wheelbase": 2.7,
+    "track": 1.65,
+    "left_right": {
+     "refs": {
+      "FL": "-X",
+      "FR": "+X",
+      "RL": "-X",
+      "RR": "+X"
+     },
+     "convention_ok": false,
+     "note": "project convention: vehicle left = Blender +X (forward -Y, up +Z)"
+    },
+    "lods": {
+     "LOD0": {
+      "objects": 642,
+      "tris": 176152,
+      "materials": 27,
+      "images": 49
+     },
+     "LOD1": {
+      "objects": 452,
+      "tris": 99084,
+      "materials": 27,
+      "images": 49
+     },
+     "LOD2": {
+      "objects": 248,
+      "tris": 44985,
+      "materials": 22,
+      "images": 41
+     },
+     "LOD3": {
+      "objects": 199,
+      "tris": 16386,
+      "materials": 21,
+      "images": 40
+     }
+    },
+    "colliders": {
+     "Collision_Body": {
+      "tris": 28,
+      "closed": true,
+      "convex": true,
+      "materials": []
+     },
+     "Collision_Front": {
+      "tris": 20,
+      "closed": true,
+      "convex": true,
+      "materials": []
+     },
+     "Collision_Rear": {
+      "tris": 20,
+      "closed": true,
+      "convex": true,
+      "materials": []
+     },
+     "Collision_Roof": {
+      "tris": 28,
+      "closed": true,
+      "convex": true,
+      "materials": []
+     }
+    },
+    "references": {
+     "Car_Root": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "CenterOfMass": [
+      0.0,
+      0.22,
+      0.37
+     ],
+     "Front_Axle_Reference": [
+      0.0,
+      -1.35,
+      0.345
+     ],
+     "Rear_Axle_Reference": [
+      0.0,
+      1.35,
+      0.365
+     ],
+     "WheelColliderRef_FL": [
+      -0.825,
+      -1.35,
+      0.345
+     ],
+     "WheelColliderRef_FR": [
+      0.825,
+      -1.35,
+      0.345
+     ],
+     "WheelColliderRef_RL": [
+      -0.835,
+      1.35,
+      0.365
+     ],
+     "WheelColliderRef_RR": [
+      0.835,
+      1.35,
+      0.365
+     ]
+    },
+    "topology_lod0": {
+     "zero_area_faces": 366,
+     "ngons": 2438,
+     "loose_verts": 0,
+     "nonmanifold_edges": 0,
+     "boundary_edges": 6572,
+     "inconsistent_winding_edges": 0,
+     "duplicate_verts": 183,
+     "closed_inside_out": 0
+    },
+    "file_hygiene": {
+     "cameras": 25,
+     "lights": 5,
+     "hidden_reference_tris": 251080
+    }
+   },
+   "defects": [
+    "left/right mirrored vs project convention (FL/RL on -X)",
+    "front end: no headlight units, boxy grille / bumper corners, protruding splitter",
+    "tail lights read as chrome strips; exhaust tips pierce bumper side; detached diffuser fins",
+    "grainy glass; exterior roof-hoop tubes",
+    "wavy door reflections",
+    "366 zero-area faces, 2,438 n-gons, 183 duplicate verts (LOD0)",
+    "642 LOD0 objects, no Car_Root hierarchy",
+    "tail and brake share one emissive; no reverse; indicators not split L/R",
+    "221 MB textures with 3 UV channels (needs custom shader)",
+    "LOD0 176k above the 60-120k target",
+    "no FBX exported; export notes differ from the project axis-bake standard"
+   ]
+  },
+  {
+   "name": "Zero Gap R",
+   "status": "NOT FOUND under this name",
+   "next": "confirm racing car = Zero Gap R, or supply source"
+  },
+  {
+   "name": "Titan GT",
+   "status": "NOT FOUND",
+   "design_doc": "very stable, strong braking; heavier acceleration",
+   "next": "supply Unity source for remaster, or approve original new build"
+  },
+  {
+   "name": "Vortex R",
+   "status": "NOT FOUND",
+   "design_doc": "extreme speed and acceleration; less stable",
+   "next": "original full build (Phase D)"
+  },
+  {
+   "name": "Raven XR",
+   "status": "NOT FOUND",
+   "design_doc": "balanced sports setup",
+   "next": "original full build (Phase E)"
+  },
+  {
+   "name": "Pulse EV",
+   "status": "NOT FOUND",
+   "design_doc": "instant acceleration, clean handling",
+   "next": "original full build (Phase F)"
+  },
+  {
+   "name": "Existing traffic vehicles",
+   "status": "NONE FOUND",
+   "next": "supply Unity sources for Phase G, or skip G"
+  },
+  {
+   "name": "Traffic fleet (9 archetypes)",
+   "status": "to build in Phase H",
+   "items": [
+    "Traffic_Sedan_A",
+    "Traffic_Sedan_B",
+    "Traffic_Hatchback_A",
+    "Traffic_SUV_A",
+    "Traffic_SUV_B",
+    "Traffic_Pickup_A",
+    "Traffic_Van_A",
+    "Traffic_BoxTruck_A",
+    "Traffic_Bus_A"
+   ]
+  }
+ ],
+ "excluded": [
+  "~/.pub-cache/hosted/pub.dev/mapbox_maps_flutter-*/example/assets/sportcar.glb (third-party example asset, unknown licence)"
+ ],
+ "budgets": {
+  "player": {
+   "LOD0": "60-120k",
+   "LOD1": "40-60% of LOD0",
+   "LOD2": "15-30%",
+   "LOD3": "5-10%"
+  },
+  "traffic": {
+   "LOD0": "8-25k"
+  }
+ },
+ "updated": "2026-10-09",
+ "releases": [
+  {
+   "name": "Hypercar",
+   "status": "FROZEN (flagship reference)",
+   "folder": "new_car/",
+   "unity_import": "new_car (hypercar_08_unity_export)"
+  },
+  {
+   "name": "Zero Gap R",
+   "phase": "B",
+   "status": "FROZEN",
+   "folder": "vehicles/B_ZeroGapR/",
+   "freeze": "reports/ZG_FINAL_FREEZE.md",
+   "unity_import": "vehicles/B_ZeroGapR/UnityTransfer/",
+   "preferred": true,
+   "note": "shading QA 2026-10-08: LOD1 trim / lights normal smears confirmed visually (LOD0 flags are false positives) \u2014 r1 proposed, awaiting approval"
+  },
+  {
+   "name": "Titan GT",
+   "phase": "C",
+   "status": "FROZEN original release \u2014 SUPERSEDED for import by r1 (LOD1-3 panel-gap shading tears)",
+   "folder": "vehicles/C_TitanGT/",
+   "freeze": "reports/TG_FINAL_FREEZE.md",
+   "preferred": false
+  },
+  {
+   "name": "Titan GT r1",
+   "phase": "C revision r1",
+   "status": "FROZEN corrected revision \u2014 PREFERRED Unity import candidate",
+   "folder": "vehicles/C_TitanGT_r1/",
+   "freeze": "reports/TG_R1_FINAL_FREEZE.md",
+   "unity_import": "vehicles/C_TitanGT_r1/UnityTransfer/",
+   "preferred": true,
+   "changes": "Body_LOD1-3 rebuilt groove-free; Trim_LOD3 arch liners from LOD2; Trim_LOD1 normals. LOD0, rig, colliders, materials, names identical; FBX names unchanged (drop-in).",
+   "note": "shading QA 2026-10-08: Lights_LOD1 tail-lamp shards (mild) \u2014 r2 normals-only proposed, awaiting approval"
+  },
+  {
+   "name": "Vortex R",
+   "phase": "D",
+   "status": "FROZEN original release \u2014 SUPERSEDED for import by r1 (LOD1 trim normal tears)",
+   "folder": "vehicles/D_VortexR/",
+   "freeze": "reports/VX_FINAL_FREEZE.md",
+   "preferred": false
+  },
+  {
+   "name": "Vortex R r1",
+   "phase": "D revision r1",
+   "status": "FROZEN corrected revision \u2014 PREFERRED Unity import candidate",
+   "folder": "vehicles/D_VortexR_r1/",
+   "freeze": "reports/VX_R1_FINAL_FREEZE.md",
+   "unity_import": "vehicles/D_VortexR_r1/UnityTransfer/",
+   "preferred": true,
+   "changes": "normals only on Trim/Lights/Interior/SteeringWheel LOD1; FBX names unchanged (drop-in)"
+  },
+  {
+   "name": "Raven XR",
+   "phase": "E",
+   "status": "FROZEN",
+   "folder": "vehicles/E_RavenXR/",
+   "unity_import": "vehicles/E_RavenXR/UnityTransfer/",
+   "freeze": "reports/RV_FINAL_FREEZE.md",
+   "preferred": true
+  },
+  {
+   "name": "Pulse EV",
+   "phase": "F",
+   "status": "POSTPONED by the project owner (2026-10-08) \u2014 design blockout kept untouched",
+   "folder": "vehicles/F_PulseEV/"
+  },
+  {
+   "name": "Traffic Sedan A r3",
+   "status": "FROZEN",
+   "folder": "vehicles/H_TrafficFleet/Traffic_Sedan_A_r3/",
+   "freeze": "reports/TS_SedanA_r3_FINAL_FREEZE.md"
+  },
+  {
+   "name": "Traffic Sedan B",
+   "status": "FROZEN (Blender-only)",
+   "folder": "vehicles/H_TrafficFleet/Traffic_Sedan_B/",
+   "freeze": "reports/TS_SedanB_FINAL_FREEZE.md"
+  },
+  {
+   "name": "Traffic Hatchback A",
+   "status": "final production complete - awaiting final approval",
+   "folder": "vehicles/H_TrafficFleet/Traffic_Hatchback_A/"
+  },
+  {
+   "name": "Traffic SUV A",
+   "status": "final production complete - awaiting final approval",
+   "folder": "vehicles/H_TrafficFleet/Traffic_SUV_A/"
+  },
+  {
+   "name": "Traffic SUV B",
+   "status": "final production complete - awaiting final approval (class budget 13k-20k pending sign-off)",
+   "folder": "vehicles/H_TrafficFleet/Traffic_SUV_B/"
+  },
+  {
+   "name": "Traffic Box Truck A",
+   "status": "design blockout - awaiting visual approval",
+   "folder": "vehicles/H_TrafficFleet/Traffic_Box_Truck_A/"
+  },
+  {
+   "name": "Traffic Bus A",
+   "status": "design blockout - awaiting visual approval",
+   "folder": "vehicles/H_TrafficFleet/Traffic_Bus_A/"
+  },
+  {
+   "name": "Traffic Pickup A / Van A",
+   "status": "POSTPONED"
+  }
+ ]
+}

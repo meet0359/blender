@@ -1,0 +1,8 @@
+{
+ "asset": "Traffic_Box_Truck_A",
+ "source_checkpoint": "trafficboxtrucka_08_rig.blend",
+ "export_checkpoint": "trafficboxtrucka_09_export_ready.blend",
+ "files": {},
+ "blender_only": true,
+ "note": "TS_NO_FBX: no FBX / UnityTransfer generated (Blender-only production). Hierarchy verified: complete set == collection TRAFFIC_BOX_TRUCK_A (71 objects)"
+}

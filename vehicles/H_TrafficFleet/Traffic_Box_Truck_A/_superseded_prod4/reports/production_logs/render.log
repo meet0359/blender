@@ -1,0 +1,238 @@
+00:00.394  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:79: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear(); e = nt.nodes.new('ShaderNodeEmission'); o = nt.nodes.new('ShaderNodeOutputMaterial')
+00:34.229  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_front34.png
+01:03.387  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_rear34.png
+01:58.092  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_front.png
+02:34.623  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_rear.png
+03:33.100  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_side.png
+04:09.170  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_top.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_top.png
+05:18.691  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_wheel.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_wheel.png
+06:17.289  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_interior.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_interior.png
+07:16.336  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_front_detail.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_front_detail.png
+08:08.497  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_rear_detail.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_rear_detail.png
+09:02.639  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_bumper_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_bumper_front.png
+09:39.344  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_bumper_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_bumper_rear.png
+10:25.681  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_lamp_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_lamp_front.png
+11:03.907  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_lamp_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_lamp_rear.png
+11:43.686  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_plate_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_plate_rear.png
+12:27.524  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_arch_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_arch_rear.png
+13:10.381  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_quarter_rear_L.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_quarter_rear_L.png
+13:55.465  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_quarter_rear_R.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_quarter_rear_R.png
+14:52.093  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_lamp_front_R.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_lamp_front_R.png
+15:38.912  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_ortho_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_ortho_front.png
+16:26.675  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_ortho_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_ortho_rear.png
+17:05.127  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_ortho_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_ortho_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.723  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:41.880  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_front34.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_front34.png
+01:11.741  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_rear34.png
+01:35.853  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_side.png
+02:10.892  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_glass.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_day_glass.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.798  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:28.290  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_game_close.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_game_close.png
+00:41.610  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_game_normal.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_game_normal.png
+00:53.745  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_game_far.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/TrafficBoxTruckA_game_far.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.466  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:50: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  for m in {m for o in O if o.type == 'MESH' and not o.hide_render for m in o.data.materials if m and m.use_nodes}:
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:79: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear(); e = nt.nodes.new('ShaderNodeEmission'); o = nt.nodes.new('ShaderNodeOutputMaterial')
+00:21.477  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_front34.png
+00:41.732  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_rear34.png
+01:02.353  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_front.png
+01:21.716  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_rear.png
+01:38.982  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_side.png
+02:00.252  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_bumper_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_bumper_rear.png
+02:27.236  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_lamp_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/clay_lamp_front.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.488  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:50: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  for m in {m for o in O if o.type == 'MESH' and not o.hide_render for m in o.data.materials if m and m.use_nodes}:
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:79: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear(); e = nt.nodes.new('ShaderNodeEmission'); o = nt.nodes.new('ShaderNodeOutputMaterial')
+00:20.322  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_front34.png
+00:42.326  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_rear34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_rear34.png
+01:02.061  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_front.png
+01:20.325  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_rear.png
+01:35.452  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_side.png
+01:53.287  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_bumper_rear.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_bumper_rear.png
+02:15.929  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_lamp_front.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/qa/wire_lamp_front.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.575  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:79: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear(); e = nt.nodes.new('ShaderNodeEmission'); o = nt.nodes.new('ShaderNodeOutputMaterial')
+00:45.554  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD0_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD0_front34.png
+01:04.286  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD0_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD0_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.611  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:24.451  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD0_game_close.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD0_game_close.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.994  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:79: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear(); e = nt.nodes.new('ShaderNodeEmission'); o = nt.nodes.new('ShaderNodeOutputMaterial')
+00:22.995  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD1_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD1_front34.png
+00:42.213  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD1_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD1_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.834  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:19.912  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD1_game_close.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD1_game_close.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.581  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:79: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear(); e = nt.nodes.new('ShaderNodeEmission'); o = nt.nodes.new('ShaderNodeOutputMaterial')
+00:31.415  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD2_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD2_front34.png
+00:57.393  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD2_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD2_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.787  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:36.021  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD2_game_close.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD2_game_close.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.460  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:79: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear(); e = nt.nodes.new('ShaderNodeEmission'); o = nt.nodes.new('ShaderNodeOutputMaterial')
+00:21.292  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD3_front34.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD3_front34.png
+00:36.376  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD3_side.png'
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD3_side.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.375  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('TS_World'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']; b.inputs['Base Color'].default_value = (*col, 1); b.inputs['Roughness'].default_value = rough; return m
+00:19.466  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD3_game_close.png'
+P0 MISSING: stand-in road
+RENDERED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/previews/lod/LOD3_game_close.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

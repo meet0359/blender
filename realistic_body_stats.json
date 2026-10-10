@@ -1,0 +1,25 @@
+{
+  "dimensions_m": {
+    "length": 4.548816680908203,
+    "width": 2.00600004196167,
+    "height": 1.1989787817001343
+  },
+  "wheelbase_m": 2.7,
+  "base_mesh_polygons": 29908,
+  "base_mesh_triangles": 61760,
+  "evaluated_polygons": 171034,
+  "evaluated_triangles": 343036,
+  "windshield_angle_horizontal_deg": 29.229449293137982,
+  "source_windshield_angle_horizontal_deg": 33.60033262752028,
+  "asset_objects": 321,
+  "errors": [],
+  "warnings": [
+    "Temporary review shaders; final UVs/textures and light internals intentionally absent.",
+    "Only a cabin shadow tray/deck, no detailed cockpit; glass tint is provisional.",
+    "Arch end transitions and bumper-to-quarter panel joins still need production-level topology review.",
+    "Side intake trim and front duct shut lines may need additional panel integration in the next body pass.",
+    "Open base panel boundaries are intentional; Solidify supplies panel thickness. Not export-certified.",
+    "Evaluated render geometry exceeds the earlier 100\u2013180k LOD0 target; export-budget optimization is still required.",
+    "COLLIDERS and LODS remain empty, as requested. Final collider/LOD checks deferred."
+  ]
+}

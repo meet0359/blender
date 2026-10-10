@@ -1,0 +1,11 @@
+MASTER NORMALS 377810 19978 102786
+INVERTED 364
+PLANAR 12244 -> 8972
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_vehicle_v2.py:766: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True; b_ = m.node_tree.nodes['Principled BSDF']; b_.inputs['Base Color'].default_value = (.015, .015, .016, 1); b_.inputs['Roughness'].default_value = .5
+RIBBON MISS TS_Atlas:plastic_dark
+RIBBON MISS TS_Atlas:plastic_dark
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficpickupa_01_blockout_v2.blend"
+SAVED BLOCKOUT /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Pickup_A/blend/trafficpickupa_01_blockout_v2.blend {'master_tris': 211991, 'length': 5.3, 'width_body': 2.38, 'height': 1.883, 'min_z': 0.397, 'lod0_parts_tris': {'Body_Blockout': 211991, 'Caliper_FL_LOD0': 52, 'Caliper_FR_LOD0': 52, 'Caliper_RL_LOD0': 52, 'Caliper_RR_LOD0': 52, 'Glass_LOD0': 298, 'Interior_LOD0': 2350, 'Lights_LOD0': 1276, 'Trim_LOD0': 3840, 'Wheel_FL_LOD0': 718, 'Wheel_FR_LOD0': 718, 'Wheel_RL_LOD0': 718, 'Wheel_RR_LOD0': 718}}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)

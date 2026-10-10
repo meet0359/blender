@@ -1,0 +1,14 @@
+# Traffic_Sedan_A — protected-file integrity check
+
+Re-hashed 2026-10-08 17:13:06.
+
+- Phase A baseline (1554 files outside `vehicles/`: frozen P0–P3, Hypercar, racing_car sources): changed **0**, added **0**.
+- Frozen B_ZeroGapR (70 hashed files): changed **0**.
+- Frozen C_TitanGT (81 hashed files): changed **0**.
+- Frozen C_TitanGT_r1 (89 hashed files): changed **0**.
+- Frozen D_VortexR (109 hashed files): changed **0**.
+- Frozen D_VortexR_r1 (91 hashed files): changed **0**.
+- Frozen E_RavenXR (147 hashed files): changed **0**.
+- Postponed Pulse EV blockout `pulseev_01_blockout.blend`: unchanged.
+
+Result: **PASS**

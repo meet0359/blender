@@ -1,0 +1,91 @@
+{
+ "FL": {
+  "world_position": [
+   0.835,
+   -1.39,
+   0.355
+  ],
+  "local_to_Car_Root": [
+   0.835,
+   -1.39,
+   0.355
+  ],
+  "radius_m": 0.355,
+  "diameter_m": 0.71,
+  "width_m": 0.31,
+  "axle_direction_world": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "side": "LEFT (+X)"
+ },
+ "FR": {
+  "world_position": [
+   -0.835,
+   -1.39,
+   0.355
+  ],
+  "local_to_Car_Root": [
+   -0.835,
+   -1.39,
+   0.355
+  ],
+  "radius_m": 0.355,
+  "diameter_m": 0.71,
+  "width_m": 0.31,
+  "axle_direction_world": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "side": "RIGHT (-X)"
+ },
+ "RL": {
+  "world_position": [
+   0.835,
+   1.39,
+   0.3775
+  ],
+  "local_to_Car_Root": [
+   0.835,
+   1.39,
+   0.3775
+  ],
+  "radius_m": 0.3775,
+  "diameter_m": 0.755,
+  "width_m": 0.35,
+  "axle_direction_world": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "side": "LEFT (+X)"
+ },
+ "RR": {
+  "world_position": [
+   -0.835,
+   1.39,
+   0.3775
+  ],
+  "local_to_Car_Root": [
+   -0.835,
+   1.39,
+   0.3775
+  ],
+  "radius_m": 0.3775,
+  "diameter_m": 0.755,
+  "width_m": 0.35,
+  "axle_direction_world": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "side": "RIGHT (-X)"
+ },
+ "_wheelbase_m": 2.78,
+ "_track_m": {
+  "front": 1.67,
+  "rear": 1.67
+ }
+}

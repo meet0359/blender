@@ -1,0 +1,9 @@
+MASTER NORMALS 264440 20447 74436
+INVERTED 33
+PLANAR 8339 -> 7003
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_vehicle_v2.py:766: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True; b_ = m.node_tree.nodes['Principled BSDF']; b_.inputs['Base Color'].default_value = (.015, .015, .016, 1); b_.inputs['Roughness'].default_value = .5
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficsuvb_01_blockout_v2.blend"
+SAVED BLOCKOUT /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_SUV_B/blend/trafficsuvb_01_blockout_v2.blend {'master_tris': 153616, 'length': 4.966, 'width_body': 2.3, 'height': 1.795, 'min_z': 0.22, 'lod0_parts_tris': {'Body_Blockout': 153616, 'Caliper_FL_LOD0': 52, 'Caliper_FR_LOD0': 52, 'Caliper_RL_LOD0': 52, 'Caliper_RR_LOD0': 52, 'Glass_LOD0': 548, 'Interior_LOD0': 2916, 'Lights_LOD0': 1640, 'Trim_LOD0': 4740, 'Wheel_FL_LOD0': 814, 'Wheel_FR_LOD0': 814, 'Wheel_RL_LOD0': 814, 'Wheel_RR_LOD0': 814}}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)

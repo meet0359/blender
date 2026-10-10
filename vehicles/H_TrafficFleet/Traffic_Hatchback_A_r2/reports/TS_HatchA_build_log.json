@@ -1,0 +1,117 @@
+{
+ "shells": 1,
+ "cut_mode": {
+  "REF_Master": "n-ary",
+  "Body_Game": "n-ary"
+ },
+ "window_floor_faces": [
+  0,
+  0
+ ],
+ "master_tris": 138574,
+ "cutters": [
+  "arch_-1.25_-1",
+  "arch_-1.25_1",
+  "arch_1.38_-1",
+  "arch_1.38_1",
+  "fog_-1",
+  "fog_1",
+  "grille",
+  "handle_-1_-0.12",
+  "handle_-1_0.94",
+  "handle_1_-0.12",
+  "handle_1_0.94",
+  "headlamp_-1",
+  "headlamp_1",
+  "lower",
+  "plate_r",
+  "taillamp_-1",
+  "taillamp_1",
+  "valance"
+ ],
+ "grooves": [
+  "gap_fdoor_-1",
+  "gap_fdoor_1",
+  "gap_fuel",
+  "gap_hood",
+  "gap_rdoor_-1",
+  "gap_rdoor_1",
+  "shut_front_-1",
+  "shut_front_1",
+  "shut_lid",
+  "shut_rear_bumper"
+ ],
+ "body_paint_tris": 7022,
+ "bodytrim_tris": 1832,
+ "glass_tris": 400,
+ "arch_lips": 4,
+ "master_normals": {
+  "skin_loops": 225899,
+  "wall_loops_flat": 16968,
+  "verts_on_skin": 63965
+ },
+ "body_inverted_faces": 20,
+ "body_planar_dissolve": {
+  "before": 7610,
+  "after": 6486
+ },
+ "body_normal": "TS_HatchA_Body_Normal.png",
+ "trim_parts_tris": 2162,
+ "lights_tris": 1552,
+ "interior_tris": 2364,
+ "lod0_parts": {
+  "Body_LOD0": 6184,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 404,
+  "Interior_LOD0": 2364,
+  "Lights_LOD0": 1552,
+  "Trim_LOD0": 3334,
+  "Wheel_FL_LOD0": 782,
+  "Wheel_FR_LOD0": 782,
+  "Wheel_RL_LOD0": 782,
+  "Wheel_RR_LOD0": 782
+ },
+ "lod0_total": 17174,
+ "distant_plate_faces": {
+  "2": 6,
+  "3": 6
+ },
+ "submesh_merge": "TS_Atlas faces of Lights_LODk and Glass_LODk (reflectors, housings, frit) moved into Trim_LODk",
+ "lod_ratios": {
+  "1": {
+   "Body": 0.44,
+   "Glass": 0.8,
+   "Trim": 0.36,
+   "Lights": 1.0,
+   "Interior": 0.4
+  },
+  "2": {
+   "Body": 0.17,
+   "Glass": 0.5,
+   "Trim": 0.13,
+   "Lights": 0.55,
+   "Interior": 0.15
+  },
+  "3": {
+   "Body": 0.065,
+   "Glass": 0.25,
+   "Trim": 0.05,
+   "Lights": 1.0,
+   "Interior": 0.12
+  }
+ },
+ "material_instances": {
+  "TS_HatchA_Glass": {
+   "unity_alpha": 0.22,
+   "instance_of": "TS_Glass",
+   "unity": "instance of TS_Glass: Lit transparent, base (0.78, 0.84, 0.82) alpha 0.22, smoothness 1.0 (light green automotive tint, ~75 % visible transmission)"
+  },
+  "TS_HatchA_Interior": {
+   "instance_of": "TS_Atlas",
+   "unity": "instance of TS_Atlas (same textures / UVs): normal scale 0.12 (seat weave reads as fabric, not crumpled at cabin scale)"
+  }
+ }
+}

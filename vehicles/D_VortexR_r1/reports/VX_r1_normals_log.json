@@ -1,0 +1,39 @@
+{
+ "revision": "r1",
+ "base": "D_VortexR/blend/vortexr_08_colliders_hierarchy.blend (frozen, read only)",
+ "change": "normals only on LOD1 hard-surface parts",
+ "parts": {
+  "Trim_LOD1": {
+   "kept_transferred_loops_pct": 76.9,
+   "torn_pct_before": 23.043,
+   "torn_pct_after": 0.0,
+   "sharp_angle_deg": 35,
+   "tris": 3045,
+   "tris_after": 3045
+  },
+  "Lights_LOD1": {
+   "kept_transferred_loops_pct": 92.9,
+   "torn_pct_before": 1.221,
+   "torn_pct_after": 0.0,
+   "sharp_angle_deg": 35,
+   "tris": 1696,
+   "tris_after": 1696
+  },
+  "Interior_LOD1": {
+   "kept_transferred_loops_pct": 95.2,
+   "torn_pct_before": 2.364,
+   "torn_pct_after": 0.0,
+   "sharp_angle_deg": 40,
+   "tris": 3257,
+   "tris_after": 3257
+  },
+  "SteeringWheel_LOD1": {
+   "kept_transferred_loops_pct": 96.5,
+   "torn_pct_before": 0.905,
+   "torn_pct_after": 0.075,
+   "sharp_angle_deg": 40,
+   "tris": 884,
+   "tris_after": 884
+  }
+ }
+}

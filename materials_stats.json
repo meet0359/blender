@@ -1,0 +1,621 @@
+{
+  "errors": [],
+  "warnings": [
+    "Subpixel base triangles exist on small hardware/lettering at atlas resolution; tileable detail maps remain available",
+    "Mirror and Solidify reuse base UVs intentionally; those evaluated overlaps require separate bake/export policy later",
+    "Physical lettering and thin seams create tiny atlas islands; preserve geometry now, bake detail in the later optimization phase"
+  ],
+  "groups": {
+    "trim": {
+      "objects": 60,
+      "triangles": 18076,
+      "uv_area": 0.6787495357811695,
+      "world_area": 20.03332047403016,
+      "density_min": 188.68978972113806,
+      "density_max": 189.0620341874455,
+      "density_median": 188.69218682950532
+    },
+    "wheels": {
+      "objects": 96,
+      "triangles": 14512,
+      "uv_area": 0.47109729541894013,
+      "world_area": 4.992579392940547,
+      "density_min": 629.1020943613868,
+      "density_max": 629.1082135970187,
+      "density_median": 629.1055495909893
+    },
+    "interior": {
+      "objects": 186,
+      "triangles": 44916,
+      "uv_area": 0.506163524617361,
+      "world_area": 20.4599570573677,
+      "density_min": 322.111563063865,
+      "density_max": 325.6715745139184,
+      "density_median": 322.1245637345699
+    },
+    "brakes": {
+      "objects": 108,
+      "triangles": 9264,
+      "uv_area": 0.562107160963231,
+      "world_area": 2.1296264611093925,
+      "density_min": 526.0846160033713,
+      "density_max": 526.0908659241741,
+      "density_median": 526.087301531589
+    },
+    "lights": {
+      "objects": 38,
+      "triangles": 21976,
+      "uv_area": 0.779315912490581,
+      "world_area": 3.34980248785657,
+      "density_min": 987.8109497949096,
+      "density_max": 987.8426813067008,
+      "density_median": 987.8251778577777
+    },
+    "body": {
+      "objects": 17,
+      "triangles": 13412,
+      "uv_area": 0.44017588620320874,
+      "world_area": 7.621564200952324,
+      "density_min": 984.3837102558506,
+      "density_max": 984.5700256777701,
+      "density_median": 984.3894597966602
+    },
+    "tires": {
+      "objects": 8,
+      "triangles": 62080,
+      "uv_area": 0.6128129766232269,
+      "world_area": 5.839909328176863,
+      "density_min": 663.4245151122652,
+      "density_max": 663.4407345523107,
+      "density_median": 663.4312530965395
+    }
+  },
+  "stretch": [],
+  "tiny_triangles": [
+    [
+      "InstrumentCluster_ShroudSide_1",
+      15
+    ],
+    [
+      "Caliper_PistonBoss_FR_1",
+      40
+    ],
+    [
+      "Seat_Driver_BackrestSeam_1",
+      743
+    ],
+    [
+      "Headlight_Projector_Bezel_L_2",
+      64
+    ],
+    [
+      "Headlight_Projector_Bezel_L_1",
+      64
+    ],
+    [
+      "Dashboard_Seam_-1",
+      780
+    ],
+    [
+      "DoorPanel_L_SpeakerSlit_0",
+      4
+    ],
+    [
+      "Steering_Button_1_0",
+      84
+    ],
+    [
+      "Wheel_Hub_FL",
+      64
+    ],
+    [
+      "Mirror_Glass_Center_R",
+      92
+    ],
+    [
+      "Tire_Sidewall_Markings_RR",
+      11118
+    ],
+    [
+      "Caliper_PistonBoss_RR_1",
+      40
+    ],
+    [
+      "Seat_Passenger_PadDivision_2",
+      396
+    ],
+    [
+      "Headlight_Projector_Emitter_R_1",
+      64
+    ],
+    [
+      "DoorPanel_R_SpeakerSlit_4",
+      4
+    ],
+    [
+      "Mirror_L",
+      32
+    ],
+    [
+      "Caliper_PistonBoss_FR_3",
+      40
+    ],
+    [
+      "Wheel_Lug_FR_3",
+      12
+    ],
+    [
+      "DoorPanel_L_SpeakerSlit_4",
+      4
+    ],
+    [
+      "RearViewMirror_Mount",
+      8
+    ],
+    [
+      "Wheel_Hub_RL",
+      64
+    ],
+    [
+      "Mirror_R",
+      32
+    ],
+    [
+      "DoorPanel_R_SpeakerSlit_0",
+      4
+    ],
+    [
+      "Seat_Driver_CushionSeam_-1",
+      524
+    ],
+    [
+      "Headlight_Projector_Shroud_R_1",
+      64
+    ],
+    [
+      "DriveMode_Cap",
+      100
+    ],
+    [
+      "Wheel_Hub_RR",
+      64
+    ],
+    [
+      "Steering_Stalk_-1",
+      8
+    ],
+    [
+      "Seat_Driver_Bolster_-1",
+      14
+    ],
+    [
+      "Exhaust_Depth_L",
+      224
+    ],
+    [
+      "Wheel_Lug_FL_1",
+      12
+    ],
+    [
+      "DoorPanel_R_Pull",
+      8
+    ],
+    [
+      "Seat_Driver_PadDivision_0",
+      396
+    ],
+    [
+      "Dashboard_Seam_1",
+      780
+    ],
+    [
+      "Caliper_PistonBoss_FL_1",
+      40
+    ],
+    [
+      "DoorPanel_L_SpeakerSlit_1",
+      4
+    ],
+    [
+      "Exhaust_Depth_R",
+      224
+    ],
+    [
+      "Mirror_Glass_L",
+      64
+    ],
+    [
+      "Caliper_PistonBoss_RR_2",
+      40
+    ],
+    [
+      "DoorPanel_L_SpeakerSlit_2",
+      4
+    ],
+    [
+      "DoorPanel_L_Pull",
+      8
+    ],
+    [
+      "Headlight_Projector_Emitter_R_2",
+      64
+    ],
+    [
+      "Rear_Center_Recess_Depth",
+      8
+    ],
+    [
+      "StartStop_Button",
+      68
+    ],
+    [
+      "Wheel_Lug_RL_3",
+      12
+    ],
+    [
+      "Wheel_Lug_FL_3",
+      12
+    ],
+    [
+      "Seat_Passenger_BackrestSeam_1",
+      743
+    ],
+    [
+      "Tire_Sidewall_Markings_FL",
+      11294
+    ],
+    [
+      "Caliper_PistonBoss_RL_1",
+      40
+    ],
+    [
+      "DoorPanel_L_SpeakerSlit_5",
+      4
+    ],
+    [
+      "Wheel_Lug_FL_4",
+      12
+    ],
+    [
+      "Wheel_Lug_RL_4",
+      12
+    ],
+    [
+      "Headlight_Projector_Bezel_R_2",
+      64
+    ],
+    [
+      "DoorPanel_R_SpeakerSlit_1",
+      4
+    ],
+    [
+      "Seat_Driver_CushionSeam_1",
+      524
+    ],
+    [
+      "Headlight_Projector_Shroud_R_2",
+      64
+    ],
+    [
+      "Wheel_Lug_RL_1",
+      12
+    ],
+    [
+      "Wheel_Lug_FL_5",
+      12
+    ],
+    [
+      "DriveMode_Rotary",
+      72
+    ],
+    [
+      "DoorPanel_R_SpeakerSlit_5",
+      4
+    ],
+    [
+      "Steering_Stalk_1",
+      8
+    ],
+    [
+      "Seat_Driver_Bolster_1",
+      7
+    ],
+    [
+      "Front_Cooling_Duct_L_Depth",
+      8
+    ],
+    [
+      "Exhaust_L",
+      480
+    ],
+    [
+      "Wheel_Lug_RL_5",
+      12
+    ],
+    [
+      "Steering_Button_1_1",
+      84
+    ],
+    [
+      "Seat_Passenger_PadDivision_0",
+      396
+    ],
+    [
+      "Headlight_Projector_Bezel_R_1",
+      64
+    ],
+    [
+      "Caliper_PistonBoss_FL_3",
+      40
+    ],
+    [
+      "Console_Red_Seam_-1",
+      652
+    ],
+    [
+      "Seat_Driver_PadDivision_1",
+      396
+    ],
+    [
+      "Caliper_PistonBoss_FL_2",
+      40
+    ],
+    [
+      "Wheel_Lug_RR_1",
+      12
+    ],
+    [
+      "Exhaust_R",
+      480
+    ],
+    [
+      "Headlight_Projector_Shroud_L_1",
+      64
+    ],
+    [
+      "Seat_Passenger_CushionSeam_-1",
+      524
+    ],
+    [
+      "Mirror_Glass_R",
+      64
+    ],
+    [
+      "Caliper_PistonBoss_RR_3",
+      40
+    ],
+    [
+      "Mirror_Glass_Center_L",
+      92
+    ],
+    [
+      "Wheel_Lug_FL_2",
+      12
+    ],
+    [
+      "Wheel_Lug_RR_2",
+      12
+    ],
+    [
+      "Front_Cooling_Duct_R_Depth",
+      8
+    ],
+    [
+      "Tire_Sidewall_Markings_RL",
+      11118
+    ],
+    [
+      "DoorPanel_L_Seam",
+      1036
+    ],
+    [
+      "Steering_Button_-1_0",
+      84
+    ],
+    [
+      "DoorPanel_R_SpeakerSlit_6",
+      4
+    ],
+    [
+      "Seat_Passenger_Bolster_-1",
+      7
+    ],
+    [
+      "Tire_Sidewall_Markings_FR",
+      11294
+    ],
+    [
+      "Caliper_PistonBoss_RL_2",
+      40
+    ],
+    [
+      "Wheel_Lug_RR_3",
+      12
+    ],
+    [
+      "Car_Body",
+      4
+    ],
+    [
+      "DoorPanel_L_SpeakerSlit_6",
+      4
+    ],
+    [
+      "Wheel_Hub_FR",
+      64
+    ],
+    [
+      "Headlight_Projector_Emitter_L_1",
+      64
+    ],
+    [
+      "DoorPanel_R_SpeakerSlit_2",
+      4
+    ],
+    [
+      "Wheel_Lug_RL_2",
+      12
+    ],
+    [
+      "Wheel_Lug_RR_4",
+      12
+    ],
+    [
+      "Wheel_Lug_FR_4",
+      12
+    ],
+    [
+      "Wheel_Lug_FR_1",
+      12
+    ],
+    [
+      "Exhaust_InnerSleeve_L",
+      256
+    ],
+    [
+      "DoorPanel_R_Seam",
+      1036
+    ],
+    [
+      "Wheel_Lug_FR_5",
+      12
+    ],
+    [
+      "Wheel_Lug_RR_5",
+      12
+    ],
+    [
+      "Console_Red_Seam_1",
+      652
+    ],
+    [
+      "InstrumentCluster_ShroudSide_-1",
+      15
+    ],
+    [
+      "Seat_Driver_PadDivision_2",
+      396
+    ],
+    [
+      "Side_Intake_Throat_L",
+      35
+    ],
+    [
+      "Wheel_Center_Cap_FL",
+      48
+    ],
+    [
+      "DoorPanel_L_SpeakerSlit_3",
+      4
+    ],
+    [
+      "Seat_Driver_BackrestSeam_-1",
+      744
+    ],
+    [
+      "Seat_Passenger_CushionSeam_1",
+      524
+    ],
+    [
+      "Wheel_Center_Cap_FR",
+      48
+    ],
+    [
+      "Side_Intake_Throat_R",
+      35
+    ],
+    [
+      "Front_Intake_Grille",
+      6120
+    ],
+    [
+      "Steering_Button_-1_1",
+      84
+    ],
+    [
+      "Seat_Passenger_Bolster_1",
+      14
+    ],
+    [
+      "Caliper_PistonBoss_RL_3",
+      40
+    ],
+    [
+      "Wheel_Center_Cap_RL",
+      48
+    ],
+    [
+      "Seat_Passenger_PadDivision_1",
+      396
+    ],
+    [
+      "Headlight_Projector_Emitter_L_2",
+      64
+    ],
+    [
+      "DoorPanel_R_SpeakerSlit_3",
+      4
+    ],
+    [
+      "Wheel_Center_Cap_RR",
+      48
+    ],
+    [
+      "Caliper_PistonBoss_FR_2",
+      40
+    ],
+    [
+      "Wheel_Lug_FR_2",
+      12
+    ],
+    [
+      "Exhaust_InnerSleeve_R",
+      256
+    ],
+    [
+      "Seat_Passenger_BackrestSeam_-1",
+      744
+    ],
+    [
+      "Headlight_Projector_Shroud_L_2",
+      64
+    ],
+    [
+      "Steering_Column",
+      40
+    ]
+  ],
+  "flips": [],
+  "overlaps": {},
+  "material_count": 27,
+  "material_nodes": {
+    "MAT_HeadlightHousing": 12,
+    "MAT_SeatAccent": 12,
+    "MAT_EmissiveRed": 2,
+    "MAT_Chrome": 12,
+    "MAT_InteriorPlastic": 12,
+    "MAT_BrushedMetal": 12,
+    "MAT_InteriorLeather": 12,
+    "MAT_BlackPlastic": 12,
+    "MAT_Tire": 12,
+    "MAT_Speaker": 12,
+    "MAT_HeadlightLens": 12,
+    "MAT_EmissiveWhite": 2,
+    "MAT_Display": 2,
+    "MAT_CarbonFiber": 12,
+    "MAT_ProjectorLens": 12,
+    "MAT_TaillightLens": 12,
+    "MAT_WheelDark": 12,
+    "MAT_BrakeCaliper": 12,
+    "MAT_InteriorMetal": 12,
+    "MAT_InteriorAlcantara": 12,
+    "MAT_Glass": 2,
+    "MAT_EmissiveAmber": 2,
+    "MAT_CarPaint": 12,
+    "MAT_WheelMetal": 12,
+    "MAT_BrakeDisc": 20,
+    "MAT_InteriorMirror": 2,
+    "MAT_InteriorCarbon": 12
+  },
+  "texture_count": 67
+}

@@ -1,0 +1,86 @@
+{
+ "file": "trafficboxtrucka_01_blockout.blend",
+ "checks": {
+  "four_wheels": true,
+  "tires_on_ground (<5 mm)": true,
+  "body_clearance >= 0.12 m": true,
+  "no NaN / loose vertices": true,
+  "glass, lights, trim, interior present": true,
+  "no part > 10 cm outside the body bounds (stray / floating trim; bumpers may be proud)": true,
+  "dimensions within 6 cm of the design": true
+ },
+ "length_m": 6.893,
+ "width_body_m": 1.976,
+ "width_mirrors_m": 2.5,
+ "roof_height_m": 3.281,
+ "height_incl_fin_m": 3.281,
+ "body_min_z_m": 0.6,
+ "wheelbase_m": 3.85,
+ "track_f_m": 1.68,
+ "track_r_m": 1.68,
+ "tire_radius_m": 0.405,
+ "front_overhang_m": 1.143,
+ "rear_overhang_m": 1.9,
+ "tris": {
+  "Body_Blockout": 222748,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 56,
+  "Interior_LOD0": 1898,
+  "Lights_LOD0": 1046,
+  "Trim_LOD0": 4208,
+  "Wheel_FL_LOD0": 750,
+  "Wheel_FR_LOD0": 750,
+  "Wheel_RL_LOD0": 750,
+  "Wheel_RR_LOD0": 750
+ },
+ "tris_total": 233164,
+ "tris_without_master_body": 10416,
+ "mesh_issues": {
+  "Body_Blockout": {
+   "zero_area": 6,
+   "loose": 0,
+   "nan": 0
+  }
+ },
+ "parts_outside_body_bounds_m": {},
+ "design_dim": {
+  "length": 6.9,
+  "width_body": 2.0,
+  "height": 3.28,
+  "wheelbase": 3.85,
+  "track_f": 1.68,
+  "track_r": 1.68,
+  "overhang_f": 1.15,
+  "overhang_r": 1.9,
+  "ground_clearance": 0.22,
+  "tire": "225/70 R19.5 (R 0.405, rim 19.5\")",
+  "box_width": 2.34
+ },
+ "dim_deviation_m": {
+  "length": -0.007,
+  "width_body": -0.024,
+  "height": 0.001
+ },
+ "materials": [
+  "TMP_arch",
+  "TMP_grille",
+  "TMP_housing",
+  "TMP_plastic",
+  "TMP_plate",
+  "TMP_pocket",
+  "TMP_seal",
+  "TS_Atlas",
+  "TS_BoxTruckA_Glass",
+  "TS_BoxTruckA_Interior",
+  "TS_BoxTruckA_Paint",
+  "TS_Glass",
+  "TS_Lens",
+  "TS_LensRed",
+  "TS_Lights",
+  "TS_Tire"
+ ],
+ "PASS": true
+}

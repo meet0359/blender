@@ -1,0 +1,1630 @@
+{
+ "asset": "Traffic_SUV_A",
+ "source": "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/_UNITY_EXPORT_WS_20261010/Traffic_SUV_A/blend/trafficsuva_09_export_ready.blend",
+ "source_sha1": "02b50f74ea09181c2ec33d58bca67abf024e4e3c",
+ "files": {
+  "TrafficSUVA_LOD0_unity_test.fbx": {
+   "sha1": "dacafd46e6480404482e3f8df07fefa78d833bba",
+   "bytes": 1313132,
+   "file": {
+    "fbx_version": 7400,
+    "globals": {
+     "UpAxis": 1,
+     "UpAxisSign": 1,
+     "FrontAxis": 2,
+     "FrontAxisSign": 1,
+     "CoordAxis": 0,
+     "CoordAxisSign": 1,
+     "UnitScaleFactor": 100.0,
+     "OriginalUnitScaleFactor": 100.0
+    },
+    "object_kinds": {
+     "NodeAttribute": 10,
+     "Geometry": 17,
+     "Model": 27,
+     "Material": 8,
+     "Texture": 13,
+     "Video": 9
+    },
+    "texture_relative_paths": [
+     "../../shared/textures/TS_Atlas_BaseColor.png",
+     "../../shared/textures/TS_Atlas_Metallic.png",
+     "../../shared/textures/TS_Atlas_Normal.png",
+     "../../shared/textures/TS_Atlas_Roughness.png",
+     "../../shared/textures/TS_Lights_BaseColor.png",
+     "../../shared/textures/TS_Tire_BaseColor.png",
+     "../../shared/textures/TS_Tire_Normal.png",
+     "../../shared/textures/TS_Tire_Roughness.png",
+     "../textures/TS_SUVA_Body_Normal.png"
+    ],
+    "unresolved_from_package": [],
+    "embedded_media": 0,
+    "geometries_with_tangents": 13,
+    "material_texture_slots": {
+     "TS_SUVA_Paint": {
+      "NormalMap": "../textures/TS_SUVA_Body_Normal.png"
+     },
+     "TS_Atlas": {
+      "DiffuseColor": "../../shared/textures/TS_Atlas_BaseColor.png",
+      "NormalMap": "../../shared/textures/TS_Atlas_Normal.png",
+      "ShininessExponent": "../../shared/textures/TS_Atlas_Roughness.png",
+      "ReflectionFactor": "../../shared/textures/TS_Atlas_Metallic.png"
+     },
+     "TS_SUVA_Interior": {
+      "DiffuseColor": "../../shared/textures/TS_Atlas_BaseColor.png",
+      "NormalMap": "../../shared/textures/TS_Atlas_Normal.png",
+      "ShininessExponent": "../../shared/textures/TS_Atlas_Roughness.png",
+      "ReflectionFactor": "../../shared/textures/TS_Atlas_Metallic.png"
+     },
+     "TS_Lights": {
+      "DiffuseColor": "../../shared/textures/TS_Lights_BaseColor.png"
+     },
+     "TS_Tire": {
+      "DiffuseColor": "../../shared/textures/TS_Tire_BaseColor.png",
+      "NormalMap": "../../shared/textures/TS_Tire_Normal.png",
+      "ShininessExponent": "../../shared/textures/TS_Tire_Roughness.png"
+     }
+    }
+   },
+   "lods": {
+    "LOD0": {
+     "objects": 16,
+     "source_objects": 16,
+     "tris": 17998,
+     "source_tris": 17998,
+     "materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint",
+      "TS_Tire"
+     ],
+     "source_materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint",
+      "TS_Tire"
+     ]
+    }
+   },
+   "wheels": {
+    "FL": {
+     "ref_blender": [
+      0.8,
+      -1.32,
+      0.37
+     ],
+     "ref_unity": [
+      -0.8,
+      0.37,
+      1.32
+     ],
+     "wheel_lods": [
+      0
+     ],
+     "pivots": 3,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    },
+    "FR": {
+     "ref_blender": [
+      -0.8,
+      -1.32,
+      0.37
+     ],
+     "ref_unity": [
+      0.8,
+      0.37,
+      1.32
+     ],
+     "wheel_lods": [
+      0
+     ],
+     "pivots": 3,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    },
+    "RL": {
+     "ref_blender": [
+      0.805,
+      1.36,
+      0.37
+     ],
+     "ref_unity": [
+      -0.805,
+      0.37,
+      -1.36
+     ],
+     "wheel_lods": [
+      0
+     ],
+     "pivots": 2,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    },
+    "RR": {
+     "ref_blender": [
+      -0.805,
+      1.36,
+      0.37
+     ],
+     "ref_unity": [
+      0.805,
+      0.37,
+      -1.36
+     ],
+     "wheel_lods": [
+      0
+     ],
+     "pivots": 2,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    }
+   },
+   "max_pivot_dev_vs_source_m": 1.4901161193847656e-07,
+   "center_of_mass_blender": [
+    0.0,
+    -0.12,
+    0.62
+   ],
+   "colliders": {
+    "Collision_Body": {
+     "tris": 74,
+     "materials": 0
+    },
+    "Collision_Cabin": {
+     "tris": 182,
+     "materials": 0
+    },
+    "Collision_Front": {
+     "tris": 172,
+     "materials": 0
+    },
+    "Collision_Rear": {
+     "tris": 166,
+     "materials": 0
+    }
+   },
+   "light_channels": {
+    "Lights_LOD0": {
+     "fbx": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     },
+     "source": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     }
+    }
+   },
+   "normals": {
+    "nan_values": 0,
+    "zero_length_normals": 0,
+    "degenerate_faces": 0,
+    "source_degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "s1_worst_fbx": [
+     [
+      "Body_LOD0",
+      0.0
+     ],
+     [
+      "Caliper_FL_LOD0",
+      0.0
+     ],
+     [
+      "Caliper_FR_LOD0",
+      0.0
+     ]
+    ]
+   },
+   "unity_space": {
+    "car_root_identity": 7.549790126404332e-08,
+    "max_rotation_dev": 7.549790126404332e-08,
+    "max_scale_dev": 0.0,
+    "negative_scale": [],
+    "lod0_dims_m": {
+     "width_x": 2.19,
+     "height_y": 1.7043,
+     "length_z": 4.4786
+    },
+    "nose_z": 2.2446,
+    "tail_z": -2.234,
+    "roof_y": 1.7043,
+    "ground_y": -0.0,
+    "center_of_mass": [
+     -0.0,
+     0.62,
+     0.12
+    ]
+   },
+   "problems": [],
+   "ok": true
+  },
+  "TrafficSUVA_complete_unity.fbx": {
+   "sha1": "e8a197c424459f4c8e55ed079dc76c5f488a23cb",
+   "bytes": 2596044,
+   "file": {
+    "fbx_version": 7400,
+    "globals": {
+     "UpAxis": 1,
+     "UpAxisSign": 1,
+     "FrontAxis": 2,
+     "FrontAxisSign": 1,
+     "CoordAxis": 0,
+     "CoordAxisSign": 1,
+     "UnitScaleFactor": 100.0,
+     "OriginalUnitScaleFactor": 100.0
+    },
+    "object_kinds": {
+     "NodeAttribute": 19,
+     "Geometry": 52,
+     "Model": 71,
+     "Material": 10,
+     "Texture": 14,
+     "Video": 10
+    },
+    "texture_relative_paths": [
+     "../../shared/textures/TS_Atlas_BaseColor.png",
+     "../../shared/textures/TS_Atlas_Metallic.png",
+     "../../shared/textures/TS_Atlas_Normal.png",
+     "../../shared/textures/TS_Atlas_Roughness.png",
+     "../../shared/textures/TS_Lights_BaseColor.png",
+     "../../shared/textures/TS_Tire_BaseColor.png",
+     "../../shared/textures/TS_Tire_Normal.png",
+     "../../shared/textures/TS_Tire_Roughness.png",
+     "../textures/TS_SUVA_Body_Normal.png",
+     "../textures/TS_SUVA_Body_Normal_LOD1.png"
+    ],
+    "unresolved_from_package": [],
+    "embedded_media": 0,
+    "geometries_with_tangents": 48,
+    "material_texture_slots": {
+     "TS_SUVA_Paint": {
+      "NormalMap": "../textures/TS_SUVA_Body_Normal.png"
+     },
+     "TS_SUVA_Paint_LOD1": {
+      "NormalMap": "../textures/TS_SUVA_Body_Normal_LOD1.png"
+     },
+     "TS_Atlas": {
+      "DiffuseColor": "../../shared/textures/TS_Atlas_BaseColor.png",
+      "NormalMap": "../../shared/textures/TS_Atlas_Normal.png",
+      "ShininessExponent": "../../shared/textures/TS_Atlas_Roughness.png",
+      "ReflectionFactor": "../../shared/textures/TS_Atlas_Metallic.png"
+     },
+     "TS_SUVA_Interior": {
+      "DiffuseColor": "../../shared/textures/TS_Atlas_BaseColor.png",
+      "NormalMap": "../../shared/textures/TS_Atlas_Normal.png",
+      "ShininessExponent": "../../shared/textures/TS_Atlas_Roughness.png",
+      "ReflectionFactor": "../../shared/textures/TS_Atlas_Metallic.png"
+     },
+     "TS_Lights": {
+      "DiffuseColor": "../../shared/textures/TS_Lights_BaseColor.png"
+     },
+     "TS_Tire": {
+      "DiffuseColor": "../../shared/textures/TS_Tire_BaseColor.png",
+      "NormalMap": "../../shared/textures/TS_Tire_Normal.png",
+      "ShininessExponent": "../../shared/textures/TS_Tire_Roughness.png"
+     }
+    }
+   },
+   "lods": {
+    "LOD0": {
+     "objects": 16,
+     "source_objects": 16,
+     "tris": 17998,
+     "source_tris": 17998,
+     "materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint",
+      "TS_Tire"
+     ],
+     "source_materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint",
+      "TS_Tire"
+     ]
+    },
+    "LOD1": {
+     "objects": 16,
+     "source_objects": 16,
+     "tris": 8768,
+     "source_tris": 8768,
+     "materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint_LOD1",
+      "TS_Tire"
+     ],
+     "source_materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint_LOD1",
+      "TS_Tire"
+     ]
+    },
+    "LOD2": {
+     "objects": 16,
+     "source_objects": 16,
+     "tris": 4027,
+     "source_tris": 4027,
+     "materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint_Far",
+      "TS_Tire"
+     ],
+     "source_materials": [
+      "TS_Atlas",
+      "TS_Lens",
+      "TS_LensRed",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint_Far",
+      "TS_Tire"
+     ]
+    },
+    "LOD3": {
+     "objects": 12,
+     "source_objects": 12,
+     "tris": 1728,
+     "source_tris": 1728,
+     "materials": [
+      "TS_Atlas",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint_Far",
+      "TS_Tire"
+     ],
+     "source_materials": [
+      "TS_Atlas",
+      "TS_Lights",
+      "TS_SUVA_Glass",
+      "TS_SUVA_Interior",
+      "TS_SUVA_Paint_Far",
+      "TS_Tire"
+     ]
+    }
+   },
+   "wheels": {
+    "FL": {
+     "ref_blender": [
+      0.8,
+      -1.32,
+      0.37
+     ],
+     "ref_unity": [
+      -0.8,
+      0.37,
+      1.32
+     ],
+     "wheel_lods": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "pivots": 11,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    },
+    "FR": {
+     "ref_blender": [
+      -0.8,
+      -1.32,
+      0.37
+     ],
+     "ref_unity": [
+      0.8,
+      0.37,
+      1.32
+     ],
+     "wheel_lods": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "pivots": 11,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    },
+    "RL": {
+     "ref_blender": [
+      0.805,
+      1.36,
+      0.37
+     ],
+     "ref_unity": [
+      -0.805,
+      0.37,
+      -1.36
+     ],
+     "wheel_lods": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "pivots": 7,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    },
+    "RR": {
+     "ref_blender": [
+      -0.805,
+      1.36,
+      0.37
+     ],
+     "ref_unity": [
+      0.805,
+      0.37,
+      -1.36
+     ],
+     "wheel_lods": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "pivots": 7,
+     "max_pivot_vs_ref_m": 0.0,
+     "props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     },
+     "source_props": {
+      "radius_m": 0.37,
+      "width_m": 0.235
+     }
+    }
+   },
+   "max_pivot_dev_vs_source_m": 1.4901161193847656e-07,
+   "center_of_mass_blender": [
+    0.0,
+    -0.12,
+    0.62
+   ],
+   "colliders": {
+    "Collision_Body": {
+     "tris": 74,
+     "materials": 0
+    },
+    "Collision_Cabin": {
+     "tris": 182,
+     "materials": 0
+    },
+    "Collision_Front": {
+     "tris": 172,
+     "materials": 0
+    },
+    "Collision_Rear": {
+     "tris": 166,
+     "materials": 0
+    }
+   },
+   "light_channels": {
+    "Lights_LOD0": {
+     "fbx": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     },
+     "source": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     }
+    },
+    "Lights_LOD1": {
+     "fbx": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     },
+     "source": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     }
+    },
+    "Lights_LOD2": {
+     "fbx": {
+      "Headlamp": 42,
+      "DRL": 38,
+      "Indicator_L": 10,
+      "Tail": 16,
+      "Brake": 22,
+      "Reverse": 4,
+      "Indicator_R": 10
+     },
+     "source": {
+      "Headlamp": 42,
+      "DRL": 38,
+      "Indicator_L": 10,
+      "Tail": 16,
+      "Brake": 22,
+      "Reverse": 4,
+      "Indicator_R": 10
+     }
+    },
+    "Lights_LOD3": {
+     "fbx": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     },
+     "source": {
+      "Headlamp": 42,
+      "DRL": 24,
+      "Indicator_L": 7,
+      "Tail": 8,
+      "Brake": 11,
+      "Reverse": 6,
+      "Indicator_R": 7
+     }
+    }
+   },
+   "normals": {
+    "nan_values": 0,
+    "zero_length_normals": 0,
+    "degenerate_faces": 0,
+    "source_degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "s1_worst_fbx": [
+     [
+      "Body_LOD2",
+      0.142
+     ],
+     [
+      "Interior_LOD3",
+      0.133
+     ],
+     [
+      "Interior_LOD2",
+      0.106
+     ]
+    ]
+   },
+   "unity_space": {
+    "car_root_identity": 7.549790126404332e-08,
+    "max_rotation_dev": 7.549790126404332e-08,
+    "max_scale_dev": 0.0,
+    "negative_scale": [],
+    "lod0_dims_m": {
+     "width_x": 2.19,
+     "height_y": 1.7043,
+     "length_z": 4.4786
+    },
+    "nose_z": 2.2446,
+    "tail_z": -2.234,
+    "roof_y": 1.7043,
+    "ground_y": -0.0,
+    "center_of_mass": [
+     -0.0,
+     0.62,
+     0.12
+    ]
+   },
+   "problems": [],
+   "ok": true
+  }
+ },
+ "materials": {
+  "TS_Atlas": {
+   "custom": {},
+   "surface_render_method": "DITHERED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Atlas_BaseColor.png"
+     ]
+    },
+    "Metallic": {
+     "value": 0.0,
+     "linked": true,
+     "textures": [
+      "TS_Atlas_Metallic.png"
+     ]
+    },
+    "Roughness": {
+     "value": 0.5,
+     "linked": true,
+     "textures": [
+      "TS_Atlas_Roughness.png"
+     ]
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Atlas_Normal.png"
+     ]
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.03,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [
+    1.0
+   ],
+   "rgb_nodes": {},
+   "images": [
+    [
+     "TS_Atlas_BaseColor.png",
+     "sRGB"
+    ],
+    [
+     "TS_Atlas_Metallic.png",
+     "Non-Color"
+    ],
+    [
+     "TS_Atlas_Normal.png",
+     "Non-Color"
+    ],
+    [
+     "TS_Atlas_Roughness.png",
+     "Non-Color"
+    ]
+   ],
+   "used_by_lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "objects": 32
+  },
+  "TS_Lens": {
+   "custom": {
+    "unity_alpha": 0.1
+   },
+   "surface_render_method": "BLENDED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.92,
+      0.94,
+      0.96,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Metallic": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.01,
+     "linked": false,
+     "textures": []
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.03,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [],
+   "rgb_nodes": {},
+   "images": [],
+   "used_by_lods": [
+    0,
+    1,
+    2
+   ],
+   "objects": 3
+  },
+  "TS_LensRed": {
+   "custom": {
+    "unity_alpha": 0.55
+   },
+   "surface_render_method": "BLENDED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.42,
+      0.0,
+      0.006,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Metallic": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.02,
+     "linked": false,
+     "textures": []
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.03,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [],
+   "rgb_nodes": {},
+   "images": [],
+   "used_by_lods": [
+    0,
+    1,
+    2
+   ],
+   "objects": 3
+  },
+  "TS_Lights": {
+   "custom": {
+    "unity": "one emissive material; channel = TS_Lights_ChannelID (R * 15 = index into DRL, Headlamp, Tail, Brake, Indicator_L, Indicator_R, Reverse, Marker); per-channel intensity array set at runtime (one draw call)"
+   },
+   "surface_render_method": "DITHERED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Lights_BaseColor.png"
+     ]
+    },
+    "Metallic": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.25,
+     "linked": false,
+     "textures": []
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Lights_Emission.png",
+      "TS_Lights_State (packed, Blender review only)"
+     ]
+    },
+    "Emission Strength": {
+     "value": 6.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.03,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [],
+   "rgb_nodes": {},
+   "images": [
+    [
+     "TS_Lights_BaseColor.png",
+     "sRGB"
+    ],
+    [
+     "TS_Lights_Emission.png",
+     "sRGB"
+    ],
+    [
+     "TS_Lights_State (packed)",
+     "sRGB"
+    ]
+   ],
+   "used_by_lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "objects": 4
+  },
+  "TS_SUVA_Glass": {
+   "custom": {
+    "unity_alpha": 0.22,
+    "instance_of": "TS_Glass",
+    "unity": "instance of TS_Glass: Lit transparent, base (0.78, 0.84, 0.82) alpha 0.22, smoothness 1.0 (light green automotive tint, ~75 % visible transmission)"
+   },
+   "surface_render_method": "BLENDED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.78,
+      0.84,
+      0.82,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Metallic": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.03,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [],
+   "rgb_nodes": {},
+   "images": [],
+   "used_by_lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "objects": 4
+  },
+  "TS_SUVA_Interior": {
+   "custom": {
+    "instance_of": "TS_Atlas",
+    "unity": "instance of TS_Atlas (same textures / UVs): normal scale 0.12 (seat weave reads as fabric, not crumpled at cabin scale)"
+   },
+   "surface_render_method": "DITHERED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Atlas_BaseColor.png"
+     ]
+    },
+    "Metallic": {
+     "value": 0.0,
+     "linked": true,
+     "textures": [
+      "TS_Atlas_Metallic.png"
+     ]
+    },
+    "Roughness": {
+     "value": 0.5,
+     "linked": true,
+     "textures": [
+      "TS_Atlas_Roughness.png"
+     ]
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Atlas_Normal.png"
+     ]
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.03,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [
+    0.12
+   ],
+   "rgb_nodes": {},
+   "images": [
+    [
+     "TS_Atlas_BaseColor.png",
+     "sRGB"
+    ],
+    [
+     "TS_Atlas_Metallic.png",
+     "Non-Color"
+    ],
+    [
+     "TS_Atlas_Normal.png",
+     "Non-Color"
+    ],
+    [
+     "TS_Atlas_Roughness.png",
+     "Non-Color"
+    ]
+   ],
+   "used_by_lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "objects": 4
+  },
+  "TS_SUVA_Paint": {
+   "custom": {
+    "unity": "Lit (or clear-coat paint shader): BaseColor = PaintColour x AO (R of AO_Grime) blended to grime (G); Normal = baked body normal; detail normal TS_PaintFlake_Normal tiling 60; metallic 0.55, smoothness 0.64, clear coat 1.00 / coat smoothness 0.955"
+   },
+   "surface_render_method": "DITHERED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_SUVA_Body_AO_Grime.png"
+     ]
+    },
+    "Metallic": {
+     "value": 0.55,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.36,
+     "linked": false,
+     "textures": []
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_SUVA_Body_Normal.png"
+     ]
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.045,
+     "linked": true,
+     "textures": [
+      "TS_SUVA_Body_AO_Grime.png"
+     ]
+    }
+   },
+   "normal_map_strengths": [
+    1.0
+   ],
+   "rgb_nodes": {
+    "PaintColour": [
+     0.3,
+     0.28,
+     0.24
+    ]
+   },
+   "images": [
+    [
+     "TS_SUVA_Body_AO_Grime.png",
+     "Non-Color"
+    ],
+    [
+     "TS_SUVA_Body_Normal.png",
+     "Non-Color"
+    ]
+   ],
+   "used_by_lods": [
+    0
+   ],
+   "objects": 1
+  },
+  "TS_SUVA_Paint_Far": {
+   "custom": {
+    "unity": "Lit (or clear-coat paint shader): BaseColor = PaintColour x AO (R of AO_Grime) blended to grime (G); Normal = baked body normal; detail normal TS_PaintFlake_Normal tiling 60; metallic 0.55, smoothness 0.64, clear coat 1.00 / coat smoothness 0.955"
+   },
+   "surface_render_method": "DITHERED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+     ],
+     "linked": true,
+     "textures": []
+    },
+    "Metallic": {
+     "value": 0.55,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.36,
+     "linked": false,
+     "textures": []
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.045,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [],
+   "rgb_nodes": {
+    "PaintColour": [
+     0.3,
+     0.28,
+     0.24
+    ]
+   },
+   "images": [],
+   "used_by_lods": [
+    2,
+    3
+   ],
+   "objects": 2
+  },
+  "TS_SUVA_Paint_LOD1": {
+   "custom": {
+    "unity": "Lit (or clear-coat paint shader): BaseColor = PaintColour x AO (R of AO_Grime) blended to grime (G); Normal = baked body normal; detail normal TS_PaintFlake_Normal tiling 60; metallic 0.55, smoothness 0.64, clear coat 1.00 / coat smoothness 0.955"
+   },
+   "surface_render_method": "DITHERED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_SUVA_Body_AO_Grime.png"
+     ]
+    },
+    "Metallic": {
+     "value": 0.55,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.36,
+     "linked": false,
+     "textures": []
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_SUVA_Body_Normal_LOD1.png"
+     ]
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.045,
+     "linked": true,
+     "textures": [
+      "TS_SUVA_Body_AO_Grime.png"
+     ]
+    }
+   },
+   "normal_map_strengths": [
+    1.0
+   ],
+   "rgb_nodes": {
+    "PaintColour": [
+     0.3,
+     0.28,
+     0.24
+    ]
+   },
+   "images": [
+    [
+     "TS_SUVA_Body_AO_Grime.png",
+     "Non-Color"
+    ],
+    [
+     "TS_SUVA_Body_Normal_LOD1.png",
+     "Non-Color"
+    ]
+   ],
+   "used_by_lods": [
+    1
+   ],
+   "objects": 1
+  },
+  "TS_Tire": {
+   "custom": {},
+   "surface_render_method": "DITHERED",
+   "principled": {
+    "Base Color": {
+     "value": [
+      0.8,
+      0.8,
+      0.8,
+      1.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Tire_BaseColor.png"
+     ]
+    },
+    "Metallic": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Roughness": {
+     "value": 0.5,
+     "linked": true,
+     "textures": [
+      "TS_Tire_Roughness.png"
+     ]
+    },
+    "Alpha": {
+     "value": 1.0,
+     "linked": false,
+     "textures": []
+    },
+    "Normal": {
+     "value": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "linked": true,
+     "textures": [
+      "TS_Tire_Normal.png"
+     ]
+    },
+    "Emission Color": {
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "linked": false,
+     "textures": []
+    },
+    "Emission Strength": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Weight": {
+     "value": 0.0,
+     "linked": false,
+     "textures": []
+    },
+    "Coat Roughness": {
+     "value": 0.03,
+     "linked": false,
+     "textures": []
+    }
+   },
+   "normal_map_strengths": [
+    1.0
+   ],
+   "rgb_nodes": {},
+   "images": [
+    [
+     "TS_Tire_BaseColor.png",
+     "sRGB"
+    ],
+    [
+     "TS_Tire_Normal.png",
+     "Non-Color"
+    ],
+    [
+     "TS_Tire_Roughness.png",
+     "Non-Color"
+    ]
+   ],
+   "used_by_lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "objects": 16
+  }
+ },
+ "ok": true
+}

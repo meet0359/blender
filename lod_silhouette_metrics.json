@@ -1,0 +1,137 @@
+{
+  "side": {
+    "master": {
+      "iou_reference": 1.0,
+      "different_pixels": 0,
+      "reference": "master"
+    },
+    "LOD0": {
+      "iou_reference": 0.9953188193787109,
+      "different_pixels": 272,
+      "reference": "master"
+    },
+    "LOD1": {
+      "iou_reference": 0.9989979267449897,
+      "different_pixels": 58,
+      "reference": "LOD0"
+    },
+    "LOD2": {
+      "iou_reference": 0.9966313098158449,
+      "different_pixels": 195,
+      "reference": "LOD0"
+    },
+    "LOD3": {
+      "iou_reference": 0.9906513039878571,
+      "different_pixels": 542,
+      "reference": "LOD0"
+    }
+  },
+  "front_3q": {
+    "master": {
+      "iou_reference": 1.0,
+      "different_pixels": 0,
+      "reference": "master"
+    },
+    "LOD0": {
+      "iou_reference": 0.9997549940381882,
+      "different_pixels": 15,
+      "reference": "master"
+    },
+    "LOD1": {
+      "iou_reference": 0.9987748301097752,
+      "different_pixels": 75,
+      "reference": "LOD0"
+    },
+    "LOD2": {
+      "iou_reference": 0.9985952762078991,
+      "different_pixels": 86,
+      "reference": "LOD0"
+    },
+    "LOD3": {
+      "iou_reference": 0.9928655390844381,
+      "different_pixels": 437,
+      "reference": "LOD0"
+    }
+  },
+  "rear_3q": {
+    "master": {
+      "iou_reference": 1.0,
+      "different_pixels": 0,
+      "reference": "master"
+    },
+    "LOD0": {
+      "iou_reference": 0.9996048472075869,
+      "different_pixels": 21,
+      "reference": "master"
+    },
+    "LOD1": {
+      "iou_reference": 0.9993978170869402,
+      "different_pixels": 32,
+      "reference": "LOD0"
+    },
+    "LOD2": {
+      "iou_reference": 0.997308437952907,
+      "different_pixels": 143,
+      "reference": "LOD0"
+    },
+    "LOD3": {
+      "iou_reference": 0.9830116265944238,
+      "different_pixels": 903,
+      "reference": "LOD0"
+    }
+  },
+  "front": {
+    "master": {
+      "iou_reference": 1.0,
+      "different_pixels": 0,
+      "reference": "master"
+    },
+    "LOD0": {
+      "iou_reference": 0.9958624647025958,
+      "different_pixels": 274,
+      "reference": "master"
+    },
+    "LOD1": {
+      "iou_reference": 0.9973617976165206,
+      "different_pixels": 174,
+      "reference": "LOD0"
+    },
+    "LOD2": {
+      "iou_reference": 0.9956791995148575,
+      "different_pixels": 285,
+      "reference": "LOD0"
+    },
+    "LOD3": {
+      "iou_reference": 0.994454881522332,
+      "different_pixels": 366,
+      "reference": "LOD0"
+    }
+  },
+  "rear": {
+    "master": {
+      "iou_reference": 1.0,
+      "different_pixels": 0,
+      "reference": "master"
+    },
+    "LOD0": {
+      "iou_reference": 0.9965238507085357,
+      "different_pixels": 209,
+      "reference": "master"
+    },
+    "LOD1": {
+      "iou_reference": 0.9998497947194499,
+      "different_pixels": 9,
+      "reference": "LOD0"
+    },
+    "LOD2": {
+      "iou_reference": 0.999332476678404,
+      "different_pixels": 40,
+      "reference": "LOD0"
+    },
+    "LOD3": {
+      "iou_reference": 0.9971636412172985,
+      "different_pixels": 170,
+      "reference": "LOD0"
+    }
+  }
+}

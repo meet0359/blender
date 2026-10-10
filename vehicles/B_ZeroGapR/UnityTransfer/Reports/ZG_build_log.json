@@ -1,0 +1,284 @@
+{
+ "swatches": {
+  "black_plastic": {
+   "base": [
+    0.0123,
+    0.016,
+    0.0222
+   ],
+   "rough": 0.4902,
+   "metal": 0.0
+  },
+  "housing": {
+   "base": [
+    0.0021,
+    0.0037,
+    0.0056
+   ],
+   "rough": 0.4902,
+   "metal": 0.0
+  },
+  "chrome": {
+   "base": [
+    0.6191,
+    0.6725,
+    0.7229
+   ],
+   "rough": 0.1608,
+   "metal": 1.0
+  },
+  "brushed": {
+   "base": [
+    0.1046,
+    0.1329,
+    0.162
+   ],
+   "rough": 0.2784,
+   "metal": 1.0
+  },
+  "wheel_metal": {
+   "base": [
+    0.46,
+    0.48,
+    0.51
+   ],
+   "rough": 0.24,
+   "metal": 1.0
+  },
+  "wheel_dark": {
+   "base": [
+    0.0382,
+    0.0578,
+    0.0802
+   ],
+   "rough": 0.2784,
+   "metal": 1.0
+  },
+  "caliper": {
+   "base": [
+    0.6172,
+    0.2195,
+    0.008
+   ],
+   "rough": 0.2902,
+   "metal": 0.6196
+  },
+  "rotor": {
+   "base": [
+    0.3515,
+    0.3712,
+    0.3916
+   ],
+   "rough": 0.4314,
+   "metal": 1.0
+  },
+  "leather": {
+   "base": [
+    0.0152,
+    0.0203,
+    0.0262
+   ],
+   "rough": 0.4297,
+   "metal": 0.0
+  },
+  "alcantara": {
+   "base": [
+    0.0296,
+    0.0356,
+    0.0423
+   ],
+   "rough": 0.8314,
+   "metal": 0.0
+  },
+  "int_plastic": {
+   "base": [
+    0.007,
+    0.0097,
+    0.0144
+   ],
+   "rough": 0.4902,
+   "metal": 0.0
+  },
+  "int_metal": {
+   "base": [
+    0.1274,
+    0.1651,
+    0.2086
+   ],
+   "rough": 0.2784,
+   "metal": 1.0
+  },
+  "seat_accent": {
+   "base": [
+    0.0097,
+    0.0009,
+    0.0012
+   ],
+   "rough": 0.4297,
+   "metal": 0.0
+  },
+  "speaker": {
+   "base": [
+    0.0074,
+    0.0102,
+    0.013
+   ],
+   "rough": 0.6865,
+   "metal": 0.102
+  },
+  "mirror": {
+   "base": [
+    0.68,
+    0.72,
+    0.76
+   ],
+   "rough": 0.04,
+   "metal": 1.0
+  },
+  "gloss_black": {
+   "base": [
+    0.012,
+    0.012,
+    0.013
+   ],
+   "rough": 0.12,
+   "metal": 0.0
+  },
+  "grille": {
+   "base": [
+    0.018,
+    0.018,
+    0.02
+   ],
+   "rough": 0.55,
+   "metal": 0.1
+  },
+  "exhaust_inner": {
+   "base": [
+    0.035,
+    0.028,
+    0.022
+   ],
+   "rough": 0.7,
+   "metal": 0.6
+  },
+  "reflector": {
+   "base": [
+    0.55,
+    0.55,
+    0.56
+   ],
+   "rough": 0.18,
+   "metal": 1.0
+  }
+ },
+ "paint_linear": [
+  0.58,
+  0.018,
+  0.024
+ ],
+ "carbon_tile_m": 0.25,
+ "removed_parts": [
+  "Diffuser_Fin_1_LOD0",
+  "Diffuser_Fin_2_LOD0",
+  "Diffuser_Fin_3_LOD0",
+  "Diffuser_Fin_4_LOD0",
+  "Exhaust_Depth_L_LOD0",
+  "Exhaust_Depth_R_LOD0",
+  "Exhaust_InnerSleeve_L_LOD0",
+  "Exhaust_InnerSleeve_R_LOD0",
+  "Exhaust_L_LOD0",
+  "Exhaust_R_LOD0",
+  "Front_Bumper_LOD0",
+  "Front_Central_Intake_Depth_LOD0",
+  "Front_Central_Intake_LOD0",
+  "Front_Cooling_Duct_L_Depth_LOD0",
+  "Front_Cooling_Duct_L_LOD0",
+  "Front_Cooling_Duct_R_Depth_LOD0",
+  "Front_Cooling_Duct_R_LOD0",
+  "Front_Duct_Guide_L_1_LOD0",
+  "Front_Duct_Guide_L_2_LOD0",
+  "Front_Duct_Guide_R_1_LOD0",
+  "Front_Duct_Guide_R_2_LOD0",
+  "Front_Intake_Grille_LOD0",
+  "Front_Nose_Shutline_LOD0",
+  "Front_Splitter_LOD0",
+  "Rear_Bumper_LOD0",
+  "Rear_Center_Recess_Depth_LOD0",
+  "Rear_Center_Recess_LOD0",
+  "Rear_Diffuser_LOD0",
+  "Rear_Vent_Rib_1_LOD0",
+  "Rear_Vent_Rib_2_LOD0",
+  "Rear_Vent_Rib_3_LOD0",
+  "Rear_Vent_Rib_4_LOD0",
+  "Rear_Vent_Rib_5_LOD0",
+  "Rear_Vent_Rib_6_LOD0",
+  "Rear_Vent_Rib_7_LOD0",
+  "Rear_Vent_Rib_8_LOD0",
+  "Rear_Vent_Rib_9_LOD0",
+  "Splitter_Side_Return_L_LOD0",
+  "Splitter_Side_Return_R_LOD0",
+  "Taillight_Brake_L_LOD1",
+  "Taillight_Brake_R_LOD1",
+  "Taillight_Cavity_L_LOD1",
+  "Taillight_Cavity_R_LOD1",
+  "Taillight_Housing_L_LOD1",
+  "Taillight_Housing_R_LOD1",
+  "Taillight_Indicator_L_LOD1",
+  "Taillight_Indicator_R_LOD1",
+  "Taillight_L_LOD1",
+  "Taillight_OuterKick_L_LOD1",
+  "Taillight_OuterKick_R_LOD1",
+  "Taillight_R_LOD1",
+  "Taillight_Reverse_L_LOD1",
+  "Taillight_Reverse_R_LOD1",
+  "Taillight_Signature_L_LOD1",
+  "Taillight_Signature_R_LOD1"
+ ],
+ "paint_panels": {
+  "Car_Body": "master cage level 0 (mirror + solidify): 19280 tris",
+  "Hood": "master cage level 0 (mirror + solidify): 3560 tris",
+  "Roof_Panel": "master cage level 0 (mirror + solidify): 3360 tris",
+  "Rear_Engine_Cover": "master cage level 0 (mirror + solidify): 2124 tris",
+  "Car_Door_L": "master cage level 0 (mirror + solidify): 1536 tris",
+  "Car_Door_R": "master cage level 0 (mirror + solidify): 1536 tris"
+ },
+ "topology_cleanup": {
+  "merged_verts": 198,
+  "degenerate": 0,
+  "loose": 0
+ },
+ "unmapped_source_materials": [],
+ "wheel_parts_without_corner": [],
+ "lod0_budget_ratios": {
+  "Body_LOD0": 1.0,
+  "Door_L_LOD0": 1.0,
+  "Door_R_LOD0": 1.0,
+  "Trim_LOD0": 0.57,
+  "Lights_LOD0": 0.85,
+  "Glass_LOD0": 1.0
+ },
+ "lod_ratios": {
+  "1": {
+   "Body": 0.45,
+   "Door": 0.45,
+   "Trim": 0.42,
+   "Lights": 0.5,
+   "Glass": 0.65
+  },
+  "2": {
+   "Body": 0.17,
+   "Door": 0.2,
+   "Trim": 0.17,
+   "Lights": 0.24,
+   "Glass": 0.42
+  },
+  "3": {
+   "Body": 0.055,
+   "Door": 0.08,
+   "Trim": 0.045,
+   "Lights": 0.08,
+   "Glass": 0.22
+  }
+ }
+}

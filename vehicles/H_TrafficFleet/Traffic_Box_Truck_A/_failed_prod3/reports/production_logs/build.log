@@ -1,0 +1,34 @@
+MASTER NORMALS 369038 24325 101199
+INVERTED 95
+PLANAR 11820 -> 6756
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_vehicle_v2.py:357: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  bm_ = bpy.data.materials.new('BAKE_TMP'); bm_.use_nodes = True; tn = bm_.node_tree.nodes.new('ShaderNodeTexImage'); tn.image = img; bm_.node_tree.nodes.active = tn
+Info: Baking map saved to internal image, save it externally or pack it
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_02_body.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_02_body.blend
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_03_parts_lights.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_03_parts_lights.blend
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_04_wheels.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_04_wheels.blend
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_05_interior.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_05_interior.blend
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_vehicle_v2.py:852: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  img = bpy.data.images.new(f'bake_{kind}', res, res, alpha=False); img.colorspace_settings.name = 'Non-Color'; imgs[kind] = img
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+LOD0 20240 {'Body_LOD0': 6756, 'Caliper_FL_LOD0': 52, 'Caliper_FR_LOD0': 52, 'Caliper_RL_LOD0': 52, 'Caliper_RR_LOD0': 52, 'Glass_LOD0': 56, 'Interior_LOD0': 1894, 'Lights_LOD0': 1046, 'Trim_LOD0': 6520, 'Wheel_FL_LOD0': 750, 'Wheel_FR_LOD0': 750, 'Wheel_RL_LOD0': 1130, 'Wheel_RR_LOD0': 1130}
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_06_materials_uv.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_06_materials_uv.blend
+Traceback (most recent call last):
+  File "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_vehicle_v2.py", line 921, in <module>
+    bm = bmesh.new(); bm.from_mesh(d.data); bm.verts.ensure_lookup_table()
+    
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

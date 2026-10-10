@@ -1,0 +1,3487 @@
+{
+ "root": "Car_Root",
+ "forward": "-Y",
+ "up": "+Z",
+ "vehicle_left": "+X",
+ "driver_side": "+X (LHD)",
+ "objects": [
+  {
+   "name": "ActiveSpoilerHinge_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "ActiveSpoilerHinge_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "ActiveSpoiler_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "spoiler (pivot = hinge)",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "ActiveSpoiler_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "spoiler (pivot = hinge)",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "ActiveSpoiler_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "spoiler (pivot = hinge)",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "ActiveSpoiler_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "spoiler (pivot = hinge)",
+   "lod": 3,
+   "collection": "LOD3_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "ArchLip_FL_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_FL_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_FL_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_FR_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_FR_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_FR_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_RL_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_RL_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_RL_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_RR_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_RR_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "ArchLip_RR_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Body_Buttress_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Body_Buttress_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Body_Buttress_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Body_Buttress_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "body",
+   "lod": 3,
+   "collection": "LOD3_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Body_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint",
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Body_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint",
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Body_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Body_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "body",
+   "lod": 3,
+   "collection": "LOD3_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FL_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD0",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FL_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD1",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FL_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD2",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FL_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD3",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FR_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD0",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FR_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD1",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FR_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD2",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_FR_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD3",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RL_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD0",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RL_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD1",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RL_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD2",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RL_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD3",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RR_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD0",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RR_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD1",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RR_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD2",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "BrakeDisc_RR_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD3",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "LODMAT_Brakes"
+   ]
+  },
+  {
+   "name": "Caliper_FL_LOD0",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD0",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_FL_LOD1",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD1",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_FL_LOD2",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD2",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_FL_LOD3",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD3",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_FR_LOD0",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD0",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_FR_LOD1",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD1",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_FR_LOD2",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD2",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_FR_LOD3",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD3",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RL_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RL_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RL_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RL_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RR_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "brakes",
+   "lod": 0,
+   "collection": "LOD0_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RR_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "brakes",
+   "lod": 1,
+   "collection": "LOD1_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RR_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "brakes",
+   "lod": 2,
+   "collection": "LOD2_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Caliper_RR_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "brakes",
+   "lod": 3,
+   "collection": "LOD3_Brakes",
+   "materials": [
+    "MAT_BrakeCaliper"
+   ]
+  },
+  {
+   "name": "Car_Root",
+   "type": "EMPTY",
+   "parent": null,
+   "role": "root",
+   "lod": null,
+   "collection": "HC_Rig",
+   "materials": []
+  },
+  {
+   "name": "CenterConsole_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "CenterConsole_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "CenterConsole_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "CenterOfMass",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "center_of_mass",
+   "lod": null,
+   "collection": "HC_Rig",
+   "materials": []
+  },
+  {
+   "name": "CenterScreen_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_Display",
+    "LODMAT_Interior",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red"
+   ]
+  },
+  {
+   "name": "CenterScreen_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_Display",
+    "LODMAT_Interior",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red"
+   ]
+  },
+  {
+   "name": "CenterScreen_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "MAT_Display",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "CenterTunnel_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "CenterTunnel_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "CenterTunnel_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Chassis_EngineBay_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Chassis_EngineBay_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Chassis_EngineBay_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Chassis_Floor_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Chassis_Floor_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Chassis_Floor_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Chassis_Floor_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "trim",
+   "lod": 3,
+   "collection": "LOD3_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Collision",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "collider_root",
+   "lod": null,
+   "collection": "COLLIDERS",
+   "materials": []
+  },
+  {
+   "name": "Collision_Body",
+   "type": "MESH",
+   "parent": "Collision",
+   "role": "collider",
+   "lod": null,
+   "collection": "COLLIDERS",
+   "materials": [
+    "QA_Collision_Body"
+   ]
+  },
+  {
+   "name": "Collision_Cabin",
+   "type": "MESH",
+   "parent": "Collision",
+   "role": "collider",
+   "lod": null,
+   "collection": "COLLIDERS",
+   "materials": [
+    "QA_Collision_Cabin"
+   ]
+  },
+  {
+   "name": "Collision_Front",
+   "type": "MESH",
+   "parent": "Collision",
+   "role": "collider",
+   "lod": null,
+   "collection": "COLLIDERS",
+   "materials": [
+    "QA_Collision_Front"
+   ]
+  },
+  {
+   "name": "Collision_Rear",
+   "type": "MESH",
+   "parent": "Collision",
+   "role": "collider",
+   "lod": null,
+   "collection": "COLLIDERS",
+   "materials": [
+    "QA_Collision_Rear"
+   ]
+  },
+  {
+   "name": "Collision_Side_L",
+   "type": "MESH",
+   "parent": "Collision",
+   "role": "collider",
+   "lod": null,
+   "collection": "COLLIDERS",
+   "materials": [
+    "QA_Collision_Side_L"
+   ]
+  },
+  {
+   "name": "Collision_Side_R",
+   "type": "MESH",
+   "parent": "Collision",
+   "role": "collider",
+   "lod": null,
+   "collection": "COLLIDERS",
+   "materials": [
+    "QA_Collision_Side_R"
+   ]
+  },
+  {
+   "name": "Dashboard_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Dashboard_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Dashboard_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Dashboard_Vents_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "Dashboard_Vents_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "Dashboard_Vents_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "DoorHandle_L_LOD0",
+   "type": "MESH",
+   "parent": "Door_L_LOD0",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "DoorHandle_L_LOD1",
+   "type": "MESH",
+   "parent": "Door_L_LOD1",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "DoorHandle_R_LOD0",
+   "type": "MESH",
+   "parent": "Door_R_LOD0",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "DoorHandle_R_LOD1",
+   "type": "MESH",
+   "parent": "Door_R_LOD1",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "DoorPanel_L_LOD0",
+   "type": "MESH",
+   "parent": "Door_L_LOD0",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "DoorPanel_L_LOD1",
+   "type": "MESH",
+   "parent": "Door_L_LOD1",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "DoorPanel_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "DoorPanel_R_LOD0",
+   "type": "MESH",
+   "parent": "Door_R_LOD0",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "DoorPanel_R_LOD1",
+   "type": "MESH",
+   "parent": "Door_R_LOD1",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "DoorPanel_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_AmbientLight"
+   ]
+  },
+  {
+   "name": "Door_L_LOD0",
+   "type": "EMPTY",
+   "parent": "LOD0_Root",
+   "role": "door_hinge_pivot",
+   "lod": null,
+   "collection": "LOD0_Body",
+   "materials": []
+  },
+  {
+   "name": "Door_L_LOD1",
+   "type": "EMPTY",
+   "parent": "LOD1_Root",
+   "role": "door_hinge_pivot",
+   "lod": null,
+   "collection": "LOD1_Body",
+   "materials": []
+  },
+  {
+   "name": "Door_R_LOD0",
+   "type": "EMPTY",
+   "parent": "LOD0_Root",
+   "role": "door_hinge_pivot",
+   "lod": null,
+   "collection": "LOD0_Body",
+   "materials": []
+  },
+  {
+   "name": "Door_R_LOD1",
+   "type": "EMPTY",
+   "parent": "LOD1_Root",
+   "role": "door_hinge_pivot",
+   "lod": null,
+   "collection": "LOD1_Body",
+   "materials": []
+  },
+  {
+   "name": "EngineBay_Detail_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "EngineBay_Detail_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "EngineBay_Detail_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "EngineGlass_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "EngineGlass_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "EngineGlass_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "EngineGlass_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "glass",
+   "lod": 3,
+   "collection": "LOD3_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "EngineVents_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "EngineVents_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "EngineVents_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Exhaust_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Exhaust_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Exhaust_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Exhaust_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Exhaust_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "Exhaust_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "FrontIntakeVanes_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "FrontIntakeVanes_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "FrontIntakeVanes_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "FrontSplitter_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "FrontSplitter_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "FrontSplitter_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "FrontSplitter_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "trim",
+   "lod": 3,
+   "collection": "LOD3_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "HeadlightLens_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "MAT_HeadlightLens"
+   ]
+  },
+  {
+   "name": "HeadlightLens_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "MAT_HeadlightLens"
+   ]
+  },
+  {
+   "name": "HeadlightLens_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "MAT_HeadlightLens"
+   ]
+  },
+  {
+   "name": "HeadlightLens_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "MAT_HeadlightLens"
+   ]
+  },
+  {
+   "name": "HeadlightLens_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "MAT_HeadlightLens"
+   ]
+  },
+  {
+   "name": "HeadlightLens_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "MAT_HeadlightLens"
+   ]
+  },
+  {
+   "name": "Headlight_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headlight_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headlight_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headlight_L_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "lights",
+   "lod": 3,
+   "collection": "LOD3_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headlight_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headlight_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headlight_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headlight_R_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "lights",
+   "lod": 3,
+   "collection": "LOD3_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  },
+  {
+   "name": "Headliner_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Headliner_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Headliner_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "InstrumentCluster_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_Display",
+    "LODMAT_Interior",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red"
+   ]
+  },
+  {
+   "name": "InstrumentCluster_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_Display",
+    "LODMAT_Interior",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red"
+   ]
+  },
+  {
+   "name": "InstrumentCluster_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "MAT_Display",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Interior_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "interior",
+   "lod": 3,
+   "collection": "LOD3_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Interior_Tub_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "Interior_Tub_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "Interior_Tub_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "LOD0_Root",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "lod_root",
+   "lod": null,
+   "collection": "Car_LOD0",
+   "materials": []
+  },
+  {
+   "name": "LOD1_Root",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "lod_root",
+   "lod": null,
+   "collection": "Car_LOD1",
+   "materials": []
+  },
+  {
+   "name": "LOD2_Root",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "lod_root",
+   "lod": null,
+   "collection": "Car_LOD2",
+   "materials": []
+  },
+  {
+   "name": "LOD3_Root",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "lod_root",
+   "lod": null,
+   "collection": "Car_LOD3",
+   "materials": []
+  },
+  {
+   "name": "MirrorGlass_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "MirrorGlass_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "MirrorGlass_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "MirrorGlass_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "MirrorGlass_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "MirrorGlass_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "Mirror_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint",
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Mirror_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint",
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Mirror_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Mirror_L_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "body",
+   "lod": 3,
+   "collection": "LOD3_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Mirror_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "body",
+   "lod": 0,
+   "collection": "LOD0_Body",
+   "materials": [
+    "LODMAT_Body_Paint",
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Mirror_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "body",
+   "lod": 1,
+   "collection": "LOD1_Body",
+   "materials": [
+    "LODMAT_Body_Paint",
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "Mirror_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "body",
+   "lod": 2,
+   "collection": "LOD2_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Mirror_R_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "body",
+   "lod": 3,
+   "collection": "LOD3_Body",
+   "materials": [
+    "LODMAT_Body_Paint"
+   ]
+  },
+  {
+   "name": "Paddle_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "Paddle_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "Paddle_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "Paddle_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "Pedal_Brake_Arm_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Pedal_Brake_Arm_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Pedal_Brake_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Pedal_Brake_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Pedal_Dead_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Pedal_Dead_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Pedal_Throttle_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Pedal_Throttle_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "PillarTrim_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "PillarTrim_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "PillarTrim_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "QuarterGlass_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "QuarterGlass_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "QuarterGlass_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "QuarterGlass_L_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "glass",
+   "lod": 3,
+   "collection": "LOD3_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "QuarterGlass_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "QuarterGlass_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "QuarterGlass_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "QuarterGlass_R_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "glass",
+   "lod": 3,
+   "collection": "LOD3_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "RearBulkhead_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "RearBulkhead_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon"
+   ]
+  },
+  {
+   "name": "RearBulkhead_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "RearDiffuser_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "RearDiffuser_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "RearDiffuser_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearDiffuser_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "trim",
+   "lod": 3,
+   "collection": "LOD3_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearFascia_Trim_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "RearFascia_Trim_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "RearFascia_Trim_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearVent_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior",
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearVent_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior",
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearVent_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearVent_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior",
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearVent_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior",
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearVent_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "RearViewMirror_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "RearViewMirror_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorMirror"
+   ]
+  },
+  {
+   "name": "Rear_Glass_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Rear_Glass_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Rear_Glass_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Rear_Glass_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "glass",
+   "lod": 3,
+   "collection": "LOD3_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Seat_Driver_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Seat_Driver_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Seat_Driver_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Seat_Passenger_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Seat_Passenger_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "MAT_InteriorCarbon",
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "Seat_Passenger_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "SideIntakeVane_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideIntakeVane_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideIntakeVane_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "SideIntakeVane_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideIntakeVane_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideIntakeVane_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "SideSkirt_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideSkirt_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideSkirt_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "SideSkirt_L_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "trim",
+   "lod": 3,
+   "collection": "LOD3_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "SideSkirt_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "trim",
+   "lod": 0,
+   "collection": "LOD0_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideSkirt_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "trim",
+   "lod": 1,
+   "collection": "LOD1_Aero_Trim",
+   "materials": [
+    "MAT_CarbonExterior"
+   ]
+  },
+  {
+   "name": "SideSkirt_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "trim",
+   "lod": 2,
+   "collection": "LOD2_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "SideSkirt_R_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "trim",
+   "lod": 3,
+   "collection": "LOD3_Aero_Trim",
+   "materials": [
+    "LODMAT_Trim"
+   ]
+  },
+  {
+   "name": "SteerPivot_FL_LOD0",
+   "type": "EMPTY",
+   "parent": "LOD0_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD0_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteerPivot_FL_LOD1",
+   "type": "EMPTY",
+   "parent": "LOD1_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD1_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteerPivot_FL_LOD2",
+   "type": "EMPTY",
+   "parent": "LOD2_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD2_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteerPivot_FL_LOD3",
+   "type": "EMPTY",
+   "parent": "LOD3_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD3_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteerPivot_FR_LOD0",
+   "type": "EMPTY",
+   "parent": "LOD0_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD0_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteerPivot_FR_LOD1",
+   "type": "EMPTY",
+   "parent": "LOD1_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD1_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteerPivot_FR_LOD2",
+   "type": "EMPTY",
+   "parent": "LOD2_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD2_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteerPivot_FR_LOD3",
+   "type": "EMPTY",
+   "parent": "LOD3_Root",
+   "role": "steering_pivot",
+   "lod": null,
+   "collection": "LOD3_Wheels",
+   "materials": []
+  },
+  {
+   "name": "SteeringColumn_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "SteeringColumn_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior"
+   ]
+  },
+  {
+   "name": "SteeringWheel_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "interior",
+   "lod": 0,
+   "collection": "LOD0_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon",
+    "MAT_Display"
+   ]
+  },
+  {
+   "name": "SteeringWheel_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "interior",
+   "lod": 1,
+   "collection": "LOD1_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_InteriorCarbon",
+    "MAT_Display"
+   ]
+  },
+  {
+   "name": "SteeringWheel_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "interior",
+   "lod": 2,
+   "collection": "LOD2_Interior",
+   "materials": [
+    "LODMAT_Interior",
+    "MAT_Display"
+   ]
+  },
+  {
+   "name": "TaillightLens_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "MAT_TaillightLens"
+   ]
+  },
+  {
+   "name": "TaillightLens_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "MAT_TaillightLens"
+   ]
+  },
+  {
+   "name": "TaillightLens_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "MAT_TaillightLens"
+   ]
+  },
+  {
+   "name": "TaillightLens_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "MAT_TaillightLens"
+   ]
+  },
+  {
+   "name": "TaillightLens_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "MAT_TaillightLens"
+   ]
+  },
+  {
+   "name": "TaillightLens_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "MAT_TaillightLens"
+   ]
+  },
+  {
+   "name": "Taillight_L_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Taillight_L_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Taillight_L_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Taillight_L_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "lights",
+   "lod": 3,
+   "collection": "LOD3_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Taillight_R_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "lights",
+   "lod": 0,
+   "collection": "LOD0_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Taillight_R_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "lights",
+   "lod": 1,
+   "collection": "LOD1_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Taillight_R_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "lights",
+   "lod": 2,
+   "collection": "LOD2_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Taillight_R_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "lights",
+   "lod": 3,
+   "collection": "LOD3_Lights",
+   "materials": [
+    "LODMAT_Lights",
+    "MAT_LED_Red",
+    "MAT_LED_Brake",
+    "MAT_LED_Amber",
+    "MAT_LED_Reverse"
+   ]
+  },
+  {
+   "name": "Tire_FL_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD0",
+   "role": "tires",
+   "lod": 0,
+   "collection": "LOD0_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_FL_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD1",
+   "role": "tires",
+   "lod": 1,
+   "collection": "LOD1_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_FL_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD2",
+   "role": "tires",
+   "lod": 2,
+   "collection": "LOD2_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_FL_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_FL_LOD3",
+   "role": "tires",
+   "lod": 3,
+   "collection": "LOD3_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_FR_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD0",
+   "role": "tires",
+   "lod": 0,
+   "collection": "LOD0_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_FR_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD1",
+   "role": "tires",
+   "lod": 1,
+   "collection": "LOD1_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_FR_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD2",
+   "role": "tires",
+   "lod": 2,
+   "collection": "LOD2_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_FR_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_FR_LOD3",
+   "role": "tires",
+   "lod": 3,
+   "collection": "LOD3_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RL_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD0",
+   "role": "tires",
+   "lod": 0,
+   "collection": "LOD0_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RL_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD1",
+   "role": "tires",
+   "lod": 1,
+   "collection": "LOD1_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RL_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD2",
+   "role": "tires",
+   "lod": 2,
+   "collection": "LOD2_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RL_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_RL_LOD3",
+   "role": "tires",
+   "lod": 3,
+   "collection": "LOD3_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RR_LOD0",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD0",
+   "role": "tires",
+   "lod": 0,
+   "collection": "LOD0_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RR_LOD1",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD1",
+   "role": "tires",
+   "lod": 1,
+   "collection": "LOD1_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RR_LOD2",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD2",
+   "role": "tires",
+   "lod": 2,
+   "collection": "LOD2_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "Tire_RR_LOD3",
+   "type": "MESH",
+   "parent": "Wheel_RR_LOD3",
+   "role": "tires",
+   "lod": 3,
+   "collection": "LOD3_Tires",
+   "materials": [
+    "LODMAT_Tire"
+   ]
+  },
+  {
+   "name": "WheelColliderRef_FL",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "wheel_collider_reference",
+   "lod": null,
+   "collection": "HC_Rig",
+   "materials": []
+  },
+  {
+   "name": "WheelColliderRef_FR",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "wheel_collider_reference",
+   "lod": null,
+   "collection": "HC_Rig",
+   "materials": []
+  },
+  {
+   "name": "WheelColliderRef_RL",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "wheel_collider_reference",
+   "lod": null,
+   "collection": "HC_Rig",
+   "materials": []
+  },
+  {
+   "name": "WheelColliderRef_RR",
+   "type": "EMPTY",
+   "parent": "Car_Root",
+   "role": "wheel_collider_reference",
+   "lod": null,
+   "collection": "HC_Rig",
+   "materials": []
+  },
+  {
+   "name": "Wheel_FL_LOD0",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD0",
+   "role": "wheel (rolls local X)",
+   "lod": 0,
+   "collection": "LOD0_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_FL_LOD1",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD1",
+   "role": "wheel (rolls local X)",
+   "lod": 1,
+   "collection": "LOD1_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_FL_LOD2",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD2",
+   "role": "wheel (rolls local X)",
+   "lod": 2,
+   "collection": "LOD2_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_FL_LOD3",
+   "type": "MESH",
+   "parent": "SteerPivot_FL_LOD3",
+   "role": "wheel (rolls local X)",
+   "lod": 3,
+   "collection": "LOD3_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_FR_LOD0",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD0",
+   "role": "wheel (rolls local X)",
+   "lod": 0,
+   "collection": "LOD0_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_FR_LOD1",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD1",
+   "role": "wheel (rolls local X)",
+   "lod": 1,
+   "collection": "LOD1_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_FR_LOD2",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD2",
+   "role": "wheel (rolls local X)",
+   "lod": 2,
+   "collection": "LOD2_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_FR_LOD3",
+   "type": "MESH",
+   "parent": "SteerPivot_FR_LOD3",
+   "role": "wheel (rolls local X)",
+   "lod": 3,
+   "collection": "LOD3_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RL_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 0,
+   "collection": "LOD0_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RL_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 1,
+   "collection": "LOD1_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RL_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 2,
+   "collection": "LOD2_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RL_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 3,
+   "collection": "LOD3_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RR_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 0,
+   "collection": "LOD0_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RR_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 1,
+   "collection": "LOD1_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RR_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 2,
+   "collection": "LOD2_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Wheel_RR_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "wheel (rolls local X)",
+   "lod": 3,
+   "collection": "LOD3_Wheels",
+   "materials": [
+    "LODMAT_Wheels"
+   ]
+  },
+  {
+   "name": "Window_FL_LOD0",
+   "type": "MESH",
+   "parent": "Door_L_LOD0",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Window_FL_LOD1",
+   "type": "MESH",
+   "parent": "Door_L_LOD1",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Window_FL_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Window_FL_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "glass",
+   "lod": 3,
+   "collection": "LOD3_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Window_FR_LOD0",
+   "type": "MESH",
+   "parent": "Door_R_LOD0",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Window_FR_LOD1",
+   "type": "MESH",
+   "parent": "Door_R_LOD1",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Window_FR_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Window_FR_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "glass",
+   "lod": 3,
+   "collection": "LOD3_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Windshield_LOD0",
+   "type": "MESH",
+   "parent": "LOD0_Root",
+   "role": "glass",
+   "lod": 0,
+   "collection": "LOD0_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Windshield_LOD1",
+   "type": "MESH",
+   "parent": "LOD1_Root",
+   "role": "glass",
+   "lod": 1,
+   "collection": "LOD1_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Windshield_LOD2",
+   "type": "MESH",
+   "parent": "LOD2_Root",
+   "role": "glass",
+   "lod": 2,
+   "collection": "LOD2_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  },
+  {
+   "name": "Windshield_LOD3",
+   "type": "MESH",
+   "parent": "LOD3_Root",
+   "role": "glass",
+   "lod": 3,
+   "collection": "LOD3_Glass",
+   "materials": [
+    "LODMAT_Glass"
+   ]
+  }
+ ],
+ "exclude": [
+  "REFERENCE_Master (REFERENCE_ONLY)",
+  "HC_Studio / cameras / lights",
+  "HC_Cutters*",
+  "HC_QC_Reflection",
+  "HC_Daylight / HC_Night",
+  "HC_Interior_QA"
+ ],
+ "notes": [
+  "Colliders carry QA_* debug materials only: strip renderers on import, keep MeshCollider(convex)",
+  "Normal maps are OpenGL (+Y) tangent space",
+  "AO maps are in textures/hypercar/<atlas>/<ATLAS>_AO.png"
+ ],
+ "counts": {
+  "body": 32,
+  "brakes": 32,
+  "center_of_mass": 1,
+  "collider": 6,
+  "collider_root": 1,
+  "door_hinge_pivot": 4,
+  "glass": 34,
+  "interior": 65,
+  "lights": 28,
+  "lod_root": 4,
+  "root": 1,
+  "spoiler (pivot = hinge)": 4,
+  "steering_pivot": 8,
+  "tires": 16,
+  "trim": 52,
+  "wheel (rolls local X)": 16,
+  "wheel_collider_reference": 4
+ }
+}

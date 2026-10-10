@@ -1,0 +1,141 @@
+[PASS] units METRIC scale 1.0
+[PASS] unapplied object scale: none
+[PASS] length 4.695 m (target 4.6-4.75)
+[PASS] width (body, no mirrors) 2.052 m (target 2.0-2.08)
+[PASS] height 1.173 m (target 1.12-1.2)
+[PASS] ground clearance 0.105 m (target 0.1-0.13)
+[INFO] width incl. mirrors 2.211 m
+[INFO] body shell bounds x[-1.025,1.025] y[-2.397,2.249] z[0.130,1.173]
+[PASS] wheel collider refs present
+[PASS] wheelbase 2.780 m (target 2.72-2.82)
+[INFO] front overhang 1.035 m, rear overhang 0.880 m (incl. splitter / diffuser)
+[PASS] Tire_FL center vs ref offset 0.0 mm
+[PASS] Tire_FL axle along X, sits on ground (min z 0.0005)
+[PASS] Tire_FL diameter 0.709 m (target 0.7-0.72)
+[PASS] Tire_FL width 0.309 m (target 0.3-0.32)
+[PASS] Tire_FL rotation identity (spin axis X)
+[PASS] Tire_FR center vs ref offset 0.0 mm
+[PASS] Tire_FR axle along X, sits on ground (min z 0.0005)
+[PASS] Tire_FR diameter 0.709 m (target 0.7-0.72)
+[PASS] Tire_FR width 0.309 m (target 0.3-0.32)
+[PASS] Tire_FR rotation identity (spin axis X)
+[PASS] Tire_RL center vs ref offset 0.0 mm
+[PASS] Tire_RL axle along X, sits on ground (min z 0.0005)
+[PASS] Tire_RL diameter 0.754 m (target 0.74-0.77)
+[PASS] Tire_RL width 0.349 m (target 0.34-0.36)
+[PASS] Tire_RL rotation identity (spin axis X)
+[PASS] Tire_RR center vs ref offset 0.0 mm
+[PASS] Tire_RR axle along X, sits on ground (min z 0.0005)
+[PASS] Tire_RR diameter 0.754 m (target 0.74-0.77)
+[PASS] Tire_RR width 0.349 m (target 0.34-0.36)
+[PASS] Tire_RR rotation identity (spin axis X)
+[PASS] Tire_FL vs Body_Shell overlap faces: 0
+[PASS] Rim_FL vs Body_Shell overlap faces: 0
+[PASS] Caliper_FL vs Body_Shell overlap faces: 0
+[PASS] Tire_FR vs Body_Shell overlap faces: 0
+[PASS] Rim_FR vs Body_Shell overlap faces: 0
+[PASS] Caliper_FR vs Body_Shell overlap faces: 0
+[PASS] Tire_RL vs Body_Shell overlap faces: 0
+[PASS] Rim_RL vs Body_Shell overlap faces: 0
+[PASS] Caliper_RL vs Body_Shell overlap faces: 0
+[PASS] Tire_RR vs Body_Shell overlap faces: 0
+[PASS] Rim_RR vs Body_Shell overlap faces: 0
+[PASS] Caliper_RR vs Body_Shell overlap faces: 0
+[INFO] Body_Shell evaluated non-manifold edges: 880 (glazing openings - see phase-5 check)
+[PASS] Body_Shell normals outward (signed volume 4.537 m3)
+[INFO] evaluated triangles: body 212,906, whole car 481,321
+[INFO] Body_Shell base cage: 3739 faces, ngons: 0, tris: 0
+[PASS] buttress air gap (m) by y: 0.8:0.088, 1.0:0.137, 1.2:0.147, 1.4:0.140
+[PASS] approved blockout checkpoint preserved
+[PASS] brake vs rim FL overlap faces: 0
+[PASS] brake vs rim FR overlap faces: 0
+[PASS] brake vs rim RL overlap faces: 0
+[PASS] brake vs rim RR overlap faces: 0
+[PASS] ActiveSpoiler vs body overlap faces: 0; top above seat floor 0.014..0.049 m
+[PASS] HeadlightLens_L seated in recess (body overlap faces: 0)
+[PASS] HeadlightLens_R seated in recess (body overlap faces: 0)
+[PASS] TaillightLens_L seated in recess (body overlap faces: 0)
+[PASS] TaillightLens_R seated in recess (body overlap faces: 0)
+[INFO] RearDiffuser vane roots embedded in body underside (872 overlapping face pairs = integrated, not floating)
+[PASS] zero-area faces (base meshes): 0
+[PASS] loose vertices (base meshes): 0
+[INFO] triangles by category: Body 270,034, Wheels 13,840, Tires 73,728, Brakes 10,760, Lights 11,050, Aero 6,060, Glass/Mirrors 25,860, Interior 58,781, Trim/Other 11,208
+[PASS] glass objects present: 7/7 
+[PASS] glass faces left in evaluated Body_Shell: 0
+[PASS] Body_Shell unintended non-manifold edges (before glazing openings): 0
+[PASS] intentional open edges = glazing openings framed by seals: 880 (all on seal frames: True)
+[PASS] Windshield: body overlap faces 0, thickness 5 mm, origin (0.0, -0.364, 0.957)
+[PASS] Rear_Glass: body overlap faces 0, thickness 5 mm, origin (0.0, 0.692, 1.026)
+[PASS] Window_FL: body overlap faces 0, thickness 5 mm, origin (0.56, -0.065, 0.928)
+[PASS] Window_FR: body overlap faces 0, thickness 5 mm, origin (-0.56, -0.065, 0.928)
+[PASS] QuarterGlass_L: body overlap faces 0, thickness 5 mm, origin (0.524, 0.724, 0.911)
+[PASS] QuarterGlass_R: body overlap faces 0, thickness 5 mm, origin (-0.524, 0.724, 0.911)
+[PASS] EngineGlass: body overlap faces 0, thickness 5 mm, origin (0.0, 1.098, 0.923)
+[PASS] interior objects vs Body_Shell checked: 24
+[PASS] Seat_Driver vs DoorPanel_L overlap faces: 0
+[PASS] Seat_Passenger vs DoorPanel_R overlap faces: 0
+[PASS] Seat_Driver vs CenterConsole overlap faces: 0
+[PASS] Seat_Passenger vs CenterConsole overlap faces: 0
+[PASS] Seat_Driver vs CenterTunnel overlap faces: 0
+[PASS] Seat_Passenger vs CenterTunnel overlap faces: 0
+[PASS] Seat_Driver vs Headliner overlap faces: 0
+[PASS] Seat_Passenger vs Headliner overlap faces: 0
+[PASS] Seat_Driver vs RearBulkhead overlap faces: 0
+[PASS] Dashboard vs Windshield overlap faces: 0
+[PASS] RearViewMirror vs Windshield overlap faces: 0
+[PASS] InstrumentCluster vs Windshield overlap faces: 0
+[PASS] EngineBay_Detail vs EngineGlass overlap faces: 0
+[PASS] SteeringWheel vs Dashboard overlap faces: 0
+[PASS] SteeringWheel vs InstrumentCluster overlap faces: 0
+[PASS] CenterScreen vs Dashboard overlap faces: 0
+[PASS] Headliner vs Windshield overlap faces: 0
+[PASS] PillarTrim vs Windshield overlap faces: 0
+[PASS] PillarTrim vs Window_FL overlap faces: 0
+[PASS] PillarTrim vs Window_FR overlap faces: 0
+[PASS] headroom headrest->headliner: 86.9 mm (min of both seats)
+[PASS] SteeringWheel origin (0.36, -0.2, 0.645) on steering axis, local Z = (0.0, 0.91, 0.42)
+[PASS] Pedal_Brake pad centre 0.983 m from driver H-point (realistic 0.85-1.15)
+[PASS] Pedal_Throttle pad centre 1.048 m from driver H-point (realistic 0.85-1.15)
+[PASS] interior triangles: base 28,865, evaluated 58,781 (target 40-70k / 80-140k)
+[PASS] LHD: Seat_Driver x=+0.360, Seat_Passenger x=-0.360
+[PASS] steering wheel centred on driver: dx=+0.0000 m
+[PASS] cluster display centred on wheel: dx=+0.0000 m
+[PASS] pedals: brake x=+0.405, throttle x=+0.275 (throttle inboard = driver's right foot)
+[PASS] Camera_Cockpit_QA x=+0.360 (driver eye)
+[PASS] rear-view mirror centred: x=+0.0000
+[PASS] centre screen angled toward driver (+X): normal.x sum +0.127
+[PASS] meshes with UVMap: 84/84 
+[PASS] UV loops outside 0-1: 0
+[PASS] flipped UV faces: 0/61797 (0.00%) top: []
+[PASS] severe area-stretch faces (>4x from object median): 494 (0.80%)
+[PASS] BODY atlas: coverage 53.6%, overlapping texels 0.00% (512 raster)
+[PASS] TRIM atlas: coverage 58.0%, overlapping texels 0.04% (512 raster)
+[PASS] WHEELS atlas: coverage 33.7%, overlapping texels 0.00% (512 raster)
+[PASS] BRAKES atlas: coverage 48.3%, overlapping texels 0.00% (512 raster)
+[PASS] LIGHTS atlas: coverage 43.6%, overlapping texels 0.00% (512 raster)
+[PASS] GLASS atlas: coverage 56.3%, overlapping texels 0.00% (512 raster)
+[PASS] INTERIOR atlas: coverage 34.0%, overlapping texels 0.62% (512 raster)
+[INFO] TIRES atlas: intentional overlap (all tires + both half-circumferences share one lettering map)
+[INFO] texel density px/m: {'BODY': 424.3, 'INTERIOR': 672.2, 'WHEELS': 617.1, 'TIRES': 2781.3, 'LIGHTS': 2868.5, 'BRAKES': 521.6, 'GLASS': 642.6, 'TRIM': 261.1}
+[PASS] non-production materials on car: none
+[PASS] production materials: 39 (36 in use)
+[PASS] missing texture files: none
+[PASS] absolute texture paths: none (all relative)
+[PASS] normal maps: tangent space + Non-Color, OpenGL (+Y) 
+[PASS] baked atlas maps: 40/40; texture files total 48 
+[PASS] MAT_Windshield: transmission 1.00, IOR 1.46, shadow-transparent
+[PASS] MAT_SideGlass: transmission 1.00, IOR 1.46, shadow-transparent
+[PASS] MAT_RearGlass: transmission 1.00, IOR 1.46, shadow-transparent
+[PASS] MAT_EngineGlass: transmission 1.00, IOR 1.46, shadow-transparent
+[PASS] emitters (strength): [('MAT_AmbientLight', 1.2), ('MAT_Display', 0.6), ('MAT_DisplayGraphics', 1.4), ('MAT_DisplayGraphics_Red', 1.6), ('MAT_LED_Amber', 0.8), ('MAT_LED_Brake', 1.2), ('MAT_LED_Red', 5.0), ('MAT_LED_Reverse', 0.25), ('MAT_LED_White', 6.0)]
+[PASS] duplicate-suffixed objects: none
+[PASS] required objects missing: none
+[PASS] objects not parented under Car_Root: none
+[PASS] hidden render geometry (non-cutter): none
+[PASS] boolean cutters visible in render: none
+[PASS] CenterOfMass at (0.0, 0.12, 0.35) (rear-biased, low)
+[PASS] objects with empty material slots: none
+[INFO] materials are PRE_* blockout preview shaders; production materials are phase 6
+[PASS] meshes without UVs: 0 (expected until phase 6)
+[PASS] missing texture links: none
+[INFO] LOD0-3 and Collision_* not created yet (phase 7/8)

@@ -1,0 +1,8 @@
+{
+ "asset": "Traffic_SUV_A",
+ "source_checkpoint": "trafficsuva_08_rig.blend",
+ "export_checkpoint": "trafficsuva_09_export_ready.blend",
+ "files": {},
+ "blender_only": true,
+ "note": "TS_NO_FBX: no FBX / UnityTransfer generated (Blender-only production). Hierarchy verified: complete set == collection TRAFFIC_SUV_A (71 objects)"
+}

@@ -1,0 +1,537 @@
+{
+ "source": "/Users/meetshah/Documents/blender/vehicles/B_ZeroGapR/blend/zerogapr_09_export_ready.blend",
+ "thresholds": {
+  "fail_pct": 1.0,
+  "warn_pct": 0.3,
+  "angle_deg": 50
+ },
+ "summary": {
+  "PASS": 23,
+  "WARN": 2,
+  "FAIL": 62
+ },
+ "meshes": {
+  "Body_LOD0": {
+   "lod": 0,
+   "torn_pct": 1.818,
+   "loops": 75480,
+   "verdict": "FAIL"
+  },
+  "Body_LOD1": {
+   "lod": 1,
+   "torn_pct": 3.949,
+   "loops": 55554,
+   "verdict": "FAIL"
+  },
+  "Body_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.015,
+   "loops": 26625,
+   "verdict": "PASS"
+  },
+  "Body_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 9423,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 22.104,
+   "loops": 2633,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 25.723,
+   "loops": 692,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 47.414,
+   "loops": 232,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 22.538,
+   "loops": 2640,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 25.723,
+   "loops": 692,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 47.414,
+   "loops": 232,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 22.513,
+   "loops": 2634,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 25.723,
+   "loops": 692,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 47.414,
+   "loops": 232,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 23.607,
+   "loops": 2639,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 25.723,
+   "loops": 692,
+   "verdict": "FAIL"
+  },
+  "BrakeDisc_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 47.414,
+   "loops": 232,
+   "verdict": "FAIL"
+  },
+  "Caliper_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 26.471,
+   "loops": 272,
+   "verdict": "FAIL"
+  },
+  "Caliper_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 28.947,
+   "loops": 38,
+   "verdict": "FAIL"
+  },
+  "Caliper_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 50.0,
+   "loops": 28,
+   "verdict": "FAIL"
+  },
+  "Caliper_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 25.912,
+   "loops": 274,
+   "verdict": "FAIL"
+  },
+  "Caliper_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 38.889,
+   "loops": 36,
+   "verdict": "FAIL"
+  },
+  "Caliper_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 58.333,
+   "loops": 24,
+   "verdict": "FAIL"
+  },
+  "Caliper_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 25.725,
+   "loops": 276,
+   "verdict": "FAIL"
+  },
+  "Caliper_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 28.947,
+   "loops": 38,
+   "verdict": "FAIL"
+  },
+  "Caliper_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 40.0,
+   "loops": 30,
+   "verdict": "FAIL"
+  },
+  "Caliper_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 26.296,
+   "loops": 270,
+   "verdict": "FAIL"
+  },
+  "Caliper_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 33.333,
+   "loops": 36,
+   "verdict": "FAIL"
+  },
+  "Caliper_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 53.571,
+   "loops": 28,
+   "verdict": "FAIL"
+  },
+  "Door_L_LOD0": {
+   "lod": 0,
+   "torn_pct": 4.657,
+   "loops": 3264,
+   "verdict": "FAIL"
+  },
+  "Door_L_LOD1": {
+   "lod": 1,
+   "torn_pct": 4.167,
+   "loops": 2400,
+   "verdict": "FAIL"
+  },
+  "Door_L_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1200,
+   "verdict": "PASS"
+  },
+  "Door_L_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 462,
+   "verdict": "PASS"
+  },
+  "Door_R_LOD0": {
+   "lod": 0,
+   "torn_pct": 4.657,
+   "loops": 3264,
+   "verdict": "FAIL"
+  },
+  "Door_R_LOD1": {
+   "lod": 1,
+   "torn_pct": 4.583,
+   "loops": 2400,
+   "verdict": "FAIL"
+  },
+  "Door_R_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1200,
+   "verdict": "PASS"
+  },
+  "Door_R_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 462,
+   "verdict": "PASS"
+  },
+  "Glass_LOD0": {
+   "lod": 0,
+   "torn_pct": 3.578,
+   "loops": 4919,
+   "verdict": "FAIL"
+  },
+  "Glass_LOD1": {
+   "lod": 1,
+   "torn_pct": 5.108,
+   "loops": 5286,
+   "verdict": "FAIL"
+  },
+  "Glass_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.38,
+   "loops": 3417,
+   "verdict": "WARN"
+  },
+  "Glass_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.167,
+   "loops": 1794,
+   "verdict": "PASS"
+  },
+  "Interior_LOD0": {
+   "lod": 0,
+   "torn_pct": 9.374,
+   "loops": 23544,
+   "verdict": "FAIL"
+  },
+  "Interior_LOD1": {
+   "lod": 1,
+   "torn_pct": 8.556,
+   "loops": 10998,
+   "verdict": "FAIL"
+  },
+  "Interior_LOD2": {
+   "lod": 2,
+   "torn_pct": 15.901,
+   "loops": 5182,
+   "verdict": "FAIL"
+  },
+  "Interior_LOD3": {
+   "lod": 3,
+   "torn_pct": 58.293,
+   "loops": 1254,
+   "verdict": "FAIL"
+  },
+  "Lights_LOD0": {
+   "lod": 0,
+   "torn_pct": 6.959,
+   "loops": 17115,
+   "verdict": "FAIL"
+  },
+  "Lights_LOD1": {
+   "lod": 1,
+   "torn_pct": 15.502,
+   "loops": 8586,
+   "verdict": "FAIL"
+  },
+  "Lights_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.073,
+   "loops": 4134,
+   "verdict": "PASS"
+  },
+  "Lights_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.073,
+   "loops": 1374,
+   "verdict": "PASS"
+  },
+  "SteeringWheel_LOD0": {
+   "lod": 0,
+   "torn_pct": 1.256,
+   "loops": 1911,
+   "verdict": "FAIL"
+  },
+  "SteeringWheel_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.803,
+   "loops": 996,
+   "verdict": "WARN"
+  },
+  "SteeringWheel_LOD2": {
+   "lod": 2,
+   "torn_pct": 12.353,
+   "loops": 340,
+   "verdict": "FAIL"
+  },
+  "Tire_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5464,
+   "verdict": "PASS"
+  },
+  "Tire_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 3474,
+   "verdict": "PASS"
+  },
+  "Tire_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1024,
+   "verdict": "PASS"
+  },
+  "Tire_FL_LOD3": {
+   "lod": 3,
+   "torn_pct": 7.202,
+   "loops": 486,
+   "verdict": "FAIL"
+  },
+  "Tire_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5464,
+   "verdict": "PASS"
+  },
+  "Tire_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 3474,
+   "verdict": "PASS"
+  },
+  "Tire_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1024,
+   "verdict": "PASS"
+  },
+  "Tire_FR_LOD3": {
+   "lod": 3,
+   "torn_pct": 5.144,
+   "loops": 486,
+   "verdict": "FAIL"
+  },
+  "Tire_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5384,
+   "verdict": "PASS"
+  },
+  "Tire_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 3444,
+   "verdict": "PASS"
+  },
+  "Tire_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1024,
+   "verdict": "PASS"
+  },
+  "Tire_RL_LOD3": {
+   "lod": 3,
+   "torn_pct": 6.584,
+   "loops": 486,
+   "verdict": "FAIL"
+  },
+  "Tire_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5384,
+   "verdict": "PASS"
+  },
+  "Tire_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 3444,
+   "verdict": "PASS"
+  },
+  "Tire_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1024,
+   "verdict": "PASS"
+  },
+  "Tire_RR_LOD3": {
+   "lod": 3,
+   "torn_pct": 6.379,
+   "loops": 486,
+   "verdict": "FAIL"
+  },
+  "Trim_LOD0": {
+   "lod": 0,
+   "torn_pct": 19.325,
+   "loops": 29283,
+   "verdict": "FAIL"
+  },
+  "Trim_LOD1": {
+   "lod": 1,
+   "torn_pct": 33.236,
+   "loops": 12279,
+   "verdict": "FAIL"
+  },
+  "Trim_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.061,
+   "loops": 4944,
+   "verdict": "PASS"
+  },
+  "Trim_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 1167,
+   "verdict": "PASS"
+  },
+  "Wheel_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 10.867,
+   "loops": 6423,
+   "verdict": "FAIL"
+  },
+  "Wheel_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 4.058,
+   "loops": 2760,
+   "verdict": "FAIL"
+  },
+  "Wheel_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 40.863,
+   "loops": 996,
+   "verdict": "FAIL"
+  },
+  "Wheel_FL_LOD3": {
+   "lod": 3,
+   "torn_pct": 49.51,
+   "loops": 408,
+   "verdict": "FAIL"
+  },
+  "Wheel_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 10.868,
+   "loops": 6450,
+   "verdict": "FAIL"
+  },
+  "Wheel_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 4.035,
+   "loops": 2776,
+   "verdict": "FAIL"
+  },
+  "Wheel_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 39.96,
+   "loops": 996,
+   "verdict": "FAIL"
+  },
+  "Wheel_FR_LOD3": {
+   "lod": 3,
+   "torn_pct": 51.471,
+   "loops": 408,
+   "verdict": "FAIL"
+  },
+  "Wheel_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 10.28,
+   "loops": 6420,
+   "verdict": "FAIL"
+  },
+  "Wheel_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 4.441,
+   "loops": 2792,
+   "verdict": "FAIL"
+  },
+  "Wheel_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 40.04,
+   "loops": 994,
+   "verdict": "FAIL"
+  },
+  "Wheel_RL_LOD3": {
+   "lod": 3,
+   "torn_pct": 48.775,
+   "loops": 408,
+   "verdict": "FAIL"
+  },
+  "Wheel_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 10.118,
+   "loops": 6444,
+   "verdict": "FAIL"
+  },
+  "Wheel_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 4.416,
+   "loops": 2808,
+   "verdict": "FAIL"
+  },
+  "Wheel_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 39.135,
+   "loops": 994,
+   "verdict": "FAIL"
+  },
+  "Wheel_RR_LOD3": {
+   "lod": 3,
+   "torn_pct": 49.755,
+   "loops": 408,
+   "verdict": "FAIL"
+  }
+ }
+}

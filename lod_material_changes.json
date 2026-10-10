@@ -1,0 +1,23 @@
+{
+  "new_shared_variants": [
+    "MAT_Tire_LOD_Detail",
+    "MAT_InteriorAlcantara_LOD_Detail",
+    "MAT_InteriorCarbon_LOD_Detail",
+    "MAT_InteriorLeather_LOD_Detail",
+    "MAT_InteriorMetal_LOD_Detail",
+    "MAT_InteriorPlastic_LOD_Detail",
+    "MAT_Display_LOD_Detail",
+    "MAT_Speaker_LOD_Detail",
+    "MAT_InteriorMirror_LOD_Detail",
+    "MAT_SeatAccent_LOD_Detail"
+  ],
+  "normal_space": "Tangent +Y",
+  "images": {
+    "interior_Normal": "textures/racing_car/interior/lod_detail_Normal.png",
+    "interior_AO": "textures/racing_car/interior/lod_detail_AO.png",
+    "tires_Normal": "textures/racing_car/tires/lod_detail_Normal.png",
+    "tires_AO": "textures/racing_car/tires/lod_detail_AO.png"
+  },
+  "letter_mask": "//textures/racing_car/tires/lod_detail_Mask.png",
+  "note": "AO provided separately, not multiplied into Cycles lighting. Normal detail adds to existing tangent micro-normal; gross shape kept in mesh."
+}

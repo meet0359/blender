@@ -1,0 +1,30 @@
+{
+ "LOD0_vs_Master": {
+  "side": 99.93,
+  "front": 99.9,
+  "rear": 99.87,
+  "front_3q": 99.92,
+  "rear_3q": 99.91
+ },
+ "LOD1_vs_LOD0": {
+  "side": 99.94,
+  "front": 99.9,
+  "rear": 99.89,
+  "front_3q": 99.93,
+  "rear_3q": 99.92
+ },
+ "LOD2_vs_LOD0": {
+  "side": 99.69,
+  "front": 99.71,
+  "rear": 99.67,
+  "front_3q": 99.72,
+  "rear_3q": 99.62
+ },
+ "LOD3_vs_LOD0": {
+  "side": 99.57,
+  "front": 99.45,
+  "rear": 99.54,
+  "front_3q": 99.51,
+  "rear_3q": 99.47
+ }
+}

@@ -1,0 +1,377 @@
+{
+  "MAT_BlackPlastic_Engine": {
+    "source_material": "MAT_BlackPlastic",
+    "texture_set": "plastic",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "plastic_BaseColor": "//textures/racing_car/trim/plastic_BaseColor.png",
+      "plastic_ORM": "//textures/racing_car/game/plastic_ORM.png",
+      "plastic_Normal": "//textures/racing_car/trim/plastic_Normal.png"
+    }
+  },
+  "MAT_BrakeCaliper_Engine": {
+    "source_material": "MAT_BrakeCaliper",
+    "texture_set": "caliper",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "caliper_BaseColor": "//textures/racing_car/brakes/caliper_BaseColor.png",
+      "caliper_ORM": "//textures/racing_car/game/caliper_ORM.png",
+      "caliper_Normal": "//textures/racing_car/brakes/caliper_Normal.png"
+    }
+  },
+  "MAT_BrakeDisc_Engine": {
+    "source_material": "MAT_BrakeDisc",
+    "texture_set": "rotor",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "rotor_BaseColor": "//textures/racing_car/brakes/rotor_BaseColor.png",
+      "rotor_ORM": "//textures/racing_car/game/rotor_ORM.png",
+      "rotor_Normal": "//textures/racing_car/brakes/rotor_Normal.png"
+    }
+  },
+  "MAT_BrushedMetal_Engine": {
+    "source_material": "MAT_BrushedMetal",
+    "texture_set": "metal",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_BrushedMetal_BaseColor": "//textures/racing_car/game/MAT_BrushedMetal_BaseColor.png",
+      "metal_ORM": "//textures/racing_car/game/metal_ORM.png",
+      "metal_Normal": "//textures/racing_car/wheels/metal_Normal.png"
+    }
+  },
+  "MAT_CarPaint_Engine": {
+    "source_material": "MAT_CarPaint",
+    "texture_set": "paint",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "paint_BaseColor": "//textures/racing_car/body/paint_BaseColor.png",
+      "paint_ORM": "//textures/racing_car/game/paint_ORM.png",
+      "paint_Normal": "//textures/racing_car/body/paint_Normal.png"
+    }
+  },
+  "MAT_CarbonFiber_Engine": {
+    "source_material": "MAT_CarbonFiber",
+    "texture_set": "carbon",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "carbon_BaseColor": "//textures/racing_car/trim/carbon_BaseColor.png",
+      "carbon_ORM": "//textures/racing_car/game/carbon_ORM.png",
+      "carbon_Normal": "//textures/racing_car/trim/carbon_Normal.png"
+    }
+  },
+  "MAT_Chrome_Engine": {
+    "source_material": "MAT_Chrome",
+    "texture_set": "chrome",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "chrome_BaseColor": "//textures/racing_car/trim/chrome_BaseColor.png",
+      "chrome_ORM": "//textures/racing_car/game/chrome_ORM.png",
+      "chrome_Normal": "//textures/racing_car/trim/chrome_Normal.png"
+    }
+  },
+  "MAT_Display_LOD_Detail_Engine": {
+    "source_material": "MAT_Display_LOD_Detail",
+    "texture_set": null,
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "lod_detail_Normal": "//textures/racing_car/interior/lod_detail_Normal.png"
+    },
+    "emission": {
+      "color_linear": [
+        0.014000000432133675,
+        0.032999999821186066,
+        0.05000000074505806
+      ],
+      "strength": 0.3499999940395355
+    }
+  },
+  "MAT_EmissiveAmber_Engine": {
+    "source_material": "MAT_EmissiveAmber",
+    "texture_set": null,
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {},
+    "emission": {
+      "color_linear": [
+        0.800000011920929,
+        0.1599999964237213,
+        0.0020000000949949026
+      ],
+      "strength": 1.2999999523162842
+    }
+  },
+  "MAT_EmissiveRed_Engine": {
+    "source_material": "MAT_EmissiveRed",
+    "texture_set": null,
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {},
+    "emission": {
+      "color_linear": [
+        0.6499999761581421,
+        0.004999999888241291,
+        0.008999999612569809
+      ],
+      "strength": 1.2999999523162842
+    }
+  },
+  "MAT_EmissiveWhite_Engine": {
+    "source_material": "MAT_EmissiveWhite",
+    "texture_set": null,
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {},
+    "emission": {
+      "color_linear": [
+        0.7599999904632568,
+        0.8700000047683716,
+        1.0
+      ],
+      "strength": 2.0
+    }
+  },
+  "MAT_Glass_LOD_Thin_Engine": {
+    "source_material": "MAT_Glass_LOD_Thin",
+    "texture_set": null,
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {},
+    "glass": {
+      "tint_linear": [
+        0.83,
+        0.91,
+        0.95
+      ],
+      "roughness": 0.025,
+      "alpha": 0.18,
+      "transmission": 1,
+      "ior": 1.46,
+      "note": "Portable Principled approximation. Recreate original thin Fresnel reflection/straight-through model in the target engine; FBX transparency is approximate."
+    }
+  },
+  "MAT_HeadlightHousing_Engine": {
+    "source_material": "MAT_HeadlightHousing",
+    "texture_set": "plastic",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_HeadlightHousing_BaseColor": "//textures/racing_car/game/MAT_HeadlightHousing_BaseColor.png",
+      "plastic_ORM": "//textures/racing_car/game/plastic_ORM.png",
+      "plastic_Normal": "//textures/racing_car/trim/plastic_Normal.png"
+    }
+  },
+  "MAT_HeadlightLens_Engine": {
+    "source_material": "MAT_HeadlightLens",
+    "texture_set": "lens",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "lens_BaseColor": "//textures/racing_car/lights/lens_BaseColor.png",
+      "lens_ORM": "//textures/racing_car/game/lens_ORM.png",
+      "lens_Normal": "//textures/racing_car/lights/lens_Normal.png"
+    }
+  },
+  "MAT_InteriorAlcantara_LOD_Detail_Engine": {
+    "source_material": "MAT_InteriorAlcantara_LOD_Detail",
+    "texture_set": "alcantara",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "alcantara_BaseColor": "//textures/racing_car/interior/alcantara_BaseColor.png",
+      "alcantara_ORM": "//textures/racing_car/game/alcantara_ORM.png",
+      "MAT_InteriorAlcantara_LOD_Detail_Normal": "//textures/racing_car/game/MAT_InteriorAlcantara_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_InteriorCarbon_LOD_Detail_Engine": {
+    "source_material": "MAT_InteriorCarbon_LOD_Detail",
+    "texture_set": "carbon",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "carbon_BaseColor": "//textures/racing_car/trim/carbon_BaseColor.png",
+      "carbon_ORM": "//textures/racing_car/game/carbon_ORM.png",
+      "MAT_InteriorCarbon_LOD_Detail_Normal": "//textures/racing_car/game/MAT_InteriorCarbon_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_InteriorLeather_LOD_Detail_Engine": {
+    "source_material": "MAT_InteriorLeather_LOD_Detail",
+    "texture_set": "leather",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "leather_BaseColor": "//textures/racing_car/interior/leather_BaseColor.png",
+      "leather_ORM": "//textures/racing_car/game/leather_ORM.png",
+      "MAT_InteriorLeather_LOD_Detail_Normal": "//textures/racing_car/game/MAT_InteriorLeather_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_InteriorMetal_LOD_Detail_Engine": {
+    "source_material": "MAT_InteriorMetal_LOD_Detail",
+    "texture_set": "metal",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_InteriorMetal_LOD_Detail_BaseColor": "//textures/racing_car/game/MAT_InteriorMetal_LOD_Detail_BaseColor.png",
+      "metal_ORM": "//textures/racing_car/game/metal_ORM.png",
+      "MAT_InteriorMetal_LOD_Detail_Normal": "//textures/racing_car/game/MAT_InteriorMetal_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_InteriorMirror_LOD_Detail_Engine": {
+    "source_material": "MAT_InteriorMirror_LOD_Detail",
+    "texture_set": null,
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "lod_detail_Normal": "//textures/racing_car/interior/lod_detail_Normal.png"
+    }
+  },
+  "MAT_InteriorPlastic_LOD_Detail_Engine": {
+    "source_material": "MAT_InteriorPlastic_LOD_Detail",
+    "texture_set": "plastic",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_InteriorPlastic_LOD_Detail_BaseColor": "//textures/racing_car/game/MAT_InteriorPlastic_LOD_Detail_BaseColor.png",
+      "plastic_ORM": "//textures/racing_car/game/plastic_ORM.png",
+      "MAT_InteriorPlastic_LOD_Detail_Normal": "//textures/racing_car/game/MAT_InteriorPlastic_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_ProjectorLens_Engine": {
+    "source_material": "MAT_ProjectorLens",
+    "texture_set": "lens",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_ProjectorLens_BaseColor": "//textures/racing_car/game/MAT_ProjectorLens_BaseColor.png",
+      "lens_ORM": "//textures/racing_car/game/lens_ORM.png",
+      "lens_Normal": "//textures/racing_car/lights/lens_Normal.png"
+    }
+  },
+  "MAT_SeatAccent_LOD_Detail_Engine": {
+    "source_material": "MAT_SeatAccent_LOD_Detail",
+    "texture_set": "leather",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_SeatAccent_LOD_Detail_BaseColor": "//textures/racing_car/game/MAT_SeatAccent_LOD_Detail_BaseColor.png",
+      "leather_ORM": "//textures/racing_car/game/leather_ORM.png",
+      "MAT_SeatAccent_LOD_Detail_Normal": "//textures/racing_car/game/MAT_SeatAccent_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_Speaker_LOD_Detail_Engine": {
+    "source_material": "MAT_Speaker_LOD_Detail",
+    "texture_set": "speaker",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "speaker_BaseColor": "//textures/racing_car/interior/speaker_BaseColor.png",
+      "speaker_ORM": "//textures/racing_car/game/speaker_ORM.png",
+      "MAT_Speaker_LOD_Detail_Normal": "//textures/racing_car/game/MAT_Speaker_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_TaillightLens_Engine": {
+    "source_material": "MAT_TaillightLens",
+    "texture_set": "lens",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_TaillightLens_BaseColor": "//textures/racing_car/game/MAT_TaillightLens_BaseColor.png",
+      "lens_ORM": "//textures/racing_car/game/lens_ORM.png",
+      "lens_Normal": "//textures/racing_car/lights/lens_Normal.png"
+    }
+  },
+  "MAT_Tire_LOD_Detail_Engine": {
+    "source_material": "MAT_Tire_LOD_Detail",
+    "texture_set": "rubber",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "tire_BaseColor": "//textures/racing_car/game/tire_BaseColor.png",
+      "tire_ORM": "//textures/racing_car/game/tire_ORM.png",
+      "MAT_Tire_LOD_Detail_Normal": "//textures/racing_car/game/MAT_Tire_LOD_Detail_Normal.png"
+    }
+  },
+  "MAT_WheelDark_Engine": {
+    "source_material": "MAT_WheelDark",
+    "texture_set": "metal",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "MAT_WheelDark_BaseColor": "//textures/racing_car/game/MAT_WheelDark_BaseColor.png",
+      "metal_ORM": "//textures/racing_car/game/metal_ORM.png",
+      "metal_Normal": "//textures/racing_car/wheels/metal_Normal.png"
+    }
+  },
+  "MAT_WheelMetal_Engine": {
+    "source_material": "MAT_WheelMetal",
+    "texture_set": "metal",
+    "uv_tile_channel": "UV_Game",
+    "detail_channel": "UVMap",
+    "rotor_channel": "UV_Rotor",
+    "attributes_required": [],
+    "images": {
+      "metal_BaseColor": "//textures/racing_car/wheels/metal_BaseColor.png",
+      "metal_ORM": "//textures/racing_car/game/metal_ORM.png",
+      "metal_Normal": "//textures/racing_car/wheels/metal_Normal.png"
+    }
+  }
+}

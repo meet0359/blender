@@ -1,0 +1,96 @@
+{
+ "DIM": {
+  "length": 12.0,
+  "width_body": 2.55,
+  "height": 2.95,
+  "wheelbase": 6.0,
+  "track_f": 2.1,
+  "track_r": 1.9,
+  "overhang_f": 2.7,
+  "overhang_r": 3.3,
+  "ground_clearance": 0.32,
+  "tire": "275/70 R22.5 (R 0.478, rim 22.5\")",
+  "height_incl_hvac": 3.21
+ },
+ "wheel_centres": {
+  "YF": -3.3,
+  "YR": 2.7,
+  "RW": 0.478
+ },
+ "cowl": -5.75,
+ "dash_to_axle": -2.45,
+ "shells": 1,
+ "cut_mode": {
+  "REF_Master": "n-ary",
+  "Body_Game": "n-ary"
+ },
+ "master_tris": 236844,
+ "cutters": [
+  "arch_-3.3_-1",
+  "arch_-3.3_1",
+  "arch_2.7_-1",
+  "arch_2.7_1",
+  "fog_-1",
+  "fog_1",
+  "grille",
+  "headlamp_-1",
+  "headlamp_1",
+  "lower",
+  "plate_r",
+  "taillamp_-1",
+  "taillamp_1",
+  "valance"
+ ],
+ "grooves": [
+  "shut_extra_0",
+  "shut_extra_1",
+  "shut_extra_2",
+  "shut_extra_3",
+  "shut_extra_4",
+  "shut_extra_5",
+  "shut_lid"
+ ],
+ "body_paint_tris": 13339,
+ "bodytrim_tris": 1941,
+ "glass_tris": 640,
+ "arch_lips": 4,
+ "master_normals": {
+  "skin_loops": 443006,
+  "wall_loops_flat": 10714,
+  "verts_on_skin": 114737
+ },
+ "body_inverted_faces": 230,
+ "body_planar_dissolve": {
+  "before": 13927,
+  "after": 10402
+ },
+ "body_normal": null,
+ "trim_parts_tris": 6225,
+ "lights_tris": 1352,
+ "interior_tris": 10365,
+ "orphan_verts_removed": {
+  "Trim_LOD0": 4
+ },
+ "blockout": {
+  "master_tris": 227192,
+  "length": 11.977,
+  "width_body": 2.94,
+  "height": 3.005,
+  "min_z": 0.32,
+  "lod0_parts_tris": {
+   "Body_Blockout": 227192,
+   "Caliper_FL_LOD0": 52,
+   "Caliper_FR_LOD0": 52,
+   "Caliper_RL_LOD0": 52,
+   "Caliper_RR_LOD0": 52,
+   "Glass_LOD0": 356,
+   "Interior_LOD0": 10365,
+   "Lights_LOD0": 1352,
+   "Trim_LOD0": 6982,
+   "Wheel_FL_LOD0": 782,
+   "Wheel_FR_LOD0": 782,
+   "Wheel_RL_LOD0": 782,
+   "Wheel_RR_LOD0": 782
+  }
+ }
+}

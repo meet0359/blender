@@ -1,0 +1,86 @@
+{
+ "file": "trafficpickupa_01_blockout_v2.blend",
+ "checks": {
+  "four_wheels": true,
+  "tires_on_ground (<5 mm)": true,
+  "body_clearance >= 0.12 m": true,
+  "no NaN / loose vertices": true,
+  "glass, lights, trim, interior present": true,
+  "no part > 10 cm outside the body bounds (stray / floating trim; bumpers may be proud)": true,
+  "dimensions within 6 cm of the design": true
+ },
+ "length_m": 5.3,
+ "width_body_m": 1.891,
+ "width_mirrors_m": 2.38,
+ "roof_height_m": 1.854,
+ "height_incl_fin_m": 1.883,
+ "body_min_z_m": 0.397,
+ "wheelbase_m": 3.25,
+ "track_f_m": 1.62,
+ "track_r_m": 1.62,
+ "tire_radius_m": 0.388,
+ "front_overhang_m": 0.918,
+ "rear_overhang_m": 1.132,
+ "tris": {
+  "Body_Blockout": 211991,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 298,
+  "Interior_LOD0": 2350,
+  "Lights_LOD0": 1276,
+  "Trim_LOD0": 3840,
+  "Wheel_FL_LOD0": 718,
+  "Wheel_FR_LOD0": 718,
+  "Wheel_RL_LOD0": 718,
+  "Wheel_RR_LOD0": 718
+ },
+ "tris_total": 222835,
+ "tris_without_master_body": 10844,
+ "mesh_issues": {
+  "Body_Blockout": {
+   "zero_area": 12,
+   "loose": 0,
+   "nan": 0
+  }
+ },
+ "parts_outside_body_bounds_m": {},
+ "design_dim": {
+  "length": 5.32,
+  "width_body": 1.9,
+  "height": 1.83,
+  "wheelbase": 3.25,
+  "track_f": 1.62,
+  "track_r": 1.62,
+  "overhang_f": 0.92,
+  "overhang_r": 1.15,
+  "ground_clearance": 0.23,
+  "tire": "265/65 R17 (R 0.388, rim 17\")"
+ },
+ "dim_deviation_m": {
+  "length": -0.02,
+  "width_body": -0.009,
+  "height": 0.024
+ },
+ "materials": [
+  "TMP_arch",
+  "TMP_clad",
+  "TMP_grille",
+  "TMP_housing",
+  "TMP_plastic",
+  "TMP_plate",
+  "TMP_pocket",
+  "TMP_seal",
+  "TS_Atlas",
+  "TS_Glass",
+  "TS_Lens",
+  "TS_LensRed",
+  "TS_Lights",
+  "TS_PickupA_Glass",
+  "TS_PickupA_Interior",
+  "TS_PickupA_Paint",
+  "TS_Tire"
+ ],
+ "PASS": true
+}

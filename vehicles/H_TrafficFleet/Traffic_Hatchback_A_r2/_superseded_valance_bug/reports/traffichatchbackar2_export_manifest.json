@@ -1,0 +1,8 @@
+{
+ "asset": "Traffic_Hatchback_A_r2",
+ "source_checkpoint": "traffichatchbackar2_08_rig.blend",
+ "export_checkpoint": "traffichatchbackar2_09_export_ready.blend",
+ "files": {},
+ "blender_only": true,
+ "note": "TS_NO_FBX: no FBX / UnityTransfer generated (Blender-only production). Hierarchy verified: complete set == collection TRAFFIC_HATCHBACK_A_R2 (71 objects)"
+}

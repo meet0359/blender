@@ -1,0 +1,28 @@
+PASS: Required interior objects exist in INTERIOR hierarchy
+PASS: All eight requested review material slots exist
+PASS: Meaningful object names
+PASS: Positive uniform object scales
+PASS: No accidentally hidden interior parts
+PASS: No functional light objects in interior asset
+PASS: Source 04 file preserved byte-for-byte
+PASS: No zero-area faces: []
+PASS: No loose vertices: []
+PASS: Evaluated panels have manifold thickness: []
+PASS: Closed evaluated surfaces have consistent signed-volume orientation: []
+PASS: Interior base budget 30,000–60,000 triangles: 44916
+PASS: Interior evaluated budget 60,000–120,000 triangles: 119164
+PASS: No interior/exterior or glass intersections in audited envelope: []
+PASS: No primary interior assembly crossings: []
+PASS: Steering origin centered on designed steering axis
+PASS: Driver seat / steering / instrument lateral alignment
+PASS: Pedal_Brake inside driver footwell; hinge origin prepared
+PASS: Pedal_Throttle inside driver footwell; hinge origin prepared
+PASS: Seat_Driver headrest-to-roof clearance 0.0831 m
+PASS: Seat_Passenger headrest-to-roof clearance 0.0831 m
+PASS: Door inner panels stay inside future opening door span
+WARNING: No final UI graphics, UVs/textures, animation, LODs, colliders, optimization or export checks in this phase.
+WARNING: Seated upholstery/trim/fastener assemblies are not globally boolean-unioned; close-range mechanical tolerance remains a later review task.
+BASE INTERIOR V/P/T: [23702, 22068, 44916]
+EVALUATED INTERIOR V/P/T: [59952, 59676, 119164]
+COMPLETE VEHICLE EVALUATED V/P/T: [327780, 330500, 650684]
+RESULT: 0 errors / 2 warnings

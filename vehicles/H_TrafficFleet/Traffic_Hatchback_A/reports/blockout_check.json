@@ -1,0 +1,64 @@
+{
+ "file": "traffichatchbacka_01_blockout.blend",
+ "checks": {
+  "four_wheels": true,
+  "tires_on_ground (<5 mm)": true,
+  "body_clearance >= 0.12 m": true,
+  "no NaN / loose vertices": true,
+  "glass, lights, trim, interior present": true
+ },
+ "length_m": 4.255,
+ "width_body_m": 1.795,
+ "width_mirrors_m": 2.08,
+ "roof_height_m": 1.472,
+ "height_incl_fin_m": 1.498,
+ "body_min_z_m": 0.145,
+ "wheelbase_m": 2.63,
+ "track_f_m": 1.54,
+ "track_r_m": 1.53,
+ "tire_radius_m": 0.317,
+ "front_overhang_m": 0.877,
+ "rear_overhang_m": 0.748,
+ "tris": {
+  "Body_Blockout": 123672,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 396,
+  "Interior_LOD0": 2337,
+  "Lights_LOD0": 1358,
+  "Trim_LOD0": 3194,
+  "Wheel_FL_LOD0": 782,
+  "Wheel_FR_LOD0": 782,
+  "Wheel_RL_LOD0": 782,
+  "Wheel_RR_LOD0": 782
+ },
+ "tris_total": 134293,
+ "tris_without_master_body": 10621,
+ "mesh_issues": {
+  "Body_Blockout": {
+   "zero_area": 2,
+   "loose": 0,
+   "nan": 0
+  }
+ },
+ "materials": [
+  "TMP_arch",
+  "TMP_grille",
+  "TMP_housing",
+  "TMP_plastic",
+  "TMP_plate",
+  "TMP_pocket",
+  "TMP_seal",
+  "TS_Atlas",
+  "TS_HatchA_Glass",
+  "TS_HatchA_Interior",
+  "TS_HatchA_Paint",
+  "TS_Lens",
+  "TS_LensRed",
+  "TS_Lights",
+  "TS_Tire"
+ ],
+ "PASS": true
+}

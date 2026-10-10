@@ -1,0 +1,83 @@
+{
+ "file": "hypercar_LOD0_unity_test.fbx",
+ "dims_LOD0": {
+  "L": 4.695,
+  "W": 2.05233,
+  "H": 1.17258,
+  "delta_mm": [
+   -0.0,
+   0.03,
+   -0.02
+  ]
+ },
+ "tris_LOD0": 206327,
+ "materials_LOD0": [
+  "LODMAT_Body_Paint",
+  "LODMAT_Brakes",
+  "LODMAT_Glass",
+  "LODMAT_Interior",
+  "LODMAT_Lights",
+  "LODMAT_Tire",
+  "LODMAT_Trim",
+  "LODMAT_Wheels",
+  "MAT_AmbientLight",
+  "MAT_BrakeCaliper",
+  "MAT_CarbonExterior",
+  "MAT_Display",
+  "MAT_DisplayGraphics",
+  "MAT_DisplayGraphics_Red",
+  "MAT_HeadlightLens",
+  "MAT_InteriorCarbon",
+  "MAT_InteriorMirror",
+  "MAT_LED_Amber",
+  "MAT_LED_Brake",
+  "MAT_LED_Red",
+  "MAT_LED_Reverse",
+  "MAT_LED_White",
+  "MAT_ProjectorLens",
+  "MAT_TaillightLens"
+ ],
+ "CenterOfMass_blender": [
+  0.0,
+  0.12,
+  0.35
+ ],
+ "normals_p99_deg": 0.0,
+ "unity_raw": {
+  "Car_Root_rotation_deg": [
+   -0.0,
+   -0.0,
+   0.0
+  ],
+  "Car_Root_scale": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "body_z_range(forward)": [
+   -2.249,
+   2.3967
+  ],
+  "body_y_max(up)": 1.1726,
+  "driver_seat_fbx": [
+   0.36,
+   0.31,
+   -0.12
+  ],
+  "WheelColliderRef_FL_fbx": [
+   0.835,
+   0.355,
+   1.39
+  ],
+  "CenterOfMass_fbx": [
+   0.0,
+   0.35,
+   -0.12
+  ],
+  "CenterOfMass_unity(x negated by Unity's FBX importer)": [
+   -0.0,
+   0.35,
+   -0.12
+  ]
+ }
+}

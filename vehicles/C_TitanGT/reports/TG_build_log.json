@@ -1,0 +1,76 @@
+{
+ "cutters": [
+  "arch_-1.41_-1",
+  "arch_-1.41_1",
+  "arch_1.41_-1",
+  "arch_1.41_1",
+  "gap_door_-1",
+  "gap_door_1",
+  "gap_hood",
+  "gap_trunk",
+  "grille",
+  "handle_-1",
+  "handle_1",
+  "headlamp_-1",
+  "headlamp_1",
+  "intake_-1",
+  "intake_1",
+  "taillight",
+  "vent_-1",
+  "vent_1"
+ ],
+ "body_lod0_tris": 38562,
+ "trim_tris": 5112,
+ "lights_tris": 2000,
+ "interior_tris": 7720,
+ "lod0_parts": {
+  "Body_LOD0": 39834,
+  "BrakeDisc_FL_LOD0": 480,
+  "BrakeDisc_FR_LOD0": 480,
+  "BrakeDisc_RL_LOD0": 480,
+  "BrakeDisc_RR_LOD0": 480,
+  "Caliper_FL_LOD0": 152,
+  "Caliper_FR_LOD0": 152,
+  "Caliper_RL_LOD0": 152,
+  "Caliper_RR_LOD0": 152,
+  "Glass_LOD0": 1792,
+  "Interior_LOD0": 6248,
+  "Lights_LOD0": 2000,
+  "SteeringWheel_LOD0": 1472,
+  "Tire_FL_LOD0": 2688,
+  "Tire_FR_LOD0": 2688,
+  "Tire_RL_LOD0": 2688,
+  "Tire_RR_LOD0": 2688,
+  "Trim_LOD0": 5112,
+  "Wheel_FL_LOD0": 1908,
+  "Wheel_FR_LOD0": 1908,
+  "Wheel_RL_LOD0": 1908,
+  "Wheel_RR_LOD0": 1908
+ },
+ "lod0_total": 77370,
+ "lod_ratios": {
+  "1": {
+   "Body": 0.52,
+   "Glass": 0.7,
+   "Trim": 0.45,
+   "Lights": 0.5,
+   "Interior": 0.45,
+   "SteeringWheel": 0.5
+  },
+  "2": {
+   "Body": 0.26,
+   "Glass": 0.45,
+   "Trim": 0.18,
+   "Lights": 0.22,
+   "Interior": 0.18,
+   "SteeringWheel": 0.2
+  },
+  "3": {
+   "Body": 0.1,
+   "Glass": 0.18,
+   "Trim": 0.06,
+   "Lights": 0.08,
+   "Interior": 0.04
+  }
+ }
+}

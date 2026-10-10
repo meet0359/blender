@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py", line 14, in <module>
+    bpy.ops.wm.open_mainfile(filepath=SRC); sc = bpy.context.scene; O = bpy.data.objects
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+RuntimeError: Error: File format is not supported in file "/private/tmp/claude-501/-Users-meetshah-Documents-blender/7fc69d88-52fb-46e6-8ae5-3862c09c2f17/scratchpad/pv_pickup_a.v2"
+
+Error: File format is not supported in file "/private/tmp/claude-501/-Users-meetshah-Documents-blender/7fc69d88-52fb-46e6-8ae5-3862c09c2f17/scratchpad/pv_pickup_a.v2"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+Traceback (most recent call last):
+  File "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py", line 14, in <module>
+    bpy.ops.wm.open_mainfile(filepath=SRC); sc = bpy.context.scene; O = bpy.data.objects
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+RuntimeError: Error: File format is not supported in file "/private/tmp/claude-501/-Users-meetshah-Documents-blender/7fc69d88-52fb-46e6-8ae5-3862c09c2f17/scratchpad/pv_pickup_a.v2"
+
+Error: File format is not supported in file "/private/tmp/claude-501/-Users-meetshah-Documents-blender/7fc69d88-52fb-46e6-8ae5-3862c09c2f17/scratchpad/pv_pickup_a.v2"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+Traceback (most recent call last):
+  File "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_render.py", line 14, in <module>
+    bpy.ops.wm.open_mainfile(filepath=SRC); sc = bpy.context.scene; O = bpy.data.objects
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+RuntimeError: Error: File format is not supported in file "/private/tmp/claude-501/-Users-meetshah-Documents-blender/7fc69d88-52fb-46e6-8ae5-3862c09c2f17/scratchpad/pv_pickup_a.v2"
+
+Error: File format is not supported in file "/private/tmp/claude-501/-Users-meetshah-Documents-blender/7fc69d88-52fb-46e6-8ae5-3862c09c2f17/scratchpad/pv_pickup_a.v2"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

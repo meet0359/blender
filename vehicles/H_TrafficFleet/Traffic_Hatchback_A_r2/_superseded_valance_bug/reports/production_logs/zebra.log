@@ -1,0 +1,56 @@
+00:00.451  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/blend/traffichatchbackar2_02_body.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_zebra.py:24: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.name.startswith('TMP_'): m.use_nodes = True
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_zebra.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.name.endswith('_Paint') or (ONLY_ and m.use_nodes and m.name.startswith('TMP_')):
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_zebra.py:30: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('Z'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+00:01.268  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_hood.png'
+ZEBRA hood
+00:01.771  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_roof.png'
+ZEBRA roof
+00:02.242  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_deck.png'
+ZEBRA deck
+00:02.702  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_door.png'
+ZEBRA door
+00:03.128  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_side_full.png'
+ZEBRA side_full
+00:03.587  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_tail_corner.png'
+ZEBRA tail_corner
+00:04.067  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_quarter.png'
+ZEBRA quarter
+00:04.525  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_deck_r.png'
+ZEBRA deck_r
+00:04.981  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_quarter_r.png'
+ZEBRA quarter_r
+00:05.474  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_master/zebra_tail_corner_r.png'
+ZEBRA tail_corner_r
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.381  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/blend/traffichatchbackar2_09_export_ready.blend"
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_zebra.py:30: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('Z'); sc.world = w; w.use_nodes = True; nt = w.node_tree; bg = nt.nodes['Background']
+00:00.981  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_hood.png'
+ZEBRA hood
+00:01.484  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_roof.png'
+ZEBRA roof
+00:01.949  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_deck.png'
+ZEBRA deck
+00:02.423  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_door.png'
+ZEBRA door
+00:02.826  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_side_full.png'
+ZEBRA side_full
+00:03.299  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_tail_corner.png'
+ZEBRA tail_corner
+00:03.790  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_quarter.png'
+ZEBRA quarter
+00:04.261  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_deck_r.png'
+ZEBRA deck_r
+00:04.728  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_quarter_r.png'
+ZEBRA quarter_r
+00:05.222  render           | Saved: '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/zebra_game/zebra_tail_corner_r.png'
+ZEBRA tail_corner_r
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

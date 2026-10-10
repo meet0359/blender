@@ -1,0 +1,43 @@
+EXTERIOR 04 VALIDATION — no export certification / no optimization phase
+PASS: Required exterior objects and integrated aero anchor exist
+PASS: Original collection structure preserved
+PASS: Positive uniform unit scales; no reflected object transforms
+PASS: No duplicate exact object names
+PASS: No meaningless default names or unjoined glyph objects: []
+PASS: No accidental hidden vehicle meshes/curves; reference empties excluded
+PASS: Metric / -Y front / +Z up preserved
+PASS: FL axle center and local-X wheel axis preserved
+PASS: FL actual rim rotation around centered X axle
+PASS: FL caliper remains stationary during wheel rotation
+PASS: FR axle center and local-X wheel axis preserved
+PASS: FR actual rim rotation around centered X axle
+PASS: FR caliper remains stationary during wheel rotation
+PASS: RL axle center and local-X wheel axis preserved
+PASS: RL actual rim rotation around centered X axle
+PASS: RL caliper remains stationary during wheel rotation
+PASS: RR axle center and local-X wheel axis preserved
+PASS: RR actual rim rotation around centered X axle
+PASS: RR caliper remains stationary during wheel rotation
+PASS: Zero-area base face audit: []
+PASS: Unused base vertex audit: []
+PASS: Closed evaluated signed-volume / inverted-normal audit: []
+PASS: All evaluated mesh/curve surfaces are manifold
+PASS: 73 open editable panel/curve base meshes become thickened/capped at evaluation; base openness recorded
+PASS: No body/glass triangle overlaps in audited primary surfaces
+PASS: No non-adjacent self-overlap candidates in audited primary surfaces
+PASS: Evaluated envelope: L 4.5488, W 2.0073, H 1.1998 m
+PASS: 2.7000 m wheelbase
+PASS: Independent front/rear light channels exist
+PASS: Four restrained diffuser fins
+PASS: Base mesh totals {'base_vertices': 75146, 'base_polygons': 74012, 'base_triangles': 141264, 'evaluated_vertices': 271984, 'evaluated_polygons': 274980, 'evaluated_triangles': 539824}
+PASS: Base quad fraction 84.4%; major skin panels are quads
+Body: {'base_vertices': 17670, 'base_polygons': 14588, 'base_triangles': 29800, 'evaluated_vertices': 119004, 'evaluated_polygons': 117856, 'evaluated_triangles': 235664}
+Wheels: {'base_vertices': 7392, 'base_polygons': 6680, 'base_triangles': 14512, 'evaluated_vertices': 14944, 'evaluated_polygons': 14392, 'evaluated_triangles': 29616}
+Tires: {'base_vertices': 31120, 'base_polygons': 36612, 'base_triangles': 62080, 'evaluated_vertices': 37168, 'evaluated_polygons': 42884, 'evaluated_triangles': 73728}
+Brakes: {'base_vertices': 4832, 'base_polygons': 3960, 'base_triangles': 9264, 'evaluated_vertices': 22800, 'evaluated_polygons': 22408, 'evaluated_triangles': 44912}
+Glass: {'base_vertices': 4394, 'base_polygons': 3956, 'base_triangles': 7992, 'evaluated_vertices': 27516, 'evaluated_polygons': 27460, 'evaluated_triangles': 55000}
+Lights: {'base_vertices': 7644, 'base_polygons': 6400, 'base_triangles': 13984, 'evaluated_vertices': 35652, 'evaluated_polygons': 35080, 'evaluated_triangles': 71152}
+Aero: {'base_vertices': 2094, 'base_polygons': 1816, 'base_triangles': 3632, 'evaluated_vertices': 14900, 'evaluated_polygons': 14900, 'evaluated_triangles': 29752}
+WARNING: No final UV/textures, full interior, collider, LOD or export checks were undertaken, as requested.
+WARNING: Intersection tests cover primary surfaces; intentional optical/trim/duct assembly seating is not globally unioned.
+RESULT: 0 errors / 2 warnings

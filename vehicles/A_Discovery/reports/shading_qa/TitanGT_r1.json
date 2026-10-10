@@ -1,0 +1,489 @@
+{
+ "source": "/Users/meetshah/Documents/blender/vehicles/C_TitanGT_r1/blend/titangt_r1_09_export_ready.blend",
+ "thresholds": {
+  "fail_pct": 1.0,
+  "warn_pct": 0.3,
+  "angle_deg": 50
+ },
+ "summary": {
+  "PASS": 75,
+  "WARN": 3,
+  "FAIL": 1
+ },
+ "meshes": {
+  "Body_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.035,
+   "loops": 96801,
+   "verdict": "PASS"
+  },
+  "Body_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 62102,
+   "verdict": "PASS"
+  },
+  "Body_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 31049,
+   "verdict": "PASS"
+  },
+  "Body_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 11744,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 992,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 558,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 324,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 992,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 558,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 324,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 992,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 558,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 324,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 992,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 558,
+   "verdict": "PASS"
+  },
+  "BrakeDisc_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 324,
+   "verdict": "PASS"
+  },
+  "Caliper_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 300,
+   "verdict": "PASS"
+  },
+  "Caliper_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 204,
+   "verdict": "PASS"
+  },
+  "Caliper_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 108,
+   "verdict": "PASS"
+  },
+  "Caliper_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 300,
+   "verdict": "PASS"
+  },
+  "Caliper_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 204,
+   "verdict": "PASS"
+  },
+  "Caliper_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 108,
+   "verdict": "PASS"
+  },
+  "Caliper_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 300,
+   "verdict": "PASS"
+  },
+  "Caliper_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 204,
+   "verdict": "PASS"
+  },
+  "Caliper_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 108,
+   "verdict": "PASS"
+  },
+  "Caliper_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 300,
+   "verdict": "PASS"
+  },
+  "Caliper_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 204,
+   "verdict": "PASS"
+  },
+  "Caliper_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 108,
+   "verdict": "PASS"
+  },
+  "Glass_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5376,
+   "verdict": "PASS"
+  },
+  "Glass_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 3756,
+   "verdict": "PASS"
+  },
+  "Glass_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 2418,
+   "verdict": "PASS"
+  },
+  "Glass_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 966,
+   "verdict": "PASS"
+  },
+  "Interior_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 12720,
+   "verdict": "PASS"
+  },
+  "Interior_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.83,
+   "loops": 8430,
+   "verdict": "WARN"
+  },
+  "Interior_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 3360,
+   "verdict": "PASS"
+  },
+  "Interior_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 729,
+   "verdict": "PASS"
+  },
+  "Lights_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 4242,
+   "verdict": "PASS"
+  },
+  "Lights_LOD1": {
+   "lod": 1,
+   "torn_pct": 4.371,
+   "loops": 2997,
+   "verdict": "FAIL"
+  },
+  "Lights_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1317,
+   "verdict": "PASS"
+  },
+  "Lights_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 480,
+   "verdict": "PASS"
+  },
+  "SteeringWheel_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 2976,
+   "verdict": "PASS"
+  },
+  "SteeringWheel_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.996,
+   "loops": 2208,
+   "verdict": "WARN"
+  },
+  "SteeringWheel_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.227,
+   "loops": 882,
+   "verdict": "PASS"
+  },
+  "Tire_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5376,
+   "verdict": "PASS"
+  },
+  "Tire_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2688,
+   "verdict": "PASS"
+  },
+  "Tire_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 784,
+   "verdict": "PASS"
+  },
+  "Tire_FL_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 448,
+   "verdict": "PASS"
+  },
+  "Tire_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5376,
+   "verdict": "PASS"
+  },
+  "Tire_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2688,
+   "verdict": "PASS"
+  },
+  "Tire_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 784,
+   "verdict": "PASS"
+  },
+  "Tire_FR_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 448,
+   "verdict": "PASS"
+  },
+  "Tire_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5376,
+   "verdict": "PASS"
+  },
+  "Tire_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2688,
+   "verdict": "PASS"
+  },
+  "Tire_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 784,
+   "verdict": "PASS"
+  },
+  "Tire_RL_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 448,
+   "verdict": "PASS"
+  },
+  "Tire_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 5376,
+   "verdict": "PASS"
+  },
+  "Tire_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2688,
+   "verdict": "PASS"
+  },
+  "Tire_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 784,
+   "verdict": "PASS"
+  },
+  "Tire_RR_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 448,
+   "verdict": "PASS"
+  },
+  "Trim_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 10432,
+   "verdict": "PASS"
+  },
+  "Trim_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 6897,
+   "verdict": "PASS"
+  },
+  "Trim_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 2760,
+   "verdict": "PASS"
+  },
+  "Trim_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.366,
+   "loops": 1092,
+   "verdict": "WARN"
+  },
+  "Wheel_FL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 3854,
+   "verdict": "PASS"
+  },
+  "Wheel_FL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2060,
+   "verdict": "PASS"
+  },
+  "Wheel_FL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1100,
+   "verdict": "PASS"
+  },
+  "Wheel_FL_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 924,
+   "verdict": "PASS"
+  },
+  "Wheel_FR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 3854,
+   "verdict": "PASS"
+  },
+  "Wheel_FR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2060,
+   "verdict": "PASS"
+  },
+  "Wheel_FR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1100,
+   "verdict": "PASS"
+  },
+  "Wheel_FR_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 924,
+   "verdict": "PASS"
+  },
+  "Wheel_RL_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 3854,
+   "verdict": "PASS"
+  },
+  "Wheel_RL_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2060,
+   "verdict": "PASS"
+  },
+  "Wheel_RL_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1100,
+   "verdict": "PASS"
+  },
+  "Wheel_RL_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 924,
+   "verdict": "PASS"
+  },
+  "Wheel_RR_LOD0": {
+   "lod": 0,
+   "torn_pct": 0.0,
+   "loops": 3854,
+   "verdict": "PASS"
+  },
+  "Wheel_RR_LOD1": {
+   "lod": 1,
+   "torn_pct": 0.0,
+   "loops": 2060,
+   "verdict": "PASS"
+  },
+  "Wheel_RR_LOD2": {
+   "lod": 2,
+   "torn_pct": 0.0,
+   "loops": 1100,
+   "verdict": "PASS"
+  },
+  "Wheel_RR_LOD3": {
+   "lod": 3,
+   "torn_pct": 0.0,
+   "loops": 924,
+   "verdict": "PASS"
+  }
+ }
+}

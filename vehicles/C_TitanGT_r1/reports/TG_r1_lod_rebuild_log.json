@@ -1,0 +1,30 @@
+{
+ "revision": "r1",
+ "base": "C_TitanGT/blend/titangt_08_colliders_hierarchy.blend (frozen, read only)",
+ "nogap_body_tris": 29732,
+ "slivers_to_paint": {
+  "1": 0,
+  "2": 2,
+  "3": 2
+ },
+ "swapped": {
+  "Body_LOD1": {
+   "tris_frozen": 20710,
+   "tris_r1": 20712
+  },
+  "Body_LOD2": {
+   "tris_frozen": 10354,
+   "tris_r1": 10356
+  },
+  "Body_LOD3": {
+   "tris_frozen": 3980,
+   "tris_r1": 3920
+  },
+  "Trim_LOD3": {
+   "tris_frozen": 304,
+   "tris_r1": 364
+  },
+  "Trim_LOD1": "normals only: custom normals cleared, smooth + 38 deg sharp edges; geometry unchanged"
+ },
+ "method": "groove-free body (panel-gap cutters disabled), collapse decimate to the frozen per-LOD body triangle count, KD-tree smooth-reference normals on skin faces, flat on openings"
+}

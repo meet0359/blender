@@ -1,0 +1,96 @@
+{
+ "DIM": {
+  "length": 4.98,
+  "width_body": 1.89,
+  "height": 1.47,
+  "wheelbase": 2.97,
+  "track_f": 1.625,
+  "track_r": 1.64,
+  "overhang_f": 0.86,
+  "overhang_r": 1.15,
+  "ground_clearance": 0.14,
+  "tire": "245/40 R20 (R 0.352, rim 20\")"
+ },
+ "wheel_centres": {
+  "YF": -1.62,
+  "YR": 1.35,
+  "RW": 0.352
+ },
+ "cowl": -0.74,
+ "dash_to_axle": 0.88,
+ "master_tris": 136438,
+ "cutters": [
+  "arch_-1.62_-1",
+  "arch_-1.62_1",
+  "arch_1.35_-1",
+  "arch_1.35_1",
+  "exhaust_-1",
+  "exhaust_1",
+  "fog_-1",
+  "fog_1",
+  "grille",
+  "handle_-1_-0.05",
+  "handle_-1_0.99",
+  "handle_1_-0.05",
+  "handle_1_0.99",
+  "headlamp_-1",
+  "headlamp_1",
+  "lower",
+  "plate_r",
+  "taillamp_-1",
+  "taillamp_1",
+  "valance"
+ ],
+ "grooves": [
+  "gap_fdoor_-1",
+  "gap_fdoor_1",
+  "gap_fuel",
+  "gap_hood",
+  "gap_rdoor_-1",
+  "gap_rdoor_1",
+  "gap_trunk",
+  "shut_front_-1",
+  "shut_front_1",
+  "shut_rear_bumper"
+ ],
+ "body_paint_tris": 7181,
+ "bodytrim_tris": 2077,
+ "glass_tris": 400,
+ "arch_lips": 4,
+ "master_normals": {
+  "skin_loops": 220837,
+  "wall_loops_flat": 17652,
+  "verts_on_skin": 62851
+ },
+ "body_inverted_faces": 10,
+ "body_planar_dissolve": {
+  "before": 7673,
+  "after": 6795
+ },
+ "body_normal": null,
+ "trim_parts_tris": 2277,
+ "lights_tris": 1258,
+ "interior_tris": 888,
+ "blockout": {
+  "master_tris": 130530,
+  "length": 4.967,
+  "width_body": 2.15,
+  "height": 1.494,
+  "min_z": 0.149,
+  "lod0_parts_tris": {
+   "Body_Blockout": 130530,
+   "Caliper_FL_LOD0": 52,
+   "Caliper_FR_LOD0": 52,
+   "Caliper_RL_LOD0": 52,
+   "Caliper_RR_LOD0": 52,
+   "Glass_LOD0": 394,
+   "Interior_LOD0": 888,
+   "Lights_LOD0": 1258,
+   "Trim_LOD0": 3424,
+   "Wheel_FL_LOD0": 814,
+   "Wheel_FR_LOD0": 814,
+   "Wheel_RL_LOD0": 814,
+   "Wheel_RR_LOD0": 814
+  }
+ }
+}

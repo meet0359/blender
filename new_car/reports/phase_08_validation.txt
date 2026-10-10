@@ -1,0 +1,85 @@
+[PASS] Car_Root at origin, rotation 0, scale 1, top level
+[PASS] LOD0_Root under Car_Root with identity transform (LODs overlap exactly)
+[PASS] LOD1_Root under Car_Root with identity transform (LODs overlap exactly)
+[PASS] LOD2_Root under Car_Root with identity transform (LODs overlap exactly)
+[PASS] LOD3_Root under Car_Root with identity transform (LODs overlap exactly)
+[PASS] COLLIDERS collection + Collision root + 6 pieces parented
+[PASS] CenterOfMass at (0.0, 0.12, 0.35) (centreline, rear-biased, low)
+[PASS] WheelColliderRef_FL LEFT (+X) at [0.835, -1.39, 0.355], r=0.355 w=0.31
+[PASS] WheelColliderRef_FR RIGHT (-X) at [-0.835, -1.39, 0.355], r=0.355 w=0.31
+[PASS] WheelColliderRef_RL LEFT (+X) at [0.835, 1.39, 0.3775], r=0.3775 w=0.35
+[PASS] WheelColliderRef_RR RIGHT (-X) at [-0.835, 1.39, 0.3775], r=0.3775 w=0.35
+[PASS] Wheel_FL_LOD0: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_FR_LOD0: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_RL_LOD0: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] Wheel_RR_LOD0: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] SteerPivot_FL_LOD0: +/-25 deg yaw about wheel centre (err 0.0001 mm); caliper steers, does not roll
+[PASS] SteerPivot_FR_LOD0: +/-25 deg yaw about wheel centre (err 0.0001 mm); caliper steers, does not roll
+[PASS] Wheel_FL_LOD1: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_FR_LOD1: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_RL_LOD1: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] Wheel_RR_LOD1: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] SteerPivot_FL_LOD1: +/-25 deg yaw about wheel centre (err 0.0001 mm); caliper steers, does not roll
+[PASS] SteerPivot_FR_LOD1: +/-25 deg yaw about wheel centre (err 0.0001 mm); caliper steers, does not roll
+[PASS] Wheel_FL_LOD2: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_FR_LOD2: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_RL_LOD2: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] Wheel_RR_LOD2: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] SteerPivot_FL_LOD2: +/-25 deg yaw about wheel centre (err 0.0002 mm); caliper steers, does not roll
+[PASS] SteerPivot_FR_LOD2: +/-25 deg yaw about wheel centre (err 0.0002 mm); caliper steers, does not roll
+[PASS] Wheel_FL_LOD3: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_FR_LOD3: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0002 mm), axle X, caliper static on roll
+[PASS] Wheel_RL_LOD3: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] Wheel_RR_LOD3: offset 0.0000 mm, roll +/-30 deg rigid (err 0.0001 mm), axle X, caliper static on roll
+[PASS] SteerPivot_FL_LOD3: +/-25 deg yaw about wheel centre (err 0.0001 mm); caliper steers, does not roll
+[PASS] SteerPivot_FR_LOD3: +/-25 deg yaw about wheel centre (err 0.0002 mm); caliper steers, does not roll
+[PASS] SteeringWheel_LOD0: +/-30 deg about local Z (column axis (0.0, 0.91, 0.42)), wobble 0.0001 mm
+[PASS] SteeringWheel_LOD1: +/-30 deg about local Z (column axis (0.0, 0.91, 0.42)), wobble 0.0001 mm
+[PASS] SteeringWheel_LOD2: +/-30 deg about local Z (column axis (0.0, 0.91, 0.42)), wobble 0.0001 mm
+[PASS] Door_L_LOD0 hinge [0.9, -0.95, 0.8]: 18 deg opening, 3 children follow rigidly
+[PASS] Door_R_LOD0 hinge [-0.9, -0.95, 0.8]: 18 deg opening, 3 children follow rigidly
+[PASS] Door_L_LOD1 hinge [0.9, -0.95, 0.8]: 18 deg opening, 3 children follow rigidly
+[PASS] Door_R_LOD1 hinge [-0.9, -0.95, 0.8]: 18 deg opening, 3 children follow rigidly
+[PASS] ActiveSpoiler_LOD0: 3 -> 18 deg about hinge, rise 4.9 cm, no translation, brackets static
+[PASS] ActiveSpoiler_LOD1: 3 -> 18 deg about hinge, rise 4.9 cm, no translation, brackets static
+[PASS] ActiveSpoiler_LOD2: 3 -> 18 deg about hinge, rise 4.9 cm, no translation, brackets static
+[PASS] ActiveSpoiler_LOD3: 3 -> 18 deg about hinge, rise 4.9 cm, no translation, brackets static
+[PASS] negative scales: none
+[PASS] non-unit / non-uniform scales: none
+[INFO] intentional rotations (11): ['ActiveSpoiler_LOD0', 'ActiveSpoiler_LOD1', 'ActiveSpoiler_LOD2', 'ActiveSpoiler_LOD3', 'Paddle_L_LOD0', 'Paddle_L_LOD1', 'Paddle_R_LOD0', 'Paddle_R_LOD1', 'SteeringWheel_LOD0', 'SteeringWheel_LOD1', 'SteeringWheel_LOD2']
+[PASS] duplicate-suffixed names: none
+[PASS] left(+X)/right(-X) naming across production objects: consistent
+[PASS] Collision_Front: 74 tris, convex True, closed True, normals outward True
+[PASS] Collision_Front fit: 9/39 verts outside LOD0 skin, max 7.4 mm
+[PASS] Collision_Body: 52 tris, convex True, closed True, normals outward True
+[PASS] Collision_Body fit: 0/28 verts outside LOD0 skin, max 0.0 mm
+[PASS] Collision_Side_L: 64 tris, convex True, closed True, normals outward True
+[PASS] Collision_Side_L fit: 11/34 verts outside LOD0 skin, max 2.8 mm
+[PASS] Collision_Side_R: 66 tris, convex True, closed True, normals outward True
+[PASS] Collision_Side_R fit: 10/35 verts outside LOD0 skin, max 2.8 mm
+[PASS] Collision_Cabin: 60 tris, convex True, closed True, normals outward True
+[PASS] Collision_Cabin fit: 4/32 verts outside LOD0 skin, max 4.8 mm
+[PASS] Collision_Rear: 76 tris, convex True, closed True, normals outward True
+[PASS] Collision_Rear fit: 11/40 verts outside LOD0 skin, max 8.2 mm
+[PASS] collider total 392 triangles (target ~100-500)
+[PASS] LOD0: 206,329 tris (phase 7: 206,329); L4.6950 W2.0523 H1.1726 m
+[PASS] LOD0 UVMap + material slots on all 84 meshes
+[PASS] LOD0 independent light channels present: 6/6; material groups 24
+[PASS] LOD1: 107,212 tris (phase 7: 107,212); L4.6950 W2.0525 H1.1726 m
+[PASS] LOD1 UVMap + material slots on all 84 meshes
+[PASS] LOD1 independent light channels present: 6/6; material groups 24
+[PASS] LOD2: 53,807 tris (phase 7: 53,807); L4.6950 W2.0528 H1.1741 m
+[PASS] LOD2 UVMap + material slots on all 73 meshes
+[PASS] LOD2 independent light channels present: 6/6; material groups 20
+[PASS] LOD3: 17,779 tris (phase 7: 17,779); L4.6920 W2.0528 H1.1741 m
+[PASS] LOD3 UVMap + material slots on all 38 meshes
+[PASS] LOD3 independent light channels present: 6/6; material groups 15
+[PASS] side glass rides on the door hinges (LOD0/LOD1)
+[PASS] textures: missing none, absolute paths none
+[PASS] every object under Car_Root is in GAME_ASSET (308 objects)
+[PASS] GAME_ASSET objects outside Car_Root hierarchy: none
+[PASS] REFERENCE_Master excluded (view layer + render), not in GAME_ASSET, no master object under Car_Root
+[PASS] no studio/camera/cutter helpers in GAME_ASSET: none
+[PASS] checkpoint 06 unchanged (sha1 875e57736aab)
+[INFO] export manifest: 308 objects, roles {'body': 32, 'brakes': 32, 'center_of_mass': 1, 'collider': 6, 'collider_root': 1, 'door_hinge_pivot': 4, 'glass': 34, 'interior': 65, 'lights': 28, 'lod_root': 4, 'root': 1, 'spoiler (pivot = hinge)': 4, 'steering_pivot': 8, 'tires': 16, 'trim': 52, 'wheel (rolls local X)': 16, 'wheel_collider_reference': 4}
+SUMMARY: 82 PASS, 0 WARNING, 0 ERROR

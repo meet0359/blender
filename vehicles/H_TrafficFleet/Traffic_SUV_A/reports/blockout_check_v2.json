@@ -1,0 +1,83 @@
+{
+ "file": "trafficsuva_01_blockout_v2.blend",
+ "checks": {
+  "four_wheels": true,
+  "tires_on_ground (<5 mm)": true,
+  "body_clearance >= 0.12 m": true,
+  "no NaN / loose vertices": true,
+  "glass, lights, trim, interior present": true,
+  "no part > 10 cm outside the body bounds (stray / floating trim; bumpers may be proud)": true,
+  "dimensions within 6 cm of the design": true
+ },
+ "length_m": 4.474,
+ "width_body_m": 1.845,
+ "width_mirrors_m": 2.19,
+ "roof_height_m": 1.681,
+ "height_incl_fin_m": 1.69,
+ "body_min_z_m": 0.201,
+ "wheelbase_m": 2.68,
+ "track_f_m": 1.6,
+ "track_r_m": 1.61,
+ "tire_radius_m": 0.37,
+ "front_overhang_m": 0.919,
+ "rear_overhang_m": 0.875,
+ "tris": {
+  "Body_Blockout": 141182,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 574,
+  "Interior_LOD0": 2398,
+  "Lights_LOD0": 1442,
+  "Trim_LOD0": 4059,
+  "Wheel_FL_LOD0": 782,
+  "Wheel_FR_LOD0": 782,
+  "Wheel_RL_LOD0": 782,
+  "Wheel_RR_LOD0": 782
+ },
+ "tris_total": 152991,
+ "tris_without_master_body": 11809,
+ "mesh_issues": {
+  "Body_Blockout": {
+   "zero_area": 10,
+   "loose": 0,
+   "nan": 0
+  }
+ },
+ "parts_outside_body_bounds_m": {},
+ "design_dim": {
+  "length": 4.48,
+  "width_body": 1.84,
+  "height": 1.66,
+  "wheelbase": 2.68,
+  "track_f": 1.6,
+  "track_r": 1.61,
+  "overhang_f": 0.92,
+  "overhang_r": 0.88,
+  "ground_clearance": 0.19,
+  "tire": "235/60 R18 (R 0.370, rim 18\")"
+ },
+ "dim_deviation_m": {
+  "length": -0.006,
+  "width_body": 0.005,
+  "height": 0.021
+ },
+ "materials": [
+  "TMP_arch",
+  "TMP_clad",
+  "TMP_grille",
+  "TMP_housing",
+  "TMP_pocket",
+  "TMP_seal",
+  "TS_Atlas",
+  "TS_Lens",
+  "TS_LensRed",
+  "TS_Lights",
+  "TS_SUVA_Glass",
+  "TS_SUVA_Interior",
+  "TS_SUVA_Paint",
+  "TS_Tire"
+ ],
+ "PASS": true
+}

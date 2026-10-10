@@ -1,0 +1,9 @@
+.DS_Store
+*.blend
+*.blend[0-9]*
+vehicles/_TO_DELETE_cleanup_*/
+
+# Render/preview/QA PNGs stay local; keep real textures and handoff refs
+*.png
+!**/[Tt]extures/**/*.png
+!handoff_*/**/*.png

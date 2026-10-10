@@ -1,0 +1,6 @@
+{
+  "interior_Normal": "textures/racing_car/interior/lod_detail_Normal.png",
+  "interior_AO": "textures/racing_car/interior/lod_detail_AO.png",
+  "tires_Normal": "textures/racing_car/tires/lod_detail_Normal.png",
+  "tires_AO": "textures/racing_car/tires/lod_detail_AO.png"
+}

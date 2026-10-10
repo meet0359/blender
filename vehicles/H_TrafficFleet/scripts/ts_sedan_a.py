@@ -1,0 +1,696 @@
+# Traffic_Sedan_A (Phase H1) — original compact family sedan, realism-first production build.
+#   Blender -b --factory-startup --python ts_sedan_a.py [-- <last stage 2..8>]      env TS_SCRATCH=<dir> for trial runs
+# Method (TRAFFIC_REALISM_STANDARDS.md §2): high-res master (cage level 3 + real openings + panel-gap grooves) -> decimated, uniquely unwrapped
+# low-poly game body with baked tangent-space normals (+ AO / grime later). Real-world compact-sedan proportions; constructed (creased) front and
+# rear faces; recessed lamps with housings, reflectors, projector and light guides under surface-following lenses; inset glass with seals + frit.
+#  02 body (master, game body, bake)  03 exterior parts + lights + glass  04 wheels  05 interior  06 merge, UVs, AO / grime bake  07 LODs (+ LOD1 bake)  08 rig
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); sys.dont_write_bytecode = True
+from ts_lib import *
+VEH = 'Traffic_Sedan_A'; PRE = 'TS_SedanA'; ROOT = vroot(VEH)
+LAST = int(sys.argv[sys.argv.index('--') + 1]) if '--' in sys.argv else 8
+def OUTD(*a):
+    d = os.path.join(SCR, *a[:-1]) if SCR else os.path.join(ROOT, *a[:-1]); os.makedirs(d, exist_ok=True); return os.path.join(d, a[-1])
+def save_ckp(name):
+    path = OUTD('blend', name); assert SCR or not os.path.exists(path), 'checkpoint exists: ' + path
+    bpy.ops.file.make_paths_relative(); bpy.ops.wm.save_as_mainfile(filepath=path, copy=True, relative_remap=True); print('SAVED', path, flush=True)
+bpy.ops.wm.read_factory_settings(use_empty=True); sc = bpy.context.scene; sc.unit_settings.system = 'METRIC'
+REPORT = {}
+# ================================================================ design (metres) — real-world compact-sedan class (§4: L 4.55-4.70, W 1.78-1.82, H 1.42-1.48, WB 2.65-2.72)
+DIM = dict(length=4.64, width_body=1.80, height=1.45, wheelbase=2.70, track_f=1.56, track_r=1.555, overhang_f=.92, overhang_r=1.02, ground_clearance=.145, tire='205/55 R16 (R 0.316, rim 16")')
+YF, YR = -1.35, 1.35; RW = .3160; WT = .205; RIM = .2032; XF, XR = DIM['track_f'] / 2, DIM['track_r'] / 2
+YN, YT = -2.27, 2.37
+# side profile: bumper nose -> hood leading edge -> hood -> cowl -> 29 deg windshield -> roof -> rear glass -> trunk deck (lip) -> tail
+ZC = pchip([YN, -2.17, -2.06, -1.70, -1.35, -.98, -.60, -.22, .20, .62, 1.00, 1.36, 1.66, 2.05, 2.30, YT], [.60, .735, .790, .835, .870, .955, 1.21, 1.405, 1.450, 1.432, 1.330, 1.150, 1.040, 1.045, 1.050, 1.000])
+ZBELT = pchip([YN, -2.12, -1.70, -1.35, -.95, 0, .90, 1.35, 1.66, 2.10, 2.30, YT], [.66, .765, .835, .862, .885, .925, .965, .985, .998, 1.000, .985, .95])
+WBELT = pchip([YN, -2.12, -1.70, -1.35, -.95, 0, .90, 1.35, 1.66, 2.10, 2.30, YT], [.775, .835, .858, .862, .846, .846, .852, .858, .857, .852, .838, .805])
+WMAX = pchip([YN, -2.12, -1.70, -1.35, -.95, 0, .90, 1.35, 1.66, 2.10, 2.30, YT], [.855, .886, .896, .900, .894, .896, .898, .900, .898, .894, .886, .862])
+ZSH = pchip([YN, -1.35, 0, 1.35, YT], [.46, .58, .60, .62, .58])
+ZFLOOR = pchip([YN, -2.12, -1.88, 1.90, 2.20, YT], [.28, .22, .160, .160, .24, .33])
+WFLOOR = pchip([YN, -2.1, 0, 2.2, YT], [.62, .78, .82, .78, .66])
+CAB = lambda y: ss(-1.12, -.92, y) * (1 - ss(1.50, 1.72, y))
+ROOFW = pchip([-.98, -.50, 0, .60, 1.10, 1.66], [.705, .660, .640, .630, .605, .585])
+SK = lambda y: .014 * ss(-1.00, -.80, y) * (1 - ss(.85, 1.05, y))                                      # lower-door feature (concave band)
+def ring_half(y):
+    zb, wf, wm, zs, zb_, wb, zc, c = ZFLOOR(y), WFLOOR(y), WMAX(y), ZSH(y), ZBELT(y), WBELT(y), ZC(y), CAB(y); sk = SK(y)
+    side = [(0.0, zb), (.5 * wf, zb), (wf, zb + .006), (wm - .040 - sk * .3, zb + .075), (wm - .010 - sk, lerp(zb + .075, zs, .5)), (wm, zs), (lerp(wm, wb, .45), lerp(zs, zb_, .55)), (wb, zb_)]
+    crown = lambda t: zb_ + (zc - zb_) * (1 - (1 - t) ** 2.2)
+    rw = ROOFW(min(max(y, -.98), 1.66)); sw = wb - .05
+    gh = [(wb - .035, zb_ + .008), (sw, zb_ + .028), (lerp(sw, rw, .82) + .008, lerp(zb_ + .028, zc - .065, .92)), (rw, zc - .032), (.50 * rw, zc - .007), (0.0, zc)]
+    w = ss(.80, 1.40, y)                                                                                # Raven P0 rule: rear deck points at the greenhouse x (pure vertical fade)
+    ts = [lerp(t, min(max(1 - g[0] / wb, 0.0), 1.0), w) for t, g in zip((.08, .26, .50, .74, .90, 1.0), gh)]
+    deck = [(wb * (1 - t), crown(t)) for t in ts]
+    top = [(lerp(d[0], g[0], c), lerp(d[1], g[1], c)) for d, g in zip(deck, gh)]
+    return side + top
+NS = len(ring_half(0.0)); I_ROOF = 11
+STAT = [-2.19, -2.08, -1.94, -1.76, -1.56, -1.35, -1.14, -.94, -.74, -.52, -.30, -.08, .14, .36, .58, .80, 1.02, 1.22, 1.42, 1.60, 1.78, 1.96, 2.12, 2.24, 2.31]
+NOSE = [(YN + .045, 1.0), (YN + .016, .93), (YN, .60)]; TAIL = [(YT - .03, 1.0), (YT - .010, .955), (YT, .72)]
+def full_ring(y, scale=1.0, centre=None):
+    h = ring_half(y); cz = centre if centre is not None else (h[0][1] + h[-1][1]) * .5
+    pts = [(x * scale, y, cz + (z - cz) * scale) for x, z in h]
+    return pts + [(-x, yy, z) for x, yy, z in pts[1:-1]][::-1]
+RAW = [full_ring(y, s, .46) for y, s in NOSE[::-1]] + [full_ring(y) for y in STAT] + [full_ring(y, s, .66) for y, s in TAIL[::-1][::-1]]
+RAW = [full_ring(y, s, .46) for y, s in NOSE[::-1]] + [full_ring(y) for y in STAT] + [full_ring(y, s, .66) for y, s in TAIL]
+NR = len(RAW[0]); I_FRONTFACE = len(NOSE) - 1; I_REARFACE = len(NOSE) + len(STAT)
+col_tag = lambda j: j if j < NS else NR - j
+def fair_cage(rings, iters=30, lam=.5, mu=-.53, fixed=2):
+    R = np.array(rings, float); n = len(R)
+    for it in range(iters):
+        for f in (lam, mu):
+            L = np.zeros_like(R); L[1:-1] = (R[:-2] + R[2:]) * .5 - R[1:-1]; L[:fixed] = 0; L[n - fixed:] = 0; L[..., 1] = 0; R = R + f * L
+    return [[tuple(p) for p in r] for r in R]
+def fair_lateral(rings, iters=12, lam=.45, mu=-.48, lock=3):
+    out = []
+    for r in rings:
+        R = np.array(r, float); n = len(R); fix = set(range(lock)) | set(range(n - lock + 1, n)) | {7, n - 7}
+        if CAB(r[0][1]) > .05: fix |= set(range(8, n - 7))                                               # designed greenhouse stays exact (Pulse EV lesson)
+        for it in range(iters):
+            for f in (lam, mu):
+                L = (np.roll(R, 1, 0) + np.roll(R, -1, 0)) * .5 - R; L[list(fix)] = 0; L[:, 1] = 0; R = R + f * L
+        R[NS - 1, 0] = 0.0; out.append([tuple(p) for p in R])
+    return out
+RINGS = fair_lateral(fair_cage(RAW))
+RINGS = [[(x, y, z + .006 * (1 - ss(.15, .24, z))) for x, y, z in r] for r in RINGS]                    # floor lift: subdivided underside >= clearance
+VB = [p for r in RINGS for p in r]; F = []; FT = []
+for i in range(len(RINGS) - 1):
+    for j in range(NR):
+        a = i * NR + j; b = i * NR + (j + 1) % NR; cc = (i + 1) * NR + (j + 1) % NR; d = (i + 1) * NR + j
+        F.append((a, d, cc, b)); ym = (RINGS[i][0][1] + RINGS[i + 1][0][1]) / 2; h0, h1 = col_tag(j), col_tag((j + 1) % NR); FT.append((ym, min(h0, h1), max(h0, h1)))
+for ri, flip in ((0, False), (len(RINGS) - 1, True)):
+    r = RINGS[ri]; cidx = len(VB); VB.append(tuple(np.mean(np.array(r), axis=0)))
+    for j in range(NR): f = (ri * NR + j, ri * NR + (j + 1) % NR, cidx); F.append(f[::-1] if not flip else f); FT.append(('cap', 0, 0))
+def tag(t):
+    if t[0] == 'cap': return 'paint'
+    y, a, b = t
+    if CAB(y) < .5: return 'paint'
+    if a >= I_ROOF and -.97 < y < -.25: return 'glass'                                                  # windshield
+    if a >= I_ROOF and .82 < y < 1.60: return 'glass'                                                   # rear window
+    if (a, b) == (9, 10) and -.90 < y < 1.30: return 'glass'                                            # side glass (front door, rear door, quarter light)
+    if (a, b) == (8, 9) and -.94 < y < 1.36: return 'seal'                                              # belt / DLO seal
+    return 'paint'
+TAGS = [tag(t) for t in FT]
+# ================================================================ materials
+TEX = make_shared_textures(); PAINT_RGB = (.060, .115, .220)                                           # review colour: steel-blue metallic (variants in the report)
+M = build_library(TEX, PRE, PAINT_RGB)
+TMP = {}
+def tmp(n):
+    if n not in TMP: m = bpy.data.materials.new('TMP_' + n); m.diffuse_color = (.02, .02, .02, 1); TMP[n] = m
+    return TMP[n]
+MM = dict(M); MM.update({'TMP_' + k: tmp(k) for k in ('seal', 'pocket', 'housing', 'grille', 'plastic', 'arch', 'plate')})
+WORK = coll('TS_WORK'); CUT = coll('TS_CUTTERS'); CUT_G = coll('TS_GROOVES')
+def cage_obj(name):
+    tags = [PRE + '_Paint' if t == 'paint' else 'TS_Glass' if t == 'glass' else 'TMP_seal' for t in TAGS]
+    me = bpy.data.meshes.new(name); me.from_pydata(VB, [], F); me.update(); order = list(dict.fromkeys(tags))
+    for m in order: me.materials.append(MM[m])
+    me.polygons.foreach_set('material_index', [order.index(t) for t in tags]); o = bpy.data.objects.new(name, me); WORK.objects.link(o)
+    bm = bmesh.new(); bm.from_mesh(me); bmesh.ops.recalc_face_normals(bm, faces=bm.faces); bm.to_mesh(me); bm.free()
+    cr = me.attributes.new('crease_edge', 'FLOAT', 'EDGE'); n_ = len(RINGS)
+    crest = {i * NR + j for i in range(n_) for j in (7, NR - 7)}
+    rail = {i * NR + j for i in range(n_) if -.95 < RINGS[i][0][1] < 1.62 for j in (I_ROOF, NR - I_ROOF)}
+    for e in me.edges:
+        a_, b_ = e.vertices
+        if a_ >= n_ * NR or b_ >= n_ * NR: continue
+        ia, ja = divmod(a_, NR); ib, jb = divmod(b_, NR); ym_ = (VB[a_][1] + VB[b_][1]) / 2
+        if ia != ib and ja == jb:
+            if a_ in crest and b_ in crest: cr.data[e.index].value = .72 * ss(-2.16, -1.95, ym_) * (1 - ss(2.08, 2.30, ym_))   # shoulder line (crisp, real-car)
+            elif a_ in rail and b_ in rail: cr.data[e.index].value = .55                                                    # roof drip rail
+            elif ja in (3, NR - 3): cr.data[e.index].value = .62 if (ym_ < -1.92 or ym_ > 2.02) else .30                    # bumper lower edge (crisp) / sill line
+            elif ja in (6, NR - 6): cr.data[e.index].value = .58 * ss(-1.75, -1.35, ym_) * (1 - ss(1.75, 2.15, ym_))       # door character line at handle height (fades into the fenders)
+        elif ia == ib and ia in (I_FRONTFACE, I_REARFACE):                                                                   # front / rear face edge: constructed ends, not pillows
+            cj = min(col_tag(ja), col_tag(jb)); cr.data[e.index].value = .90 * ss(2.5, 5.5, cj)
+    return o
+def subdiv(o, lv):
+    m = o.modifiers.new('s', 'SUBSURF'); m.levels = m.render_levels = lv; m.boundary_smooth = 'ALL'
+    with bpy.context.temp_override(object=o, active_object=o): bpy.ops.object.modifier_apply(modifier='s')
+# ================================================================ 02 body
+REF = cage_obj('REF_Skin'); subdiv(REF, 3)                                                              # uncut limit surface: projection reference (cutters, lenses, parts)
+BVH = BVHTree.FromObject(REF, bpy.context.evaluated_depsgraph_get())
+def ray(o, d):
+    loc, nrm, i, dist = BVH.ray_cast(Vector(o), Vector(d))
+    if loc is None: return None, None
+    if nrm.dot(Vector(d)) > 0: nrm = -nrm
+    return loc, nrm
+fhit = lambda x, z: ray((x, -4, z), (0, 1, 0)); rhit = lambda x, z: ray((x, 4, z), (0, -1, 0))
+shit = lambda sx, y, z: ray((sx * 3, y, z), (-sx, 0, 0)); thit = lambda x, y: ray((x, y, 3), (0, 0, -1))
+def solid(name, outer, inner, mat, c=None):
+    bm = bmesh.new(); a = [bm.verts.new(p) for p in outer]; b = [bm.verts.new(p) for p in inner]; n = len(a)
+    bm.faces.new(a); bm.faces.new(b[::-1])
+    for i in range(n): j = (i + 1) % n; bm.faces.new((a[i], b[i], b[j], a[j]))
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces); bmesh.ops.triangulate(bm, faces=bm.faces)
+    me = bpy.data.meshes.new(name); bm.to_mesh(me); bm.free(); me.materials.append(MM['TMP_' + mat]); o = bpy.data.objects.new(name, me); (c or CUT).objects.link(o); return o
+def rounded(pts, r, seg=3):
+    out = []; n = len(pts); rs = r if isinstance(r, (list, tuple)) else [r] * n
+    for i in range(n):
+        p0, p1, p2 = Vector(pts[i - 1]), Vector(pts[i]), Vector(pts[(i + 1) % n]); d1 = (p0 - p1).normalized(); d2 = (p2 - p1).normalized()
+        rr = min(rs[i], (p0 - p1).length * .45, (p2 - p1).length * .45); a_ = p1 + d1 * rr; b_ = p1 + d2 * rr
+        for k in range(seg + 1): t = k / seg; q = (1 - t) ** 2 * a_ + 2 * (1 - t) * t * p1 + t * t * b_; out.append((q.x, q.y))
+    return out
+def mirror_x(poly): return [(-x, z) for x, z in poly][::-1]
+def front_pocket(name, poly, depth, mat, rear=False, c=None):
+    hitf = rhit if rear else fhit; s = 1 if rear else -1; outer, inner = [], []
+    for x, z in poly:
+        p, n = hitf(x, z)
+        if p is None: print('CUT MISS', name, x, z); return None
+        outer.append((x, s * 3.5, z)); inner.append((p.x, p.y - s * depth, p.z))
+    return solid(name, outer, inner, mat, c)
+def side_pocket(name, poly, depth, mat, sx, c=None):
+    outer, inner = [], []
+    for y, z in poly:
+        p, n = shit(sx, y, z)
+        if p is None: print('CUT MISS', name, y, z); return None
+        outer.append((sx * 2.0, y, z)); inner.append((p.x - sx * depth, p.y, p.z))
+    return solid(name, outer, inner, mat, c)
+def top_pocket(name, poly, depth, mat, c=None):
+    outer, inner = [], []
+    for x, y in poly:
+        p, n = thit(x, y)
+        if p is None: print('CUT MISS', name, x, y); return None
+        outer.append((x, y, 3.0)); inner.append((p.x, p.y, p.z - depth))
+    return solid(name, outer, inner, mat, c)
+def sample_poly(poly, step=.015, closed=True):
+    out = []; pairs = list(zip(poly, poly[1:] + (poly[:1] if closed else [])))
+    for a_, b_ in pairs:
+        a_, b_ = Vector(a_), Vector(b_); n = max(1, int((b_ - a_).length / step)); out += [tuple(a_.lerp(b_, k / n)) for k in range(n)]
+    return out
+def fence(name, pts_normals, w=.0058, d_in=.009, d_out=.02):
+    """closed groove cutter (panel gap, 4.5 mm wide) along a loop on the surface — high-res master only (baked into the normal map)."""
+    n = len(pts_normals); bm = bmesh.new(); rr = []
+    for i, (p, nr) in enumerate(pts_normals):
+        q = pts_normals[(i + 1) % n][0]; r_ = pts_normals[i - 1][0]; tg = (q - r_).normalized(); b = tg.cross(nr).normalized()
+        rr.append([bm.verts.new(p + b * w / 2 + nr * d_out), bm.verts.new(p - b * w / 2 + nr * d_out), bm.verts.new(p - b * w / 2 - nr * d_in), bm.verts.new(p + b * w / 2 - nr * d_in)])
+    for i in range(n):
+        A, B = rr[i], rr[(i + 1) % n]
+        for k in range(4): bm.faces.new((A[k], A[(k + 1) % 4], B[(k + 1) % 4], B[k]))
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces); me = bpy.data.meshes.new(name); bm.to_mesh(me); bm.free(); me.materials.append(MM['TMP_pocket'])
+    o = bpy.data.objects.new(name, me); CUT_G.objects.link(o); return o
+def slot(name, pts_normals, w=.0058, d_in=.009, d_out=.02):
+    """open groove (bumper split line): a thin closed loop around a polyline (out and back)."""
+    return fence(name, pts_normals + [(p + n * 0, n) for p, n in pts_normals[::-1][1:-1]], w, d_in, d_out)
+def loop_top(pts): return [(p, n) for p, n in (thit(x, y) for x, y in pts) if p is not None]
+def loop_side(sx, pts): return [(p, n) for p, n in (shit(sx, y, z) for y, z in pts) if p is not None]
+def loop_front(pts, rear=False): return [(p, n) for p, n in ((rhit if rear else fhit)(x, z) for x, z in pts) if p is not None]
+# ---- openings (cut into master AND game body)
+for (y, sx) in ((YF, 1), (YF, -1), (YR, 1), (YR, -1)):                                                   # wheel arches: 55 mm tire clearance, centre 20 mm above the axle
+    R_ = RW + .042; seg = 24; zc = RW + .014
+    outer = [(sx * 1.4, y + R_ * math.cos(2 * math.pi * k / seg), zc + R_ * math.sin(2 * math.pi * k / seg)) for k in range(seg)]
+    solid(f'arch_{y}_{sx}', outer, [(sx * .56, py, pz) for _, py, pz in outer], 'arch')
+HL = lambda sx: rounded([(sx * .43, .655), (sx * .62, .672), (sx * .79, .712), (sx * .862, .735), (sx * .872, .690), (sx * .84, .615), (sx * .64, .585), (sx * .45, .580)], [.012, .03, .03, .02, .015, .02, .03, .012], 2)
+GRILLE = rounded([(-.40, .668), (.40, .668), (.34, .572), (-.34, .572)], [.025, .025, .02, .02], 2)
+LOWER = rounded([(-.52, .425), (.52, .425), (.46, .285), (-.46, .285)], [.03, .03, .04, .04], 2)
+FOG = lambda sx: rounded([(sx * .60, .405), (sx * .755, .425), (sx * .745, .305), (sx * .62, .300)], .02, 2)
+TL = lambda sx: rounded([(sx * .46, .905), (sx * .78, .905), (sx * .815, .875), (sx * .812, .805), (sx * .74, .792), (sx * .52, .835)], [.012, .02, .02, .015, .02, .015], 2)
+PLATE_R = rounded([(-.265, .585), (.265, .585), (.265, .465), (-.265, .465)], .012, 2)
+VALANCE = rounded([(-.72, .375), (.72, .375), (.66, .300), (-.66, .300)], .02, 3)
+for sx in (1, -1):
+    front_pocket(f'headlamp_{sx}', HL(sx)[::-1] if sx > 0 else HL(sx), .095, 'housing')
+    front_pocket(f'fog_{sx}', FOG(sx) if sx > 0 else FOG(sx)[::-1], .055, 'pocket')
+    front_pocket(f'taillamp_{sx}', TL(sx) if sx < 0 else TL(sx)[::-1], .075, 'housing', rear=True)
+    for (y0, y1) in ((-.16, -.02), (.80, .94)):                                                         # door-handle recesses
+        side_pocket(f'handle_{sx}_{y0}', rounded([(y0, .862), (y1, .866), (y1, .838), (y0, .834)], .01, 3), .018, 'pocket', sx)
+front_pocket('grille', GRILLE[::-1], .075, 'grille'); front_pocket('lower', LOWER[::-1], .085, 'grille')
+front_pocket('plate_r', PLATE_R[::-1], .018, 'plate', rear=True); front_pocket('valance', VALANCE[::-1], .022, 'plastic', rear=True)
+# ---- panel gaps (master only -> baked): hood, trunk, 4 doors, fuel door, bumper splits (front + rear, both sides)
+fence('gap_hood', loop_top(sample_poly(rounded([(.71, -.97), (.76, -1.50), (.70, -2.03), (-.70, -2.03), (-.76, -1.50), (-.71, -.97)], [.02, .3, .08, .08, .3, .02], 6))))
+fence('gap_trunk', loop_top(sample_poly(rounded([(.60, 1.66), (.66, 2.00), (.62, 2.31), (-.62, 2.31), (-.66, 2.00), (-.60, 1.66)], [.02, .2, .05, .05, .2, .02], 6))))
+for sx in (1, -1):
+    FD = rounded([(-.93, .315), (.09, .315), (.09, ZBELT(.09) - .018), (-.87, ZBELT(-.87) - .018)], [.04, .02, .01, .02], 5)
+    RD = rounded([(.15, .315), (.93, .315), (1.03, .50), (1.20, ZBELT(1.20) - .018), (.15, ZBELT(.15) - .018)], [.02, .05, .06, .02, .01], 5)
+    fence(f'gap_fdoor_{sx}', loop_side(sx, sample_poly(FD))); fence(f'gap_rdoor_{sx}', loop_side(sx, sample_poly(RD)))
+    None and slot(f'split_f_{sx}', loop_side(sx, sample_poly([(-1.62, .62), (-1.72, .74), (-1.86, .80)], closed=False)))      # front bumper / fender split, loop_side(sx, sample_poly([(-1.62, .62), (-1.72, .74), (-1.86, .80)], closed=False)))      # front bumper / fender split
+    None and slot(f'split_r_{sx}', loop_side(sx, sample_poly([(1.70, .66), (1.86, .76), (2.02, .82)], closed=False)))         # rear bumper / quarter split, loop_side(sx, sample_poly([(1.70, .66), (1.86, .76), (2.02, .82)], closed=False)))         # rear bumper / quarter split
+fence('gap_fuel', loop_side(-1, sample_poly(rounded([(1.44, .80), (1.60, .80), (1.60, .93), (1.44, .93)], .025, 4))))   # fuel door (right rear quarter)
+None and slot('split_front_upper', loop_front(sample_poly([(-.80, .705), (-.40, .675), (0, .668), (.40, .675), (.80, .705)], closed=False)))   # bumper top / hood-front line, loop_front(sample_poly([(-.80, .705), (-.40, .675), (0, .668), (.40, .675), (.80, .705)], closed=False)))   # bumper top / hood-front line
+def apply_cuts(o, cc):
+    m_ = o.modifiers.new('cuts', 'BOOLEAN'); m_.operation = 'DIFFERENCE'; m_.solver = 'EXACT'; m_.operand_type = 'COLLECTION'; m_.collection = cc
+    if hasattr(m_, 'material_mode'): m_.material_mode = 'TRANSFER'
+    with bpy.context.temp_override(object=o, active_object=o): bpy.ops.object.modifier_apply(modifier='cuts')
+ALLC = coll('TS_ALLCUT')
+for o in list(CUT.objects) + list(CUT_G.objects): ALLC.objects.link(o)
+HI = cage_obj('REF_Master'); subdiv(HI, 3); apply_cuts(HI, ALLC); HI.data.shade_smooth()
+LO = cage_obj('Body_Game'); subdiv(LO, 1); apply_cuts(LO, CUT)
+REPORT['master_tris'] = tris(HI); REPORT['cutters'] = sorted(o.name for o in CUT.objects); REPORT['grooves'] = sorted(o.name for o in CUT_G.objects)
+for c_ in (ALLC, CUT, CUT_G):
+    for o in list(c_.objects): bpy.data.objects.remove(o, do_unlink=True) if o.name in bpy.data.objects else None
+clean(LO)
+# game body = cage at subdivision level 1 (clean quads; material boundaries stay on cage lines - no decimation tears); smoothness comes from the bake
+def split_by(o, pred, new_name):
+    me2 = o.data.copy(); n = bpy.data.objects.new(new_name, me2); o.users_collection[0].objects.link(n)
+    for ob, keep in ((o, lambda m: not pred(m)), (n, pred)):
+        bm = bmesh.new(); bm.from_mesh(ob.data); mats = ob.data.materials
+        bmesh.ops.delete(bm, geom=[f for f in bm.faces if not keep(mats[f.material_index].name if mats[f.material_index] else '')], context='FACES'); bm.to_mesh(ob.data); bm.free(); ob.data.update()
+    purge_slots(n); purge_slots(o); return n
+GLASS = split_by(LO, lambda m: m == 'TS_Glass', 'Glass_Shell')
+BODYTRIM = split_by(LO, lambda m: m.startswith('TMP_'), 'BodyTrim')                                   # pocket walls, seals, arch walls -> atlas
+REPORT['body_paint_tris'] = tris(LO); REPORT['bodytrim_tris'] = tris(BODYTRIM); REPORT['glass_tris'] = tris(GLASS)
+# ---- body-colour mirror housings + roof antenna fin: part of the paint body (unique UVs, baked like the rest; copies added to the master)
+MIRC = {sx: Vector((sx * .945, -.805, .985)) for sx in (1, -1)}
+def mirror_housing(sx):
+    """tapered rounded-box housing: outboard end taller, flat rear face (glass sits there), rounded aero front."""
+    bm = bmesh.new(); bmesh.ops.create_cube(bm, size=1.0); bmesh.ops.scale(bm, vec=(.17, .085, .110), verts=bm.verts)
+    bmesh.ops.bevel(bm, geom=[e for e in bm.edges if not all(v.co.y > .04 for v in e.verts)], offset=.028, segments=2, affect='EDGES', profile=.5)
+    for v in bm.verts:
+        t = (v.co.x * sx + .10) / .20; v.co.z *= lerp(.72, 1.0, t); v.co.y *= lerp(.80, 1.0, t)                                 # narrower / lower toward the door
+        if v.co.y < 0: v.co.y *= 1.0 + .35 * (1 - abs(v.co.z) / .06) * (1 - abs(v.co.x) / .10)                                  # rounded aero front bulge
+        v.co += MIRC[sx]
+    me = bpy.data.meshes.new('MirH'); bm.to_mesh(me); bm.free(); me.materials.append(M[PRE + '_Paint']); o = bpy.data.objects.new(f'MirrorHousing_{sx}', me); WORK.objects.link(o); return o
+def antenna_fin():
+    prof = [(.50, 0.0), (.60, .012), (.68, .045), (.72, .058), (.75, .040), (.765, 0.0)]; Vs = []; Fs = []
+    for y, h in prof:
+        p, n = thit(0, y); Vs += [(-.028 * (h > 0) - .006, y, p.z - .004), (.028 * (h > 0) + .006, y, p.z - .004), (0, y, p.z + h)]
+    for i in range(len(prof) - 1):
+        a0 = 3 * i; b0 = 3 * (i + 1); Fs += [(a0, b0, b0 + 2, a0 + 2), (a0 + 1, a0 + 2, b0 + 2, b0 + 1)]
+    me = bpy.data.meshes.new('Fin'); me.from_pydata(Vs, [], Fs); me.materials.append(M[PRE + '_Paint']); o = bpy.data.objects.new('AntennaFin', me); WORK.objects.link(o)
+    bm = bmesh.new(); bm.from_mesh(me); bmesh.ops.recalc_face_normals(bm, faces=bm.faces); bm.to_mesh(me); bm.free(); return o
+EXTRA = [mirror_housing(1), mirror_housing(-1), antenna_fin()]
+for e_ in EXTRA:
+    c_ = e_.copy(); c_.data = e_.data.copy(); WORK.objects.link(c_); HI = join([HI, c_], 'REF_Master', WORK)
+LO = join([LO] + EXTRA, 'Body_Game', WORK)
+bm = bmesh.new(); bm.from_mesh(LO.data); bm.normal_update()
+bmesh.ops.delete(bm, geom=[f for f in bm.faces if f.normal.z < -.75 and f.calc_center_median().z < .26 and abs(f.calc_center_median().y) < 1.95], context='FACES'); bm.to_mesh(LO.data); bm.free()   # hidden underside (underbody tray covers it)
+# ---- shading of the game body: smooth, hard edges only at real breaks (opening rims), then UV unwrap + normal bake from the master
+LO.data.shade_smooth(); LO.data.set_sharp_from_angle(angle=math.radians(48))
+bpy.context.view_layer.objects.active = LO
+for o in bpy.context.view_layer.objects: o.select_set(o == LO)
+bpy.ops.object.mode_set(mode='EDIT'); bpy.ops.mesh.select_all(action='SELECT')
+bpy.ops.uv.smart_project(angle_limit=math.radians(58), island_margin=.006, area_weight=.3, correct_aspect=True, scale_to_bounds=False)
+bpy.ops.uv.pack_islands(margin=.006, rotate=True)
+bpy.ops.object.mode_set(mode='OBJECT')
+def bake_normal(low, high, img_name, res, path):
+    img = bpy.data.images.new(img_name, res, res, alpha=False, float_buffer=False); img.colorspace_settings.name = 'Non-Color'
+    bm_ = bpy.data.materials.new('BAKE_TMP'); bm_.use_nodes = True; tn = bm_.node_tree.nodes.new('ShaderNodeTexImage'); tn.image = img; bm_.node_tree.nodes.active = tn
+    saved = [m for m in low.data.materials]; low.data.materials.clear(); low.data.materials.append(bm_)
+    sc.render.engine = 'CYCLES'; sc.cycles.samples = 1
+    try:
+        pr = bpy.context.preferences.addons['cycles'].preferences; pr.compute_device_type = 'METAL'; pr.get_devices(); [setattr(d, 'use', True) for d in pr.devices]; sc.cycles.device = 'GPU'
+    except Exception as e: print('bake on CPU', e)
+    hr, hv = high.hide_render, high.hide_viewport; high.hide_render = False; high.hide_viewport = False
+    for o in bpy.context.view_layer.objects: o.select_set(o in (low, high))
+    bpy.context.view_layer.objects.active = low
+    bpy.ops.object.bake(type='NORMAL', normal_space='TANGENT', use_selected_to_active=True, cage_extrusion=.012, max_ray_distance=.03, margin=8, use_clear=True)
+    high.hide_render, high.hide_viewport = hr, hv
+    img.filepath_raw = path; img.file_format = 'PNG'; img.save(); low.data.materials.clear()
+    for m in saved: low.data.materials.append(m)
+    bpy.data.materials.remove(bm_); return path
+NORMAL0 = bake_normal(LO, HI, f'{PRE}_Body_Normal', int(os.environ.get('TS_BAKE_RES', 2048)), OUTD('textures', f'{PRE}_Body_Normal.png'))
+M.update(paint_material(PRE + '_Paint', PAINT_RGB, dict(normal=NORMAL0), TEX))
+REPORT['body_normal'] = os.path.basename(NORMAL0)
+HI.hide_render = True; HI.hide_viewport = True
+save_ckp('trafficsedana_02_body.blend') if LAST >= 2 else None
+if LAST <= 2: sys.exit(0)
+# ================================================================ 03 exterior parts, lamps, glass (real depth; nothing painted-on)
+TR, LI = Geo(), Geo()
+def grow(poly, d):
+    c = centroid2(poly); return [tuple(c + (Vector(p) - c) * (1 + d / max((Vector(p) - c).length, 1e-6))) for p in poly]
+def ptat(hitf, a, b, depth):
+    p, n = hitf(a, b); return None if p is None else p - n * depth
+def centroid2(poly): return Vector((sum(x for x, _ in poly) / len(poly), sum(z for _, z in poly) / len(poly)))
+def surf_patch(g, poly, hitf, off, t, step=.026, shrink=1.0):
+    """surface-following panel / lens over a closed outline (polar fan from the outline centroid; exact outline), offset `off` along the skin normal."""
+    ring = sample_poly(poly, step); c = centroid2(ring); rows = []
+    for k in (shrink, shrink * .5):
+        row = []
+        for x, z in ring:
+            q = c.lerp(Vector((x, z)), k); p, n = hitf(q.x, q.y); row.append(p + n * off if p is not None else None)
+        rows.append(row)
+    if any(p is None for r in rows for p in r): print('PATCH MISS', t); return
+    pc, nc = hitf(c.x, c.y); n0 = len(g.V); nr = len(ring)
+    for r in rows: g.V += [tuple(p) for p in r]
+    g.V.append(tuple(pc + nc * off))
+    for i in range(1):
+        for j in range(nr): g.F.append((n0 + i * nr + j, n0 + i * nr + (j + 1) % nr, n0 + (i + 1) * nr + (j + 1) % nr, n0 + (i + 1) * nr + j)); g.T.append(t)
+    for j in range(nr): g.F.append((n0 + nr + j, n0 + nr + (j + 1) % nr, n0 + 2 * nr)); g.T.append(t)
+def bezel(g, poly, hitf, d0, d1, k1, t, step=.04):
+    """depth ring inside an opening: outline at depth d0 -> outline shrunk to k1 at depth d1 (gives a lamp / grille real inner wall)."""
+    ring = sample_poly(poly, step); c = centroid2(ring); A, B = [], []
+    for x, z in ring:
+        p0 = ptat(hitf, x, z, d0); q = c.lerp(Vector((x, z)), k1); p1 = ptat(hitf, q.x, q.y, d1)
+        if p0 is None or p1 is None: print('BEZEL MISS', t); return
+        A.append(p0); B.append(p1)
+    g.strip(A, B, t, closed=True)
+def ribbon(g, hitf, pts, h, depth, t):
+    """light guide / trim ribbon of height h along a polyline of (x, z) points, `depth` behind the skin."""
+    A = [ptat(hitf, x, z - h / 2, depth) for x, z in pts]; B = [ptat(hitf, x, z + h / 2, depth) for x, z in pts]
+    if any(p is None for p in A + B): print('RIBBON MISS', t); return
+    g.strip(A, B, t)
+def cup(g, centre, axis, r, depth, seg, t_rim, t_core=None, rc=.010):
+    """reflector bowl: rim ring -> apex along -axis; optional emitter disc at the bottom."""
+    axis = Vector(axis).normalized(); a = Vector((1, 0, 0)) if abs(axis.x) < .9 else Vector((0, 0, 1)); b1 = axis.cross(a).normalized(); b2 = axis.cross(b1)
+    ring = lambda rr, d: [Vector(centre) - axis * d + (b1 * math.cos(2 * math.pi * k / seg) + b2 * math.sin(2 * math.pi * k / seg)) * rr for k in range(seg)]
+    g.strip(ring(r, 0), ring(rc + .004, depth), t_rim, closed=True)
+    if t_core: g.cap(ring(rc + .004, depth), t_core, centre=Vector(centre) - axis * (depth - .004))
+def tube(g, p0, p1, r, seg, t, cap_end=True):
+    p0, p1 = Vector(p0), Vector(p1); ax = (p1 - p0).normalized(); a = Vector((1, 0, 0)) if abs(ax.x) < .9 else Vector((0, 0, 1)); b1 = ax.cross(a).normalized(); b2 = ax.cross(b1)
+    ring = lambda p: [p + (b1 * math.cos(2 * math.pi * k / seg) + b2 * math.sin(2 * math.pi * k / seg)) * r for k in range(seg)]
+    g.strip(ring(p0), ring(p1), t, closed=True)
+    if cap_end: g.cap(ring(p1), t, centre=p1)
+for sx in (1, -1):
+    IND = 'TS_Lights:Indicator_L' if sx > 0 else 'TS_Lights:Indicator_R'
+    # ---- headlamp: inner silver bezel (depth), two chrome reflector bowls with emitters, LED light guide (DRL) along the lower edge, amber indicator, clear lens
+    bezel(LI, HL(sx), fhit, .004, .035, .90, 'TS_Atlas:lamp_inner')
+    for x0, z0, r0 in ((.53, .628, .028), (.68, .650, .032)):
+        p, n = fhit(sx * x0, z0); cup(LI, p - n * .030, -n, r0, .040, 10, 'TS_Atlas:reflector', 'TS_Lights:Headlamp')
+    ribbon(LI, fhit, [(sx * x, z) for x, z in ((.46, .594), (.56, .594), (.65, .600), (.75, .622), (.83, .650))], .010, .022, 'TS_Lights:DRL')
+    ribbon(LI, fhit, [(sx * x, z) for x, z in ((.775, .708), (.815, .718), (.85, .720))], .016, .024, IND)
+    surf_patch(LI, grow(HL(sx), .006), fhit, .004, 'TS_Lens')                                      # lens seats over the cut rim
+    # ---- fog pocket: honeycomb back plate + round fog lamp (unlit reflector + clear lens)
+    surf_patch(TR, FOG(sx), lambda a, b: (lambda pn: (pn[0] - pn[1] * .050, pn[1]) if pn[0] is not None else pn)(fhit(a, b)), 0.0, 'TS_Atlas:grille', step=.05)
+    p, n = fhit(sx * .688, .360); cup(TR, p - n * .012, -n, .032, .03, 10, 'TS_Atlas:reflector', 'TS_Atlas:lamp_inner')
+    # ---- tail lamp: chrome reflector field, C-shaped tail light guide, brake block, amber indicator, red lens
+    surf_patch(LI, TL(sx), lambda a, b: (lambda pn: (pn[0] - pn[1] * .052, pn[1]) if pn[0] is not None else pn)(rhit(a, b)), 0.0, 'TS_Atlas:reflector', step=.05, shrink=.97)
+    bezel(LI, TL(sx), rhit, .004, .045, .97, 'TS_Atlas:lamp_housing')
+    ribbon(LI, rhit, [(sx * x, z) for x, z in ((.49, .886), (.60, .889), (.70, .889), (.78, .886))], .012, .020, 'TS_Lights:Tail')
+    ribbon(LI, rhit, [(sx * .795, z) for z in (.885, .860, .835, .815)], .0, .020, 'TS_Lights:Tail') if False else None
+    LI.grid([[ptat(rhit, sx * x, z, .022) for x in (.785, .800)] for z in np.linspace(.815, .878, 4)], 'TS_Lights:Tail')
+    LI.grid([[ptat(rhit, sx * x, z, .028) for x in np.linspace(.57, .745, 5)] for z in (.842, .868)], 'TS_Lights:Brake')
+    LI.grid([[ptat(rhit, sx * x, z, .028) for x in np.linspace(.60, .745, 4)] for z in (.812, .832)], IND)
+    surf_patch(LI, grow(TL(sx), .006), rhit, .004, 'TS_LensRed')
+    # ---- rear bumper: reverse lamp (clear lens) + red reflector; side repeater on the front fender; door handles; mirror arm + glass; wheel-arch liners
+    LI.grid([[ptat(rhit, sx * x, z, .004) for x in np.linspace(.42, .56, 4)] for z in (.330, .352)], 'TS_Lights:Reverse')
+    LI.grid([[ptat(rhit, sx * x, z, -.0015) for x in np.linspace(.415, .565, 4)] for z in (.326, .356)], 'TS_Lens')
+    TR.grid([[ptat(rhit, sx * x, z, -.002) for x in np.linspace(.66, .76, 3)] for z in (.405, .428)], 'TS_Atlas:reflector_red')
+    LI.grid([[ptat(lambda y_, z_: shit(sx, y_, z_), y, z, -.002) for y in np.linspace(-1.78, -1.71, 3)] for z in (.655, .672)], IND)
+    for (y0, y1) in ((-.15, -.03), (.81, .93)):
+        TR.grid([[ptat(lambda y_, z_: shit(sx, y_, z_), y, z, d) for y in np.linspace(y0, y1, 4)] for z, d in ((.840, .002), (.851, -.006), (.860, .002))], 'TS_Atlas:dark_chrome')
+    mc = MIRC[sx]; base = shit(sx, -.80, .925)[0]
+    TR.rbox(((base.x + mc.x - sx * .07) / 2, -.80, (.93 + mc.z - .02) / 2), (abs(mc.x - sx * .07 - base.x) / 2 + .012, .030, .020), 'TS_Atlas:plastic_black', .008)
+    TR.add([(mc.x - sx * .072, mc.y + .046, mc.z - .043), (mc.x + sx * .072, mc.y + .046, mc.z - .040), (mc.x + sx * .072, mc.y + .046, mc.z + .046), (mc.x - sx * .072, mc.y + .046, mc.z + .038)], [(0, 1, 2, 3) if sx < 0 else (3, 2, 1, 0)], 'TS_Atlas:mirror_glass')
+for (y, sx) in ((YF, 1), (YF, -1), (YR, 1), (YR, -1)):
+    R_ = RW + .045; zc = RW + .014; seg = 18; a0, a1 = math.radians(-12), math.radians(192)
+    arc = [(y + R_ * math.cos(lerp(a0, a1, q / seg)), zc + R_ * math.sin(lerp(a0, a1, q / seg))) for q in range(seg + 1)]
+    xi, xo = sx * .56, sx * (WMAX(y) - .02)
+    TR.strip([Vector((xi, yy, zz)) for yy, zz in arc], [Vector((xo, yy, zz)) for yy, zz in arc], 'TS_Atlas:arch_liner', flip=sx > 0)
+    TR.cap([Vector((xi, yy, zz)) for yy, zz in arc], 'TS_Atlas:arch_liner', centre=Vector((xi, y, zc - .05)), flip=sx < 0)
+# ---- grille: chrome frame, three gloss-black slats with depth, honeycomb back plate in shadow; lower intake honeycomb + centre bar; front plate; badges
+bezel(TR, GRILLE, fhit, .002, .012, .955, 'TS_Atlas:chrome')
+surf_patch(TR, GRILLE, lambda a, b: (lambda pn: (pn[0] - pn[1] * .068, pn[1]) if pn[0] is not None else pn)(fhit(a, b)), 0.0, 'TS_Atlas:grille', step=.06)
+for z in (.595, .620, .645):
+    xs = np.linspace(-.36 - (z - .572) * .55, .36 + (z - .572) * .55, 9); A = [ptat(fhit, x, z, .022) for x in xs]
+    TR.strip([p - Vector((0, 0, .004)) for p in A], [p + Vector((0, 0, .004)) for p in A], 'TS_Atlas:gloss_black'); TR.strip([p + Vector((0, 0, .004)) for p in A], [p + Vector((0, .03, .004)) for p in A], 'TS_Atlas:gloss_black')
+surf_patch(TR, LOWER, lambda a, b: (lambda pn: (pn[0] - pn[1] * .072, pn[1]) if pn[0] is not None else pn)(fhit(a, b)), 0.0, 'TS_Atlas:grille', step=.06)
+bezel(TR, LOWER, fhit, .003, .03, .965, 'TS_Atlas:plastic_black')
+xs = np.linspace(-.47, .47, 11); A = [ptat(fhit, x, .355, .035) for x in xs]
+TR.strip([p - Vector((0, 0, .006)) for p in A], [p + Vector((0, 0, .006)) for p in A], 'TS_Atlas:gloss_black')
+TR.grid([[ptat(fhit, x, z, -.006) for x in np.linspace(-.26, .26, 4)] for z in (.462, .558)], 'TS_Atlas:plate')                       # front plate (fictional)
+TR.grid([[ptat(fhit, x, z, -.002) for x in np.linspace(-.28, .28, 4)] for z in (.452, .568)], 'TS_Atlas:plastic_black')             # plate holder
+TR.grid([[ptat(rhit, x, z, .010) for x in np.linspace(-.25, .25, 4)] for z in (.475, .575)], 'TS_Atlas:plate')                        # rear plate in the recess
+p, n = fhit(0, .622); TR.cap([p - n * .010 + Vector((.032 * math.cos(2 * math.pi * k / 12), 0, .024 * math.sin(2 * math.pi * k / 12))) for k in range(12)], 'TS_Atlas:badge', flip=True)
+p, n = rhit(0, .770); TR.cap([p + n * .002 + Vector((.030 * math.cos(2 * math.pi * k / 12), 0, .022 * math.sin(2 * math.pi * k / 12))) for k in range(12)], 'TS_Atlas:badge')
+# ---- rear: exhaust tip under the bumper (left), underbody tray, high-mount brake light behind the rear glass, wipers
+tube(TR, (.42, YT - .16, .265), (.42, YT - .015, .262), .028, 10, 'TS_Atlas:exhaust', cap_end=False); tube(TR, (.42, YT - .016, .262), (.42, YT - .10, .262), .022, 10, 'TS_Atlas:underbody')
+TR.grid([[Vector((x, y, .168)) for x in np.linspace(-.78, .78, 3)] for y in np.linspace(-1.90, 1.98, 4)], 'TS_Atlas:underbody', flip=True)
+ph = thit(0, 1.50)[0]; LI.grid([[Vector((x, 1.50 + dz * .5, ph.z - .028 + dz)) for x in np.linspace(-.12, .12, 4)] for dz in (0, .014)], 'TS_Lights:Brake')
+for x0, x1 in ((-.62, -.06), (.02, .56)):
+    pts = [thit(x, -.915)[0] + Vector((0, 0, .012)) for x in np.linspace(x0, x1, 6)]
+    TR.strip([p - Vector((0, .006, 0)) for p in pts], [p + Vector((0, .006, .004)) for p in pts], 'TS_Atlas:wiper'); TR.strip([p + Vector((0, .006, .004)) for p in pts], [p + Vector((0, .006, .016)) for p in pts], 'TS_Atlas:wiper')
+# ---- glass: inset 6 mm with a rubber seal wall, black frit band on the windshield / rear window, B-pillar applique + quarter-light divider
+gme = GLASS.data; bmg = bmesh.new(); bmg.from_mesh(gme); bmg.verts.ensure_lookup_table(); bmg.normal_update()
+orig = {v.index: v.co.copy() for v in bmg.verts}
+for v in bmg.verts: v.co -= v.normal * .006
+bnd = [e for e in bmg.edges if e.is_boundary]
+for e in bnd:
+    a_, b_ = e.verts; TR.add([orig[a_.index], orig[b_.index], b_.co.copy(), a_.co.copy()], [(0, 1, 2, 3)], 'TS_Atlas:rubber')
+isl = {}; seen = set()
+for f0 in bmg.faces:
+    if f0.index in seen: continue
+    st = [f0]; comp = []
+    while st:
+        f = st.pop()
+        if f.index in seen: continue
+        seen.add(f.index); comp.append(f); st += [g for e in f.edges for g in e.link_faces if g.index not in seen]
+    cen = sum((f.calc_center_median() for f in comp), Vector()) / len(comp)
+    for f in comp: isl[f.index] = cen
+frit_faces = [f for f in bmg.faces if abs(isl[f.index].x) < .30]                                    # windshield + rear window
+res_ = bmesh.ops.inset_region(bmg, faces=frit_faces, thickness=.045, depth=0.0, use_even_offset=True, use_boundary=True)
+gme.materials.append(M['TS_Atlas']); FRIT_SLOT = len(gme.materials) - 1
+for f in res_['faces']: f.material_index = FRIT_SLOT
+bmg.to_mesh(gme); bmg.free(); gme.update()
+fa = gme.attributes.get('cell') or gme.attributes.new('cell', 'INT', 'FACE'); fa.data.foreach_set('value', [CELLS.index('frit') if p.material_index == FRIT_SLOT else -1 for p in gme.polygons])
+for sx in (1, -1):
+    sh_ = lambda y, z: shit(sx, y, z)
+    for (ya, yb, t) in ((.075, .165, 'TS_Atlas:gloss_black'), (1.015, 1.035, 'TS_Atlas:rubber')):
+        rows = []
+        for z_ in np.linspace(0, 1, 5):
+            row = []
+            for y in (ya, yb):
+                z0 = ZBELT(y) + .03; z1 = lerp(ZBELT(y) + .028, ZC(y) - .065, .92) - .004; p = ptat(sh_, y, lerp(z0, z1, z_), -.003); row.append(p)
+            rows.append(row)
+        if all(p is not None for r in rows for p in r): TR.grid(rows, t, flip=sx > 0)
+trim = mk('Trim_Parts', TR.V, TR.F, TR.T, WORK, M); lights = mk('Lights_LOD0', LI.V, LI.F, LI.T, WORK, M)
+for o in (trim, lights): clean(o); orient_out(o); o.data.shade_smooth(); o.data.set_sharp_from_angle(angle=math.radians(35))
+REPORT['trim_parts_tris'], REPORT['lights_tris'] = tris(trim), tris(lights)
+save_ckp('trafficsedana_03_parts_lights.blend') if LAST >= 3 else None
+if LAST <= 3: sys.exit(0)
+# ================================================================ 04 wheels: 205/55 R16 on a 16" 10-spoke alloy (5 double spokes), lug nuts, centre cap, ventilated disc, caliper
+WREF = {'FL': Vector((XF, YF, RW)), 'FR': Vector((-XF, YF, RW)), 'RL': Vector((XR, YR, RW)), 'RR': Vector((-XR, YR, RW))}
+WSEG = {0: (20, 18), 1: (14, 12), 2: (10, 8), 3: (8, 6)}                                                 # (tire, rim) segments per LOD
+def build_wheel(c, k, coll_):
+    sx = 1 if c[1] == 'L' else -1; hw = WT / 2; st, sr = WSEG[k]; g = Geo(); out = {}
+    # tire: bead -> sidewall bulge (max section at 45 % height) -> shoulder radius -> slightly crowned tread (real 55-series profile)
+    prof = [(-hw * .80, RIM + .006), (-hw * .96, RIM + .020), (-hw * 1.0, RW - .072), (-hw * .985, RW - .040), (-hw * .90, RW - .012), (-hw * .70, RW - .002), (0, RW),
+            (hw * .70, RW - .002), (hw * .90, RW - .012), (hw * .985, RW - .040), (hw * 1.0, RW - .072), (hw * .96, RIM + .020), (hw * .80, RIM + .006)]
+    prof = [prof[i] for i in ((0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12) if k <= 1 else (0, 2, 4, 6, 8, 10, 12))]
+    Vt, Ft, UVt = revolve(prof, st, sx, a0=-math.pi / 2); n0 = len(g.V); g.add(Vt, Ft, 'TS_Tire'); tire_uv = UVt          # vertex at the contact patch at every LOD
+    face = hw * .48
+    lip = [(hw * .80, RIM + .006), (hw * .86, RIM - .004), (hw * .55, RIM - .020)]
+    if k <= 2: V_, F_, _ = revolve(lip, sr, sx); g.add(V_, F_, 'TS_Atlas:wheel_silver')
+    barrel = [(hw * .55, RIM - .020), (-hw * .80, RIM - .028), (-hw * .80, RIM + .006)]
+    if k <= 2: V_, F_, _ = revolve(barrel, max(8, sr // 2 + 4), sx); g.add(V_, F_, 'TS_Atlas:wheel_dark')
+    if k <= 2:
+        nsp = 10 if k <= 1 else 5
+        for s_ in range(nsp):                                                                               # spokes: trapezoid section, concave dish (face sinks toward the hub)
+            a_ = 2 * math.pi * (s_ // 2 * 2 + (s_ % 2) * .30) / 10 if nsp == 10 else 2 * math.pi * s_ / 5
+            secs = []
+            for t in (0.0, 1.0):
+                r_ = lerp(.060, RIM - .018, t); w = lerp(.014, .010, t) * (1.0 if nsp == 10 else 1.7); xx = face - .030 * (1 - t) ** 1.5 + .004
+                Rm = Matrix.Rotation(a_, 3, 'X'); secs.append([Rm @ Vector((sx * xx, -w, r_)), Rm @ Vector((sx * xx, w, r_)), Rm @ Vector((sx * (xx - .028), w * 1.5, r_)), Rm @ Vector((sx * (xx - .028), -w * 1.5, r_))])
+            for A, B in zip(secs, secs[1:]): g.strip(A, B, 'TS_Atlas:wheel_silver', closed=True, flip=sx < 0)
+        hub = [(face - .026, .068), (face - .020, .040), (face - .016, .030)]
+        V_, F_, _ = revolve(hub, 10 if k <= 1 else 6, sx); g.add(V_, F_, 'TS_Atlas:wheel_silver')
+        V_, F_, _ = revolve([(face - .014, .030), (face - .010, .022), (face - .009, 0.0)], 10 if k <= 1 else 6, sx); g.add(V_, F_, 'TS_Atlas:badge')     # centre cap
+        if k == 0:
+            for s_ in range(5):                                                                             # lug nuts (5 x 114.3 PCD)
+                a_ = 2 * math.pi * (s_ + .5) / 5; cy, cz = .0572 * math.cos(a_), .0572 * math.sin(a_); hx = [(cy + .0095 * math.cos(2 * math.pi * q / 6), cz + .0095 * math.sin(2 * math.pi * q / 6)) for q in range(6)]
+                A = [Vector((sx * (face - .024), y, z)) for y, z in hx]; Bv = [Vector((sx * (face - .010), y, z)) for y, z in hx]
+                g.strip(A, Bv, 'TS_Atlas:lug', closed=True, flip=sx < 0); g.cap(Bv, 'TS_Atlas:lug', flip=sx < 0)
+    else:
+        V_, F_, _ = revolve([(face - .03, 0.0), (face - .03, RIM - .02)], 8, sx); g.add(V_, F_, 'TS_Atlas:wheel_silver')   # LOD3: flat face disc
+    if k <= 2:                                                                                              # ventilated disc (280 mm) with hat (rotates with the wheel)
+        rd = .140; V_, F_, _ = revolve([(-hw * .25, .085), (-hw * .25, rd), (-hw * .55, rd)], 12 if k <= 1 else 8, sx); g.add(V_, F_, 'TS_Atlas:brake_disc')
+        V_, F_, _ = revolve([(face - .030, .072), (-hw * .25, .085)], 10 if k <= 1 else 6, sx); g.add(V_, F_, 'TS_Atlas:caliper')
+    o = mk(f'Wheel_{c}_LOD{k}', g.V, g.F, g.T, coll_, M)
+    uvl = o.data.uv_layers.new(name='tireUV')
+    for p in o.data.polygons:
+        for li in p.loop_indices:
+            vi = o.data.loops[li].vertex_index; uvl.data[li].uv = tire_uv[vi] if vi < len(tire_uv) else (0, 0)
+    out['Wheel'] = o
+    if k <= 2:                                                                                              # floating caliper (static / steers, does not roll)
+        g = Geo(); front = c[0] == 'F'; a0, a1 = (math.radians(20), math.radians(70)) if front else (math.radians(110), math.radians(160)); n_ = 6 if k <= 1 else 3
+        secs = []
+        for q in range(n_ + 1):
+            a = lerp(a0, a1, q / n_); ca, sa = math.cos(a) * (1 if front else -1), math.sin(a)
+            pts = [(.098, sx * (-hw * .10)), (.150, sx * (-hw * .10)), (.150, -sx * hw * .62), (.098, -sx * hw * .62)]
+            secs.append([Vector((xx, rr * ca, rr * sa)) for rr, xx in pts])
+        for A, B in zip(secs, secs[1:]): g.strip(A, B, 'TS_Atlas:caliper', closed=True)
+        g.add(secs[0], [(0, 1, 2, 3)], 'TS_Atlas:caliper'); g.add(secs[-1], [(3, 2, 1, 0)], 'TS_Atlas:caliper')
+        out['Caliper'] = mk(f'Caliper_{c}_LOD{k}', g.V, g.F, g.T, coll_, M)
+    for key, o in out.items():
+        clean(o); orient_out(o, centre=(0, 0, 0)) if key == 'Caliper' else None
+        o.data.shade_smooth(); o.data.set_sharp_from_angle(angle=math.radians(40 if key != 'Wheel' else 50))
+        o.data.transform(Matrix.Translation(WREF[c])); set_origin(o, WREF[c])
+    return out
+WH = coll('TS_WHEELS'); ASM = {}
+for k in range(4):
+    for c in ('FL', 'FR', 'RL', 'RR'):
+        for key, o in build_wheel(c, k, WH).items(): ASM[(k, c, key)] = o
+save_ckp('trafficsedana_04_wheels.blend') if LAST >= 4 else None
+# ================================================================ 05 interior (visible through the glass): seats + headrests, rear bench, dashboard, cluster, wheel, console, door cards, headliner
+IN = Geo(); DRV = .37
+for sx in (1, -1):
+    xs_ = sx * DRV; tilt = Matrix.Rotation(-.30, 3, 'X')
+    IN.rbox((xs_, -.12, .42), (.25, .26, .06), 'TS_Atlas:fabric_dark', .03)                                   # front seat cushion
+    IN.rbox((xs_, .16, .76), (.24, .06, .30), 'TS_Atlas:fabric_dark', .04, tilt)                              # backrest
+    IN.rbox((xs_, .23, 1.13), (.13, .05, .08), 'TS_Atlas:fabric_dark', .03, tilt)                             # headrest
+    IN.rbox((sx * .80, .20, .62), (.03, 1.10, .29), 'TS_Atlas:int_plastic', 0)                               # door cards up to the belt (front + rear)
+    IN.rbox((sx * .772, .20, .74), (.03, 1.00, .02), 'TS_Atlas:fabric_light', 0)                              # armrest line
+    IN.rbox((sx * .36, 1.05, 1.08), (.12, .05, .075), 'TS_Atlas:fabric_dark', .03, Matrix.Rotation(-.20, 3, 'X'))   # rear headrests
+IN.rbox((0, .78, .44), (.68, .26, .07), 'TS_Atlas:fabric_dark', .04); IN.rbox((0, 1.02, .75), (.68, .07, .30), 'TS_Atlas:fabric_dark', .04, Matrix.Rotation(-.30, 3, 'X'))  # rear bench
+IN.rbox((0, -.78, .86), (.74, .17, .07), 'TS_Atlas:int_plastic', .04); IN.rbox((0, -.66, .76), (.72, .06, .06), 'TS_Atlas:int_plastic', 0)   # dashboard
+IN.rbox((DRV, -.64, .935), (.15, .05, .03), 'TS_Atlas:int_plastic', .02); IN.rbox((DRV, -.60, .905), (.13, .004, .035), 'TS_Atlas:screen', .002)  # cluster hood + gauges
+IN.rbox((0, -.70, .88), (.10, .01, .065), 'TS_Atlas:screen', .004, Matrix.Rotation(.25, 3, 'X'))           # centre display
+IN.rbox((0, -.28, .45), (.10, .42, .12), 'TS_Atlas:int_plastic', 0); IN.rbox((0, -.18, .58), (.04, .05, .03), 'TS_Atlas:leather', .015)   # console + shifter
+IN.rbox((0, 1.30, 1.00), (.66, .22, .02), 'TS_Atlas:fabric_dark', 0)                                     # parcel shelf
+hub = Vector((DRV, -.45, .86)); tilt = Matrix.Rotation(math.radians(-62), 3, 'X'); seg, sg2 = 12, 4
+for q in range(seg):
+    a0, a1 = 2 * math.pi * q / seg, 2 * math.pi * (q + 1) / seg
+    ring = lambda a: [hub + tilt @ Vector((.185 * math.cos(a) + .016 * math.cos(2 * math.pi * k / sg2) * math.cos(a), .016 * math.sin(2 * math.pi * k / sg2), .185 * math.sin(a) + .016 * math.cos(2 * math.pi * k / sg2) * math.sin(a))) for k in range(sg2)]
+    IN.strip(ring(a0), ring(a1), 'TS_Atlas:leather', closed=True)
+IN.rbox(tuple(hub + tilt @ Vector((0, .02, 0))), (.06, .03, .05), 'TS_Atlas:leather', .02, tilt)
+for a in (0, math.pi, -math.pi / 2): IN.rbox(tuple(hub + tilt @ Vector((.10 * math.cos(a), .01, .10 * math.sin(a)))), (.06 if a != -math.pi / 2 else .014, .01, .014 if a != -math.pi / 2 else .05), 'TS_Atlas:int_plastic', .004, tilt)
+interior = mk('Interior_LOD0', IN.V, IN.F, IN.T, WORK, M); clean(interior); interior.data.shade_smooth(); interior.data.set_sharp_from_angle(angle=math.radians(40))
+liner = LO.copy(); liner.data = LO.data.copy(); WORK.objects.link(liner); bm = bmesh.new(); bm.from_mesh(liner.data); bm.normal_update()
+bmesh.ops.delete(bm, geom=[f for f in bm.faces if not (f.calc_center_median().z > ZBELT(f.calc_center_median().y) + .02 and CAB(f.calc_center_median().y) > .5 and abs(f.calc_center_median().x) < .95)], context='FACES')
+for v in bm.verts: v.co -= v.normal * .018
+bmesh.ops.reverse_faces(bm, faces=bm.faces); bm.to_mesh(liner.data); bm.free()
+liner.data.materials.clear(); liner.data.materials.append(M['TS_Atlas']); la = liner.data.attributes.get('cell') or liner.data.attributes.new('cell', 'INT', 'FACE'); la.data.foreach_set('value', [CELLS.index('fabric_light')] * len(liner.data.polygons))
+decim_ = liner.modifiers.new('d', 'DECIMATE'); decim_.ratio = .45; decim_.use_symmetry = True
+with bpy.context.temp_override(object=liner, active_object=liner): bpy.ops.object.modifier_apply(modifier='d')
+for l_ in list(liner.data.uv_layers): liner.data.uv_layers.remove(l_)
+interior = join([interior, liner], 'Interior_LOD0', WORK); clean(interior); interior.data.shade_smooth(); interior.data.set_sharp_from_angle(angle=math.radians(40))
+REPORT['interior_tris'] = tris(interior)
+save_ckp('trafficsedana_05_interior.blend') if LAST >= 5 else None
+# ================================================================ 06 merge, UVs, AO + grime bake (all LOD0 parts in place -> real contact occlusion)
+TMAP = {'TMP_seal': 'gloss_black', 'TMP_pocket': 'plastic_black', 'TMP_housing': 'lamp_housing', 'TMP_grille': 'grille', 'TMP_plastic': 'plastic_black', 'TMP_arch': 'arch_liner', 'TMP_plate': 'plastic_black'}
+def tmp_to_atlas(o):
+    me = o.data; names = [m.name for m in me.materials]; idx = [p.material_index for p in me.polygons]
+    a = me.attributes.get('cell') or me.attributes.new('cell', 'INT', 'FACE'); vals = [CELLS.index(TMAP[names[i]]) if names[i] in TMAP else -1 for i in idx]
+    me.materials.clear(); me.materials.append(M['TS_Atlas']); me.polygons.foreach_set('material_index', [0] * len(idx)); a.data.foreach_set('value', vals)
+tmp_to_atlas(BODYTRIM)
+d_ = BODYTRIM.modifiers.new('d', 'DECIMATE'); d_.decimate_type = 'DISSOLVE'; d_.angle_limit = math.radians(2.0); d_.delimit = {'MATERIAL', 'NORMAL'}
+with bpy.context.temp_override(object=BODYTRIM, active_object=BODYTRIM): bpy.ops.object.modifier_apply(modifier='d')
+bm = bmesh.new(); bm.from_mesh(BODYTRIM.data); bmesh.ops.triangulate(bm, faces=[f for f in bm.faces if len(f.verts) > 4]); bm.to_mesh(BODYTRIM.data); bm.free()   # planar cut walls: dissolve flat facets
+L0 = coll('LOD0_PARTS')
+trim0 = join([BODYTRIM, trim], 'Trim_LOD0', L0)
+for g_ in [GLASS]:
+    g_.name = g_.data.name = 'Glass_LOD0'; link_only(g_, L0)
+LO.name = LO.data.name = 'Body_LOD0'; link_only(LO, L0); link_only(lights, L0); link_only(interior, L0)
+for o in (trim0, lights, interior, GLASS): atlas_uvs(o)
+for k_ in range(4):
+    for c in ('FL', 'FR', 'RL', 'RR'):
+        for key in ('Wheel', 'Caliper'):
+            o = ASM.get((k_, c, key))
+            if o: atlas_uvs(o)
+trim0.data.shade_smooth(); trim0.data.set_sharp_from_angle(angle=math.radians(35)); GLASS.data.shade_smooth()
+for o in [x for x in bpy.data.objects if x.type == 'MESH']: purge_slots(o)
+def bake_ao_grime(body, res, path):
+    """AO with every LOD0 part in place (wheels, trim, interior occlude) + road-grime mask (low on the body, in cavities). R = AO, G = grime."""
+    for o in bpy.data.objects:
+        if o.type == 'MESH': o.hide_render = not (o.name in L0.objects or (o.name.endswith('_LOD0') and o.name.startswith(('Wheel', 'Caliper'))))
+    sc.render.engine = 'CYCLES'; sc.cycles.samples = 96
+    imgs = {}
+    for kind in ('AO', 'EMIT'):
+        img = bpy.data.images.new(f'bake_{kind}', res, res, alpha=False); img.colorspace_settings.name = 'Non-Color'; imgs[kind] = img
+        bm_ = bpy.data.materials.new('BAKE_TMP'); bm_.use_nodes = True; nt = bm_.node_tree; tn = nt.nodes.new('ShaderNodeTexImage'); tn.image = img; nt.nodes.active = tn
+        if kind == 'EMIT':
+            em = nt.nodes.new('ShaderNodeEmission'); tc = nt.nodes.new('ShaderNodeTexCoord'); sp = nt.nodes.new('ShaderNodeSeparateXYZ'); mr = nt.nodes.new('ShaderNodeMapRange')
+            mr.inputs['From Min'].default_value = .18; mr.inputs['From Max'].default_value = .62; mr.inputs['To Min'].default_value = 1.0; mr.inputs['To Max'].default_value = 0.0
+            nt.links.new(tc.outputs['Object'], sp.inputs[0]); nt.links.new(sp.outputs['Z'], mr.inputs['Value']); nt.links.new(mr.outputs[0], em.inputs['Color'])
+            nt.links.new(em.outputs[0], nt.nodes['Material Output'].inputs[0])
+        saved = [m for m in body.data.materials]; body.data.materials.clear(); body.data.materials.append(bm_)
+        for o in bpy.context.view_layer.objects: o.select_set(o == body)
+        bpy.context.view_layer.objects.active = body
+        bpy.ops.object.bake(type=kind, margin=8, use_clear=True); body.data.materials.clear()
+        for m in saved: body.data.materials.append(m)
+        bpy.data.materials.remove(bm_)
+    ao = np.array(imgs['AO'].pixels[:]).reshape(res, res, 4)[..., 0]; low = np.array(imgs['EMIT'].pixels[:]).reshape(res, res, 4)[..., 0]
+    grime = np.clip(.75 * low ** 1.6 + .45 * np.clip(.85 - ao, 0, 1), 0, 1) * .8
+    out = np.dstack([ao, grime, np.zeros_like(ao), np.ones_like(ao)])
+    im = bpy.data.images.new(os.path.basename(path)[:-4], res, res, alpha=True); im.colorspace_settings.name = 'Non-Color'; im.pixels.foreach_set(out.astype(np.float32).ravel())
+    im.filepath_raw = path; im.file_format = 'PNG'; im.save()
+    for o in bpy.data.objects:
+        if o.type == 'MESH': o.hide_render = False
+    HI.hide_render = True; REF.hide_render = True; return path
+AOMASK = bake_ao_grime(LO, int(os.environ.get('TS_AO_RES', 1024)), OUTD('textures', f'{PRE}_Body_AO_Grime.png'))
+M.update(paint_material(PRE + '_Paint', PAINT_RGB, dict(normal=NORMAL0, aomask=AOMASK), TEX))
+T0_ = {o.name: tris(o) for o in bpy.data.objects if o.type == 'MESH' and o.name.endswith('_LOD0')}; REPORT['lod0_parts'] = T0_; REPORT['lod0_total'] = sum(T0_.values())
+print('LOD0', REPORT['lod0_total'], T0_, flush=True)
+save_ckp('trafficsedana_06_materials_uv.blend') if LAST >= 6 else None
+# ================================================================ 07 LODs: body re-baked at LOD1 (1024); own normals (sharp 35-40 deg) on every hard-surface part; LOD3 drops the interior detail + lenses
+def decim(o, ratio):
+    if ratio >= .999: return o
+    m = o.modifiers.new('dec', 'DECIMATE'); m.decimate_type = 'COLLAPSE'; m.ratio = ratio; m.use_symmetry = True; m.symmetry_axis = 'X'; m.use_collapse_triangulate = True
+    with bpy.context.temp_override(object=o, active_object=o): bpy.ops.object.modifier_apply(modifier='dec')
+    clean(o); return o
+RK = {1: dict(Body=.44, Glass=.8, Trim=.36, Lights=1.0, Interior=.40), 2: dict(Body=.17, Glass=.5, Trim=.13, Lights=.55, Interior=.15), 3: dict(Body=.065, Glass=.25, Trim=.05, Lights=1.0, Interior=.12)}
+if os.environ.get('TS_RK'): RK = {int(k): v for k, v in json.loads(os.environ['TS_RK']).items()}
+for k in (1, 2, 3):
+    Lk = coll(f'LOD{k}_PARTS')
+    for kind in ('Body', 'Glass', 'Trim', 'Lights', 'Interior'):
+        o0 = bpy.data.objects[f'{kind}_LOD0']; d = o0.copy(); d.data = o0.data.copy(); Lk.objects.link(d); d.name = d.data.name = f'{kind}_LOD{k}'
+        if kind == 'Lights':                                                                             # deterministic light LODs: drop detail, never emitters
+            DROP = {1: {'lamp_inner', 'lamp_housing'}, 2: {'lamp_inner', 'reflector', 'lamp_housing'}, 3: {'lamp_inner', 'reflector', 'lamp_housing', 'LENS'}}[k]
+            bm = bmesh.new(); bm.from_mesh(d.data); mats = d.data.materials; cl = bm.faces.layers.int.get('cell')
+            def drop(f):
+                mn = mats[f.material_index].name
+                if mn in ('TS_Lens', 'TS_LensRed'): return 'LENS' in DROP
+                return mn == 'TS_Atlas' and 0 <= f[cl] < 100 and CELLS[f[cl]] in DROP
+            bmesh.ops.delete(bm, geom=[f for f in bm.faces if drop(f)], context='FACES'); bm.to_mesh(d.data); bm.free(); purge_slots(d)
+        if kind == 'Body':                                                                               # mirrors + fin decimated gently (silhouette width / height kept)
+            bm = bmesh.new(); bm.from_mesh(d.data); bm.verts.ensure_lookup_table()
+            ext = [f for f in bm.faces if (abs(f.calc_center_median().x) > .89 and f.calc_center_median().z > .85) or (abs(f.calc_center_median().x) < .045 and f.calc_center_median().z > ZC(f.calc_center_median().y) - .005 and .45 < f.calc_center_median().y < .80)]
+            sub_ = bmesh.ops.split(bm, geom=ext); bm.to_mesh(d.data); bm.free()
+            ex = d.copy(); ex.data = d.data.copy(); Lk.objects.link(ex)
+            for ob, keep_ext in ((d, False), (ex, True)):
+                bm = bmesh.new(); bm.from_mesh(ob.data); bm.faces.ensure_lookup_table()
+                isx = lambda f: (abs(f.calc_center_median().x) > .89 and f.calc_center_median().z > .85) or (abs(f.calc_center_median().x) < .045 and f.calc_center_median().z > ZC(f.calc_center_median().y) - .005 and .45 < f.calc_center_median().y < .80)
+                bmesh.ops.delete(bm, geom=[f for f in bm.faces if isx(f) != keep_ext], context='FACES'); bm.to_mesh(ob.data); bm.free()
+            decim(d, RK[k][kind]); d = join([d, ex], f'Body_LOD{k}', Lk); clean(d)                              # mirrors + fin kept whole (tiny; exact silhouette)
+        else:
+            if kind == 'Interior' and k == 3:                                                           # far: seats / dash silhouettes only (thin liner shells spike under heavy collapse)
+                bm = bmesh.new(); bm.from_mesh(d.data); cl = bm.faces.layers.int.get('cell')
+                bmesh.ops.delete(bm, geom=[f for f in bm.faces if cl and f[cl] == CELLS.index('fabric_light')], context='FACES'); bm.to_mesh(d.data); bm.free()
+            decim(d, RK[k][kind])
+            if kind == 'Lights' and k == 2: pass
+        if kind == 'Body':
+            d.data.shade_smooth(); d.data.set_sharp_from_angle(angle=math.radians(48))
+        else:
+            with bpy.context.temp_override(object=d, active_object=d): bpy.ops.mesh.customdata_custom_splitnormals_clear()
+            d.data.shade_smooth(); d.data.set_sharp_from_angle(angle=math.radians(35 if kind != 'Glass' else 60))
+    for c in ('FL', 'FR', 'RL', 'RR'):
+        for key in ('Wheel', 'Caliper'):
+            o = ASM.get((k, c, key))
+            if o: link_only(o, Lk)
+NORMAL1 = bake_normal(bpy.data.objects['Body_LOD1'], HI, f'{PRE}_Body_Normal_LOD1', 1024, OUTD('textures', f'{PRE}_Body_Normal_LOD1.png'))
+M.update(paint_material(PRE + '_Paint_LOD1', PAINT_RGB, dict(normal=NORMAL1, aomask=AOMASK), TEX))
+M.update(paint_material(PRE + '_Paint_Far', PAINT_RGB, dict(normal=None, aomask=None), TEX) if False else paint_material(PRE + '_Paint_Far', PAINT_RGB, None, TEX))
+for k, mname in ((1, PRE + '_Paint_LOD1'), (2, PRE + '_Paint_Far'), (3, PRE + '_Paint_Far')):
+    me = bpy.data.objects[f'Body_LOD{k}'].data
+    for i, m in enumerate(me.materials):
+        if m.name == PRE + '_Paint': me.materials[i] = M[mname]
+bpy.data.objects.remove(HI, do_unlink=True); bpy.data.objects.remove(REF, do_unlink=True)
+REPORT['lod_ratios'] = RK
+save_ckp('trafficsedana_07_lods.blend') if LAST >= 7 else None
+# ================================================================ 08 hierarchy, pivots, colliders, references
+FIN = coll('TRAFFIC_SEDAN_A'); COLL = coll('TS_COLLIDERS', FIN)
+root = empty('Car_Root', FIN, (0, 0, 0), None, 'PLAIN_AXES', .5)
+for k in range(4):
+    lr = empty(f'LOD{k}_Root', FIN, (0, 0, 0), root, 'PLAIN_AXES', .3)
+    for n in ('Body', 'Glass', 'Trim', 'Lights', 'Interior'):
+        o = bpy.data.objects.get(f'{n}_LOD{k}')
+        if not o: continue
+        link_only(o, FIN); set_origin(o, (0, 0, 0)); mw = o.matrix_world.copy(); o.parent = lr; o.matrix_world = mw
+    for c in ('FL', 'FR', 'RL', 'RR'):
+        w = ASM[(k, c, 'Wheel')]; cal = ASM.get((k, c, 'Caliper')); parent = lr
+        if c in ('FL', 'FR'): parent = empty(f'SteerPivot_{c}_LOD{k}', FIN, WREF[c], lr, 'ARROWS', .15); bpy.context.view_layer.update()
+        local = Matrix.Identity(4) if parent is not lr else Matrix.Translation(WREF[c])
+        link_only(w, FIN); w.parent = parent; w.matrix_parent_inverse = Matrix.Identity(4); w.matrix_basis = local
+        if cal: link_only(cal, FIN); cal.parent = parent; cal.matrix_parent_inverse = Matrix.Identity(4); cal.matrix_basis = local
+        bpy.context.view_layer.update()
+def hull(name, verts):
+    cell = .05
+    while True:
+        pts = list({(round(v.x / cell), round(v.y / cell), round(v.z / cell)): v for v in verts}.values())
+        pts += [max(verts, key=lambda v: v[i] * sg) for i in range(3) for sg in (1, -1)]
+        bm = bmesh.new(); vv = [bm.verts.new(v) for v in pts]; bmesh.ops.convex_hull(bm, input=vv)
+        bmesh.ops.delete(bm, geom=[v for v in bm.verts if not v.link_faces], context='VERTS'); bmesh.ops.triangulate(bm, faces=bm.faces); bm.normal_update()
+        convex = all(all((v.co - f.calc_center_median()).dot(f.normal) <= 5e-4 for v in bm.verts) for f in bm.faces)
+        if (len(bm.faces) <= 200 and convex) or cell > .4: break
+        bm.free(); cell *= 1.3
+    me = bpy.data.meshes.new(name); bm.to_mesh(me); bm.free(); o = bpy.data.objects.new(name, me); COLL.objects.link(o); o.display_type = 'WIRE'; return o
+pts = [bpy.data.objects[f'{n}_LOD2'].matrix_world @ v.co for n in ('Body', 'Glass') for v in bpy.data.objects[f'{n}_LOD2'].data.vertices]
+CL = {'Collision_Front': [p for p in pts if p.y < -.95 and p.z < .95], 'Collision_Body': [p for p in pts if -1.10 < p.y < 1.25 and p.z < .92],
+      'Collision_Cabin': [p for p in pts if -1.0 < p.y < 1.62 and p.z > .86], 'Collision_Rear': [p for p in pts if p.y > 1.05 and p.z < 1.08]}
+cr = empty('Collision', FIN, (0, 0, 0), root, 'PLAIN_AXES', .2)
+for n, vs in CL.items():
+    if len(vs) > 8: h = hull(n, vs); h.parent = cr
+for c in ('FL', 'FR', 'RL', 'RR'):
+    e = empty(f'WheelColliderRef_{c}', FIN, WREF[c], root, 'SPHERE', .1); e['radius_m'] = RW; e['width_m'] = WT
+empty('CenterOfMass', FIN, (0, -.22, .52), root, 'SPHERE', .08)                                       # front-engine FWD compact sedan: centreline, ~60/40 front bias, 0.52 m high
+for c in list(bpy.data.collections):
+    if c.name not in ('TRAFFIC_SEDAN_A', 'TS_COLLIDERS'):
+        for o in list(c.objects):
+            if o.name not in FIN.all_objects: bpy.data.objects.remove(o, do_unlink=True)
+        bpy.data.collections.remove(c)
+for d in (bpy.data.meshes, bpy.data.materials, bpy.data.images):
+    for x in list(d):
+        if x.users == 0: d.remove(x)
+json.dump(REPORT, open(OUTD('reports', 'TS_SedanA_build_log.json'), 'w'), indent=1)
+save_ckp('trafficsedana_08_rig.blend') if LAST >= 8 else None

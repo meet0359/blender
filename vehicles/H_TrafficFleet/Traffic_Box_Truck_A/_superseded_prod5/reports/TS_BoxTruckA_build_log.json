@@ -1,0 +1,117 @@
+{
+ "shells": 2,
+ "cut_mode": {
+  "REF_Master": "n-ary",
+  "Body_Game": "n-ary"
+ },
+ "window_floor_faces": [
+  6,
+  6
+ ],
+ "master_tris": 214922,
+ "cutters": [
+  "arch_-2.3_-1",
+  "arch_-2.3_1",
+  "arch_1.55_-1",
+  "arch_1.55_1",
+  "faceglass_0",
+  "fog_-1",
+  "fog_1",
+  "grille",
+  "handle_-1_-2.24",
+  "handle_1_-2.24",
+  "headlamp_-1",
+  "headlamp_1",
+  "lower",
+  "plate_r",
+  "taillamp_-1",
+  "taillamp_1",
+  "valance"
+ ],
+ "grooves": [
+  "gap_fdoor_-1",
+  "gap_fdoor_1",
+  "shut_extra_0",
+  "shut_extra_1",
+  "shut_extra_2",
+  "shut_extra_3",
+  "shut_extra_4",
+  "shut_extra_5",
+  "shut_extra_6",
+  "shut_lid"
+ ],
+ "body_paint_tris": 11109,
+ "bodytrim_tris": 1155,
+ "glass_tris": 96,
+ "arch_lips": 0,
+ "master_normals": {
+  "skin_loops": 355208,
+  "wall_loops_flat": 22970,
+  "verts_on_skin": 97864
+ },
+ "body_inverted_faces": 24,
+ "body_planar_dissolve": {
+  "before": 11357,
+  "after": 6049
+ },
+ "flat_planar_loops": 4739,
+ "body_normal": "TS_BoxTruckA_Body_Normal.png",
+ "trim_parts_tris": 5886,
+ "lights_tris": 1046,
+ "interior_tris": 1869,
+ "lod0_parts": {
+  "Body_LOD0": 6049,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 56,
+  "Interior_LOD0": 1869,
+  "Lights_LOD0": 1046,
+  "Trim_LOD0": 6616,
+  "Wheel_FL_LOD0": 750,
+  "Wheel_FR_LOD0": 750,
+  "Wheel_RL_LOD0": 1130,
+  "Wheel_RR_LOD0": 1130
+ },
+ "lod0_total": 19604,
+ "distant_plate_faces": {
+  "2": 6,
+  "3": 6
+ },
+ "submesh_merge": "TS_Atlas faces of Lights_LODk and Glass_LODk (reflectors, housings, frit) moved into Trim_LODk",
+ "lod_ratios": {
+  "1": {
+   "Body": 0.44,
+   "Glass": 0.8,
+   "Trim": 0.28,
+   "Lights": 1.0,
+   "Interior": 0.32
+  },
+  "2": {
+   "Body": 0.17,
+   "Glass": 0.5,
+   "Trim": 0.1,
+   "Lights": 0.55,
+   "Interior": 0.12
+  },
+  "3": {
+   "Body": 0.065,
+   "Glass": 0.25,
+   "Trim": 0.04,
+   "Lights": 1.0,
+   "Interior": 0.08
+  }
+ },
+ "material_instances": {
+  "TS_BoxTruckA_Glass": {
+   "unity_alpha": 0.22,
+   "instance_of": "TS_Glass",
+   "unity": "instance of TS_Glass: Lit transparent, base (0.78, 0.84, 0.82) alpha 0.22, smoothness 1.0 (light green automotive tint, ~75 % visible transmission)"
+  },
+  "TS_BoxTruckA_Interior": {
+   "instance_of": "TS_Atlas",
+   "unity": "instance of TS_Atlas (same textures / UVs): normal scale 0.12 (seat weave reads as fabric, not crumpled at cabin scale)"
+  }
+ }
+}

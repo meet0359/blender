@@ -1,0 +1,44 @@
+== hypercar_LOD0_unity_test.fbx (lod0) ==
+[PASS] imported 102 objects into a clean scene (90 meshes, 12 empties)
+[PASS] no .001-style or duplicate names: ok
+[PASS] no master/studio/cutter leakage: clean
+[PASS] scales: Car_Root (1.0, 1.0, 1.0), negative none, non-1 none
+[PASS] Car_Root position (0.0, 0.0, 0.0)
+[PASS] LOD0_Root under Car_Root, offset 0.000 mm
+[PASS] LOD0 re-import dims L4.6950 W2.0523 H1.1726 m (delta mm -0.00/+0.03/-0.02)
+[PASS] LOD0 triangles 206,327 (Phase 7 206,329 - coincident duplicates removed at export {'Body_LOD0': 2})
+[PASS] LOD0 UVMap on 84/84 meshes 
+[PASS] LOD0 material slots filled on all meshes 
+[PASS] LOD0 24 material groups survive; 6 light channels, paint, glass, tire, caliper distinct
+[PASS] WheelColliderRef_FL at (0.835, -1.39, 0.355) (source delta 0.000 mm)
+[PASS] WheelColliderRef_FR at (-0.835, -1.39, 0.355) (source delta 0.000 mm)
+[PASS] WheelColliderRef_RL at (0.835, 1.39, 0.3775) (source delta 0.000 mm)
+[PASS] WheelColliderRef_RR at (-0.835, 1.39, 0.3775) (source delta 0.000 mm)
+[PASS] wheelbase 2.78000 m (delta -0.000 mm)
+[PASS] Wheel_FL_LOD0: pivot 0.000 mm, roll +/-30 rigid (err 0.0001 mm), tire+rotor follow, caliper static, axle along vehicle X
+[PASS] Wheel_FR_LOD0: pivot 0.000 mm, roll +/-30 rigid (err 0.0001 mm), tire+rotor follow, caliper static, axle along vehicle X
+[PASS] Wheel_RL_LOD0: pivot 0.000 mm, roll +/-30 rigid (err 0.0001 mm), tire+rotor follow, caliper static, axle along vehicle X
+[PASS] Wheel_RR_LOD0: pivot 0.000 mm, roll +/-30 rigid (err 0.0001 mm), tire+rotor follow, caliper static, axle along vehicle X
+[PASS] SteerPivot_FL_LOD0: -25/0/+25 deg yaw about wheel centre (err 0.0001 mm), caliper steers but not rolls, roll works while steered
+[PASS] SteerPivot_FR_LOD0: -25/0/+25 deg yaw about wheel centre (err 0.0001 mm), caliper steers but not rolls, roll works while steered
+[PASS] SteeringWheel_LOD0: origin delta 0.000 mm, shaft axis delta 0.0000 deg, wobble 0.0001 mm
+[PASS] Door_L_LOD0: hinge delta 0.000 mm, 18 deg open, ['DoorHandle_L_LOD0', 'DoorPanel_L_LOD0', 'Window_FL_LOD0'] follow (err 0.0002 mm)
+[PASS] Door_R_LOD0: hinge delta 0.000 mm, 18 deg open, ['DoorHandle_R_LOD0', 'DoorPanel_R_LOD0', 'Window_FR_LOD0'] follow (err 0.0002 mm)
+[PASS] ActiveSpoiler_LOD0: hinge delta 0.019 mm, 3->18 deg rise 4.9 cm, err 0.0002 mm
+[PASS] Collision_Front: 74 tris, convex (viol 0.000 mm), normals outward, placement delta 0.0 mm
+[PASS] Collision_Body: 52 tris, convex (viol 0.105 mm), normals outward, placement delta 0.0 mm
+[PASS] Collision_Side_L: 64 tris, convex (viol 0.830 mm), normals outward, placement delta 0.0 mm
+[PASS] Collision_Side_R: 66 tris, convex (viol 0.047 mm), normals outward, placement delta 0.0 mm
+[PASS] Collision_Cabin: 60 tris, convex (viol 0.067 mm), normals outward, placement delta 0.0 mm
+[PASS] Collision_Rear: 76 tris, convex (viol 0.000 mm), normals outward, placement delta 0.0 mm
+[PASS] collider total 392 triangles (source 392)
+[PASS] CenterOfMass physical position (Blender frame) (0.0, 0.12, 0.35)
+[PASS] shading normals vs source on hero meshes (5314 samples): 99th pct 0.000 deg, flipped 0
+[PASS] UVMap present on every imported render mesh
+[PASS] 6 colliders: physics-only (no UVs / materials required)
+[PASS] Unity view: Car_Root rotation [-0.0, -0.0, 0.0] scale [1.0, 1.0, 1.0] (no 90 deg / 100x)
+[PASS] Unity view: nose at +Z (2.397), tail -2.249, roof +Y (1.173) -> car faces +Z, upright
+[PASS] Unity view: driver seat FBX x +0.360, front-left wheel FBX (+0.835, 0.355, +1.390); Unity negates FBX x -> vehicle left = Unity -X, LHD driver on the left
+[PASS] Unity view: CenterOfMass FBX [0.0, 0.35, -0.12] -> Unity (0, 0.35, -0.12): low, 0.12 m behind mid-wheelbase
+[PASS] Unity view local pivot axes: wheel roll = local X, steer yaw = local Y (= world up), steering shaft = local Y (max err 1.99e-05)
+SUMMARY hypercar_LOD0_unity_test.fbx: 42 PASS, 0 WARNING, 0 ERROR

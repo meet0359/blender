@@ -1,0 +1,261 @@
+{
+ "lods": {
+  "LOD0": {
+   "triangles": 33712,
+   "ratio": 1.0,
+   "objects": 13,
+   "materials": 8,
+   "draw_calls": 20,
+   "dims_m": [
+    2.984,
+    12.0004,
+    3.198
+   ],
+   "parts": {
+    "Body_LOD0": 9340,
+    "Caliper_FL_LOD0": 52,
+    "Caliper_FR_LOD0": 52,
+    "Caliper_RL_LOD0": 52,
+    "Caliper_RR_LOD0": 52,
+    "Glass_LOD0": 324,
+    "Interior_LOD0": 9689,
+    "Lights_LOD0": 668,
+    "Trim_LOD0": 9595,
+    "Wheel_FL_LOD0": 782,
+    "Wheel_FR_LOD0": 782,
+    "Wheel_RL_LOD0": 1162,
+    "Wheel_RR_LOD0": 1162
+   }
+  },
+  "LOD1": {
+   "triangles": 14551,
+   "ratio": 0.4316,
+   "objects": 13,
+   "materials": 8,
+   "draw_calls": 20,
+   "dims_m": [
+    2.984,
+    12.0004,
+    3.198
+   ],
+   "parts": {
+    "Body_LOD1": 2245,
+    "Caliper_FL_LOD1": 52,
+    "Caliper_FR_LOD1": 52,
+    "Caliper_RL_LOD1": 52,
+    "Caliper_RR_LOD1": 52,
+    "Glass_LOD1": 258,
+    "Interior_LOD1": 3093,
+    "Lights_LOD1": 668,
+    "Trim_LOD1": 5375,
+    "Wheel_FL_LOD1": 530,
+    "Wheel_FR_LOD1": 530,
+    "Wheel_RL_LOD1": 822,
+    "Wheel_RR_LOD1": 822
+   }
+  },
+  "LOD2": {
+   "triangles": 5994,
+   "ratio": 0.1778,
+   "objects": 13,
+   "materials": 8,
+   "draw_calls": 20,
+   "dims_m": [
+    2.984,
+    12.0004,
+    3.198
+   ],
+   "parts": {
+    "Body_LOD2": 1536,
+    "Caliper_FL_LOD2": 28,
+    "Caliper_FR_LOD2": 28,
+    "Caliper_RL_LOD2": 28,
+    "Caliper_RR_LOD2": 28,
+    "Glass_LOD2": 161,
+    "Interior_LOD2": 1028,
+    "Lights_LOD2": 367,
+    "Trim_LOD2": 1198,
+    "Wheel_FL_LOD2": 310,
+    "Wheel_FR_LOD2": 310,
+    "Wheel_RL_LOD2": 486,
+    "Wheel_RR_LOD2": 486
+   }
+  },
+  "LOD3": {
+   "triangles": 2744,
+   "ratio": 0.0814,
+   "objects": 9,
+   "materials": 6,
+   "draw_calls": 14,
+   "dims_m": [
+    2.984,
+    12.0004,
+    3.198
+   ],
+   "parts": {
+    "Body_LOD3": 578,
+    "Glass_LOD3": 81,
+    "Interior_LOD3": 620,
+    "Lights_LOD3": 146,
+    "Trim_LOD3": 903,
+    "Wheel_FL_LOD3": 104,
+    "Wheel_FR_LOD3": 104,
+    "Wheel_RL_LOD3": 104,
+    "Wheel_RR_LOD3": 104
+   }
+  }
+ },
+ "wheel_refs": {
+  "FL": [
+   1.05,
+   -3.3,
+   0.478
+  ],
+  "FR": [
+   -1.05,
+   -3.3,
+   0.478
+  ],
+  "RL": [
+   0.95,
+   2.7,
+   0.478
+  ],
+  "RR": [
+   -0.95,
+   2.7,
+   0.478
+  ]
+ },
+ "center_of_mass": [
+  0.0,
+  0.3,
+  1.1
+ ],
+ "colliders": {
+  "Collision_Body": {
+   "tris": 154,
+   "closed": true,
+   "convex": true,
+   "outward": true,
+   "material": false,
+   "uv": 0
+  },
+  "Collision_Cabin": {
+   "tris": 128,
+   "closed": true,
+   "convex": true,
+   "outward": true,
+   "material": false,
+   "uv": 0
+  },
+  "Collision_Front": {
+   "tris": 182,
+   "closed": true,
+   "convex": true,
+   "outward": true,
+   "material": false,
+   "uv": 0
+  },
+  "Collision_Rear": {
+   "tris": 158,
+   "closed": true,
+   "convex": true,
+   "outward": true,
+   "material": false,
+   "uv": 0
+  }
+ },
+ "silhouette_iou": {
+  "LOD1": {
+   "side": 0.9952,
+   "front": 0.9985,
+   "top": 1.0
+  },
+  "LOD2": {
+   "side": 0.9947,
+   "front": 0.9909,
+   "top": 1.0
+  },
+  "LOD3": {
+   "side": 0.994,
+   "front": 0.9371,
+   "top": 1.0
+  }
+ },
+ "light_faces": {
+  "DRL": 20,
+  "Headlamp": 28,
+  "Tail": 8,
+  "Brake": 11,
+  "Indicator_L": 7,
+  "Indicator_R": 7,
+  "Reverse": 6
+ },
+ "texture_memory_mb": 94.5,
+ "textures": [
+  "TS_Atlas_BaseColor.png",
+  "TS_Atlas_Metallic.png",
+  "TS_Atlas_Normal.png",
+  "TS_Atlas_Roughness.png",
+  "TS_BusA_Body_AO_Grime",
+  "TS_BusA_Body_Normal",
+  "TS_BusA_Body_Normal_LOD1",
+  "TS_Lights_BaseColor.png",
+  "TS_Lights_Emission.png",
+  "TS_Tire_BaseColor.png",
+  "TS_Tire_Normal.png",
+  "TS_Tire_Roughness.png"
+ ],
+ "lod_tear_pct": {
+  "Body_LOD0": 0.0,
+  "Body_LOD1": 0.48,
+  "Body_LOD2": 0.451,
+  "Body_LOD3": 1.915,
+  "Caliper_FL_LOD0": 0.0,
+  "Caliper_FL_LOD1": 0.0,
+  "Caliper_FL_LOD2": 0.0,
+  "Caliper_FR_LOD0": 0.0,
+  "Caliper_FR_LOD1": 0.0,
+  "Caliper_FR_LOD2": 0.0,
+  "Caliper_RL_LOD0": 0.0,
+  "Caliper_RL_LOD1": 0.0,
+  "Caliper_RL_LOD2": 0.0,
+  "Caliper_RR_LOD0": 0.0,
+  "Caliper_RR_LOD1": 0.0,
+  "Caliper_RR_LOD2": 0.0,
+  "Glass_LOD0": 0.0,
+  "Glass_LOD1": 0.0,
+  "Glass_LOD2": 0.0,
+  "Glass_LOD3": 0.0,
+  "Interior_LOD0": 1.216,
+  "Interior_LOD1": 0.011,
+  "Interior_LOD2": 0.0,
+  "Interior_LOD3": 0.0,
+  "Lights_LOD0": 0.0,
+  "Lights_LOD1": 0.0,
+  "Lights_LOD2": 0.0,
+  "Lights_LOD3": 0.0,
+  "Trim_LOD0": 0.0,
+  "Trim_LOD1": 0.0,
+  "Trim_LOD2": 0.0,
+  "Trim_LOD3": 0.0,
+  "Wheel_FL_LOD0": 0.0,
+  "Wheel_FL_LOD1": 0.0,
+  "Wheel_FL_LOD2": 0.0,
+  "Wheel_FL_LOD3": 0.0,
+  "Wheel_FR_LOD0": 0.0,
+  "Wheel_FR_LOD1": 0.0,
+  "Wheel_FR_LOD2": 0.0,
+  "Wheel_FR_LOD3": 0.0,
+  "Wheel_RL_LOD0": 0.0,
+  "Wheel_RL_LOD1": 0.0,
+  "Wheel_RL_LOD2": 0.0,
+  "Wheel_RL_LOD3": 0.0,
+  "Wheel_RR_LOD0": 0.0,
+  "Wheel_RR_LOD1": 0.0,
+  "Wheel_RR_LOD2": 0.0,
+  "Wheel_RR_LOD3": 0.0
+ },
+ "fbx_reimport": {}
+}

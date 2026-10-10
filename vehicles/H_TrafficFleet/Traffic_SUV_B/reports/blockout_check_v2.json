@@ -1,0 +1,84 @@
+{
+ "file": "trafficsuvb_01_blockout_v2.blend",
+ "checks": {
+  "four_wheels": true,
+  "tires_on_ground (<5 mm)": true,
+  "body_clearance >= 0.12 m": true,
+  "no NaN / loose vertices": true,
+  "glass, lights, trim, interior present": true,
+  "no part > 10 cm outside the body bounds (stray / floating trim; bumpers may be proud)": true,
+  "dimensions within 6 cm of the design": true
+ },
+ "length_m": 4.966,
+ "width_body_m": 1.978,
+ "width_mirrors_m": 2.3,
+ "roof_height_m": 1.795,
+ "height_incl_fin_m": 1.795,
+ "body_min_z_m": 0.22,
+ "wheelbase_m": 2.98,
+ "track_f_m": 1.68,
+ "track_r_m": 1.69,
+ "tire_radius_m": 0.391,
+ "front_overhang_m": 0.938,
+ "rear_overhang_m": 1.048,
+ "tris": {
+  "Body_Blockout": 153616,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 548,
+  "Interior_LOD0": 2916,
+  "Lights_LOD0": 1640,
+  "Trim_LOD0": 4740,
+  "Wheel_FL_LOD0": 814,
+  "Wheel_FR_LOD0": 814,
+  "Wheel_RL_LOD0": 814,
+  "Wheel_RR_LOD0": 814
+ },
+ "tris_total": 166924,
+ "tris_without_master_body": 13308,
+ "mesh_issues": {
+  "Body_Blockout": {
+   "zero_area": 27,
+   "loose": 0,
+   "nan": 0
+  }
+ },
+ "parts_outside_body_bounds_m": {},
+ "design_dim": {
+  "length": 4.98,
+  "width_body": 1.96,
+  "height": 1.76,
+  "wheelbase": 2.98,
+  "track_f": 1.68,
+  "track_r": 1.69,
+  "overhang_f": 0.94,
+  "overhang_r": 1.06,
+  "ground_clearance": 0.21,
+  "tire": "275/45 R21 (R 0.391, rim 21\")"
+ },
+ "dim_deviation_m": {
+  "length": -0.014,
+  "width_body": 0.018,
+  "height": 0.035
+ },
+ "materials": [
+  "TMP_arch",
+  "TMP_grille",
+  "TMP_housing",
+  "TMP_plastic",
+  "TMP_plate",
+  "TMP_pocket",
+  "TMP_seal",
+  "TS_Atlas",
+  "TS_Lens",
+  "TS_LensRed",
+  "TS_Lights",
+  "TS_SUVB_Glass",
+  "TS_SUVB_Interior",
+  "TS_SUVB_Paint",
+  "TS_Tire"
+ ],
+ "PASS": true
+}

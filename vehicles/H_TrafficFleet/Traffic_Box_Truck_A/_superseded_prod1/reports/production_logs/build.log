@@ -1,0 +1,36 @@
+MASTER NORMALS 371216 24437 101780
+INVERTED 104
+PLANAR 11908 -> 6838
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_vehicle_v2.py:357: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  bm_ = bpy.data.materials.new('BAKE_TMP'); bm_.use_nodes = True; tn = bm_.node_tree.nodes.new('ShaderNodeTexImage'); tn.image = img; bm_.node_tree.nodes.active = tn
+Info: Baking map saved to internal image, save it externally or pack it
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_02_body.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_02_body.blend
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_03_parts_lights.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_03_parts_lights.blend
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_04_wheels.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_04_wheels.blend
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_05_interior.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_05_interior.blend
+/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_vehicle_v2.py:852: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  bm_ = bpy.data.materials.new('BAKE_TMP'); bm_.use_nodes = True; nt = bm_.node_tree; tn = nt.nodes.new('ShaderNodeTexImage'); tn.image = img; nt.nodes.active = tn
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+LOD0 20198 {'Body_LOD0': 6838, 'Caliper_FL_LOD0': 52, 'Caliper_FR_LOD0': 52, 'Caliper_RL_LOD0': 52, 'Caliper_RR_LOD0': 52, 'Glass_LOD0': 56, 'Interior_LOD0': 1898, 'Lights_LOD0': 1046, 'Trim_LOD0': 6392, 'Wheel_FL_LOD0': 750, 'Wheel_FR_LOD0': 750, 'Wheel_RL_LOD0': 1130, 'Wheel_RR_LOD0': 1130}
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_06_materials_uv.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_06_materials_uv.blend
+Info: Baking map saved to internal image, save it externally or pack it
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_07_lods.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_07_lods.blend
+Warning: Cannot set relative paths with an unsaved blend file
+Info: Saved copy as "trafficboxtrucka_08_rig.blend"
+SAVED /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Box_Truck_A/blend/trafficboxtrucka_08_rig.blend
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

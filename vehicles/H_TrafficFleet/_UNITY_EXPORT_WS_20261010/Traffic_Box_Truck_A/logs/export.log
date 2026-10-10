@@ -1,0 +1,14 @@
+00:00.407  blend            | Read blend: "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/_UNITY_EXPORT_WS_20261010/Traffic_Box_Truck_A/blend/trafficboxtrucka_09_export_ready.blend"
+AXIS BAKE max residual 2.682209014892578e-07
+
+FBX export starting... '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/_UNITY_EXPORT_WS_20261010/Traffic_Box_Truck_A/exports/TrafficBoxTruckA_LOD0_unity_test.fbx'
+export finished in 0.0393 sec.
+EXPORTED TrafficBoxTruckA_LOD0_unity_test.fbx 27 []
+
+FBX export starting... '/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/_UNITY_EXPORT_WS_20261010/Traffic_Box_Truck_A/exports/TrafficBoxTruckA_complete_unity.fbx'
+export finished in 0.0826 sec.
+EXPORTED TrafficBoxTruckA_complete_unity.fbx 71 []
+EXPORT DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

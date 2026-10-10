@@ -1,0 +1,138 @@
+{
+ "cage": {
+  "stations": 31,
+  "points_per_ring": 26,
+  "cage_faces": 832,
+  "fairing": "Taubin 30 x (0.5, -0.53) along Y (2 end rings fixed) + 12 x (0.45, -0.48) around each section",
+  "max_control_point_shift_mm": 126.9
+ },
+ "waviness": {
+  "hood": {
+   "x=0": {
+    "inflections": 1,
+    "fairness_rms": 1.9702520583267578
+   },
+   "x=0.25": {
+    "inflections": 1,
+    "fairness_rms": 2.1064372887268563
+   },
+   "x=0.45": {
+    "inflections": 1,
+    "fairness_rms": 2.6148329015251046
+   },
+   "x=-0.45": {
+    "inflections": 1,
+    "fairness_rms": 2.180367026589383
+   }
+  },
+  "roof": {
+   "x=0": {
+    "inflections": 1,
+    "fairness_rms": 1.86488489243036
+   },
+   "x=0.3": {
+    "inflections": 1,
+    "fairness_rms": 1.8720468127857077
+   },
+   "x=0.5": {
+    "inflections": 1,
+    "fairness_rms": 1.7910712492556597
+   },
+   "x=-0.5": {
+    "inflections": 1,
+    "fairness_rms": 1.8128662801993691
+   }
+  },
+  "rear_deck": {
+   "x=0": {
+    "inflections": 1,
+    "fairness_rms": 49.72866605202317
+   },
+   "x=0.3": {
+    "inflections": 1,
+    "fairness_rms": 37.002289729252425
+   },
+   "x=0.55": {
+    "inflections": 1,
+    "fairness_rms": 32.491415143921984
+   },
+   "x=-0.55": {
+    "inflections": 21,
+    "fairness_rms": 100.5893320691121
+   }
+  },
+  "front_door_L": {
+   "inflections": 0,
+   "fairness_rms": 0.11266434465487432
+  },
+  "rear_door_L": {
+   "inflections": 0,
+   "fairness_rms": 1.1022793250806906
+  },
+  "front_door_R": {
+   "inflections": 0,
+   "fairness_rms": 0.12157433333916304
+  },
+  "quarter_L": {
+   "inflections": 0,
+   "fairness_rms": 8.67882382952549
+  },
+  "quarter_R": {
+   "inflections": 0,
+   "fairness_rms": 6.497353775271922
+  }
+ },
+ "stage": "01 blockout",
+ "design": {
+  "length": 4.84,
+  "width_body": 1.98,
+  "height": 1.43,
+  "wheelbase": 2.95,
+  "track_f": 1.69,
+  "track_r": 1.7,
+  "overhang_f": 0.905,
+  "overhang_r": 0.985,
+  "ground_clearance": 0.135,
+  "tire_f": "265/35 R21 (R 0.359)",
+  "tire_r": "295/30 R21 (R 0.355)"
+ },
+ "measured": {
+  "length": 4.848,
+  "width_overall": 2.16,
+  "width_body": 1.968,
+  "height": 1.444,
+  "height_body": 1.444,
+  "body_min_z": 0.128
+ },
+ "triangles_total": 119046,
+ "objects": {
+  "Body_Blockout": 102198,
+  "Details": 2178,
+  "Mirror_L": 440,
+  "MirrorBlade_L": 12,
+  "Mirror_R": 440,
+  "MirrorBlade_R": 12,
+  "Tire_FL": 1280,
+  "RimBarrel_FL": 640,
+  "Spokes_FL": 720,
+  "BrakeDisc_FL": 288,
+  "Caliper_FL": 108,
+  "Tire_FR": 1280,
+  "RimBarrel_FR": 640,
+  "Spokes_FR": 720,
+  "BrakeDisc_FR": 288,
+  "Caliper_FR": 108,
+  "Tire_RL": 1280,
+  "RimBarrel_RL": 640,
+  "Spokes_RL": 720,
+  "BrakeDisc_RL": 288,
+  "Caliper_RL": 108,
+  "Tire_RR": 1280,
+  "RimBarrel_RR": 640,
+  "Spokes_RR": 720,
+  "BrakeDisc_RR": 288,
+  "Caliper_RR": 108,
+  "Interior_Blockout": 1620,
+  "Floor": 2
+ }
+}

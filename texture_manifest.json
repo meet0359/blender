@@ -1,0 +1,195 @@
+{
+  "paint": {
+    "resolution": 4096,
+    "tile_m": 0.2,
+    "maps": {
+      "BaseColor": "textures/racing_car/body/paint_BaseColor.png",
+      "Roughness": "textures/racing_car/body/paint_Roughness.png",
+      "Metallic": "textures/racing_car/body/paint_Metallic.png",
+      "Normal": "textures/racing_car/body/paint_Normal.png",
+      "AO": "textures/racing_car/body/paint_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "carbon": {
+    "resolution": 1024,
+    "tile_m": 0.128,
+    "maps": {
+      "BaseColor": "textures/racing_car/trim/carbon_BaseColor.png",
+      "Roughness": "textures/racing_car/trim/carbon_Roughness.png",
+      "Metallic": "textures/racing_car/trim/carbon_Metallic.png",
+      "Normal": "textures/racing_car/trim/carbon_Normal.png",
+      "AO": "textures/racing_car/trim/carbon_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "plastic": {
+    "resolution": 1024,
+    "tile_m": 0.16,
+    "maps": {
+      "BaseColor": "textures/racing_car/trim/plastic_BaseColor.png",
+      "Roughness": "textures/racing_car/trim/plastic_Roughness.png",
+      "Metallic": "textures/racing_car/trim/plastic_Metallic.png",
+      "Normal": "textures/racing_car/trim/plastic_Normal.png",
+      "AO": "textures/racing_car/trim/plastic_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "chrome": {
+    "resolution": 1024,
+    "tile_m": 0.16,
+    "maps": {
+      "BaseColor": "textures/racing_car/trim/chrome_BaseColor.png",
+      "Roughness": "textures/racing_car/trim/chrome_Roughness.png",
+      "Metallic": "textures/racing_car/trim/chrome_Metallic.png",
+      "Normal": "textures/racing_car/trim/chrome_Normal.png",
+      "AO": "textures/racing_car/trim/chrome_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "metal": {
+    "resolution": 2048,
+    "tile_m": 0.2,
+    "maps": {
+      "BaseColor": "textures/racing_car/wheels/metal_BaseColor.png",
+      "Roughness": "textures/racing_car/wheels/metal_Roughness.png",
+      "Metallic": "textures/racing_car/wheels/metal_Metallic.png",
+      "Normal": "textures/racing_car/wheels/metal_Normal.png",
+      "AO": "textures/racing_car/wheels/metal_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "rubber": {
+    "resolution": 2048,
+    "tile_m": 0.18,
+    "maps": {
+      "BaseColor": "textures/racing_car/tires/rubber_BaseColor.png",
+      "Roughness": "textures/racing_car/tires/rubber_Roughness.png",
+      "Metallic": "textures/racing_car/tires/rubber_Metallic.png",
+      "Normal": "textures/racing_car/tires/rubber_Normal.png",
+      "AO": "textures/racing_car/tires/rubber_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "rotor": {
+    "resolution": 1024,
+    "tile_m": 0.12,
+    "maps": {
+      "BaseColor": "textures/racing_car/brakes/rotor_BaseColor.png",
+      "Roughness": "textures/racing_car/brakes/rotor_Roughness.png",
+      "Metallic": "textures/racing_car/brakes/rotor_Metallic.png",
+      "Normal": "textures/racing_car/brakes/rotor_Normal.png",
+      "AO": "textures/racing_car/brakes/rotor_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "caliper": {
+    "resolution": 1024,
+    "tile_m": 0.15,
+    "maps": {
+      "BaseColor": "textures/racing_car/brakes/caliper_BaseColor.png",
+      "Roughness": "textures/racing_car/brakes/caliper_Roughness.png",
+      "Metallic": "textures/racing_car/brakes/caliper_Metallic.png",
+      "Normal": "textures/racing_car/brakes/caliper_Normal.png",
+      "AO": "textures/racing_car/brakes/caliper_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "leather": {
+    "resolution": 2048,
+    "tile_m": 0.16,
+    "maps": {
+      "BaseColor": "textures/racing_car/interior/leather_BaseColor.png",
+      "Roughness": "textures/racing_car/interior/leather_Roughness.png",
+      "Metallic": "textures/racing_car/interior/leather_Metallic.png",
+      "Normal": "textures/racing_car/interior/leather_Normal.png",
+      "AO": "textures/racing_car/interior/leather_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "alcantara": {
+    "resolution": 2048,
+    "tile_m": 0.1,
+    "maps": {
+      "BaseColor": "textures/racing_car/interior/alcantara_BaseColor.png",
+      "Roughness": "textures/racing_car/interior/alcantara_Roughness.png",
+      "Metallic": "textures/racing_car/interior/alcantara_Metallic.png",
+      "Normal": "textures/racing_car/interior/alcantara_Normal.png",
+      "AO": "textures/racing_car/interior/alcantara_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "speaker": {
+    "resolution": 1024,
+    "tile_m": 0.096,
+    "maps": {
+      "BaseColor": "textures/racing_car/interior/speaker_BaseColor.png",
+      "Roughness": "textures/racing_car/interior/speaker_Roughness.png",
+      "Metallic": "textures/racing_car/interior/speaker_Metallic.png",
+      "Normal": "textures/racing_car/interior/speaker_Normal.png",
+      "AO": "textures/racing_car/interior/speaker_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "lens": {
+    "resolution": 2048,
+    "tile_m": 0.25,
+    "maps": {
+      "BaseColor": "textures/racing_car/lights/lens_BaseColor.png",
+      "Roughness": "textures/racing_car/lights/lens_Roughness.png",
+      "Metallic": "textures/racing_car/lights/lens_Metallic.png",
+      "Normal": "textures/racing_car/lights/lens_Normal.png",
+      "AO": "textures/racing_car/lights/lens_AO.png"
+    },
+    "AO_scope": "Material micro-occlusion only; white for unoccluded tile, not vehicle cavity AO"
+  },
+  "atlas_interior": {
+    "resolution": 2048,
+    "maps": {
+      "AO": "textures/racing_car/interior/interior_Atlas_CavityAO.png"
+    },
+    "scope": "12 cm finite-distance cavity AO; evaluated canonical skin, mirrored and back surfaces excluded to avoid conflicting UV writes. Modifiers restored."
+  },
+  "atlas_brakes": {
+    "resolution": 1024,
+    "maps": {
+      "AO": "textures/racing_car/brakes/brakes_Atlas_CavityAO.png"
+    },
+    "scope": "12 cm finite-distance cavity AO; evaluated canonical skin, mirrored and back surfaces excluded to avoid conflicting UV writes. Modifiers restored."
+  },
+  "atlas_body": {
+    "resolution": 2048,
+    "maps": {
+      "AO": "textures/racing_car/body/body_Atlas_CavityAO.png"
+    },
+    "scope": "12 cm finite-distance cavity AO; evaluated canonical skin, mirrored and back surfaces excluded to avoid conflicting UV writes. Modifiers restored."
+  },
+  "atlas_trim": {
+    "resolution": 1024,
+    "maps": {
+      "AO": "textures/racing_car/trim/trim_Atlas_CavityAO.png"
+    },
+    "scope": "12 cm finite-distance cavity AO; evaluated canonical skin, mirrored and back surfaces excluded to avoid conflicting UV writes. Modifiers restored."
+  },
+  "atlas_lights": {
+    "resolution": 1024,
+    "maps": {
+      "AO": "textures/racing_car/lights/lights_Atlas_CavityAO.png"
+    },
+    "scope": "12 cm finite-distance cavity AO; evaluated canonical skin, mirrored and back surfaces excluded to avoid conflicting UV writes. Modifiers restored."
+  },
+  "atlas_wheels": {
+    "resolution": 1024,
+    "maps": {
+      "AO": "textures/racing_car/wheels/wheels_Atlas_CavityAO.png"
+    },
+    "scope": "12 cm finite-distance cavity AO; evaluated canonical skin, mirrored and back surfaces excluded to avoid conflicting UV writes. Modifiers restored."
+  },
+  "atlas_tires": {
+    "resolution": 1024,
+    "maps": {
+      "AO": "textures/racing_car/tires/tires_Atlas_CavityAO.png"
+    },
+    "scope": "12 cm finite-distance cavity AO; evaluated canonical skin, mirrored and back surfaces excluded to avoid conflicting UV writes. Modifiers restored."
+  }
+}

@@ -1,0 +1,119 @@
+{
+ "shells": 1,
+ "cut_mode": {
+  "REF_Master": "n-ary",
+  "Body_Game": "n-ary"
+ },
+ "window_floor_faces": [
+  0,
+  0
+ ],
+ "master_tris": 164032,
+ "cutters": [
+  "arch_-1.55_-1",
+  "arch_-1.55_1",
+  "arch_1.43_-1",
+  "arch_1.43_1",
+  "exhaust_-1",
+  "exhaust_1",
+  "fog_-1",
+  "fog_1",
+  "grille",
+  "handle_-1_-0.08",
+  "handle_-1_1.1",
+  "handle_1_-0.08",
+  "handle_1_1.1",
+  "headlamp_-1",
+  "headlamp_1",
+  "lower",
+  "plate_r",
+  "taillamp_-1",
+  "taillamp_1",
+  "valance"
+ ],
+ "grooves": [
+  "gap_fdoor_-1",
+  "gap_fdoor_1",
+  "gap_fuel",
+  "gap_hood",
+  "gap_rdoor_-1",
+  "gap_rdoor_1",
+  "shut_front_-1",
+  "shut_front_1",
+  "shut_lid",
+  "shut_rear_bumper"
+ ],
+ "body_paint_tris": 7976,
+ "bodytrim_tris": 1980,
+ "glass_tris": 528,
+ "arch_lips": 4,
+ "master_normals": {
+  "skin_loops": 268803,
+  "wall_loops_flat": 19412,
+  "verts_on_skin": 75521
+ },
+ "body_inverted_faces": 24,
+ "body_planar_dissolve": {
+  "before": 8564,
+  "after": 7030
+ },
+ "body_normal": "TS_SUVB_Body_Normal.png",
+ "trim_parts_tris": 3213,
+ "lights_tris": 1640,
+ "interior_tris": 2914,
+ "lod0_parts": {
+  "Body_LOD0": 6812,
+  "Caliper_FL_LOD0": 52,
+  "Caliper_FR_LOD0": 52,
+  "Caliper_RL_LOD0": 52,
+  "Caliper_RR_LOD0": 52,
+  "Glass_LOD0": 548,
+  "Interior_LOD0": 2914,
+  "Lights_LOD0": 1640,
+  "Trim_LOD0": 4462,
+  "Wheel_FL_LOD0": 814,
+  "Wheel_FR_LOD0": 814,
+  "Wheel_RL_LOD0": 814,
+  "Wheel_RR_LOD0": 814
+ },
+ "lod0_total": 19840,
+ "distant_plate_faces": {
+  "2": 6,
+  "3": 6
+ },
+ "submesh_merge": "TS_Atlas faces of Lights_LODk and Glass_LODk (reflectors, housings, frit) moved into Trim_LODk",
+ "lod_ratios": {
+  "1": {
+   "Body": 0.44,
+   "Glass": 0.8,
+   "Trim": 0.36,
+   "Lights": 1.0,
+   "Interior": 0.4
+  },
+  "2": {
+   "Body": 0.17,
+   "Glass": 0.5,
+   "Trim": 0.13,
+   "Lights": 0.55,
+   "Interior": 0.15
+  },
+  "3": {
+   "Body": 0.075,
+   "Glass": 0.25,
+   "Trim": 0.05,
+   "Lights": 1.0,
+   "Interior": 0.12
+  }
+ },
+ "material_instances": {
+  "TS_SUVB_Glass": {
+   "unity_alpha": 0.22,
+   "instance_of": "TS_Glass",
+   "unity": "instance of TS_Glass: Lit transparent, base (0.78, 0.84, 0.82) alpha 0.22, smoothness 1.0 (light green automotive tint, ~75 % visible transmission)"
+  },
+  "TS_SUVB_Interior": {
+   "instance_of": "TS_Atlas",
+   "unity": "instance of TS_Atlas (same textures / UVs): normal scale 0.12 (seat weave reads as fabric, not crumpled at cabin scale)"
+  }
+ }
+}

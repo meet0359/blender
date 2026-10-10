@@ -1,0 +1,98 @@
+{
+  "Console_Red_Seam_-1": [
+    652,
+    652
+  ],
+  "Console_Red_Seam_1": [
+    652,
+    652
+  ],
+  "Dashboard_Seam_-1": [
+    780,
+    780
+  ],
+  "Dashboard_Seam_1": [
+    780,
+    780
+  ],
+  "DoorPanel_L_Seam": [
+    1036,
+    1036
+  ],
+  "DoorPanel_R_Seam": [
+    1036,
+    1036
+  ],
+  "Seat_Driver_BackrestSeam_-1": [
+    764,
+    764
+  ],
+  "Seat_Driver_BackrestSeam_1": [
+    764,
+    764
+  ],
+  "Seat_Driver_CushionSeam_-1": [
+    524,
+    524
+  ],
+  "Seat_Driver_CushionSeam_1": [
+    524,
+    524
+  ],
+  "Seat_Driver_PadDivision_0": [
+    396,
+    396
+  ],
+  "Seat_Driver_PadDivision_1": [
+    396,
+    396
+  ],
+  "Seat_Driver_PadDivision_2": [
+    396,
+    396
+  ],
+  "Seat_Passenger_BackrestSeam_-1": [
+    764,
+    764
+  ],
+  "Seat_Passenger_BackrestSeam_1": [
+    764,
+    764
+  ],
+  "Seat_Passenger_CushionSeam_-1": [
+    524,
+    524
+  ],
+  "Seat_Passenger_CushionSeam_1": [
+    524,
+    524
+  ],
+  "Seat_Passenger_PadDivision_0": [
+    396,
+    396
+  ],
+  "Seat_Passenger_PadDivision_1": [
+    396,
+    396
+  ],
+  "Seat_Passenger_PadDivision_2": [
+    396,
+    396
+  ],
+  "Tire_Sidewall_Markings_FL": [
+    11348,
+    11348
+  ],
+  "Tire_Sidewall_Markings_FR": [
+    11348,
+    11348
+  ],
+  "Tire_Sidewall_Markings_RL": [
+    11180,
+    11180
+  ],
+  "Tire_Sidewall_Markings_RR": [
+    11180,
+    11180
+  ]
+}

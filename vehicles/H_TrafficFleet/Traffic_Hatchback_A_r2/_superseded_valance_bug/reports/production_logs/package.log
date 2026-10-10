@@ -1,0 +1,62 @@
+Traceback (most recent call last):
+  File "/Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/scripts/ts_package.py", line 78, in <module>
+    man = json.load(open(P_('reports', f'{PFX}_export_manifest.json'))); shared = [t for t in man['textures'] if t.startswith('TS_') and os.path.exists(os.path.join(SHARED_TEX, t))]
+                                                                                              ~~~^^^^^^^^^^^^
+KeyError: 'textures'
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_studio_1.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_studio_2.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_details.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_daylight.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_game_camera.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD0_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD1_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD2_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD3_game_normal.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_lod_comparison.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/variants/white_front34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/variants/silver_front34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/variants/graphite_front34.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_paint_variants_a.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/variants/black_front34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/variants/red_front34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/variants/blue_front34.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_paint_variants_b.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lights/off_front_detail.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lights/off_rear_detail.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lights/on_front_detail.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lights/on_rear_detail.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_lights_off_on.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_zebra_master_vs_game.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_qa_clay.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_qa_wire.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/normal_front34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/normal_rear34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/normal_lamp_front.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/normal_bumper_rear.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_qa_normal.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/clay_bumper_front.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/clay_arch_rear.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/wire_bumper_front.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/qa/wire_arch_rear.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_qa_clay_wire_details.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_closeups_wheel_glass_plate.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_closeups_bumpers_lamps.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_orthographic.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD2_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD2_game_far.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD3_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD3_game_far.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_distant_lods_plates.jpg
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD0_rear34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD0_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD1_rear34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD1_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD2_rear34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD2_game_normal.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD3_rear34.png
+MISSING /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/lod/LOD3_game_normal.png
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_lod_comparison.jpg
+SHEET /Users/meetshah/Documents/blender/vehicles/H_TrafficFleet/Traffic_Hatchback_A_r2/previews/TrafficHatchbackA_sheet_realism_vs_h0_audit.jpg
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
