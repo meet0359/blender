@@ -1,0 +1,418 @@
+{
+ "asset": "hypercar",
+ "phase": 9,
+ "date": "2026-10-06",
+ "source_checkpoint": "hypercar_07_colliders_hierarchy.blend",
+ "export_checkpoint": "hypercar_08_unity_export.blend",
+ "fbx_settings": {
+  "use_selection": true,
+  "object_types": [
+   "EMPTY",
+   "MESH"
+  ],
+  "use_active_collection": false,
+  "global_scale": 1.0,
+  "apply_unit_scale": true,
+  "apply_scale_options": "FBX_SCALE_ALL",
+  "axis_forward": "-Z",
+  "axis_up": "Y",
+  "bake_space_transform": false,
+  "use_mesh_modifiers": true,
+  "use_mesh_modifiers_render": true,
+  "mesh_smooth_type": "FACE",
+  "use_subsurf": false,
+  "use_mesh_edges": false,
+  "use_tspace": true,
+  "use_triangles": false,
+  "use_custom_props": false,
+  "add_leaf_bones": false,
+  "primary_bone_axis": "Y",
+  "secondary_bone_axis": "X",
+  "use_armature_deform_only": false,
+  "bake_anim": false,
+  "path_mode": "RELATIVE",
+  "embed_textures": false,
+  "batch_mode": "OFF"
+ },
+ "axis_bake": "explicit in export session: world' = world @ G^-1, mesh' = G v, G = Rot(-90 deg, X)",
+ "export_session_changes": {
+  "ngon_triangulated_meshes": 133,
+  "duplicate_triangles_removed": {
+   "Caliper_FL_LOD3": 3,
+   "InstrumentCluster_LOD1": 2,
+   "Caliper_FR_LOD3": 2,
+   "CenterConsole_LOD2": 6,
+   "InstrumentCluster_LOD2": 2,
+   "Body_LOD2": 7,
+   "Body_LOD0": 2,
+   "Interior_LOD3": 21,
+   "Interior_Tub_LOD2": 6,
+   "Caliper_RL_LOD3": 5,
+   "Caliper_RR_LOD3": 1
+  },
+  "collider_qa_materials_stripped": 6
+ },
+ "fbx": {
+  "hypercar_LOD0_unity_test.fbx": {
+   "objects": 102,
+   "validation": "SUMMARY hypercar_LOD0_unity_test.fbx: 42 PASS, 0 WARNING, 0 ERROR"
+  },
+  "hypercar_complete_unity.fbx": {
+   "objects": 308,
+   "validation": "SUMMARY hypercar_complete_unity.fbx: 85 PASS, 0 WARNING, 0 ERROR"
+  }
+ },
+ "unity": {
+  "forward": "+Z",
+  "up": "+Y",
+  "vehicle_left": "-X",
+  "units": "m",
+  "root_rotation": [
+   0,
+   0,
+   0
+  ],
+  "root_scale": [
+   1,
+   1,
+   1
+  ],
+  "center_of_mass": [
+   -0.0,
+   0.35,
+   -0.12
+  ],
+  "wheels": {
+   "FL": {
+    "position": [
+     -0.835,
+     0.355,
+     1.39
+    ],
+    "radius": 0.355,
+    "width": 0.31
+   },
+   "FR": {
+    "position": [
+     0.835,
+     0.355,
+     1.39
+    ],
+    "radius": 0.355,
+    "width": 0.31
+   },
+   "RL": {
+    "position": [
+     -0.835,
+     0.3775,
+     -1.39
+    ],
+    "radius": 0.3775,
+    "width": 0.35
+   },
+   "RR": {
+    "position": [
+     0.835,
+     0.3775,
+     -1.39
+    ],
+    "radius": 0.3775,
+    "width": 0.35
+   }
+  },
+  "wheelbase": 2.78,
+  "track": {
+   "front": 1.67,
+   "rear": 1.67
+  }
+ },
+ "lods": {
+  "LOD0": {
+   "triangles": 206327,
+   "dims_m": {
+    "L": 4.695,
+    "W": 2.05233,
+    "H": 1.17258,
+    "delta_mm": [
+     -0.0,
+     0.03,
+     -0.02
+    ]
+   },
+   "materials": 24
+  },
+  "LOD1": {
+   "triangles": 107210,
+   "dims_m": {
+    "L": 4.695,
+    "W": 2.05252,
+    "H": 1.17258,
+    "delta_mm": [
+     -0.0,
+     0.02,
+     -0.02
+    ]
+   },
+   "materials": 24
+  },
+  "LOD2": {
+   "triangles": 53786,
+   "dims_m": {
+    "L": 4.695,
+    "W": 2.05275,
+    "H": 1.1741,
+    "delta_mm": [
+     -0.0,
+     -0.05,
+     0.0
+    ]
+   },
+   "materials": 20
+  },
+  "LOD3": {
+   "triangles": 17747,
+   "dims_m": {
+    "L": 4.69201,
+    "W": 2.05275,
+    "H": 1.1741,
+    "delta_mm": [
+     0.01,
+     -0.05,
+     0.0
+    ]
+   },
+   "materials": 15
+  }
+ },
+ "colliders": {
+  "Collision_Front": 74,
+  "Collision_Body": 52,
+  "Collision_Side_L": 64,
+  "Collision_Side_R": 66,
+  "Collision_Cabin": 60,
+  "Collision_Rear": 76
+ },
+ "collider_triangles": 392,
+ "validation": {
+  "errors": 0,
+  "warnings": 0
+ },
+ "reports": [
+  "reports/fbx_export_validation.txt",
+  "reports/unity_import_notes.md",
+  "reports/unity_material_mapping.md",
+  "reports/fbx_validation_lod0.txt",
+  "reports/fbx_validation_complete.txt",
+  "reports/fbx_export_settings.json"
+ ],
+ "files": {
+  "hypercar_07_colliders_hierarchy.blend": {
+   "bytes": 8795102,
+   "sha1": "5f991548919f5f19c65d3ed10eb44c95578a2005"
+  },
+  "hypercar_08_unity_export.blend": {
+   "bytes": 8797215,
+   "sha1": "f8897c50a177b42a1c06526df5dd16f772c84324"
+  },
+  "exports/hypercar_LOD0_unity_test.fbx": {
+   "bytes": 10928972,
+   "sha1": "18a281c3dea09a7b0b42cd4dc9d7c6af940b153d"
+  },
+  "exports/hypercar_complete_unity.fbx": {
+   "bytes": 22078332,
+   "sha1": "58f0edbf6fe59d297df902e11f0ab4bb92252463"
+  },
+  "textures/hypercar/body/BODY_AO.png": {
+   "bytes": 4707617,
+   "sha1": "9326d7deafc9e832612cbc4cd22a47071879a2e6"
+  },
+  "textures/hypercar/body/BODY_BaseColor.png": {
+   "bytes": 630262,
+   "sha1": "a6d7f077d5a8ab447fc86f3c7a1fd110fe1ebb0c"
+  },
+  "textures/hypercar/body/BODY_Metallic.png": {
+   "bytes": 447468,
+   "sha1": "606cc6a49d9d6e0ad8a13bf3c81e857a5dd4304a"
+  },
+  "textures/hypercar/body/BODY_Normal.png": {
+   "bytes": 385775,
+   "sha1": "7a11f57d6fb143a705c1dac3584b49120fb8dcb3"
+  },
+  "textures/hypercar/body/BODY_Roughness.png": {
+   "bytes": 458340,
+   "sha1": "1b0ad1d2b40fd6b5d624a778733c418ff3b5593f"
+  },
+  "textures/hypercar/brakes/BRAKES_AO.png": {
+   "bytes": 468021,
+   "sha1": "df2586075027fc8900769459de5dcb760eee8cd6"
+  },
+  "textures/hypercar/brakes/BRAKES_BaseColor.png": {
+   "bytes": 662728,
+   "sha1": "3ab74fcdbe38b2c2b90e1c8d27075f50b5f2b5ce"
+  },
+  "textures/hypercar/brakes/BRAKES_Metallic.png": {
+   "bytes": 102328,
+   "sha1": "9e44d38de71507af18eca838eacb57fe8a9b2c3f"
+  },
+  "textures/hypercar/brakes/BRAKES_Normal.png": {
+   "bytes": 27102,
+   "sha1": "2b75f7650d3a5d4feaee4d666acbbc6b4b1a9599"
+  },
+  "textures/hypercar/brakes/BRAKES_Roughness.png": {
+   "bytes": 166529,
+   "sha1": "b9185a0bc62c5080aef6ebfefadcdf644bcdb008"
+  },
+  "textures/hypercar/glass/GLASS_AO.png": {
+   "bytes": 556563,
+   "sha1": "fb85c1855038a95522d3d917507effa63f717d28"
+  },
+  "textures/hypercar/glass/GLASS_BaseColor.png": {
+   "bytes": 37763,
+   "sha1": "1d60ce4ee10e7bfe75b8f568f746a4dca1bdd263"
+  },
+  "textures/hypercar/glass/GLASS_Metallic.png": {
+   "bytes": 16736,
+   "sha1": "14bde71c3667758f588d24b98de44a7ace354d1f"
+  },
+  "textures/hypercar/glass/GLASS_Normal.png": {
+   "bytes": 16260,
+   "sha1": "b6d34605a330f14140a3e0d19d72542642cd9178"
+  },
+  "textures/hypercar/glass/GLASS_Roughness.png": {
+   "bytes": 29106,
+   "sha1": "c46a84799549b35cb9ac6e3d7b05bc7ddd74a409"
+  },
+  "textures/hypercar/interior/INTERIOR_AO.png": {
+   "bytes": 7242149,
+   "sha1": "fe895dfd807b6a43643084d39fbae5ff238793cf"
+  },
+  "textures/hypercar/interior/INTERIOR_BaseColor.png": {
+   "bytes": 3846164,
+   "sha1": "91d5004ecb7c6380dcfa0490e75699411118ec2b"
+  },
+  "textures/hypercar/interior/INTERIOR_Metallic.png": {
+   "bytes": 362573,
+   "sha1": "d8e188b59c3e89eb737315a42ca246a00880c86f"
+  },
+  "textures/hypercar/interior/INTERIOR_Normal.png": {
+   "bytes": 8503496,
+   "sha1": "ec31c2e5385b80d45fd403d9db812071aa5ffd02"
+  },
+  "textures/hypercar/interior/INTERIOR_Roughness.png": {
+   "bytes": 964548,
+   "sha1": "31b07480804850d2cb94d2906c792bff7f5fe4d5"
+  },
+  "textures/hypercar/interior/speaker_perforation_Mask.png": {
+   "bytes": 3408,
+   "sha1": "a57935493c877b8a8accb5184e8284712f7bb82e"
+  },
+  "textures/hypercar/interior/speaker_perforation_Normal.png": {
+   "bytes": 4478,
+   "sha1": "62187b78ea3f5e663cb99298e07709ae55965372"
+  },
+  "textures/hypercar/interior/stitch_Mask.png": {
+   "bytes": 751,
+   "sha1": "4518ef73792829af73c62df23e62526a83ee475e"
+  },
+  "textures/hypercar/interior/stitch_Normal.png": {
+   "bytes": 1175,
+   "sha1": "7939253a97a82fda774663965a1ae5ffa41d8ebc"
+  },
+  "textures/hypercar/lights/LIGHTS_AO.png": {
+   "bytes": 2708076,
+   "sha1": "52ce8d5dfb43394d7df2fa9f9b7ab14260d3b00d"
+  },
+  "textures/hypercar/lights/LIGHTS_BaseColor.png": {
+   "bytes": 172089,
+   "sha1": "fc3b076a375909fa59380678836653cac5d14c73"
+  },
+  "textures/hypercar/lights/LIGHTS_Metallic.png": {
+   "bytes": 96347,
+   "sha1": "0f57f07e601e526d56451b757b12f23be7d5c992"
+  },
+  "textures/hypercar/lights/LIGHTS_Normal.png": {
+   "bytes": 65358,
+   "sha1": "0ae388953ed5ea96786f82c6a1998b2861d65f6b"
+  },
+  "textures/hypercar/lights/LIGHTS_Roughness.png": {
+   "bytes": 252976,
+   "sha1": "4decfb652521b6297df5055828f5bd230154034b"
+  },
+  "textures/hypercar/tires/TIRES_AO.png": {
+   "bytes": 1940645,
+   "sha1": "5cc4529b9c6a80dc39a85e95d77a6cf9752890cd"
+  },
+  "textures/hypercar/tires/TIRES_BaseColor.png": {
+   "bytes": 59580,
+   "sha1": "b7bc7ac053f6ce9ea7b248bc44ad67b517e01482"
+  },
+  "textures/hypercar/tires/TIRES_Metallic.png": {
+   "bytes": 55235,
+   "sha1": "0b76721a68b7705147f9e061a0bc3a0c8e4e0152"
+  },
+  "textures/hypercar/tires/TIRES_Normal.png": {
+   "bytes": 5782751,
+   "sha1": "4ced4985548b40f3e9bc4169a653ba59b7b66b3c"
+  },
+  "textures/hypercar/tires/TIRES_Roughness.png": {
+   "bytes": 68880,
+   "sha1": "f6b20c7757b0201354fd748a87c8d742520c19fa"
+  },
+  "textures/hypercar/tires/tire_sidewall_Mask.png": {
+   "bytes": 63589,
+   "sha1": "979ae3404ffb814b0a1da53062e7c700220d5256"
+  },
+  "textures/hypercar/tires/tire_sidewall_Normal.png": {
+   "bytes": 80142,
+   "sha1": "8af3c32f7b9daf3456e41b3832862677d105ee8f"
+  },
+  "textures/hypercar/trim/TRIM_AO.png": {
+   "bytes": 618427,
+   "sha1": "66c8c0111f40932fbbb86f29a973cea3fcbf2d0a"
+  },
+  "textures/hypercar/trim/TRIM_BaseColor.png": {
+   "bytes": 820881,
+   "sha1": "167bbe94b152eaeb9f0173a1db203176440575d3"
+  },
+  "textures/hypercar/trim/TRIM_Metallic.png": {
+   "bytes": 64207,
+   "sha1": "93342cc4b4324ef93b609852f9e85548efaf3435"
+  },
+  "textures/hypercar/trim/TRIM_Normal.png": {
+   "bytes": 563356,
+   "sha1": "1c7637ed439b66baa898ad4994ffe5775313168c"
+  },
+  "textures/hypercar/trim/TRIM_Roughness.png": {
+   "bytes": 76435,
+   "sha1": "3bfde3fe6df5d770acab2078fb545f438b50517d"
+  },
+  "textures/hypercar/trim/carbon_twill_BaseColor.png": {
+   "bytes": 5792,
+   "sha1": "6040fb9a369b813512b11290da8b2ec048b0a122"
+  },
+  "textures/hypercar/trim/carbon_twill_Normal.png": {
+   "bytes": 19929,
+   "sha1": "c16051d1baef820c8ceef1b40ae674642faedacd"
+  },
+  "textures/hypercar/wheels/WHEELS_AO.png": {
+   "bytes": 2063096,
+   "sha1": "40efdac4ab06d2898e1503fe6366ea3beba111e5"
+  },
+  "textures/hypercar/wheels/WHEELS_BaseColor.png": {
+   "bytes": 491559,
+   "sha1": "80596c090eadb9280c4bf03a5dd417349da8d571"
+  },
+  "textures/hypercar/wheels/WHEELS_Metallic.png": {
+   "bytes": 373822,
+   "sha1": "f0af772e071358b14decb4e5cc28261a88fb2f4c"
+  },
+  "textures/hypercar/wheels/WHEELS_Normal.png": {
+   "bytes": 63049,
+   "sha1": "3f9840d448de7ded4722ba928900d31669cf03a8"
+  },
+  "textures/hypercar/wheels/WHEELS_Roughness.png": {
+   "bytes": 493413,
+   "sha1": "d001e367468c861cf323c9a8d33678fb88fe1415"
+  }
+ }
+}

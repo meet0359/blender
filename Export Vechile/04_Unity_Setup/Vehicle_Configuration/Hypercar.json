@@ -1,0 +1,668 @@
+{
+ "schema": "export_vechile/vehicle_spec@1",
+ "vehicle_id": "Hypercar",
+ "display_name": "Hypercar",
+ "vehicle_type": "player",
+ "vehicle_class": "hypercar",
+ "approved_release": "Hypercar (flagship, Phase 9 export checkpoint hypercar_08)",
+ "source_release": {
+  "freeze": "Hypercar FROZEN flagship (handoff_vehicle_remaster/00_START_HERE, VA_VEHICLE_MASTER_INVENTORY.md)",
+  "release_manifest": "new_car/reports/final_export_manifest.json",
+  "release_manifest_sha1": "63488235eb2d155885112319c2c586f76e6ad2cf",
+  "source_blend": "new_car/hypercar_08_unity_export.blend",
+  "source_blend_sha1": "f8897c50a177b42a1c06526df5dd16f772c84324",
+  "fbx_note": "re-exported 2026-10-11 from the hash-verified source copy, see REEXPORT_PROVENANCE.md"
+ },
+ "fbx": {
+  "path": "02_Player_Vehicles/Hypercar/FBX/hypercar_complete_unity.fbx",
+  "bytes": 22085340,
+  "sha256": "46fede3da3a8de81759c58302bba2c45c851a5f99abef3b7e394f9908dacf798",
+  "sha1": "cf5b184335ac1af7ccda6eb407748d902b15657f",
+  "objects": 308,
+  "contents": "Car_Root > LOD0_Root..LOD3_Root (render meshes, wheel and steer pivots), Collision (convex hulls), WheelColliderRef_FL/FR/RL/RR, CenterOfMass"
+ },
+ "textures": {
+  "fbx_linked": [
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/carbon_twill_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/carbon_twill_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Roughness.png"
+  ],
+  "manual_setup": [
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_AO.png"
+  ],
+  "all": [
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/speaker_perforation_Mask.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/speaker_perforation_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/stitch_Mask.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/interior/stitch_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/tire_sidewall_Mask.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/tires/tire_sidewall_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Roughness.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/carbon_twill_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/trim/carbon_twill_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_AO.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_BaseColor.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Metallic.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Normal.png",
+   "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Roughness.png"
+  ]
+ },
+ "dimensions_m": {
+  "visual_lod0": {
+   "length": 4.695,
+   "width": 2.2113,
+   "height": 1.1726
+  },
+  "visual_width_includes_mirrors": true,
+  "mirrors_source": "measured: LOD0 bounds over all meshes include Mirror_L/R objects",
+  "lod0_excluding_mirror_objects": {
+   "length": 4.695,
+   "width": 2.0523,
+   "height": 1.1726
+  },
+  "collision": {
+   "collision_union": {
+    "length": 4.6128,
+    "width": 2.0016,
+    "height": 1.033,
+    "center_unity": [
+     -0.0,
+     0.6503,
+     0.0736
+    ]
+   },
+   "hull_widths": {
+    "Collision_Body": 1.2878,
+    "Collision_Cabin": 1.8278,
+    "Collision_Front": 1.9555,
+    "Collision_Rear": 2.0016,
+    "Collision_Side_L": 0.5355,
+    "Collision_Side_R": 0.5355
+   }
+  }
+ },
+ "wheelbase_m": 2.78,
+ "track_m": {
+  "front": 1.67,
+  "rear": 1.67
+ },
+ "wheels": {
+  "FL": {
+   "unity_position": [
+    -0.835,
+    0.355,
+    1.39
+   ],
+   "radius_m": 0.355,
+   "width_m": 0.31,
+   "measured_wheel_mesh": {
+    "radius": 0.355,
+    "width": 0.31
+   },
+   "pivots": {
+    "SteerPivot_FL_LOD0": 0.0,
+    "SteerPivot_FL_LOD1": 0.0,
+    "SteerPivot_FL_LOD2": 0.0,
+    "SteerPivot_FL_LOD3": 0.0,
+    "Wheel_FL_LOD0": 0.0,
+    "Wheel_FL_LOD1": 0.0,
+    "Wheel_FL_LOD2": 0.0,
+    "Wheel_FL_LOD3": 0.0
+   }
+  },
+  "FR": {
+   "unity_position": [
+    0.835,
+    0.355,
+    1.39
+   ],
+   "radius_m": 0.355,
+   "width_m": 0.31,
+   "measured_wheel_mesh": {
+    "radius": 0.355,
+    "width": 0.31
+   },
+   "pivots": {
+    "SteerPivot_FR_LOD0": 0.0,
+    "SteerPivot_FR_LOD1": 0.0,
+    "SteerPivot_FR_LOD2": 0.0,
+    "SteerPivot_FR_LOD3": 0.0,
+    "Wheel_FR_LOD0": 0.0,
+    "Wheel_FR_LOD1": 0.0,
+    "Wheel_FR_LOD2": 0.0,
+    "Wheel_FR_LOD3": 0.0
+   }
+  },
+  "RL": {
+   "unity_position": [
+    -0.835,
+    0.3775,
+    -1.39
+   ],
+   "radius_m": 0.3775,
+   "width_m": 0.35,
+   "measured_wheel_mesh": {
+    "radius": 0.3775,
+    "width": 0.35
+   },
+   "pivots": {
+    "Wheel_RL_LOD0": 0.0,
+    "Wheel_RL_LOD1": 0.0,
+    "Wheel_RL_LOD2": 0.0,
+    "Wheel_RL_LOD3": 0.0
+   }
+  },
+  "RR": {
+   "unity_position": [
+    0.835,
+    0.3775,
+    -1.39
+   ],
+   "radius_m": 0.3775,
+   "width_m": 0.35,
+   "measured_wheel_mesh": {
+    "radius": 0.3775,
+    "width": 0.35
+   },
+   "pivots": {
+    "Wheel_RR_LOD0": 0.0,
+    "Wheel_RR_LOD1": 0.0,
+    "Wheel_RR_LOD2": 0.0,
+    "Wheel_RR_LOD3": 0.0
+   }
+  }
+ },
+ "wheel_notes": null,
+ "center_of_mass_unity": [
+  -0.0,
+  0.35,
+  -0.12
+ ],
+ "colliders": {
+  "optional_integration_resource": true,
+  "note": "Convex reference hulls (MeshCollider Convex ON, renderers off). Use them if the player car keeps physics colliders; the existing controller decides.",
+  "hulls": {
+   "Collision_Body": {
+    "tris": 52,
+    "unity_bounds": {
+     "min": [
+      -0.6439,
+      0.1343,
+      -0.6072
+     ],
+     "max": [
+      0.6439,
+      0.7926,
+      0.7526
+     ]
+    }
+   },
+   "Collision_Cabin": {
+    "tris": 60,
+    "unity_bounds": {
+     "min": [
+      -0.9139,
+      0.7684,
+      -0.5605
+     ],
+     "max": [
+      0.9139,
+      1.1668,
+      0.6899
+     ]
+    }
+   },
+   "Collision_Front": {
+    "tris": 74,
+    "unity_bounds": {
+     "min": [
+      -0.9778,
+      0.1338,
+      0.8363
+     ],
+     "max": [
+      0.9777,
+      0.7666,
+      2.38
+     ]
+    }
+   },
+   "Collision_Rear": {
+    "tris": 76,
+    "unity_bounds": {
+     "min": [
+      -1.0009,
+      0.1361,
+      -2.2328
+     ],
+     "max": [
+      1.0008,
+      1.0767,
+      -0.6431
+     ]
+    }
+   },
+   "Collision_Side_L": {
+    "tris": 64,
+    "unity_bounds": {
+     "min": [
+      -0.9998,
+      0.1346,
+      -0.9822
+     ],
+     "max": [
+      -0.4643,
+      0.814,
+      0.9349
+     ]
+    }
+   },
+   "Collision_Side_R": {
+    "tris": 66,
+    "unity_bounds": {
+     "min": [
+      0.4642,
+      0.1346,
+      -0.9823
+     ],
+     "max": [
+      0.9997,
+      0.8142,
+      0.9348
+     ]
+    }
+   }
+  }
+ },
+ "wheel_collider_refs": {
+  "optional_integration_resource": true,
+  "note": "WheelColliderRef_* empties mark wheel centres for the player-car physics, if used."
+ },
+ "lods": {
+  "LOD0": {
+   "root": "LOD0_Root",
+   "triangles": 206327,
+   "objects": 84,
+   "materials": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_AmbientLight",
+    "MAT_BrakeCaliper",
+    "MAT_CarbonExterior",
+    "MAT_Display",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red",
+    "MAT_HeadlightLens",
+    "MAT_InteriorCarbon",
+    "MAT_InteriorMirror",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens",
+    "MAT_TaillightLens"
+   ]
+  },
+  "LOD1": {
+   "root": "LOD1_Root",
+   "triangles": 107210,
+   "objects": 84,
+   "materials": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_AmbientLight",
+    "MAT_BrakeCaliper",
+    "MAT_CarbonExterior",
+    "MAT_Display",
+    "MAT_DisplayGraphics",
+    "MAT_DisplayGraphics_Red",
+    "MAT_HeadlightLens",
+    "MAT_InteriorCarbon",
+    "MAT_InteriorMirror",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens",
+    "MAT_TaillightLens"
+   ]
+  },
+  "LOD2": {
+   "root": "LOD2_Root",
+   "triangles": 53786,
+   "objects": 73,
+   "materials": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_AmbientLight",
+    "MAT_BrakeCaliper",
+    "MAT_Display",
+    "MAT_HeadlightLens",
+    "MAT_InteriorMirror",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens",
+    "MAT_TaillightLens"
+   ]
+  },
+  "LOD3": {
+   "root": "LOD3_Root",
+   "triangles": 17747,
+   "objects": 38,
+   "materials": [
+    "LODMAT_Body_Paint",
+    "LODMAT_Brakes",
+    "LODMAT_Glass",
+    "LODMAT_Interior",
+    "LODMAT_Lights",
+    "LODMAT_Tire",
+    "LODMAT_Trim",
+    "LODMAT_Wheels",
+    "MAT_BrakeCaliper",
+    "MAT_LED_Amber",
+    "MAT_LED_Brake",
+    "MAT_LED_Red",
+    "MAT_LED_Reverse",
+    "MAT_LED_White",
+    "MAT_ProjectorLens"
+   ]
+  }
+ },
+ "materials": [
+  "LODMAT_Body_Paint",
+  "LODMAT_Brakes",
+  "LODMAT_Glass",
+  "LODMAT_Interior",
+  "LODMAT_Lights",
+  "LODMAT_Tire",
+  "LODMAT_Trim",
+  "LODMAT_Wheels",
+  "MAT_AmbientLight",
+  "MAT_BrakeCaliper",
+  "MAT_CarbonExterior",
+  "MAT_Display",
+  "MAT_DisplayGraphics",
+  "MAT_DisplayGraphics_Red",
+  "MAT_HeadlightLens",
+  "MAT_InteriorCarbon",
+  "MAT_InteriorMirror",
+  "MAT_LED_Amber",
+  "MAT_LED_Brake",
+  "MAT_LED_Red",
+  "MAT_LED_Reverse",
+  "MAT_LED_White",
+  "MAT_ProjectorLens",
+  "MAT_TaillightLens"
+ ],
+ "light_channels": {
+  "count": 6,
+  "names": [
+   "MAT_LED_White",
+   "MAT_LED_Red",
+   "MAT_LED_Brake",
+   "MAT_LED_Amber",
+   "MAT_LED_Reverse",
+   "MAT_AmbientLight"
+  ],
+  "mechanism": "one emissive material per channel; drive _EmissionColor intensity at runtime. MAT_LED_White = DRL + headlamp, MAT_LED_Red = tail, MAT_LED_Amber = BOTH indicators (no left/right split), MAT_AmbientLight = interior. MAT_ProjectorLens has no emission."
+ },
+ "coordinate_convention": {
+  "forward": "+Z",
+  "up": "+Y",
+  "vehicle_left": "-X",
+  "ground": "Y = 0",
+  "front_axle": "+Z",
+  "blender_to_unity_point": "(x, y, z) -> (-x, z, -y)",
+  "fbx_globals": {
+   "UpAxis": 1,
+   "UpAxisSign": 1,
+   "FrontAxis": 2,
+   "FrontAxisSign": 1,
+   "CoordAxis": 0,
+   "CoordAxisSign": 1,
+   "UnitScaleFactor": 100.0,
+   "OriginalUnitScaleFactor": 100.0
+  },
+  "axis_conversion": "baked into the meshes: Car_Root identity; Bake Axis Conversion OFF"
+ },
+ "scale": {
+  "units": "metres",
+  "fbx_unit_scale_factor": 100.0,
+  "unity_scale_factor": 1,
+  "convert_units": true
+ },
+ "unity_import": {
+  "scale_factor": 1,
+  "convert_units": true,
+  "bake_axis_conversion": false,
+  "import_blendshapes": false,
+  "import_visibility": false,
+  "import_cameras": false,
+  "import_lights": false,
+  "preserve_hierarchy": true,
+  "mesh_compression": "Off",
+  "read_write": false,
+  "generate_colliders": false,
+  "normals": "Import",
+  "tangents": "Import",
+  "animation_type": "None",
+  "import_animation": false,
+  "material_creation": "Import via MaterialDescription, then remap by exact name",
+  "lod_group": {
+   "on": "Car_Root",
+   "renderers_from": [
+    "LOD0_Root",
+    "LOD1_Root",
+    "LOD2_Root",
+    "LOD3_Root"
+   ],
+   "screen_relative_heights": [
+    0.6,
+    0.3,
+    0.12,
+    0.03
+   ],
+   "note": "suggested starting values from the Blender handoff; tune on device"
+  }
+ },
+ "traffic": null,
+ "dependencies": {
+  "fbx_relative_texture_paths": [
+   "../textures/hypercar/body/BODY_BaseColor.png",
+   "../textures/hypercar/body/BODY_Metallic.png",
+   "../textures/hypercar/body/BODY_Normal.png",
+   "../textures/hypercar/body/BODY_Roughness.png",
+   "../textures/hypercar/brakes/BRAKES_BaseColor.png",
+   "../textures/hypercar/brakes/BRAKES_Metallic.png",
+   "../textures/hypercar/brakes/BRAKES_Normal.png",
+   "../textures/hypercar/brakes/BRAKES_Roughness.png",
+   "../textures/hypercar/interior/INTERIOR_BaseColor.png",
+   "../textures/hypercar/interior/INTERIOR_Metallic.png",
+   "../textures/hypercar/interior/INTERIOR_Normal.png",
+   "../textures/hypercar/interior/INTERIOR_Roughness.png",
+   "../textures/hypercar/lights/LIGHTS_BaseColor.png",
+   "../textures/hypercar/lights/LIGHTS_Metallic.png",
+   "../textures/hypercar/lights/LIGHTS_Normal.png",
+   "../textures/hypercar/lights/LIGHTS_Roughness.png",
+   "../textures/hypercar/tires/TIRES_BaseColor.png",
+   "../textures/hypercar/tires/TIRES_Metallic.png",
+   "../textures/hypercar/tires/TIRES_Normal.png",
+   "../textures/hypercar/tires/TIRES_Roughness.png",
+   "../textures/hypercar/trim/TRIM_BaseColor.png",
+   "../textures/hypercar/trim/TRIM_Metallic.png",
+   "../textures/hypercar/trim/TRIM_Normal.png",
+   "../textures/hypercar/trim/TRIM_Roughness.png",
+   "../textures/hypercar/trim/carbon_twill_BaseColor.png",
+   "../textures/hypercar/trim/carbon_twill_Normal.png",
+   "../textures/hypercar/wheels/WHEELS_BaseColor.png",
+   "../textures/hypercar/wheels/WHEELS_Metallic.png",
+   "../textures/hypercar/wheels/WHEELS_Normal.png",
+   "../textures/hypercar/wheels/WHEELS_Roughness.png"
+  ],
+  "unresolved": [],
+  "absolute_paths_embedded": 30,
+  "embedded_media": 0,
+  "vehicle_readme": "02_Player_Vehicles/Hypercar/REEXPORT_PROVENANCE.md"
+ },
+ "validation": {
+  "checks": {
+   "02 Correct approved release version": {
+    "result": "PASS",
+    "detail": "FBX SHA-1 cf5b184335ac = release record; re-exported from source checkpoints whose SHA-1 match final_export_manifest.json (REEXPORT_PROVENANCE.md)"
+   },
+   "03 Complete FBX exists": {
+    "result": "PASS",
+    "detail": "hypercar_complete_unity.fbx: 22,085,340 bytes, 308 objects (release 308)"
+   },
+   "04 Every required texture exists": {
+    "result": "PASS",
+    "detail": "48 required textures (8 for manual URP setup), missing []"
+   },
+   "05 All paths resolve inside the portable package": {
+    "result": "PASS",
+    "detail": "30 relative texture paths resolve in the package and in the portable copy; importer loaded 30 images, all from inside the copy"
+   },
+   "06 FBX hierarchy valid": {
+    "result": "PASS",
+    "detail": "single root Car_Root; children 10 incl. LOD0-3_Root, Collision, 4 WheelColliderRef, CenterOfMass; colliders under Collision; no .001 names"
+   },
+   "07 Model orientation (+Z forward, +Y up, -X left)": {
+    "result": "PASS",
+    "detail": "FBX axes Up +Y / Front +Z / Coord +X; body nose Z 2.3967 (release 2.3967), tail -2.2490; FL wheel at -X/+Z; authored pivot rotations only: ['ActiveSpoiler_LOD0', 'ActiveSpoiler_LOD1', 'ActiveSpoiler_LOD2', 'ActiveSpoiler_LOD3', 'Paddle_L_LOD0', 'Paddle_L_LOD1', 'Paddle_R_LOD0', 'Paddle_R_LOD1', 'SteeringWheel_LOD0', 'SteeringWheel_LOD1', 'SteeringWheel_LOD2']"
+   },
+   "08 Dimensions and scale (metres, scale 1, ground Y 0)": {
+    "result": "PASS",
+    "detail": "UnitScaleFactor 100 (1 unit = 1 m), max Lcl scale deviation 6.0e-08, no negative scale; LOD0 L x W x H 4.6950 x 2.0523 x 1.1726 m (mirror objects excluded, as released) vs release 4.695 x 2.05233 x 1.17258; ground Y -0.0000"
+   },
+   "09 All LODs preserved (LOD0-3)": {
+    "result": "PASS",
+    "detail": "4 LOD roots"
+   },
+   "10 Triangle counts match the release manifest": {
+    "result": "PASS",
+    "detail": "LOD0 206,327, LOD1 107,210, LOD2 53,786, LOD3 17,747"
+   },
+   "11 Wheel pivots match the validated source": {
+    "result": "PASS",
+    "detail": "4 WheelColliderRef positions = release (Unity FL [-0.835, 0.355, 1.39]); 24 Wheel/SteerPivot pivots, max offset from ref 0.0000 mm; wheel mesh radius = release radius within 1 mm"
+   },
+   "12 Collider references preserved": {
+    "result": "PASS",
+    "detail": "6 convex hulls {'Collision_Body': 52, 'Collision_Cabin': 60, 'Collision_Front': 74, 'Collision_Rear': 76, 'Collision_Side_L': 64, 'Collision_Side_R': 66}, no materials"
+   },
+   "13 Centre-of-mass reference preserved": {
+    "result": "PASS",
+    "detail": "CenterOfMass Unity [-0.0, 0.35, -0.12] (release [-0.0, 0.35, -0.12])"
+   },
+   "14 Material names and assignments preserved": {
+    "result": "PASS",
+    "detail": "per-LOD material sets = release (LOD0 24, LOD1 24, LOD2 20, LOD3 15); every face has a material"
+   },
+   "15 Light-channel data preserved": {
+    "result": "PASS",
+    "detail": "emissive channel materials per LOD = release ({'LOD0': 6, 'LOD1': 6, 'LOD2': 6, 'LOD3': 5}); all 6 carry faces at LOD0"
+   },
+   "17 No corrupted textures": {
+    "result": "PASS",
+    "detail": "48 PNG decoded (signature, CRC, zlib, pixel length); importer read non-zero sizes for 30 linked images"
+   },
+   "18 No unexpectedly missing dependencies": {
+    "result": "PASS",
+    "detail": "no missing or external dependency; the portable-copy measurement is identical to the in-place one"
+   }
+  },
+  "blender_side": "PASS",
+  "unity_runtime": "NOT RUN (P0-05 on the Unity machine)"
+ }
+}

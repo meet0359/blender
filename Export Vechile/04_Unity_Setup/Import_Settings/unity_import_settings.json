@@ -1,0 +1,1357 @@
+{
+ "schema": "export_vechile/import_settings@1",
+ "unity": "6000.6.0f1",
+ "urp": "17.6",
+ "status": "intended settings, not runtime-verified",
+ "model_importer": {
+  "Traffic_Sedan_A_r3": {
+   "fbx": "01_Traffic_Vehicles/Traffic_Sedan_A_r3/FBX/TrafficSedanA_r3_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Calculate Mikktspace",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.5,
+     0.22,
+     0.08,
+     0.015
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "Traffic_Sedan_B": {
+   "fbx": "01_Traffic_Vehicles/Traffic_Sedan_B/FBX/TrafficSedanB_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Calculate Mikktspace",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.5,
+     0.22,
+     0.08,
+     0.015
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "Traffic_Hatchback_A_r2": {
+   "fbx": "01_Traffic_Vehicles/Traffic_Hatchback_A_r2/FBX/TrafficHatchbackA_r2_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Calculate Mikktspace",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.5,
+     0.22,
+     0.08,
+     0.015
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "Traffic_SUV_A_v2": {
+   "fbx": "01_Traffic_Vehicles/Traffic_SUV_A_v2/FBX/TrafficSUVA_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Calculate Mikktspace",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.5,
+     0.22,
+     0.08,
+     0.015
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "Traffic_SUV_B_v3": {
+   "fbx": "01_Traffic_Vehicles/Traffic_SUV_B_v3/FBX/TrafficSUVB_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Calculate Mikktspace",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.5,
+     0.22,
+     0.08,
+     0.015
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "Traffic_Box_Truck_A_r7": {
+   "fbx": "01_Traffic_Vehicles/Traffic_Box_Truck_A_r7/FBX/TrafficBoxTruckA_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Calculate Mikktspace",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.5,
+     0.22,
+     0.08,
+     0.015
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "Traffic_Bus_A_v4": {
+   "fbx": "01_Traffic_Vehicles/Traffic_Bus_A_v4/FBX/TrafficBusA_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Calculate Mikktspace",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.5,
+     0.22,
+     0.08,
+     0.015
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "Hypercar": {
+   "fbx": "02_Player_Vehicles/Hypercar/FBX/hypercar_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Import",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.6,
+     0.3,
+     0.12,
+     0.03
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "ZeroGapR": {
+   "fbx": "02_Player_Vehicles/ZeroGapR/FBX/ZeroGapR_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Import",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.6,
+     0.3,
+     0.12,
+     0.03
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "TitanGT_r1": {
+   "fbx": "02_Player_Vehicles/TitanGT_r1/FBX/TitanGT_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Import",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.6,
+     0.3,
+     0.12,
+     0.03
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "VortexR_r1": {
+   "fbx": "02_Player_Vehicles/VortexR_r1/FBX/VortexR_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Import",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.6,
+     0.3,
+     0.12,
+     0.03
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  },
+  "RavenXR": {
+   "fbx": "02_Player_Vehicles/RavenXR/FBX/RavenXR_complete_unity.fbx",
+   "scale_factor": 1,
+   "convert_units": true,
+   "bake_axis_conversion": false,
+   "import_blendshapes": false,
+   "import_visibility": false,
+   "import_cameras": false,
+   "import_lights": false,
+   "preserve_hierarchy": true,
+   "mesh_compression": "Off",
+   "read_write": false,
+   "generate_colliders": false,
+   "normals": "Import",
+   "tangents": "Import",
+   "animation_type": "None",
+   "import_animation": false,
+   "material_creation": "Import via MaterialDescription, then remap by exact name",
+   "lod_group": {
+    "on": "Car_Root",
+    "renderers_from": [
+     "LOD0_Root",
+     "LOD1_Root",
+     "LOD2_Root",
+     "LOD3_Root"
+    ],
+    "screen_relative_heights": [
+     0.6,
+     0.3,
+     0.12,
+     0.03
+    ],
+    "note": "suggested starting values from the Blender handoff; tune on device"
+   }
+  }
+ },
+ "texture_importer": [
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Box_Truck_A_r7/textures/TS_BoxTruckA_Body_AO_Grime.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "R = ambient occlusion, G = road-grime mask (URP Occlusion reads G: use a Shader Graph or repack)"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Box_Truck_A_r7/textures/TS_BoxTruckA_Body_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Box_Truck_A_r7/textures/TS_BoxTruckA_Body_Normal_LOD1.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Bus_A_v4/textures/TS_BusA_Body_AO_Grime.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "R = ambient occlusion, G = road-grime mask (URP Occlusion reads G: use a Shader Graph or repack)"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Bus_A_v4/textures/TS_BusA_Body_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Bus_A_v4/textures/TS_BusA_Body_Normal_LOD1.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Hatchback_A_r2/textures/TS_HatchA_Body_AO_Grime.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "R = ambient occlusion, G = road-grime mask (URP Occlusion reads G: use a Shader Graph or repack)"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Hatchback_A_r2/textures/TS_HatchA_Body_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Hatchback_A_r2/textures/TS_HatchA_Body_Normal_LOD1.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_SUV_A_v2/textures/TS_SUVA_Body_AO_Grime.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "R = ambient occlusion, G = road-grime mask (URP Occlusion reads G: use a Shader Graph or repack)"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_SUV_A_v2/textures/TS_SUVA_Body_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_SUV_A_v2/textures/TS_SUVA_Body_Normal_LOD1.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_AO_Grime.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "R = ambient occlusion, G = road-grime mask (URP Occlusion reads G: use a Shader Graph or repack)"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_Normal_LOD1.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_AO_Grime.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "R = ambient occlusion, G = road-grime mask (URP Occlusion reads G: use a Shader Graph or repack)"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_Normal_LOD1.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Sedan_B/textures/TS_SedanB_Body_AO_Grime.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "R = ambient occlusion, G = road-grime mask (URP Occlusion reads G: use a Shader Graph or repack)"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Sedan_B/textures/TS_SedanB_Body_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/Traffic_Sedan_B/textures/TS_SedanB_Body_Normal_LOD1.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Atlas_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Atlas_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Atlas_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Atlas_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Lights_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Lights_Emission.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Tire_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Tire_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "01_Traffic_Vehicles/shared/textures/TS_Tire_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/body/BODY_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/brakes/BRAKES_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/glass/GLASS_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/INTERIOR_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/speaker_perforation_Mask.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/speaker_perforation_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/stitch_Mask.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/interior/stitch_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/lights/LIGHTS_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/tires/TIRES_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/tires/tire_sidewall_Mask.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/tires/tire_sidewall_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/trim/TRIM_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/trim/carbon_twill_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/trim/carbon_twill_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_AO.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "not linked by the FBX: assign to Occlusion by hand (URP reads G; greyscale is fine)"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/Hypercar/textures/hypercar/wheels/WHEELS_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default",
+   "note": "pack for URP: MetallicSmoothness R = Metallic, A = 1 - Roughness"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Carbon_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Carbon_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Palette_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Palette_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Palette_MetallicSmoothness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "R = metallic, A = smoothness (Smoothness Source = Metallic Alpha)"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Palette_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Tire_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/RavenXR/textures/RV_Tire_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Carbon_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Carbon_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_MetallicSmoothness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "R = metallic, A = smoothness (Smoothness Source = Metallic Alpha)"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Tire_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/TitanGT_r1/textures/TG_Tire_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Carbon_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Carbon_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_MetallicSmoothness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "R = metallic, A = smoothness (Smoothness Source = Metallic Alpha)"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Tire_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/VortexR_r1/textures/VX_Tire_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Carbon_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Carbon_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Palette_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Palette_Metallic.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Palette_MetallicSmoothness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "R = metallic, A = smoothness (Smoothness Source = Metallic Alpha)"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Palette_Roughness.png",
+   "textureType": "Default",
+   "sRGBTexture": false,
+   "mipmapEnabled": false,
+   "filterMode": "Point",
+   "compression": "Default",
+   "note": "256 px swatch atlas"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Tire_BaseColor.png",
+   "textureType": "Default",
+   "sRGBTexture": true,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  },
+  {
+   "path": "02_Player_Vehicles/ZeroGapR/textures/ZG_Tire_Normal.png",
+   "textureType": "NormalMap",
+   "sRGBTexture": false,
+   "mipmapEnabled": true,
+   "filterMode": "Bilinear",
+   "compression": "Default"
+  }
+ ]
+}

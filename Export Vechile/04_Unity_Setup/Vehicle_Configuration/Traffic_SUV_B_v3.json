@@ -1,0 +1,536 @@
+{
+ "schema": "export_vechile/vehicle_spec@1",
+ "vehicle_id": "Traffic_SUV_B_v3",
+ "display_name": "SUV B v3",
+ "vehicle_type": "traffic",
+ "vehicle_class": "suv",
+ "approved_release": "SUV B v3",
+ "source_release": {
+  "freeze_manifest": "H_TrafficFleet/Traffic_SUV_B/reports/TS_SUVB_FINAL_FREEZE.md",
+  "freeze_manifest_sha1": "45387cb9dc6436805b626437730f29be942e08b0",
+  "source_blend": "H_TrafficFleet/Traffic_SUV_B/blend/trafficsuvb_09_export_ready.blend",
+  "source_blend_sha1": "cc4d2ae0a7493cd22ccf44f893b731404141f12c",
+  "handoff": "vehicles/H_TrafficFleet/UNITY_HANDOFF_20261010/05_Traffic_SUV_B"
+ },
+ "fbx": {
+  "path": "01_Traffic_Vehicles/Traffic_SUV_B_v3/FBX/TrafficSUVB_complete_unity.fbx",
+  "bytes": 2836636,
+  "sha256": "744a805cca7430f0c8626f3d5f8cd96d1252c7f02277b16c15adf1de18ad2fe4",
+  "sha1": "2f3836ff6185883f98e2eec1dbc0db265aafd407",
+  "objects": 71,
+  "contents": "Car_Root > LOD0_Root..LOD3_Root (render meshes, wheel and steer pivots), Collision (convex hulls), WheelColliderRef_FL/FR/RL/RR, CenterOfMass"
+ },
+ "textures": {
+  "fbx_linked": [
+   "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_Normal.png",
+   "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_Normal_LOD1.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Metallic.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Roughness.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Roughness.png"
+  ],
+  "manual_setup": [
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_MetallicSmoothness.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_ChannelID.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_Emission.png",
+   "01_Traffic_Vehicles/shared/textures/TS_PaintFlake_Normal.png",
+   "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_AO_Grime.png"
+  ],
+  "all": [
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Metallic.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Roughness.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_Emission.png",
+   "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_AO_Grime.png",
+   "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_Normal.png",
+   "01_Traffic_Vehicles/Traffic_SUV_B_v3/textures/TS_SUVB_Body_Normal_LOD1.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Roughness.png"
+  ]
+ },
+ "dimensions_m": {
+  "visual_lod0": {
+   "length": 4.9783,
+   "width": 2.3,
+   "height": 1.8109
+  },
+  "visual_width_includes_mirrors": true,
+  "mirrors_source": "traffic README_UNITY_IMPORT.md section 8: \"Width includes the mirrors.\"",
+  "design_body_width": {
+   "value": 1.96,
+   "source": "H_TrafficFleet/scripts/designs/suv_b.py DIM.width_body"
+  },
+  "collision": {
+   "collision_union": {
+    "length": 4.9695,
+    "width": 2.3,
+    "height": 1.5492,
+    "center_unity": [
+     0.0,
+     1.0181,
+     0.0048
+    ]
+   },
+   "hull_widths": {
+    "Collision_Body": 1.968,
+    "Collision_Cabin": 2.3,
+    "Collision_Front": 1.968,
+    "Collision_Rear": 1.9702
+   },
+   "recommended_footprint_override": {
+    "width": 1.9702,
+    "length": 4.9695,
+    "height": 1.5492,
+    "center_unity": [
+     0.0,
+     1.0181,
+     0.0048
+    ],
+    "width_from": "Collision_Rear",
+    "rule": "width = widest collision hull not wider than the design body width + 3 cm (1.96 m, H_TrafficFleet/scripts/designs/suv_b.py DIM.width_body); hulls ['Collision_Cabin'] reach the mirror zone and are excluded from the width. Length / height = union of all collision hulls.",
+    "excluded_mirror_zone_hulls": [
+     "Collision_Cabin"
+    ]
+   }
+  }
+ },
+ "wheelbase_m": 2.98,
+ "track_m": {
+  "front": 1.68,
+  "rear": 1.69
+ },
+ "wheels": {
+  "FL": {
+   "unity_position": [
+    -0.84,
+    0.391,
+    1.55
+   ],
+   "radius_m": 0.391,
+   "width_m": 0.275,
+   "measured_wheel_mesh": {
+    "radius": 0.391,
+    "width": 0.275
+   },
+   "pivots": {
+    "SteerPivot_FL_LOD0": 0.0,
+    "SteerPivot_FL_LOD1": 0.0,
+    "SteerPivot_FL_LOD2": 0.0,
+    "SteerPivot_FL_LOD3": 0.0,
+    "Wheel_FL_LOD0": 0.0,
+    "Wheel_FL_LOD1": 0.0,
+    "Wheel_FL_LOD2": 0.0,
+    "Wheel_FL_LOD3": 0.0
+   }
+  },
+  "FR": {
+   "unity_position": [
+    0.84,
+    0.391,
+    1.55
+   ],
+   "radius_m": 0.391,
+   "width_m": 0.275,
+   "measured_wheel_mesh": {
+    "radius": 0.391,
+    "width": 0.275
+   },
+   "pivots": {
+    "SteerPivot_FR_LOD0": 0.0,
+    "SteerPivot_FR_LOD1": 0.0,
+    "SteerPivot_FR_LOD2": 0.0,
+    "SteerPivot_FR_LOD3": 0.0,
+    "Wheel_FR_LOD0": 0.0,
+    "Wheel_FR_LOD1": 0.0,
+    "Wheel_FR_LOD2": 0.0,
+    "Wheel_FR_LOD3": 0.0
+   }
+  },
+  "RL": {
+   "unity_position": [
+    -0.845,
+    0.391,
+    -1.43
+   ],
+   "radius_m": 0.391,
+   "width_m": 0.275,
+   "measured_wheel_mesh": {
+    "radius": 0.391,
+    "width": 0.275
+   },
+   "pivots": {
+    "Wheel_RL_LOD0": 0.0,
+    "Wheel_RL_LOD1": 0.0,
+    "Wheel_RL_LOD2": 0.0,
+    "Wheel_RL_LOD3": 0.0
+   }
+  },
+  "RR": {
+   "unity_position": [
+    0.845,
+    0.391,
+    -1.43
+   ],
+   "radius_m": 0.391,
+   "width_m": 0.275,
+   "measured_wheel_mesh": {
+    "radius": 0.391,
+    "width": 0.275
+   },
+   "pivots": {
+    "Wheel_RR_LOD0": 0.0,
+    "Wheel_RR_LOD1": 0.0,
+    "Wheel_RR_LOD2": 0.0,
+    "Wheel_RR_LOD3": 0.0
+   }
+  }
+ },
+ "wheel_notes": null,
+ "center_of_mass_unity": [
+  -0.0,
+  0.7,
+  0.1
+ ],
+ "colliders": {
+  "optional_integration_resource": true,
+  "note": "Convex reference hulls (MeshCollider Convex ON, renderers off). The current traffic system uses analytic collision: these are optional, not required.",
+  "hulls": {
+   "Collision_Body": {
+    "tris": 68,
+    "unity_bounds": {
+     "min": [
+      -0.984,
+      0.2584,
+      -1.2924
+     ],
+     "max": [
+      0.984,
+      1.237,
+      1.4718
+     ]
+    }
+   },
+   "Collision_Cabin": {
+    "tris": 170,
+    "unity_bounds": {
+     "min": [
+      -1.15,
+      1.1617,
+      -2.346
+     ],
+     "max": [
+      1.15,
+      1.7927,
+      0.7968
+     ]
+    }
+   },
+   "Collision_Front": {
+    "tris": 200,
+    "unity_bounds": {
+     "min": [
+      -0.984,
+      0.2441,
+      1.3085
+     ],
+     "max": [
+      0.984,
+      1.234,
+      2.4895
+     ]
+    }
+   },
+   "Collision_Rear": {
+    "tris": 190,
+    "unity_bounds": {
+     "min": [
+      -0.9851,
+      0.2435,
+      -2.48
+     ],
+     "max": [
+      0.9851,
+      1.3459,
+      -1.1023
+     ]
+    }
+   }
+  }
+ },
+ "wheel_collider_refs": {
+  "optional_integration_resource": true,
+  "note": "WheelColliderRef_* empties mark wheel centres; WheelColliders are NOT required for analytic traffic."
+ },
+ "lods": {
+  "LOD0": {
+   "root": "LOD0_Root",
+   "triangles": 19840,
+   "objects": 13,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_SUVB_Glass",
+    "TS_SUVB_Interior",
+    "TS_SUVB_Paint",
+    "TS_Tire"
+   ]
+  },
+  "LOD1": {
+   "root": "LOD1_Root",
+   "triangles": 9566,
+   "objects": 13,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_SUVB_Glass",
+    "TS_SUVB_Interior",
+    "TS_SUVB_Paint_LOD1",
+    "TS_Tire"
+   ]
+  },
+  "LOD2": {
+   "root": "LOD2_Root",
+   "triangles": 4325,
+   "objects": 13,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_SUVB_Glass",
+    "TS_SUVB_Interior",
+    "TS_SUVB_Paint_Far",
+    "TS_Tire"
+   ]
+  },
+  "LOD3": {
+   "root": "LOD3_Root",
+   "triangles": 1939,
+   "objects": 9,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lights",
+    "TS_SUVB_Glass",
+    "TS_SUVB_Interior",
+    "TS_SUVB_Paint_Far",
+    "TS_Tire"
+   ]
+  }
+ },
+ "materials": [
+  "TS_Atlas",
+  "TS_Lens",
+  "TS_LensRed",
+  "TS_Lights",
+  "TS_SUVB_Glass",
+  "TS_SUVB_Interior",
+  "TS_SUVB_Paint",
+  "TS_SUVB_Paint_Far",
+  "TS_SUVB_Paint_LOD1",
+  "TS_Tire"
+ ],
+ "light_channels": {
+  "count": 7,
+  "names": [
+   "DRL",
+   "Headlamp",
+   "Tail",
+   "Brake",
+   "Indicator_L",
+   "Indicator_R",
+   "Reverse"
+  ],
+  "material": "TS_Lights (one material, one draw call)",
+  "mechanism": "channel index = round(TS_Lights_ChannelID.R x 15); emission = TS_Lights_Emission x intensity[channel] (per-renderer MaterialPropertyBlock)",
+  "index_order": [
+   "DRL",
+   "Headlamp",
+   "Tail",
+   "Brake",
+   "Indicator_L",
+   "Indicator_R",
+   "Reverse"
+  ]
+ },
+ "coordinate_convention": {
+  "forward": "+Z",
+  "up": "+Y",
+  "vehicle_left": "-X",
+  "ground": "Y = 0",
+  "front_axle": "+Z",
+  "blender_to_unity_point": "(x, y, z) -> (-x, z, -y)",
+  "fbx_globals": {
+   "UpAxis": 1,
+   "UpAxisSign": 1,
+   "FrontAxis": 2,
+   "FrontAxisSign": 1,
+   "CoordAxis": 0,
+   "CoordAxisSign": 1,
+   "UnitScaleFactor": 100.0,
+   "OriginalUnitScaleFactor": 100.0
+  },
+  "axis_conversion": "baked into the meshes: Car_Root identity; Bake Axis Conversion OFF"
+ },
+ "scale": {
+  "units": "metres",
+  "fbx_unit_scale_factor": 100.0,
+  "unity_scale_factor": 1,
+  "convert_units": true
+ },
+ "unity_import": {
+  "scale_factor": 1,
+  "convert_units": true,
+  "bake_axis_conversion": false,
+  "import_blendshapes": false,
+  "import_visibility": false,
+  "import_cameras": false,
+  "import_lights": false,
+  "preserve_hierarchy": true,
+  "mesh_compression": "Off",
+  "read_write": false,
+  "generate_colliders": false,
+  "normals": "Import",
+  "tangents": "Calculate Mikktspace",
+  "animation_type": "None",
+  "import_animation": false,
+  "material_creation": "Import via MaterialDescription, then remap by exact name",
+  "lod_group": {
+   "on": "Car_Root",
+   "renderers_from": [
+    "LOD0_Root",
+    "LOD1_Root",
+    "LOD2_Root",
+    "LOD3_Root"
+   ],
+   "screen_relative_heights": [
+    0.5,
+    0.22,
+    0.08,
+    0.015
+   ],
+   "note": "suggested starting values from the Blender handoff; tune on device"
+  }
+ },
+ "traffic": {
+  "footprint_override": {
+   "width": 1.9702,
+   "length": 4.9695,
+   "height": 1.5492,
+   "center_unity": [
+    0.0,
+    1.0181,
+    0.0048
+   ],
+   "width_from": "Collision_Rear",
+   "rule": "width = widest collision hull not wider than the design body width + 3 cm (1.96 m, H_TrafficFleet/scripts/designs/suv_b.py DIM.width_body); hulls ['Collision_Cabin'] reach the mirror zone and are excluded from the width. Length / height = union of all collision hulls.",
+   "excluded_mirror_zone_hulls": [
+    "Collision_Cabin"
+   ]
+  },
+  "lod0_vs_15k_budget": {
+   "lod0_triangles": 19840,
+   "budget": 15000,
+   "over": true
+  },
+  "note": "Map footprint_override onto the existing TrafficVehicleData footprint fields (names are the Unity project's); width is the collision body without mirrors."
+ },
+ "dependencies": {
+  "fbx_relative_texture_paths": [
+   "../../shared/textures/TS_Atlas_BaseColor.png",
+   "../../shared/textures/TS_Atlas_Metallic.png",
+   "../../shared/textures/TS_Atlas_Normal.png",
+   "../../shared/textures/TS_Atlas_Roughness.png",
+   "../../shared/textures/TS_Lights_BaseColor.png",
+   "../../shared/textures/TS_Tire_BaseColor.png",
+   "../../shared/textures/TS_Tire_Normal.png",
+   "../../shared/textures/TS_Tire_Roughness.png",
+   "../textures/TS_SUVB_Body_Normal.png",
+   "../textures/TS_SUVB_Body_Normal_LOD1.png"
+  ],
+  "unresolved": [],
+  "absolute_paths_embedded": 10,
+  "embedded_media": 0,
+  "vehicle_readme": "01_Traffic_Vehicles/Traffic_SUV_B_v3/README_TrafficSUVB.md"
+ },
+ "validation": {
+  "checks": {
+   "02 Correct approved release version": {
+    "result": "PASS",
+    "detail": "FBX SHA-1 2f3836ff6185 = release record; release 'SUV B v3'; freeze manifest TS_SUVB_FINAL_FREEZE.md unchanged since export (45387cb9dc64)"
+   },
+   "03 Complete FBX exists": {
+    "result": "PASS",
+    "detail": "TrafficSUVB_complete_unity.fbx: 2,836,636 bytes, 71 objects (release 71)"
+   },
+   "04 Every required texture exists": {
+    "result": "PASS",
+    "detail": "12 required textures (5 for manual URP setup), missing []"
+   },
+   "05 All paths resolve inside the portable package": {
+    "result": "PASS",
+    "detail": "10 relative texture paths resolve in the package and in the portable copy; importer loaded 14 images, all from inside the copy"
+   },
+   "06 FBX hierarchy valid": {
+    "result": "PASS",
+    "detail": "single root Car_Root; children 10 incl. LOD0-3_Root, Collision, 4 WheelColliderRef, CenterOfMass; colliders under Collision; no .001 names"
+   },
+   "07 Model orientation (+Z forward, +Y up, -X left)": {
+    "result": "PASS",
+    "detail": "FBX axes Up +Y / Front +Z / Coord +X; nose Z 2.4943 (release 2.4943), tail -2.4840; FL wheel at -X/+Z; all node rotations identity"
+   },
+   "08 Dimensions and scale (metres, scale 1, ground Y 0)": {
+    "result": "PASS",
+    "detail": "UnitScaleFactor 100 (1 unit = 1 m), max Lcl scale deviation 0.0e+00, no negative scale; LOD0 L x W x H 4.9783 x 2.3000 x 1.8109 m vs release 4.9783 x 2.3 x 1.8109; ground Y -0.0000"
+   },
+   "09 All LODs preserved (LOD0-3)": {
+    "result": "PASS",
+    "detail": "4 LOD roots"
+   },
+   "10 Triangle counts match the release manifest": {
+    "result": "PASS",
+    "detail": "LOD0 19,840, LOD1 9,566, LOD2 4,325, LOD3 1,939"
+   },
+   "11 Wheel pivots match the validated source": {
+    "result": "PASS",
+    "detail": "4 WheelColliderRef positions = release (Unity FL [-0.84, 0.391, 1.55]); 24 Wheel/SteerPivot pivots, max offset from ref 0.0000 mm; wheel mesh radius = release radius within 1 mm"
+   },
+   "12 Collider references preserved": {
+    "result": "PASS",
+    "detail": "4 convex hulls {'Collision_Body': 68, 'Collision_Cabin': 170, 'Collision_Front': 200, 'Collision_Rear': 190}, no materials"
+   },
+   "13 Centre-of-mass reference preserved": {
+    "result": "PASS",
+    "detail": "CenterOfMass Unity [-0.0, 0.7, 0.1] (release [-0.0, 0.7, 0.1])"
+   },
+   "14 Material names and assignments preserved": {
+    "result": "PASS",
+    "detail": "per-LOD material sets = release (LOD0 8, LOD1 8, LOD2 8, LOD3 6); every face has a material"
+   },
+   "15 Light-channel data preserved": {
+    "result": "PASS",
+    "detail": "TS_Lights channel faces decoded from UVs identical to the FBX audit on 4 Lights_LODn objects; 7 channels ['DRL', 'Headlamp', 'Tail', 'Brake', 'Indicator_L', 'Indicator_R', 'Reverse']"
+   },
+   "17 No corrupted textures": {
+    "result": "PASS",
+    "detail": "12 PNG decoded (signature, CRC, zlib, pixel length); importer read non-zero sizes for 14 linked images"
+   },
+   "18 No unexpectedly missing dependencies": {
+    "result": "PASS",
+    "detail": "no missing or external dependency; the portable-copy measurement is identical to the in-place one"
+   }
+  },
+  "blender_side": "PASS",
+  "unity_runtime": "NOT RUN (P0-05 on the Unity machine)"
+ }
+}

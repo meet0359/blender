@@ -1,0 +1,509 @@
+{
+ "schema": "export_vechile/vehicle_spec@1",
+ "vehicle_id": "TitanGT_r1",
+ "display_name": "Titan GT r1",
+ "vehicle_type": "player",
+ "vehicle_class": "sports_car",
+ "approved_release": "Titan GT r1 (Phase C revision r1)",
+ "source_release": {
+  "freeze_manifest": "vehicles/C_TitanGT_r1/reports/TG_R1_FINAL_FREEZE.md",
+  "freeze_manifest_sha1": "5aebf8e0788c1202b7e27692f67ae2d7684f96f5",
+  "source_blend": "vehicles/C_TitanGT_r1/blend/titangt_r1_09_export_ready.blend",
+  "source_blend_sha1": "56e752d5c43ff18e9328a6f2debd4e8d1e682bcb"
+ },
+ "fbx": {
+  "path": "02_Player_Vehicles/TitanGT_r1/FBX/TitanGT_complete_unity.fbx",
+  "bytes": 8833692,
+  "sha256": "38fa0840035a90ce017c6599f63e97de6bfc3c57ef83095a14f57e67dc4e7526",
+  "sha1": "3b535d63f6d27ece36c628f088583e82a1a04fb1",
+  "objects": 102,
+  "contents": "Car_Root > LOD0_Root..LOD3_Root (render meshes, wheel and steer pivots), Collision (convex hulls), WheelColliderRef_FL/FR/RL/RR, CenterOfMass"
+ },
+ "textures": {
+  "fbx_linked": [
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Carbon_BaseColor.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Carbon_Normal.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_BaseColor.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_Metallic.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_Roughness.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Tire_BaseColor.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Tire_Normal.png"
+  ],
+  "manual_setup": [
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_MetallicSmoothness.png"
+  ],
+  "all": [
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Carbon_BaseColor.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Carbon_Normal.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_BaseColor.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_Metallic.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_Roughness.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Tire_BaseColor.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Tire_Normal.png",
+   "02_Player_Vehicles/TitanGT_r1/textures/TG_Palette_MetallicSmoothness.png"
+  ]
+ },
+ "dimensions_m": {
+  "visual_lod0": {
+   "length": 4.8141,
+   "width": 2.23,
+   "height": 1.272
+  },
+  "visual_width_includes_mirrors": true,
+  "mirrors_source": "TG_UNITY_IMPORT_NOTES.md: \"L x W x H 4.814 x 2.230 x 1.272 m (mirrors incl.; body width 2.00 m). Wheelbase 2.82 m, track 1.69 m front / 1.71 m rear. Tires 265/35 R20 front, 305/30 R21 rear.\"",
+  "documented_body_width": {
+   "value": 2.0,
+   "source": "TG_UNITY_IMPORT_NOTES.md: \"L x W x H 4.814 x 2.230 x 1.272 m (mirrors incl.; body width 2.00 m). Wheelbase 2.82 m, track 1.69 m front / 1.71 m rear. Tires 265/35 R20 front, 305/30 R21 rear.\""
+  },
+  "collision": {
+   "collision_union": {
+    "length": 4.8108,
+    "width": 2.1502,
+    "height": 1.1566,
+    "center_unity": [
+     0.0018,
+     0.693,
+     -0.0327
+    ]
+   },
+   "hull_widths": {
+    "Collision_Body": 1.9984,
+    "Collision_Cabin": 2.1502,
+    "Collision_Front": 1.9446,
+    "Collision_Rear": 1.9961
+   }
+  }
+ },
+ "wheelbase_m": 2.82,
+ "track_m": {
+  "front": 1.69,
+  "rear": 1.71
+ },
+ "wheels": {
+  "FL": {
+   "unity_position": [
+    -0.845,
+    0.347,
+    1.41
+   ],
+   "radius_m": 0.347,
+   "width_m": 0.265,
+   "measured_wheel_mesh": {
+    "radius": 0.347,
+    "width": 0.265
+   },
+   "pivots": {
+    "SteerPivot_FL_LOD0": 0.0,
+    "SteerPivot_FL_LOD1": 0.0,
+    "SteerPivot_FL_LOD2": 0.0,
+    "SteerPivot_FL_LOD3": 0.0,
+    "Wheel_FL_LOD0": 0.0,
+    "Wheel_FL_LOD1": 0.0,
+    "Wheel_FL_LOD2": 0.0,
+    "Wheel_FL_LOD3": 0.0
+   }
+  },
+  "FR": {
+   "unity_position": [
+    0.845,
+    0.347,
+    1.41
+   ],
+   "radius_m": 0.347,
+   "width_m": 0.265,
+   "measured_wheel_mesh": {
+    "radius": 0.347,
+    "width": 0.265
+   },
+   "pivots": {
+    "SteerPivot_FR_LOD0": 0.0,
+    "SteerPivot_FR_LOD1": 0.0,
+    "SteerPivot_FR_LOD2": 0.0,
+    "SteerPivot_FR_LOD3": 0.0,
+    "Wheel_FR_LOD0": 0.0,
+    "Wheel_FR_LOD1": 0.0,
+    "Wheel_FR_LOD2": 0.0,
+    "Wheel_FR_LOD3": 0.0
+   }
+  },
+  "RL": {
+   "unity_position": [
+    -0.855,
+    0.358,
+    -1.41
+   ],
+   "radius_m": 0.358,
+   "width_m": 0.305,
+   "measured_wheel_mesh": {
+    "radius": 0.358,
+    "width": 0.305
+   },
+   "pivots": {
+    "Wheel_RL_LOD0": 0.0,
+    "Wheel_RL_LOD1": 0.0,
+    "Wheel_RL_LOD2": 0.0,
+    "Wheel_RL_LOD3": 0.0
+   }
+  },
+  "RR": {
+   "unity_position": [
+    0.855,
+    0.358,
+    -1.41
+   ],
+   "radius_m": 0.358,
+   "width_m": 0.305,
+   "measured_wheel_mesh": {
+    "radius": 0.358,
+    "width": 0.305
+   },
+   "pivots": {
+    "Wheel_RR_LOD0": 0.0,
+    "Wheel_RR_LOD1": 0.0,
+    "Wheel_RR_LOD2": 0.0,
+    "Wheel_RR_LOD3": 0.0
+   }
+  }
+ },
+ "wheel_notes": null,
+ "center_of_mass_unity": [
+  -0.0,
+  0.42,
+  -0.15
+ ],
+ "colliders": {
+  "optional_integration_resource": true,
+  "note": "Convex reference hulls (MeshCollider Convex ON, renderers off). Use them if the player car keeps physics colliders; the existing controller decides.",
+  "hulls": {
+   "Collision_Body": {
+    "tris": 182,
+    "unity_bounds": {
+     "min": [
+      -0.9992,
+      0.1147,
+      -1.2194
+     ],
+     "max": [
+      0.9992,
+      0.8198,
+      1.1395
+     ]
+    }
+   },
+   "Collision_Cabin": {
+    "tris": 184,
+    "unity_bounds": {
+     "min": [
+      -1.0733,
+      0.7408,
+      -1.5299
+     ],
+     "max": [
+      1.077,
+      1.2713,
+      0.5662
+     ]
+    }
+   },
+   "Collision_Front": {
+    "tris": 168,
+    "unity_bounds": {
+     "min": [
+      -0.9734,
+      0.1153,
+      1.0117
+     ],
+     "max": [
+      0.9712,
+      0.816,
+      2.3727
+     ]
+    }
+   },
+   "Collision_Rear": {
+    "tris": 150,
+    "unity_bounds": {
+     "min": [
+      -0.9968,
+      0.1198,
+      -2.4381
+     ],
+     "max": [
+      0.9993,
+      1.0192,
+      -1.0518
+     ]
+    }
+   }
+  }
+ },
+ "wheel_collider_refs": {
+  "optional_integration_resource": true,
+  "note": "WheelColliderRef_* empties mark wheel centres for the player-car physics, if used."
+ },
+ "lods": {
+  "LOD0": {
+   "root": "LOD0_Root",
+   "triangles": 77370,
+   "objects": 22,
+   "materials": [
+    "TG_Carbon",
+    "TG_Display",
+    "TG_Glass",
+    "TG_LED_Brake",
+    "TG_LED_DRL",
+    "TG_LED_Headlamp",
+    "TG_LED_Indicator_L",
+    "TG_LED_Indicator_R",
+    "TG_LED_Reverse",
+    "TG_LED_Tail",
+    "TG_LensClear",
+    "TG_LensRed",
+    "TG_Paint",
+    "TG_Palette",
+    "TG_Tire"
+   ]
+  },
+  "LOD1": {
+   "root": "LOD1_Root",
+   "triangles": 39752,
+   "objects": 22,
+   "materials": [
+    "TG_Carbon",
+    "TG_Display",
+    "TG_Glass",
+    "TG_LED_Brake",
+    "TG_LED_DRL",
+    "TG_LED_Headlamp",
+    "TG_LED_Indicator_L",
+    "TG_LED_Indicator_R",
+    "TG_LED_Reverse",
+    "TG_LED_Tail",
+    "TG_LensClear",
+    "TG_LensRed",
+    "TG_Paint",
+    "TG_Palette",
+    "TG_Tire"
+   ]
+  },
+  "LOD2": {
+   "root": "LOD2_Root",
+   "triangles": 18527,
+   "objects": 22,
+   "materials": [
+    "TG_Carbon",
+    "TG_Display",
+    "TG_Glass",
+    "TG_LED_Brake",
+    "TG_LED_DRL",
+    "TG_LED_Headlamp",
+    "TG_LED_Indicator_L",
+    "TG_LED_Indicator_R",
+    "TG_LED_Reverse",
+    "TG_LED_Tail",
+    "TG_LensClear",
+    "TG_LensRed",
+    "TG_Paint",
+    "TG_Palette",
+    "TG_Tire"
+   ]
+  },
+  "LOD3": {
+   "root": "LOD3_Root",
+   "triangles": 7729,
+   "objects": 13,
+   "materials": [
+    "TG_Carbon",
+    "TG_Display",
+    "TG_Glass",
+    "TG_LED_Brake",
+    "TG_LED_DRL",
+    "TG_LED_Headlamp",
+    "TG_LED_Indicator_L",
+    "TG_LED_Indicator_R",
+    "TG_LED_Reverse",
+    "TG_LED_Tail",
+    "TG_LensClear",
+    "TG_LensRed",
+    "TG_Paint",
+    "TG_Palette",
+    "TG_Tire"
+   ]
+  }
+ },
+ "materials": [
+  "TG_Carbon",
+  "TG_Display",
+  "TG_Glass",
+  "TG_LED_Brake",
+  "TG_LED_DRL",
+  "TG_LED_Headlamp",
+  "TG_LED_Indicator_L",
+  "TG_LED_Indicator_R",
+  "TG_LED_Reverse",
+  "TG_LED_Tail",
+  "TG_LensClear",
+  "TG_LensRed",
+  "TG_Paint",
+  "TG_Palette",
+  "TG_Tire"
+ ],
+ "light_channels": {
+  "count": 7,
+  "names": [
+   "TG_LED_DRL",
+   "TG_LED_Headlamp",
+   "TG_LED_Tail",
+   "TG_LED_Brake",
+   "TG_LED_Indicator_L",
+   "TG_LED_Indicator_R",
+   "TG_LED_Reverse"
+  ],
+  "mechanism": "one emissive material per channel; drive _EmissionColor intensity at runtime"
+ },
+ "coordinate_convention": {
+  "forward": "+Z",
+  "up": "+Y",
+  "vehicle_left": "-X",
+  "ground": "Y = 0",
+  "front_axle": "+Z",
+  "blender_to_unity_point": "(x, y, z) -> (-x, z, -y)",
+  "fbx_globals": {
+   "UpAxis": 1,
+   "UpAxisSign": 1,
+   "FrontAxis": 2,
+   "FrontAxisSign": 1,
+   "CoordAxis": 0,
+   "CoordAxisSign": 1,
+   "UnitScaleFactor": 100.0,
+   "OriginalUnitScaleFactor": 100.0
+  },
+  "axis_conversion": "baked into the meshes: Car_Root identity; Bake Axis Conversion OFF"
+ },
+ "scale": {
+  "units": "metres",
+  "fbx_unit_scale_factor": 100.0,
+  "unity_scale_factor": 1,
+  "convert_units": true
+ },
+ "unity_import": {
+  "scale_factor": 1,
+  "convert_units": true,
+  "bake_axis_conversion": false,
+  "import_blendshapes": false,
+  "import_visibility": false,
+  "import_cameras": false,
+  "import_lights": false,
+  "preserve_hierarchy": true,
+  "mesh_compression": "Off",
+  "read_write": false,
+  "generate_colliders": false,
+  "normals": "Import",
+  "tangents": "Import",
+  "animation_type": "None",
+  "import_animation": false,
+  "material_creation": "Import via MaterialDescription, then remap by exact name",
+  "lod_group": {
+   "on": "Car_Root",
+   "renderers_from": [
+    "LOD0_Root",
+    "LOD1_Root",
+    "LOD2_Root",
+    "LOD3_Root"
+   ],
+   "screen_relative_heights": [
+    0.6,
+    0.3,
+    0.12,
+    0.03
+   ],
+   "note": "suggested starting values from the Blender handoff; tune on device"
+  }
+ },
+ "traffic": null,
+ "dependencies": {
+  "fbx_relative_texture_paths": [
+   "../textures/TG_Carbon_BaseColor.png",
+   "../textures/TG_Carbon_Normal.png",
+   "../textures/TG_Palette_BaseColor.png",
+   "../textures/TG_Palette_Metallic.png",
+   "../textures/TG_Palette_Roughness.png",
+   "../textures/TG_Tire_BaseColor.png",
+   "../textures/TG_Tire_Normal.png"
+  ],
+  "unresolved": [],
+  "absolute_paths_embedded": 7,
+  "embedded_media": 0,
+  "vehicle_readme": "02_Player_Vehicles/TitanGT_r1/TG_UNITY_IMPORT_NOTES.md"
+ },
+ "validation": {
+  "checks": {
+   "02 Correct approved release version": {
+    "result": "PASS",
+    "detail": "FBX SHA-1 3b535d63f6d2 = release record; FBX hash listed in TG_R1_FINAL_FREEZE.md"
+   },
+   "03 Complete FBX exists": {
+    "result": "PASS",
+    "detail": "TitanGT_complete_unity.fbx: 8,833,692 bytes, 102 objects (release 102)"
+   },
+   "04 Every required texture exists": {
+    "result": "PASS",
+    "detail": "8 required textures (1 for manual URP setup), missing []"
+   },
+   "05 All paths resolve inside the portable package": {
+    "result": "PASS",
+    "detail": "7 relative texture paths resolve in the package and in the portable copy; importer loaded 10 images, all from inside the copy"
+   },
+   "06 FBX hierarchy valid": {
+    "result": "PASS",
+    "detail": "single root Car_Root; children 10 incl. LOD0-3_Root, Collision, 4 WheelColliderRef, CenterOfMass; colliders under Collision; no .001 names"
+   },
+   "07 Model orientation (+Z forward, +Y up, -X left)": {
+    "result": "PASS",
+    "detail": "FBX axes Up +Y / Front +Z / Coord +X; body nose Z 2.3744 (release 2.3744), tail -2.4382; FL wheel at -X/+Z; all node rotations identity"
+   },
+   "08 Dimensions and scale (metres, scale 1, ground Y 0)": {
+    "result": "PASS",
+    "detail": "UnitScaleFactor 100 (1 unit = 1 m), max Lcl scale deviation 0.0e+00, no negative scale; LOD0 L x W x H 4.8141 x 2.2300 x 1.2720 m vs release 4.8141 x 2.23 x 1.272; ground Y -0.0000"
+   },
+   "09 All LODs preserved (LOD0-3)": {
+    "result": "PASS",
+    "detail": "4 LOD roots"
+   },
+   "10 Triangle counts match the release manifest": {
+    "result": "PASS",
+    "detail": "LOD0 77,370, LOD1 39,752, LOD2 18,527, LOD3 7,729"
+   },
+   "11 Wheel pivots match the validated source": {
+    "result": "PASS",
+    "detail": "4 WheelColliderRef positions = release (Unity FL [-0.845, 0.347, 1.41]); 24 Wheel/SteerPivot pivots, max offset from ref 0.0000 mm; wheel mesh radius = release radius within 1 mm"
+   },
+   "12 Collider references preserved": {
+    "result": "PASS",
+    "detail": "4 convex hulls {'Collision_Body': 182, 'Collision_Cabin': 184, 'Collision_Front': 168, 'Collision_Rear': 150}, no materials"
+   },
+   "13 Centre-of-mass reference preserved": {
+    "result": "PASS",
+    "detail": "CenterOfMass Unity [-0.0, 0.42, -0.15] (release [-0.0, 0.42, -0.15])"
+   },
+   "14 Material names and assignments preserved": {
+    "result": "PASS",
+    "detail": "15 materials = export manifest; per LOD [15, 15, 15, 15]; every face has a material"
+   },
+   "15 Light-channel data preserved": {
+    "result": "PASS",
+    "detail": "7 light-channel materials, LOD0 face counts = release geometry report"
+   },
+   "17 No corrupted textures": {
+    "result": "PASS",
+    "detail": "8 PNG decoded (signature, CRC, zlib, pixel length); importer read non-zero sizes for 10 linked images"
+   },
+   "18 No unexpectedly missing dependencies": {
+    "result": "PASS",
+    "detail": "no missing or external dependency; the portable-copy measurement is identical to the in-place one"
+   }
+  },
+  "blender_side": "PASS",
+  "unity_runtime": "NOT RUN (P0-05 on the Unity machine)"
+ }
+}

@@ -1,0 +1,536 @@
+{
+ "schema": "export_vechile/vehicle_spec@1",
+ "vehicle_id": "Traffic_Sedan_A_r3",
+ "display_name": "Sedan A r3",
+ "vehicle_type": "traffic",
+ "vehicle_class": "sedan",
+ "approved_release": "Sedan A r3",
+ "source_release": {
+  "freeze_manifest": "H_TrafficFleet/Traffic_Sedan_A_r3/reports/TS_SedanA_r3_FINAL_FREEZE.md",
+  "freeze_manifest_sha1": "fa869fd4e3bc38e79ebaedd820dbe08f36e8ceee",
+  "source_blend": "H_TrafficFleet/Traffic_Sedan_A_r3/blend/trafficsedanar3_09_export_ready.blend",
+  "source_blend_sha1": "898791c95ae3a8ef6e2a2d34aaf989786f51194b",
+  "handoff": "vehicles/H_TrafficFleet/UNITY_HANDOFF_20261010/01_Traffic_Sedan_A_r3"
+ },
+ "fbx": {
+  "path": "01_Traffic_Vehicles/Traffic_Sedan_A_r3/FBX/TrafficSedanA_r3_complete_unity.fbx",
+  "bytes": 2212284,
+  "sha256": "e853ced94c05b9e77ed694270ec5809a37d27702c0b9ea155d407fdbf91c35e9",
+  "sha1": "70361cfb6efed020f77e13628f878f04770e9212",
+  "objects": 71,
+  "contents": "Car_Root > LOD0_Root..LOD3_Root (render meshes, wheel and steer pivots), Collision (convex hulls), WheelColliderRef_FL/FR/RL/RR, CenterOfMass"
+ },
+ "textures": {
+  "fbx_linked": [
+   "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_Normal.png",
+   "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_Normal_LOD1.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Metallic.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Roughness.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Roughness.png"
+  ],
+  "manual_setup": [
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_MetallicSmoothness.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_ChannelID.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_Emission.png",
+   "01_Traffic_Vehicles/shared/textures/TS_PaintFlake_Normal.png",
+   "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_AO_Grime.png"
+  ],
+  "all": [
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Metallic.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Atlas_Roughness.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Lights_Emission.png",
+   "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_AO_Grime.png",
+   "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_Normal.png",
+   "01_Traffic_Vehicles/Traffic_Sedan_A_r3/textures/TS_SedanA_Body_Normal_LOD1.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_BaseColor.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Normal.png",
+   "01_Traffic_Vehicles/shared/textures/TS_Tire_Roughness.png"
+  ]
+ },
+ "dimensions_m": {
+  "visual_lod0": {
+   "length": 4.6494,
+   "width": 2.06,
+   "height": 1.4685
+  },
+  "visual_width_includes_mirrors": true,
+  "mirrors_source": "traffic README_UNITY_IMPORT.md section 8: \"Width includes the mirrors.\"",
+  "design_body_width": {
+   "value": 1.8,
+   "source": "H_TrafficFleet/scripts/ts_sedan_a_r3.py DIM.width_body"
+  },
+  "collision": {
+   "collision_union": {
+    "length": 4.645,
+    "width": 2.06,
+    "height": 1.3081,
+    "center_unity": [
+     0.0,
+     0.8192,
+     -0.0496
+    ]
+   },
+   "hull_widths": {
+    "Collision_Body": 1.8014,
+    "Collision_Cabin": 2.06,
+    "Collision_Front": 1.8008,
+    "Collision_Rear": 1.8067
+   },
+   "recommended_footprint_override": {
+    "width": 1.8067,
+    "length": 4.645,
+    "height": 1.3081,
+    "center_unity": [
+     0.0,
+     0.8192,
+     -0.0496
+    ],
+    "width_from": "Collision_Rear",
+    "rule": "width = widest collision hull not wider than the design body width + 3 cm (1.8 m, H_TrafficFleet/scripts/ts_sedan_a_r3.py DIM.width_body); hulls ['Collision_Cabin'] reach the mirror zone and are excluded from the width. Length / height = union of all collision hulls.",
+    "excluded_mirror_zone_hulls": [
+     "Collision_Cabin"
+    ]
+   }
+  }
+ },
+ "wheelbase_m": 2.7,
+ "track_m": {
+  "front": 1.56,
+  "rear": 1.555
+ },
+ "wheels": {
+  "FL": {
+   "unity_position": [
+    -0.78,
+    0.316,
+    1.35
+   ],
+   "radius_m": 0.316,
+   "width_m": 0.205,
+   "measured_wheel_mesh": {
+    "radius": 0.316,
+    "width": 0.205
+   },
+   "pivots": {
+    "SteerPivot_FL_LOD0": 0.0,
+    "SteerPivot_FL_LOD1": 0.0,
+    "SteerPivot_FL_LOD2": 0.0,
+    "SteerPivot_FL_LOD3": 0.0,
+    "Wheel_FL_LOD0": 0.0,
+    "Wheel_FL_LOD1": 0.0,
+    "Wheel_FL_LOD2": 0.0,
+    "Wheel_FL_LOD3": 0.0
+   }
+  },
+  "FR": {
+   "unity_position": [
+    0.78,
+    0.316,
+    1.35
+   ],
+   "radius_m": 0.316,
+   "width_m": 0.205,
+   "measured_wheel_mesh": {
+    "radius": 0.316,
+    "width": 0.205
+   },
+   "pivots": {
+    "SteerPivot_FR_LOD0": 0.0,
+    "SteerPivot_FR_LOD1": 0.0,
+    "SteerPivot_FR_LOD2": 0.0,
+    "SteerPivot_FR_LOD3": 0.0,
+    "Wheel_FR_LOD0": 0.0,
+    "Wheel_FR_LOD1": 0.0,
+    "Wheel_FR_LOD2": 0.0,
+    "Wheel_FR_LOD3": 0.0
+   }
+  },
+  "RL": {
+   "unity_position": [
+    -0.7775,
+    0.316,
+    -1.35
+   ],
+   "radius_m": 0.316,
+   "width_m": 0.205,
+   "measured_wheel_mesh": {
+    "radius": 0.316,
+    "width": 0.205
+   },
+   "pivots": {
+    "Wheel_RL_LOD0": 0.0,
+    "Wheel_RL_LOD1": 0.0,
+    "Wheel_RL_LOD2": 0.0,
+    "Wheel_RL_LOD3": 0.0
+   }
+  },
+  "RR": {
+   "unity_position": [
+    0.7775,
+    0.316,
+    -1.35
+   ],
+   "radius_m": 0.316,
+   "width_m": 0.205,
+   "measured_wheel_mesh": {
+    "radius": 0.316,
+    "width": 0.205
+   },
+   "pivots": {
+    "Wheel_RR_LOD0": 0.0,
+    "Wheel_RR_LOD1": 0.0,
+    "Wheel_RR_LOD2": 0.0,
+    "Wheel_RR_LOD3": 0.0
+   }
+  }
+ },
+ "wheel_notes": null,
+ "center_of_mass_unity": [
+  -0.0,
+  0.52,
+  0.22
+ ],
+ "colliders": {
+  "optional_integration_resource": true,
+  "note": "Convex reference hulls (MeshCollider Convex ON, renderers off). The current traffic system uses analytic collision: these are optional, not required.",
+  "hulls": {
+   "Collision_Body": {
+    "tris": 88,
+    "unity_bounds": {
+     "min": [
+      -0.9007,
+      0.2252,
+      -1.2204
+     ],
+     "max": [
+      0.9007,
+      0.9195,
+      1.0969
+     ]
+    }
+   },
+   "Collision_Cabin": {
+    "tris": 178,
+    "unity_bounds": {
+     "min": [
+      -1.03,
+      0.8611,
+      -1.606
+     ],
+     "max": [
+      1.03,
+      1.4732,
+      0.9402
+     ]
+    }
+   },
+   "Collision_Front": {
+    "tris": 158,
+    "unity_bounds": {
+     "min": [
+      -0.9004,
+      0.1836,
+      0.9568
+     ],
+     "max": [
+      0.9004,
+      0.9362,
+      2.2728
+     ]
+    }
+   },
+   "Collision_Rear": {
+    "tris": 184,
+    "unity_bounds": {
+     "min": [
+      -0.9033,
+      0.1651,
+      -2.3721
+     ],
+     "max": [
+      0.9033,
+      1.0774,
+      -1.0572
+     ]
+    }
+   }
+  }
+ },
+ "wheel_collider_refs": {
+  "optional_integration_resource": true,
+  "note": "WheelColliderRef_* empties mark wheel centres; WheelColliders are NOT required for analytic traffic."
+ },
+ "lods": {
+  "LOD0": {
+   "root": "LOD0_Root",
+   "triangles": 14961,
+   "objects": 13,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_SedanA_Glass",
+    "TS_SedanA_Interior",
+    "TS_SedanA_Paint",
+    "TS_Tire"
+   ]
+  },
+  "LOD1": {
+   "root": "LOD1_Root",
+   "triangles": 7756,
+   "objects": 13,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_SedanA_Glass",
+    "TS_SedanA_Interior",
+    "TS_SedanA_Paint_LOD1",
+    "TS_Tire"
+   ]
+  },
+  "LOD2": {
+   "root": "LOD2_Root",
+   "triangles": 3546,
+   "objects": 13,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_SedanA_Glass",
+    "TS_SedanA_Interior",
+    "TS_SedanA_Paint_Far",
+    "TS_Tire"
+   ]
+  },
+  "LOD3": {
+   "root": "LOD3_Root",
+   "triangles": 1383,
+   "objects": 9,
+   "materials": [
+    "TS_Atlas",
+    "TS_Lights",
+    "TS_SedanA_Glass",
+    "TS_SedanA_Interior",
+    "TS_SedanA_Paint_Far",
+    "TS_Tire"
+   ]
+  }
+ },
+ "materials": [
+  "TS_Atlas",
+  "TS_Lens",
+  "TS_LensRed",
+  "TS_Lights",
+  "TS_SedanA_Glass",
+  "TS_SedanA_Interior",
+  "TS_SedanA_Paint",
+  "TS_SedanA_Paint_Far",
+  "TS_SedanA_Paint_LOD1",
+  "TS_Tire"
+ ],
+ "light_channels": {
+  "count": 7,
+  "names": [
+   "DRL",
+   "Headlamp",
+   "Tail",
+   "Brake",
+   "Indicator_L",
+   "Indicator_R",
+   "Reverse"
+  ],
+  "material": "TS_Lights (one material, one draw call)",
+  "mechanism": "channel index = round(TS_Lights_ChannelID.R x 15); emission = TS_Lights_Emission x intensity[channel] (per-renderer MaterialPropertyBlock)",
+  "index_order": [
+   "DRL",
+   "Headlamp",
+   "Tail",
+   "Brake",
+   "Indicator_L",
+   "Indicator_R",
+   "Reverse"
+  ]
+ },
+ "coordinate_convention": {
+  "forward": "+Z",
+  "up": "+Y",
+  "vehicle_left": "-X",
+  "ground": "Y = 0",
+  "front_axle": "+Z",
+  "blender_to_unity_point": "(x, y, z) -> (-x, z, -y)",
+  "fbx_globals": {
+   "UpAxis": 1,
+   "UpAxisSign": 1,
+   "FrontAxis": 2,
+   "FrontAxisSign": 1,
+   "CoordAxis": 0,
+   "CoordAxisSign": 1,
+   "UnitScaleFactor": 100.0,
+   "OriginalUnitScaleFactor": 100.0
+  },
+  "axis_conversion": "baked into the meshes: Car_Root identity; Bake Axis Conversion OFF"
+ },
+ "scale": {
+  "units": "metres",
+  "fbx_unit_scale_factor": 100.0,
+  "unity_scale_factor": 1,
+  "convert_units": true
+ },
+ "unity_import": {
+  "scale_factor": 1,
+  "convert_units": true,
+  "bake_axis_conversion": false,
+  "import_blendshapes": false,
+  "import_visibility": false,
+  "import_cameras": false,
+  "import_lights": false,
+  "preserve_hierarchy": true,
+  "mesh_compression": "Off",
+  "read_write": false,
+  "generate_colliders": false,
+  "normals": "Import",
+  "tangents": "Calculate Mikktspace",
+  "animation_type": "None",
+  "import_animation": false,
+  "material_creation": "Import via MaterialDescription, then remap by exact name",
+  "lod_group": {
+   "on": "Car_Root",
+   "renderers_from": [
+    "LOD0_Root",
+    "LOD1_Root",
+    "LOD2_Root",
+    "LOD3_Root"
+   ],
+   "screen_relative_heights": [
+    0.5,
+    0.22,
+    0.08,
+    0.015
+   ],
+   "note": "suggested starting values from the Blender handoff; tune on device"
+  }
+ },
+ "traffic": {
+  "footprint_override": {
+   "width": 1.8067,
+   "length": 4.645,
+   "height": 1.3081,
+   "center_unity": [
+    0.0,
+    0.8192,
+    -0.0496
+   ],
+   "width_from": "Collision_Rear",
+   "rule": "width = widest collision hull not wider than the design body width + 3 cm (1.8 m, H_TrafficFleet/scripts/ts_sedan_a_r3.py DIM.width_body); hulls ['Collision_Cabin'] reach the mirror zone and are excluded from the width. Length / height = union of all collision hulls.",
+   "excluded_mirror_zone_hulls": [
+    "Collision_Cabin"
+   ]
+  },
+  "lod0_vs_15k_budget": {
+   "lod0_triangles": 14961,
+   "budget": 15000,
+   "over": false
+  },
+  "note": "Map footprint_override onto the existing TrafficVehicleData footprint fields (names are the Unity project's); width is the collision body without mirrors."
+ },
+ "dependencies": {
+  "fbx_relative_texture_paths": [
+   "../../shared/textures/TS_Atlas_BaseColor.png",
+   "../../shared/textures/TS_Atlas_Metallic.png",
+   "../../shared/textures/TS_Atlas_Normal.png",
+   "../../shared/textures/TS_Atlas_Roughness.png",
+   "../../shared/textures/TS_Lights_BaseColor.png",
+   "../../shared/textures/TS_Tire_BaseColor.png",
+   "../../shared/textures/TS_Tire_Normal.png",
+   "../../shared/textures/TS_Tire_Roughness.png",
+   "../textures/TS_SedanA_Body_Normal.png",
+   "../textures/TS_SedanA_Body_Normal_LOD1.png"
+  ],
+  "unresolved": [],
+  "absolute_paths_embedded": 10,
+  "embedded_media": 0,
+  "vehicle_readme": "01_Traffic_Vehicles/Traffic_Sedan_A_r3/README_TrafficSedanA_r3.md"
+ },
+ "validation": {
+  "checks": {
+   "02 Correct approved release version": {
+    "result": "PASS",
+    "detail": "FBX SHA-1 70361cfb6efe = release record; release 'Sedan A r3'; freeze manifest TS_SedanA_r3_FINAL_FREEZE.md unchanged since export (fa869fd4e3bc)"
+   },
+   "03 Complete FBX exists": {
+    "result": "PASS",
+    "detail": "TrafficSedanA_r3_complete_unity.fbx: 2,212,284 bytes, 71 objects (release 71)"
+   },
+   "04 Every required texture exists": {
+    "result": "PASS",
+    "detail": "12 required textures (5 for manual URP setup), missing []"
+   },
+   "05 All paths resolve inside the portable package": {
+    "result": "PASS",
+    "detail": "10 relative texture paths resolve in the package and in the portable copy; importer loaded 14 images, all from inside the copy"
+   },
+   "06 FBX hierarchy valid": {
+    "result": "PASS",
+    "detail": "single root Car_Root; children 10 incl. LOD0-3_Root, Collision, 4 WheelColliderRef, CenterOfMass; colliders under Collision; no .001 names"
+   },
+   "07 Model orientation (+Z forward, +Y up, -X left)": {
+    "result": "PASS",
+    "detail": "FBX axes Up +Y / Front +Z / Coord +X; nose Z 2.2772 (release 2.2772), tail -2.3721; FL wheel at -X/+Z; all node rotations identity"
+   },
+   "08 Dimensions and scale (metres, scale 1, ground Y 0)": {
+    "result": "PASS",
+    "detail": "UnitScaleFactor 100 (1 unit = 1 m), max Lcl scale deviation 0.0e+00, no negative scale; LOD0 L x W x H 4.6494 x 2.0600 x 1.4685 m vs release 4.6494 x 2.06 x 1.4685; ground Y -0.0000"
+   },
+   "09 All LODs preserved (LOD0-3)": {
+    "result": "PASS",
+    "detail": "4 LOD roots"
+   },
+   "10 Triangle counts match the release manifest": {
+    "result": "PASS",
+    "detail": "LOD0 14,961, LOD1 7,756, LOD2 3,546, LOD3 1,383"
+   },
+   "11 Wheel pivots match the validated source": {
+    "result": "PASS",
+    "detail": "4 WheelColliderRef positions = release (Unity FL [-0.78, 0.316, 1.35]); 24 Wheel/SteerPivot pivots, max offset from ref 0.0000 mm; wheel mesh radius = release radius within 1 mm"
+   },
+   "12 Collider references preserved": {
+    "result": "PASS",
+    "detail": "4 convex hulls {'Collision_Body': 88, 'Collision_Cabin': 178, 'Collision_Front': 158, 'Collision_Rear': 184}, no materials"
+   },
+   "13 Centre-of-mass reference preserved": {
+    "result": "PASS",
+    "detail": "CenterOfMass Unity [-0.0, 0.52, 0.22] (release [-0.0, 0.52, 0.22])"
+   },
+   "14 Material names and assignments preserved": {
+    "result": "PASS",
+    "detail": "per-LOD material sets = release (LOD0 8, LOD1 8, LOD2 8, LOD3 6); every face has a material"
+   },
+   "15 Light-channel data preserved": {
+    "result": "PASS",
+    "detail": "TS_Lights channel faces decoded from UVs identical to the FBX audit on 4 Lights_LODn objects; 7 channels ['DRL', 'Headlamp', 'Tail', 'Brake', 'Indicator_L', 'Indicator_R', 'Reverse']"
+   },
+   "17 No corrupted textures": {
+    "result": "PASS",
+    "detail": "12 PNG decoded (signature, CRC, zlib, pixel length); importer read non-zero sizes for 14 linked images"
+   },
+   "18 No unexpectedly missing dependencies": {
+    "result": "PASS",
+    "detail": "no missing or external dependency; the portable-copy measurement is identical to the in-place one"
+   }
+  },
+  "blender_side": "PASS",
+  "unity_runtime": "NOT RUN (P0-05 on the Unity machine)"
+ }
+}

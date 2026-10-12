@@ -1,0 +1,525 @@
+{
+ "schema": "export_vechile/vehicle_spec@1",
+ "vehicle_id": "VortexR_r1",
+ "display_name": "Vortex R r1",
+ "vehicle_type": "player",
+ "vehicle_class": "sports_car",
+ "approved_release": "Vortex R r1 (Phase D revision r1)",
+ "source_release": {
+  "freeze_manifest": "vehicles/D_VortexR_r1/reports/VX_R1_FINAL_FREEZE.md",
+  "freeze_manifest_sha1": "77cbac576ed4def73be1b873f43a9f89f410d257",
+  "source_blend": "vehicles/D_VortexR_r1/blend/vortexr_r1_09_export_ready.blend",
+  "source_blend_sha1": "b87379f51821a8c78cc4882fafa58e9f86bcaeef"
+ },
+ "fbx": {
+  "path": "02_Player_Vehicles/VortexR_r1/FBX/VortexR_complete_unity.fbx",
+  "bytes": 7024940,
+  "sha256": "854c49c5fb2bbd39794c5c0bf0d25b838e04e9afe47d8a40d04fca910ed4b4a6",
+  "sha1": "23476c898cf17b5807117c69b7cdc9aaf87c4d6d",
+  "objects": 103,
+  "contents": "Car_Root > LOD0_Root..LOD3_Root (render meshes, wheel and steer pivots), Collision (convex hulls), WheelColliderRef_FL/FR/RL/RR, CenterOfMass"
+ },
+ "textures": {
+  "fbx_linked": [
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Carbon_BaseColor.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Carbon_Normal.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_BaseColor.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_Metallic.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_Roughness.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Tire_BaseColor.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Tire_Normal.png"
+  ],
+  "manual_setup": [
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_MetallicSmoothness.png"
+  ],
+  "all": [
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Carbon_BaseColor.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Carbon_Normal.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_BaseColor.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_Metallic.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_Roughness.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Tire_BaseColor.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Tire_Normal.png",
+   "02_Player_Vehicles/VortexR_r1/textures/VX_Palette_MetallicSmoothness.png"
+  ]
+ },
+ "dimensions_m": {
+  "visual_lod0": {
+   "length": 4.58,
+   "width": 2.27,
+   "height": 1.275
+  },
+  "visual_width_includes_mirrors": true,
+  "mirrors_source": "VX_UNITY_IMPORT_NOTES.md: \"L x W x H 4.580 x 2.270 x 1.275 m (mirrors + wing endplates incl.; body width 2.09 m). Wheelbase 2.72 m, track 1.72 m front / 1.70 m rear. Tires 255/30 R20 front, 325/25 R21 rear.\"",
+  "documented_body_width": {
+   "value": 2.09,
+   "source": "VX_UNITY_IMPORT_NOTES.md: \"L x W x H 4.580 x 2.270 x 1.275 m (mirrors + wing endplates incl.; body width 2.09 m). Wheelbase 2.72 m, track 1.72 m front / 1.70 m rear. Tires 255/30 R20 front, 325/25 R21 rear.\""
+  },
+  "collision": {
+   "collision_union": {
+    "length": 4.5601,
+    "width": 2.27,
+    "height": 1.167,
+    "center_unity": [
+     0.0,
+     0.6915,
+     0.0201
+    ]
+   },
+   "hull_widths": {
+    "Collision_Body": 2.0186,
+    "Collision_Cabin": 2.27,
+    "Collision_Front": 2.0424,
+    "Collision_Rear": 2.0921,
+    "Collision_Wing": 1.732
+   }
+  }
+ },
+ "wheelbase_m": 2.72,
+ "track_m": {
+  "front": 1.72,
+  "rear": 1.7
+ },
+ "wheels": {
+  "FL": {
+   "unity_position": [
+    -0.86,
+    0.339,
+    1.36
+   ],
+   "radius_m": 0.339,
+   "width_m": 0.255,
+   "measured_wheel_mesh": {
+    "radius": 0.339,
+    "width": 0.255
+   },
+   "pivots": {
+    "SteerPivot_FL_LOD0": 0.0,
+    "SteerPivot_FL_LOD1": 0.0,
+    "SteerPivot_FL_LOD2": 0.0,
+    "SteerPivot_FL_LOD3": 0.0,
+    "Wheel_FL_LOD0": 0.0,
+    "Wheel_FL_LOD1": 0.0,
+    "Wheel_FL_LOD2": 0.0,
+    "Wheel_FL_LOD3": 0.0
+   }
+  },
+  "FR": {
+   "unity_position": [
+    0.86,
+    0.339,
+    1.36
+   ],
+   "radius_m": 0.339,
+   "width_m": 0.255,
+   "measured_wheel_mesh": {
+    "radius": 0.339,
+    "width": 0.255
+   },
+   "pivots": {
+    "SteerPivot_FR_LOD0": 0.0,
+    "SteerPivot_FR_LOD1": 0.0,
+    "SteerPivot_FR_LOD2": 0.0,
+    "SteerPivot_FR_LOD3": 0.0,
+    "Wheel_FR_LOD0": 0.0,
+    "Wheel_FR_LOD1": 0.0,
+    "Wheel_FR_LOD2": 0.0,
+    "Wheel_FR_LOD3": 0.0
+   }
+  },
+  "RL": {
+   "unity_position": [
+    -0.85,
+    0.348,
+    -1.36
+   ],
+   "radius_m": 0.348,
+   "width_m": 0.325,
+   "measured_wheel_mesh": {
+    "radius": 0.348,
+    "width": 0.325
+   },
+   "pivots": {
+    "Wheel_RL_LOD0": 0.0,
+    "Wheel_RL_LOD1": 0.0,
+    "Wheel_RL_LOD2": 0.0,
+    "Wheel_RL_LOD3": 0.0
+   }
+  },
+  "RR": {
+   "unity_position": [
+    0.85,
+    0.348,
+    -1.36
+   ],
+   "radius_m": 0.348,
+   "width_m": 0.325,
+   "measured_wheel_mesh": {
+    "radius": 0.348,
+    "width": 0.325
+   },
+   "pivots": {
+    "Wheel_RR_LOD0": 0.0,
+    "Wheel_RR_LOD1": 0.0,
+    "Wheel_RR_LOD2": 0.0,
+    "Wheel_RR_LOD3": 0.0
+   }
+  }
+ },
+ "wheel_notes": null,
+ "center_of_mass_unity": [
+  -0.0,
+  0.38,
+  -0.25
+ ],
+ "colliders": {
+  "optional_integration_resource": true,
+  "note": "Convex reference hulls (MeshCollider Convex ON, renderers off). Use them if the player car keeps physics colliders; the existing controller decides.",
+  "hulls": {
+   "Collision_Body": {
+    "tris": 168,
+    "unity_bounds": {
+     "min": [
+      -1.0093,
+      0.1155,
+      -1.1752
+     ],
+     "max": [
+      1.0093,
+      0.7988,
+      1.0971
+     ]
+    }
+   },
+   "Collision_Cabin": {
+    "tris": 166,
+    "unity_bounds": {
+     "min": [
+      -1.135,
+      0.7401,
+      -0.7922
+     ],
+     "max": [
+      1.135,
+      1.1224,
+      0.935
+     ]
+    }
+   },
+   "Collision_Front": {
+    "tris": 184,
+    "unity_bounds": {
+     "min": [
+      -1.0212,
+      0.1121,
+      0.9656
+     ],
+     "max": [
+      1.0212,
+      0.7949,
+      2.3001
+     ]
+    }
+   },
+   "Collision_Rear": {
+    "tris": 142,
+    "unity_bounds": {
+     "min": [
+      -1.0461,
+      0.108,
+      -2.2599
+     ],
+     "max": [
+      1.0461,
+      0.9728,
+      -1.0004
+     ]
+    }
+   },
+   "Collision_Wing": {
+    "tris": 14,
+    "unity_bounds": {
+     "min": [
+      -0.866,
+      1.12,
+      -2.19
+     ],
+     "max": [
+      0.866,
+      1.275,
+      -1.77
+     ]
+    }
+   }
+  }
+ },
+ "wheel_collider_refs": {
+  "optional_integration_resource": true,
+  "note": "WheelColliderRef_* empties mark wheel centres for the player-car physics, if used."
+ },
+ "lods": {
+  "LOD0": {
+   "root": "LOD0_Root",
+   "triangles": 73665,
+   "objects": 22,
+   "materials": [
+    "VX_Carbon",
+    "VX_Display",
+    "VX_Glass",
+    "VX_LED_Brake",
+    "VX_LED_DRL",
+    "VX_LED_Headlamp",
+    "VX_LED_Indicator_L",
+    "VX_LED_Indicator_R",
+    "VX_LED_Reverse",
+    "VX_LED_Tail",
+    "VX_LensClear",
+    "VX_LensRed",
+    "VX_Paint",
+    "VX_Palette",
+    "VX_Tire"
+   ]
+  },
+  "LOD1": {
+   "root": "LOD1_Root",
+   "triangles": 34060,
+   "objects": 22,
+   "materials": [
+    "VX_Carbon",
+    "VX_Display",
+    "VX_Glass",
+    "VX_LED_Brake",
+    "VX_LED_DRL",
+    "VX_LED_Headlamp",
+    "VX_LED_Indicator_L",
+    "VX_LED_Indicator_R",
+    "VX_LED_Reverse",
+    "VX_LED_Tail",
+    "VX_LensClear",
+    "VX_LensRed",
+    "VX_Paint",
+    "VX_Palette",
+    "VX_Tire"
+   ]
+  },
+  "LOD2": {
+   "root": "LOD2_Root",
+   "triangles": 15026,
+   "objects": 22,
+   "materials": [
+    "VX_Carbon",
+    "VX_Display",
+    "VX_Glass",
+    "VX_LED_Brake",
+    "VX_LED_DRL",
+    "VX_LED_Headlamp",
+    "VX_LED_Indicator_L",
+    "VX_LED_Indicator_R",
+    "VX_LED_Reverse",
+    "VX_LED_Tail",
+    "VX_LensClear",
+    "VX_LensRed",
+    "VX_Paint",
+    "VX_Palette",
+    "VX_Tire"
+   ]
+  },
+  "LOD3": {
+   "root": "LOD3_Root",
+   "triangles": 6146,
+   "objects": 13,
+   "materials": [
+    "VX_Carbon",
+    "VX_Display",
+    "VX_Glass",
+    "VX_LED_Brake",
+    "VX_LED_DRL",
+    "VX_LED_Headlamp",
+    "VX_LED_Indicator_L",
+    "VX_LED_Indicator_R",
+    "VX_LED_Reverse",
+    "VX_LED_Tail",
+    "VX_LensClear",
+    "VX_LensRed",
+    "VX_Paint",
+    "VX_Palette",
+    "VX_Tire"
+   ]
+  }
+ },
+ "materials": [
+  "VX_Carbon",
+  "VX_Display",
+  "VX_Glass",
+  "VX_LED_Brake",
+  "VX_LED_DRL",
+  "VX_LED_Headlamp",
+  "VX_LED_Indicator_L",
+  "VX_LED_Indicator_R",
+  "VX_LED_Reverse",
+  "VX_LED_Tail",
+  "VX_LensClear",
+  "VX_LensRed",
+  "VX_Paint",
+  "VX_Palette",
+  "VX_Tire"
+ ],
+ "light_channels": {
+  "count": 7,
+  "names": [
+   "VX_LED_DRL",
+   "VX_LED_Headlamp",
+   "VX_LED_Tail",
+   "VX_LED_Brake",
+   "VX_LED_Indicator_L",
+   "VX_LED_Indicator_R",
+   "VX_LED_Reverse"
+  ],
+  "mechanism": "one emissive material per channel; drive _EmissionColor intensity at runtime"
+ },
+ "coordinate_convention": {
+  "forward": "+Z",
+  "up": "+Y",
+  "vehicle_left": "-X",
+  "ground": "Y = 0",
+  "front_axle": "+Z",
+  "blender_to_unity_point": "(x, y, z) -> (-x, z, -y)",
+  "fbx_globals": {
+   "UpAxis": 1,
+   "UpAxisSign": 1,
+   "FrontAxis": 2,
+   "FrontAxisSign": 1,
+   "CoordAxis": 0,
+   "CoordAxisSign": 1,
+   "UnitScaleFactor": 100.0,
+   "OriginalUnitScaleFactor": 100.0
+  },
+  "axis_conversion": "baked into the meshes: Car_Root identity; Bake Axis Conversion OFF"
+ },
+ "scale": {
+  "units": "metres",
+  "fbx_unit_scale_factor": 100.0,
+  "unity_scale_factor": 1,
+  "convert_units": true
+ },
+ "unity_import": {
+  "scale_factor": 1,
+  "convert_units": true,
+  "bake_axis_conversion": false,
+  "import_blendshapes": false,
+  "import_visibility": false,
+  "import_cameras": false,
+  "import_lights": false,
+  "preserve_hierarchy": true,
+  "mesh_compression": "Off",
+  "read_write": false,
+  "generate_colliders": false,
+  "normals": "Import",
+  "tangents": "Import",
+  "animation_type": "None",
+  "import_animation": false,
+  "material_creation": "Import via MaterialDescription, then remap by exact name",
+  "lod_group": {
+   "on": "Car_Root",
+   "renderers_from": [
+    "LOD0_Root",
+    "LOD1_Root",
+    "LOD2_Root",
+    "LOD3_Root"
+   ],
+   "screen_relative_heights": [
+    0.6,
+    0.3,
+    0.12,
+    0.03
+   ],
+   "note": "suggested starting values from the Blender handoff; tune on device"
+  }
+ },
+ "traffic": null,
+ "dependencies": {
+  "fbx_relative_texture_paths": [
+   "../textures/VX_Carbon_BaseColor.png",
+   "../textures/VX_Carbon_Normal.png",
+   "../textures/VX_Palette_BaseColor.png",
+   "../textures/VX_Palette_Metallic.png",
+   "../textures/VX_Palette_Roughness.png",
+   "../textures/VX_Tire_BaseColor.png",
+   "../textures/VX_Tire_Normal.png"
+  ],
+  "unresolved": [],
+  "absolute_paths_embedded": 7,
+  "embedded_media": 0,
+  "vehicle_readme": "02_Player_Vehicles/VortexR_r1/VX_UNITY_IMPORT_NOTES.md"
+ },
+ "validation": {
+  "checks": {
+   "02 Correct approved release version": {
+    "result": "PASS",
+    "detail": "FBX SHA-1 23476c898cf1 = release record; FBX hash listed in VX_R1_FINAL_FREEZE.md"
+   },
+   "03 Complete FBX exists": {
+    "result": "PASS",
+    "detail": "VortexR_complete_unity.fbx: 7,024,940 bytes, 103 objects (release 103)"
+   },
+   "04 Every required texture exists": {
+    "result": "PASS",
+    "detail": "8 required textures (1 for manual URP setup), missing []"
+   },
+   "05 All paths resolve inside the portable package": {
+    "result": "PASS",
+    "detail": "7 relative texture paths resolve in the package and in the portable copy; importer loaded 10 images, all from inside the copy"
+   },
+   "06 FBX hierarchy valid": {
+    "result": "PASS",
+    "detail": "single root Car_Root; children 10 incl. LOD0-3_Root, Collision, 4 WheelColliderRef, CenterOfMass; colliders under Collision; no .001 names"
+   },
+   "07 Model orientation (+Z forward, +Y up, -X left)": {
+    "result": "PASS",
+    "detail": "FBX axes Up +Y / Front +Z / Coord +X; body nose Z 2.3000 (release 2.3), tail -2.2599; FL wheel at -X/+Z; all node rotations identity"
+   },
+   "08 Dimensions and scale (metres, scale 1, ground Y 0)": {
+    "result": "PASS",
+    "detail": "UnitScaleFactor 100 (1 unit = 1 m), max Lcl scale deviation 0.0e+00, no negative scale; LOD0 L x W x H 4.5800 x 2.2700 x 1.2750 m vs release 4.58 x 2.27 x 1.275; ground Y -0.0000"
+   },
+   "09 All LODs preserved (LOD0-3)": {
+    "result": "PASS",
+    "detail": "4 LOD roots"
+   },
+   "10 Triangle counts match the release manifest": {
+    "result": "PASS",
+    "detail": "LOD0 73,665, LOD1 34,060, LOD2 15,026, LOD3 6,146"
+   },
+   "11 Wheel pivots match the validated source": {
+    "result": "PASS",
+    "detail": "4 WheelColliderRef positions = release (Unity FL [-0.86, 0.339, 1.36]); 24 Wheel/SteerPivot pivots, max offset from ref 0.0000 mm; wheel mesh radius = release radius within 1 mm"
+   },
+   "12 Collider references preserved": {
+    "result": "PASS",
+    "detail": "5 convex hulls {'Collision_Body': 168, 'Collision_Cabin': 166, 'Collision_Front': 184, 'Collision_Rear': 142, 'Collision_Wing': 14}, no materials"
+   },
+   "13 Centre-of-mass reference preserved": {
+    "result": "PASS",
+    "detail": "CenterOfMass Unity [-0.0, 0.38, -0.25] (release [-0.0, 0.38, -0.25])"
+   },
+   "14 Material names and assignments preserved": {
+    "result": "PASS",
+    "detail": "15 materials = export manifest; per LOD [15, 15, 15, 15]; every face has a material"
+   },
+   "15 Light-channel data preserved": {
+    "result": "PASS",
+    "detail": "7 light-channel materials, LOD0 face counts = release geometry report"
+   },
+   "17 No corrupted textures": {
+    "result": "PASS",
+    "detail": "8 PNG decoded (signature, CRC, zlib, pixel length); importer read non-zero sizes for 10 linked images"
+   },
+   "18 No unexpectedly missing dependencies": {
+    "result": "PASS",
+    "detail": "no missing or external dependency; the portable-copy measurement is identical to the in-place one"
+   }
+  },
+  "blender_side": "PASS",
+  "unity_runtime": "NOT RUN (P0-05 on the Unity machine)"
+ }
+}

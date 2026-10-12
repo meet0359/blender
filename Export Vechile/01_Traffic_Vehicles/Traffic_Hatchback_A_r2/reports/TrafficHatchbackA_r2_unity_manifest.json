@@ -1,0 +1,487 @@
+{
+ "release": "Hatchback A r2",
+ "folder": "Traffic_Hatchback_A_r2",
+ "package_dir": "03_Traffic_Hatchback_A_r2",
+ "source": {
+  "file": "H_TrafficFleet/Traffic_Hatchback_A_r2/blend/traffichatchbackar2_09_export_ready.blend",
+  "sha1": "317c2ea5f01b14579d6fa0a12c820d63816748d0",
+  "freeze_manifest": "H_TrafficFleet/Traffic_Hatchback_A_r2/reports/TS_HatchA_r2_FINAL_FREEZE.md",
+  "freeze_manifest_sha1": "b5747b1c53041cb61b46617f6df0e926a3360f30"
+ },
+ "fbx": {
+  "TrafficHatchbackA_r2_LOD0_unity_test.fbx": {
+   "sha1": "3a3376770cc5147affd338b43f4da37bd68f14b0",
+   "bytes": 1256556,
+   "objects": 27
+  },
+  "TrafficHatchbackA_r2_complete_unity.fbx": {
+   "sha1": "e1808489b4b8f278cfca2d41616c483f7d462fcd",
+   "bytes": 2472108,
+   "objects": 71
+  }
+ },
+ "textures": {
+  "TS_HatchA_Body_AO_Grime.png": "2b63312b050d2b75c14a1059e13cfee3b4ecd485",
+  "TS_HatchA_Body_Normal.png": "72f5ad770bb9dbe3d985e49ce4d88c22f1de37e3",
+  "TS_HatchA_Body_Normal_LOD1.png": "5f638e9ac07ff959ec9fa20e06168baa873fbfb1"
+ },
+ "dependencies": {
+  "fbx_relative_texture_paths": [
+   "../../shared/textures/TS_Atlas_BaseColor.png",
+   "../../shared/textures/TS_Atlas_Metallic.png",
+   "../../shared/textures/TS_Atlas_Normal.png",
+   "../../shared/textures/TS_Atlas_Roughness.png",
+   "../../shared/textures/TS_Lights_BaseColor.png",
+   "../../shared/textures/TS_Tire_BaseColor.png",
+   "../../shared/textures/TS_Tire_Normal.png",
+   "../../shared/textures/TS_Tire_Roughness.png",
+   "../textures/TS_HatchA_Body_Normal.png",
+   "../textures/TS_HatchA_Body_Normal_LOD1.png"
+  ],
+  "unresolved": [],
+  "all_source_textures": [
+   "TS_Atlas_BaseColor.png",
+   "TS_Atlas_Metallic.png",
+   "TS_Atlas_Normal.png",
+   "TS_Atlas_Roughness.png",
+   "TS_HatchA_Body_AO_Grime.png",
+   "TS_HatchA_Body_Normal.png",
+   "TS_HatchA_Body_Normal_LOD1.png",
+   "TS_Lights_BaseColor.png",
+   "TS_Lights_Emission.png",
+   "TS_Tire_BaseColor.png",
+   "TS_Tire_Normal.png",
+   "TS_Tire_Roughness.png"
+  ],
+  "blender_only": [
+   "TS_Lights_State (packed 4x4 review mask: which channels glow in Blender renders; Unity drives channels at runtime)"
+  ],
+  "linked_libraries": 0
+ },
+ "lods": {
+  "LOD0": {
+   "triangles": 17174,
+   "objects": 16,
+   "materials": [
+    "TS_Atlas",
+    "TS_HatchA_Glass",
+    "TS_HatchA_Interior",
+    "TS_HatchA_Paint",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_Tire"
+   ]
+  },
+  "LOD1": {
+   "triangles": 8391,
+   "objects": 16,
+   "materials": [
+    "TS_Atlas",
+    "TS_HatchA_Glass",
+    "TS_HatchA_Interior",
+    "TS_HatchA_Paint_LOD1",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_Tire"
+   ]
+  },
+  "LOD2": {
+   "triangles": 3887,
+   "objects": 16,
+   "materials": [
+    "TS_Atlas",
+    "TS_HatchA_Glass",
+    "TS_HatchA_Interior",
+    "TS_HatchA_Paint_Far",
+    "TS_Lens",
+    "TS_LensRed",
+    "TS_Lights",
+    "TS_Tire"
+   ]
+  },
+  "LOD3": {
+   "triangles": 1652,
+   "objects": 12,
+   "materials": [
+    "TS_Atlas",
+    "TS_HatchA_Glass",
+    "TS_HatchA_Interior",
+    "TS_HatchA_Paint_Far",
+    "TS_Lights",
+    "TS_Tire"
+   ]
+  }
+ },
+ "materials": [
+  {
+   "material": "TS_Atlas",
+   "lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "shader": "URP Lit (opaque)",
+   "base": "TS_Atlas_BaseColor.png",
+   "metallic": 0.0,
+   "smoothness": 0.5,
+   "alpha": 1.0,
+   "coat": 0.0,
+   "normal_strength": [
+    1.0
+   ],
+   "fbx_slots": {
+    "DiffuseColor": "../../shared/textures/TS_Atlas_BaseColor.png",
+    "NormalMap": "../../shared/textures/TS_Atlas_Normal.png",
+    "ShininessExponent": "../../shared/textures/TS_Atlas_Roughness.png",
+    "ReflectionFactor": "../../shared/textures/TS_Atlas_Metallic.png"
+   },
+   "manual_textures": [
+    "TS_Atlas_MetallicSmoothness.png (R metal, A smoothness; replaces Metallic + Roughness)"
+   ],
+   "note": ""
+  },
+  {
+   "material": "TS_HatchA_Glass",
+   "lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "shader": "URP Lit, Surface Transparent",
+   "base": "(0.78, 0.84, 0.82)",
+   "metallic": 0.0,
+   "smoothness": 1.0,
+   "alpha": 0.22,
+   "coat": 0.0,
+   "normal_strength": [],
+   "fbx_slots": {},
+   "manual_textures": [],
+   "note": "instance of TS_Glass: Lit transparent, base (0.78, 0.84, 0.82) alpha 0.22, smoothness 1.0 (light green automotive tint, ~75 % visible transmission)"
+  },
+  {
+   "material": "TS_HatchA_Interior",
+   "lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "shader": "URP Lit (opaque)",
+   "base": "TS_Atlas_BaseColor.png",
+   "metallic": 0.0,
+   "smoothness": 0.5,
+   "alpha": 1.0,
+   "coat": 0.0,
+   "normal_strength": [
+    0.12
+   ],
+   "fbx_slots": {
+    "DiffuseColor": "../../shared/textures/TS_Atlas_BaseColor.png",
+    "NormalMap": "../../shared/textures/TS_Atlas_Normal.png",
+    "ShininessExponent": "../../shared/textures/TS_Atlas_Roughness.png",
+    "ReflectionFactor": "../../shared/textures/TS_Atlas_Metallic.png"
+   },
+   "manual_textures": [
+    "TS_Atlas_MetallicSmoothness.png (R metal, A smoothness; replaces Metallic + Roughness)"
+   ],
+   "note": "instance of TS_Atlas (same textures / UVs): normal scale 0.12 (seat weave reads as fabric, not crumpled at cabin scale)"
+  },
+  {
+   "material": "TS_HatchA_Paint",
+   "lods": [
+    0
+   ],
+   "shader": "URP Complex Lit (clear coat)",
+   "base": "PaintColour (0.3, 0.018, 0.022) x AO (R of AO_Grime), grime by G",
+   "metallic": 0.55,
+   "smoothness": 0.64,
+   "alpha": 1.0,
+   "coat": 1.0,
+   "normal_strength": [
+    1.0
+   ],
+   "fbx_slots": {
+    "NormalMap": "../textures/TS_HatchA_Body_Normal.png"
+   },
+   "manual_textures": [
+    "TS_HatchA_Body_AO_Grime.png",
+    "TS_PaintFlake_Normal.png (detail normal, tiling 60, strength 0.15)"
+   ],
+   "note": "Lit (or clear-coat paint shader): BaseColor = PaintColour x AO (R of AO_Grime) blended to grime (G); Normal = baked body normal; detail normal TS_PaintFlake_Normal tiling 60; metallic 0.55, smoothness 0.64, clear coat 1.00 / coat smoothness 0.955"
+  },
+  {
+   "material": "TS_HatchA_Paint_Far",
+   "lods": [
+    2,
+    3
+   ],
+   "shader": "URP Complex Lit (clear coat)",
+   "base": "PaintColour (0.3, 0.018, 0.022)",
+   "metallic": 0.55,
+   "smoothness": 0.64,
+   "alpha": 1.0,
+   "coat": 1.0,
+   "normal_strength": [],
+   "fbx_slots": {},
+   "manual_textures": [],
+   "note": "Lit (or clear-coat paint shader): BaseColor = PaintColour x AO (R of AO_Grime) blended to grime (G); Normal = baked body normal; detail normal TS_PaintFlake_Normal tiling 60; metallic 0.55, smoothness 0.64, clear coat 1.00 / coat smoothness 0.955"
+  },
+  {
+   "material": "TS_HatchA_Paint_LOD1",
+   "lods": [
+    1
+   ],
+   "shader": "URP Complex Lit (clear coat)",
+   "base": "PaintColour (0.3, 0.018, 0.022) x AO (R of AO_Grime), grime by G",
+   "metallic": 0.55,
+   "smoothness": 0.64,
+   "alpha": 1.0,
+   "coat": 1.0,
+   "normal_strength": [
+    1.0
+   ],
+   "fbx_slots": {
+    "NormalMap": "../textures/TS_HatchA_Body_Normal_LOD1.png"
+   },
+   "manual_textures": [
+    "TS_HatchA_Body_AO_Grime.png",
+    "TS_PaintFlake_Normal.png (detail normal, tiling 60, strength 0.15)"
+   ],
+   "note": "Lit (or clear-coat paint shader): BaseColor = PaintColour x AO (R of AO_Grime) blended to grime (G); Normal = baked body normal; detail normal TS_PaintFlake_Normal tiling 60; metallic 0.55, smoothness 0.64, clear coat 1.00 / coat smoothness 0.955"
+  },
+  {
+   "material": "TS_Lens",
+   "lods": [
+    0,
+    1,
+    2
+   ],
+   "shader": "URP Lit, Surface Transparent",
+   "base": "(0.92, 0.94, 0.96)",
+   "metallic": 0.0,
+   "smoothness": 0.99,
+   "alpha": 0.1,
+   "coat": 0.0,
+   "normal_strength": [],
+   "fbx_slots": {},
+   "manual_textures": [],
+   "note": ""
+  },
+  {
+   "material": "TS_LensRed",
+   "lods": [
+    0,
+    1,
+    2
+   ],
+   "shader": "URP Lit, Surface Transparent",
+   "base": "(0.42, 0.0, 0.006)",
+   "metallic": 0.0,
+   "smoothness": 0.98,
+   "alpha": 0.55,
+   "coat": 0.0,
+   "normal_strength": [],
+   "fbx_slots": {},
+   "manual_textures": [],
+   "note": ""
+  },
+  {
+   "material": "TS_Lights",
+   "lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "shader": "Emissive light-channel shader (Shader Graph; see README)",
+   "base": "TS_Lights_BaseColor.png",
+   "metallic": 0.0,
+   "smoothness": 0.75,
+   "alpha": 1.0,
+   "coat": 0.0,
+   "normal_strength": [],
+   "fbx_slots": {
+    "DiffuseColor": "../../shared/textures/TS_Lights_BaseColor.png"
+   },
+   "manual_textures": [
+    "TS_Lights_Emission.png",
+    "TS_Lights_ChannelID.png (R x 15 = channel; point filter, no compression)"
+   ],
+   "note": "one emissive material; channel = TS_Lights_ChannelID (R * 15 = index into DRL, Headlamp, Tail, Brake, Indicator_L, Indicator_R, Reverse, Marker); per-channel intensity array set at runtime (one draw call)"
+  },
+  {
+   "material": "TS_Tire",
+   "lods": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "shader": "URP Lit (opaque)",
+   "base": "TS_Tire_BaseColor.png",
+   "metallic": 0.0,
+   "smoothness": 0.5,
+   "alpha": 1.0,
+   "coat": 0.0,
+   "normal_strength": [
+    1.0
+   ],
+   "fbx_slots": {
+    "DiffuseColor": "../../shared/textures/TS_Tire_BaseColor.png",
+    "NormalMap": "../../shared/textures/TS_Tire_Normal.png",
+    "ShininessExponent": "../../shared/textures/TS_Tire_Roughness.png"
+   },
+   "manual_textures": [
+    "smoothness = 1 - TS_Tire_Roughness (pack into a map alpha, or use the constant)"
+   ],
+   "note": ""
+  }
+ ],
+ "wheels": {
+  "FL": {
+   "unity_position": [
+    -0.77,
+    0.317,
+    1.25
+   ],
+   "radius_m": 0.317,
+   "width_m": 0.225,
+   "lods_with_wheel": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "pivot_dev_m": 0.0
+  },
+  "FR": {
+   "unity_position": [
+    0.77,
+    0.317,
+    1.25
+   ],
+   "radius_m": 0.317,
+   "width_m": 0.225,
+   "lods_with_wheel": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "pivot_dev_m": 0.0
+  },
+  "RL": {
+   "unity_position": [
+    -0.765,
+    0.317,
+    -1.38
+   ],
+   "radius_m": 0.317,
+   "width_m": 0.225,
+   "lods_with_wheel": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "pivot_dev_m": 0.0
+  },
+  "RR": {
+   "unity_position": [
+    0.765,
+    0.317,
+    -1.38
+   ],
+   "radius_m": 0.317,
+   "width_m": 0.225,
+   "lods_with_wheel": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "pivot_dev_m": 0.0
+  }
+ },
+ "center_of_mass_unity": [
+  -0.0,
+  0.5,
+  0.18
+ ],
+ "colliders": {
+  "Collision_Body": {
+   "tris": 90,
+   "materials": 0
+  },
+  "Collision_Cabin": {
+   "tris": 172,
+   "materials": 0
+  },
+  "Collision_Front": {
+   "tris": 184,
+   "materials": 0
+  },
+  "Collision_Rear": {
+   "tris": 194,
+   "materials": 0
+  }
+ },
+ "light_channels": [
+  "Brake",
+  "DRL",
+  "Headlamp",
+  "Indicator_L",
+  "Indicator_R",
+  "Reverse",
+  "Tail"
+ ],
+ "unity_space": {
+  "car_root_identity": 7.549790126404332e-08,
+  "max_rotation_dev": 7.549790126404332e-08,
+  "max_scale_dev": 0.0,
+  "negative_scale": [],
+  "lod0_dims_m": {
+   "width_x": 2.08,
+   "height_y": 1.5158,
+   "length_z": 4.2668
+  },
+  "nose_z": 2.1317,
+  "tail_z": -2.1351,
+  "roof_y": 1.5158,
+  "ground_y": -0.0,
+  "center_of_mass": [
+   -0.0,
+   0.5,
+   0.18
+  ]
+ },
+ "fbx_globals": {
+  "UpAxis": 1,
+  "UpAxisSign": 1,
+  "FrontAxis": 2,
+  "FrontAxisSign": 1,
+  "CoordAxis": 0,
+  "CoordAxisSign": 1,
+  "UnitScaleFactor": 100.0,
+  "OriginalUnitScaleFactor": 100.0
+ },
+ "validation": {
+  "summary": "SUMMARY: 1 errors, 0 warnings",
+  "failed_checks": [
+   "1"
+  ],
+  "report": "reports/TrafficHatchbackA_r2_validation.txt"
+ },
+ "fbx_audit": {
+  "ok": true,
+  "problems": {
+   "TrafficHatchbackA_r2_LOD0_unity_test.fbx": [],
+   "TrafficHatchbackA_r2_complete_unity.fbx": []
+  },
+  "report": "reports/TrafficHatchbackA_r2_fbx_audit.json"
+ }
+}
